@@ -1,0 +1,34 @@
+{
+  "branding": {
+    "name": "LÜMISPIRA",
+    "tagline": "Lumière · Équilibre · Guérison",
+    "domain": "lumispira.com"
+  },
+  "navigation": [
+    { "label": "Protocoles", "href": "protocoles/index.html" },
+    { "label": "Recettes", "href": "recettes/index.html" },
+    { "label": "Cuisine Sacrée", "href": "cuisine-sacree/index.html" },
+    { "label": "Éveil", "href": "eveil/index.html" },
+    { "label": "Coups de cœur", "href": "coups-de-coeur/index.html" },
+    { "label": "Guides", "href": "guides/index.html" }
+  ],
+  "cta": { "label": "✦ Guide offert", "href": "guides/index.html" },
+  "leadMagnet": {
+    "icon": "✨",
+    "label": "Cadeau gratuit",
+    "title": "10 Protocoles<br><em>Bien-être</em>",
+    "subtitle": "PDF offert — vie alignée",
+    "href": "guides/index.html",
+    "action": "Je télécharge →",
+    "note": "Gratuit · Sans engagement"
+  },
+  "footer": {
+    "legalLinks": [
+      { "label": "Mentions légales", "href": "#" },
+      { "label": "Confidentialité", "href": "#" }
+    ],
+    "copyright": "© 2025 LÜMISPIRA",
+    "rights": "Tous droits réservés",
+    "bottomLeft": "Fait avec amour · Pour les âmes sensibles"
+  }
+}
