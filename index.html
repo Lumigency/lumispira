@@ -1,0 +1,1984 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- SEO META TAGS -->
+  <title>LÜMISPIRA — Magazine Bien-être & Sagesse Ancestrale | Lumière · Équilibre · Guérison</title>
+  <meta name="description" content="LÜMISPIRA est un sanctuaire numérique dédié aux âmes sensibles. Découvrez nos protocoles bien-être, recettes sacrées, rituels ancestraux et guides de reconnexion à soi." />
+  <meta name="keywords" content="bien-être, protocoles bien-être, recettes sacrées, rituel matin, chakras, spiritualité, cuisine sacrée, ortie, éveil spirituel, magazine bien-être français" />
+  <meta name="author" content="LÜMISPIRA" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://lumispira.com/" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://lumispira.com/" />
+  <meta property="og:title" content="LÜMISPIRA — Un espace pour les âmes sensibles" />
+  <meta property="og:description" content="Protocoles bien-être, recettes sacrées, rituels et guides pour une vie alignée. Ton sanctuaire numérique doux et bienveillant." />
+  <meta property="og:image" content="https://lumispira.com/og-image.jpg" />
+  <meta property="og:locale" content="fr_FR" />
+  <meta property="og:site_name" content="LÜMISPIRA" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="LÜMISPIRA — Magazine Bien-être & Sagesse Ancestrale" />
+  <meta name="twitter:description" content="Protocoles bien-être, recettes sacrées, rituels et guides pour une vie alignée." />
+
+  <!-- Schema.org Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "LÜMISPIRA",
+    "url": "https://lumispira.com",
+    "description": "Magazine bien-être & sagesse ancestrale pour les âmes sensibles",
+    "inLanguage": "fr",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://lumispira.com/recherche?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "LÜMISPIRA",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://lumispira.com/logo.png"
+      }
+    }
+  }
+  </script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <style>
+    /* ═══ CSS VARIABLES ═══ */
+    :root {
+      --cream: #FAF7F2;
+      --cream-2: #F2EBE0;
+      --dusty-rose: #EAD8D0;
+      --terracotta: #B86A4B;
+      --terracotta-dark: #9A5638;
+      --deep-brown: #2E231A;
+      --sage: #9FAF97;
+      --sand: #D8CCBA;
+      --gold: #C9A96E;
+      --text: #2E231A;
+      --text-muted: #7A6558;
+      --shadow-warm: 0 4px 24px rgba(184,106,75,0.10);
+      --shadow-soft: 0 2px 16px rgba(46,35,26,0.07);
+      --radius: 14px;
+      --radius-sm: 8px;
+      --radius-pill: 30px;
+    }
+
+    /* ═══ RESET & BASE ═══ */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; font-size: 16px; }
+    body {
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 300;
+      background-color: var(--cream);
+      color: var(--text);
+      line-height: 1.7;
+      overflow-x: hidden;
+    }
+    img { max-width: 100%; display: block; }
+    a { text-decoration: none; color: inherit; }
+    ul { list-style: none; }
+
+    /* ═══ UTILITIES ═══ */
+    .serif { font-family: 'Cormorant Garamond', serif; }
+    .italic { font-style: italic; }
+    .terracotta { color: var(--terracotta); }
+    .sage-color { color: var(--sage); }
+    .label {
+      font-size: 0.65rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      font-weight: 500;
+    }
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 2rem; }
+    .section-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 300;
+      font-size: clamp(2rem, 4vw, 3rem);
+      line-height: 1.2;
+    }
+
+    /* ═══ SCROLL ANIMATIONS ═══ */
+    .fade-up {
+      opacity: 0;
+      transform: translateY(32px);
+      transition: opacity 0.7s ease, transform 0.7s ease;
+    }
+    .fade-up.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .fade-up.delay-1 { transition-delay: 0.1s; }
+    .fade-up.delay-2 { transition-delay: 0.2s; }
+    .fade-up.delay-3 { transition-delay: 0.3s; }
+    .fade-up.delay-4 { transition-delay: 0.4s; }
+
+    /* ═══════════════════════════════
+       NAVIGATION
+    ════════════════════════════════*/
+    #navbar {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 1000;
+      background: rgba(250,247,242,0.85);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border-bottom: 1px solid rgba(216,204,186,0.4);
+      height: 60px;
+    }
+    .nav-inner {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+    /* Logo */
+    .nav-logo {
+      flex-shrink: 0;
+      display: flex;
+      flex-direction: column;
+      line-height: 1.1;
+    }
+    .nav-logo-name {
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 300;
+      font-size: 1.2rem;
+      letter-spacing: 0.1em;
+      color: var(--text);
+    }
+    .nav-logo-tagline {
+      font-size: 0.58rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      font-weight: 400;
+    }
+    /* Nav links */
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 0.1rem;
+      flex: 1;
+      justify-content: center;
+    }
+    .nav-links a {
+      font-size: 0.65rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      padding: 0.4rem 0.6rem;
+      border-radius: 6px;
+      transition: color 0.2s, background 0.2s;
+      white-space: nowrap;
+      font-weight: 400;
+    }
+    .nav-links a:hover {
+      color: var(--terracotta);
+      background: rgba(184,106,75,0.06);
+    }
+    /* Nav CTA */
+    .nav-cta {
+      flex-shrink: 0;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      background: var(--terracotta);
+      color: #fff;
+      font-size: 0.65rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      padding: 0.5rem 1rem;
+      border-radius: var(--radius-pill);
+      font-weight: 500;
+      transition: background 0.2s, transform 0.2s;
+      white-space: nowrap;
+    }
+    .nav-cta:hover { background: var(--terracotta-dark); transform: translateY(-1px); }
+
+    /* Mobile menu */
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+      padding: 4px;
+      background: none;
+      border: none;
+    }
+    .hamburger span {
+      display: block;
+      width: 22px;
+      height: 1.5px;
+      background: var(--text);
+      transition: 0.3s;
+      border-radius: 2px;
+    }
+    .mobile-menu {
+      display: none;
+      position: fixed;
+      top: 60px;
+      left: 0; right: 0;
+      background: rgba(250,247,242,0.97);
+      backdrop-filter: blur(16px);
+      z-index: 999;
+      padding: 1.5rem 2rem 2rem;
+      border-bottom: 1px solid var(--sand);
+    }
+    .mobile-menu.open { display: flex; flex-direction: column; gap: 0.5rem; }
+    .mobile-menu a {
+      font-size: 0.75rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      padding: 0.6rem 0;
+      border-bottom: 1px solid rgba(216,204,186,0.3);
+    }
+    .mobile-menu .nav-cta { margin-top: 1rem; text-align: center; justify-content: center; font-size: 0.7rem; }
+
+    /* ═══════════════════════════════
+       FLOATING LEAD MAGNET
+    ════════════════════════════════*/
+    #lead-magnet {
+      position: fixed;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%) translateX(200px);
+      z-index: 900;
+      transition: transform 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+    }
+    #lead-magnet.visible {
+      transform: translateY(-50%) translateX(0);
+    }
+    .lead-card {
+      width: 160px;
+      background: var(--cream);
+      border: 1px solid rgba(201,169,110,0.25);
+      border-right: none;
+      border-radius: var(--radius) 0 0 var(--radius);
+      box-shadow: -4px 4px 32px rgba(46,35,26,0.12);
+      padding: 1.2rem 1rem 1rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 0.5rem;
+    }
+    .lead-icon {
+      width: 36px;
+      height: 36px;
+      background: radial-gradient(circle, rgba(201,169,110,0.25) 0%, rgba(234,216,208,0.3) 100%);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.1rem;
+      box-shadow: 0 0 12px rgba(201,169,110,0.3);
+      animation: glowPulse 2.5s ease-in-out infinite;
+    }
+    @keyframes glowPulse {
+      0%, 100% { box-shadow: 0 0 8px rgba(201,169,110,0.3); }
+      50% { box-shadow: 0 0 20px rgba(201,169,110,0.5); }
+    }
+    .lead-cadeau {
+      color: var(--gold);
+      letter-spacing: 0.18em;
+      font-size: 0.55rem;
+      text-transform: uppercase;
+    }
+    .lead-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 0.85rem;
+      font-weight: 300;
+      line-height: 1.3;
+      color: var(--text);
+    }
+    .lead-sub {
+      font-size: 0.6rem;
+      color: var(--text-muted);
+      line-height: 1.4;
+    }
+    .lead-btn {
+      display: block;
+      width: 100%;
+      background: var(--terracotta);
+      color: #fff;
+      font-size: 0.62rem;
+      letter-spacing: 0.08em;
+      padding: 0.5rem 0.7rem;
+      border-radius: var(--radius-pill);
+      font-weight: 500;
+      transition: background 0.2s;
+      margin-top: 0.2rem;
+    }
+    .lead-btn:hover { background: var(--terracotta-dark); }
+    .lead-note {
+      font-size: 0.52rem;
+      color: var(--text-muted);
+      opacity: 0.7;
+      line-height: 1.4;
+    }
+
+    /* ═══════════════════════════════
+       HERO SECTION
+    ════════════════════════════════*/
+    #hero {
+      min-height: 100vh;
+      padding-top: 60px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+    .hero-left {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 4rem 3.5rem 4rem 4rem;
+      gap: 1.8rem;
+    }
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: rgba(234,216,208,0.5);
+      border: 1px solid rgba(184,106,75,0.2);
+      color: var(--terracotta);
+      font-size: 0.62rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      padding: 0.4rem 1rem;
+      border-radius: var(--radius-pill);
+      width: fit-content;
+      font-weight: 500;
+    }
+    .hero-h1 {
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 300;
+      font-size: clamp(2.4rem, 4.5vw, 3.8rem);
+      line-height: 1.15;
+      color: var(--text);
+    }
+    .hero-why-box {
+      border-left: 2.5px solid var(--terracotta);
+      background: rgba(234,216,208,0.18);
+      border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+      padding: 1.2rem 1.4rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.9rem;
+    }
+    .why-row { display: flex; flex-direction: column; gap: 0.15rem; }
+    .why-label {
+      font-size: 0.6rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--terracotta);
+      font-weight: 500;
+    }
+    .why-text {
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+    .hero-btns {
+      display: flex;
+      align-items: center;
+      gap: 1.2rem;
+      flex-wrap: wrap;
+    }
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      background: var(--terracotta);
+      color: #fff;
+      font-size: 0.78rem;
+      letter-spacing: 0.08em;
+      padding: 0.8rem 1.8rem;
+      border-radius: var(--radius-pill);
+      font-weight: 500;
+      transition: background 0.2s, transform 0.2s, box-shadow 0.2s;
+      box-shadow: 0 4px 16px rgba(184,106,75,0.3);
+    }
+    .btn-primary:hover {
+      background: var(--terracotta-dark);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 24px rgba(184,106,75,0.4);
+    }
+    .btn-ghost {
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      letter-spacing: 0.05em;
+      transition: color 0.2s;
+    }
+    .btn-ghost:hover { color: var(--terracotta); }
+    .hero-trust {
+      font-size: 0.65rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--sand);
+      font-weight: 400;
+    }
+
+    /* Hero right — Univers étoilé */
+    .hero-right {
+      position: relative;
+      background: linear-gradient(170deg, #1A1228 0%, #2A1D35 40%, #1E1520 70%, #2E1A10 100%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+    /* Nébuleuse de fond */
+    .hero-right::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(ellipse 60% 50% at 30% 40%, rgba(184,106,75,0.18) 0%, transparent 70%),
+        radial-gradient(ellipse 50% 60% at 75% 65%, rgba(159,175,151,0.12) 0%, transparent 60%),
+        radial-gradient(ellipse 40% 35% at 60% 20%, rgba(201,169,110,0.10) 0%, transparent 55%);
+      pointer-events: none;
+    }
+    .hero-right::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse 80% 80% at 50% 50%, rgba(234,216,208,0.04) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    /* Canvas étoiles */
+    #star-canvas {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+    }
+    /* Contenu centré hero-right */
+    .hero-cosmos-wrap {
+      position: relative;
+      z-index: 2;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 2rem;
+      padding: 3rem 2rem;
+      width: 100%;
+    }
+    /* Grand cercle central cosmique */
+    .cosmos-orb {
+      width: 240px;
+      height: 240px;
+      border-radius: 50%;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      animation: cosmosFloat 8s ease-in-out infinite;
+    }
+    .cosmos-orb::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      border-radius: 50%;
+      background: radial-gradient(circle at 35% 30%, rgba(255,255,255,0.08) 0%, rgba(184,106,75,0.06) 50%, transparent 100%);
+      border: 1px solid rgba(201,169,110,0.25);
+      box-shadow:
+        0 0 60px rgba(184,106,75,0.15),
+        0 0 120px rgba(201,169,110,0.08),
+        inset 0 0 40px rgba(255,255,255,0.03);
+    }
+    /* Anneau orbite */
+    .cosmos-orb::after {
+      content: '';
+      position: absolute;
+      width: 300px;
+      height: 300px;
+      border-radius: 50%;
+      border: 1px solid rgba(201,169,110,0.12);
+      animation: orbitRing 20s linear infinite;
+    }
+    @keyframes orbitRing {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+    @keyframes cosmosFloat {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-12px); }
+    }
+    .cosmos-inner {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.3rem;
+    }
+    .cosmos-icon {
+      font-size: 2.2rem;
+      animation: cosmosGlow 3s ease-in-out infinite;
+      display: block;
+      margin-bottom: 0.4rem;
+    }
+    @keyframes cosmosGlow {
+      0%, 100% { filter: drop-shadow(0 0 4px rgba(201,169,110,0.6)); }
+      50% { filter: drop-shadow(0 0 14px rgba(201,169,110,0.9)); }
+    }
+    .cosmos-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1rem;
+      font-weight: 300;
+      color: rgba(255,255,255,0.9);
+      letter-spacing: 0.05em;
+    }
+    .cosmos-sub {
+      font-family: 'Cormorant Garamond', serif;
+      font-style: italic;
+      font-size: 0.78rem;
+      color: rgba(201,169,110,0.8);
+    }
+    .cosmos-tagline {
+      font-size: 0.58rem;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.35);
+      margin-top: 0.4rem;
+      font-weight: 400;
+    }
+    /* Petites cartes flottantes univers */
+    .cosmos-cards {
+      display: flex;
+      gap: 0.8rem;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .cosmos-card {
+      background: rgba(255,255,255,0.05);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(201,169,110,0.2);
+      border-radius: var(--radius);
+      padding: 0.8rem 1rem;
+      text-align: center;
+      min-width: 95px;
+      animation: cosmosFloat 8s ease-in-out infinite;
+      transition: background 0.3s, border-color 0.3s;
+    }
+    .cosmos-card:hover {
+      background: rgba(255,255,255,0.09);
+      border-color: rgba(201,169,110,0.4);
+    }
+    .cosmos-card:nth-child(2) { animation-delay: 2.5s; }
+    .cosmos-card:nth-child(3) { animation-delay: 5s; }
+    .cosmos-card-icon { font-size: 1.3rem; margin-bottom: 0.3rem; display: block; }
+    .cosmos-card-text {
+      font-size: 0.62rem;
+      color: rgba(255,255,255,0.7);
+      line-height: 1.4;
+      letter-spacing: 0.03em;
+    }
+    /* Petit orbite planète déco */
+    .orbit-planet {
+      position: absolute;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--gold);
+      box-shadow: 0 0 8px rgba(201,169,110,0.8);
+      top: 50%;
+      left: 50%;
+      transform-origin: 150px 0;
+      animation: orbitPlanet 12s linear infinite;
+    }
+    @keyframes orbitPlanet {
+      from { transform: rotate(0deg) translateX(150px) rotate(0deg); }
+      to { transform: rotate(360deg) translateX(150px) rotate(-360deg); }
+    }
+    .orbit-planet-2 {
+      width: 5px;
+      height: 5px;
+      background: rgba(234,216,208,0.8);
+      box-shadow: 0 0 6px rgba(234,216,208,0.6);
+      transform-origin: 110px 0;
+      animation: orbitPlanet2 8s linear infinite reverse;
+    }
+    @keyframes orbitPlanet2 {
+      from { transform: rotate(0deg) translateX(110px) rotate(0deg); }
+      to { transform: rotate(360deg) translateX(110px) rotate(-360deg); }
+    }
+    @keyframes orbFloat {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+
+    /* ═══════════════════════════════
+       SECTION 2 — DARK STRIP
+    ════════════════════════════════*/
+    #strip {
+      background: var(--deep-brown);
+      padding: 3.5rem 0;
+    }
+    .strip-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 2rem;
+      display: grid;
+      grid-template-columns: 1fr 1px 1fr 1px 1fr;
+      gap: 0;
+      align-items: center;
+    }
+    .strip-divider {
+      height: 60px;
+      background: rgba(159,175,151,0.2);
+    }
+    .strip-col {
+      padding: 1.5rem 2.5rem;
+    }
+    .strip-label {
+      color: var(--sage);
+      margin-bottom: 0.6rem;
+      display: block;
+    }
+    .strip-question {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.2rem;
+      font-weight: 300;
+      color: #fff;
+      margin-bottom: 0.5rem;
+    }
+    .strip-answer {
+      font-size: 0.82rem;
+      color: rgba(216,204,186,0.75);
+      line-height: 1.7;
+    }
+
+    /* ═══════════════════════════════
+       SECTION 3 — CE LIEU EST FAIT
+    ════════════════════════════════*/
+    #pour-toi {
+      background: var(--cream-2);
+      padding: 6rem 0;
+    }
+    .pour-toi-header {
+      text-align: center;
+      margin-bottom: 3.5rem;
+    }
+    .pour-toi-header .section-label {
+      display: block;
+      margin-bottom: 0.8rem;
+    }
+    .pour-toi-sub {
+      font-size: 1rem;
+      color: var(--text-muted);
+      max-width: 520px;
+      margin: 0.8rem auto 0;
+      line-height: 1.8;
+    }
+    .cards-3 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+    }
+    .soul-card {
+      background: var(--cream);
+      border-radius: var(--radius);
+      padding: 2rem 1.8rem;
+      box-shadow: var(--shadow-soft);
+      border: 1px solid rgba(216,204,186,0.4);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .soul-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-warm);
+    }
+    .soul-emoji {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      display: block;
+    }
+    .soul-card-label {
+      display: block;
+      color: var(--terracotta);
+      margin-bottom: 0.5rem;
+    }
+    .soul-card h3 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.25rem;
+      font-weight: 300;
+      margin-bottom: 0.7rem;
+    }
+    .soul-card p {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      line-height: 1.7;
+    }
+
+    /* ═══════════════════════════════
+       SECTION 4 — CATEGORIES GRID
+    ════════════════════════════════*/
+    #categories {
+      background: var(--cream);
+      padding: 6rem 0;
+    }
+    .categories-header {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+    .cat-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr;
+      grid-template-rows: auto auto;
+      gap: 1.2rem;
+    }
+    .cat-card {
+      border-radius: var(--radius);
+      position: relative;
+      overflow: hidden;
+      cursor: pointer;
+      transition: transform 0.3s;
+      min-height: 200px;
+    }
+    .cat-card:hover { transform: scale(1.02); }
+    .cat-card.large { grid-row: span 2; min-height: 420px; }
+    .cat-card-bg {
+      position: absolute;
+      inset: 0;
+    }
+    .cat-card-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(0deg, rgba(46,35,26,0.7) 0%, rgba(46,35,26,0.1) 60%, transparent 100%);
+    }
+    .cat-card-content {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 1.5rem;
+      color: #fff;
+    }
+    .cat-card-name {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.3rem;
+      font-weight: 300;
+      margin-bottom: 0.3rem;
+    }
+    .cat-card-count {
+      font-size: 0.62rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.65);
+    }
+    /* Category backgrounds */
+    .cat-rituels .cat-card-bg { background: linear-gradient(135deg, #7A9172 0%, #5A7354 100%); }
+    .cat-cuisine .cat-card-bg { background: linear-gradient(135deg, #D4A8A0 0%, #B88880 100%); }
+    .cat-coups .cat-card-bg { background: linear-gradient(135deg, #C9A96E 0%, #A8843A 100%); }
+    .cat-eveil .cat-card-bg { background: linear-gradient(135deg, #B0A0C4 0%, #9080A8 100%); }
+    .cat-guides .cat-card-bg { background: linear-gradient(135deg, #92AABB 0%, #708898 100%); }
+
+    /* Category pattern overlays */
+    .cat-rituels .cat-card-bg::after,
+    .cat-cuisine .cat-card-bg::after,
+    .cat-coups .cat-card-bg::after,
+    .cat-eveil .cat-card-bg::after,
+    .cat-guides .cat-card-bg::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      opacity: 0.08;
+      background-image: radial-gradient(circle, rgba(255,255,255,0.6) 1px, transparent 1px);
+      background-size: 24px 24px;
+    }
+
+    /* ═══════════════════════════════
+       SECTION 5 — LATEST ARTICLES
+    ════════════════════════════════*/
+    #articles {
+      background: var(--cream-2);
+      padding: 6rem 0;
+    }
+    .articles-header {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      margin-bottom: 3rem;
+    }
+    .see-all {
+      font-size: 0.72rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--terracotta);
+      display: flex;
+      align-items: center;
+      gap: 0.3rem;
+      transition: gap 0.2s;
+    }
+    .see-all:hover { gap: 0.5rem; }
+    .articles-grid {
+      display: grid;
+      grid-template-columns: 1.4fr 1fr 1fr;
+      gap: 1.5rem;
+    }
+    .article-card {
+      background: var(--cream);
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: var(--shadow-soft);
+      border: 1px solid rgba(216,204,186,0.3);
+      transition: transform 0.3s, box-shadow 0.3s;
+      cursor: pointer;
+    }
+    .article-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-warm);
+    }
+    .article-thumb {
+      height: 200px;
+      position: relative;
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-end;
+      padding: 1rem;
+    }
+    .article-thumb-1 { background: linear-gradient(135deg, #A0B498 0%, #7A9172 100%); }
+    .article-thumb-2 { background: linear-gradient(135deg, #E0C4BC 0%, #C8A09A 100%); }
+    .article-thumb-3 { background: linear-gradient(135deg, #D8B878 0%, #B89040 100%); }
+    .article-thumb::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      opacity: 0.06;
+      background-image: radial-gradient(circle, rgba(255,255,255,0.8) 1px, transparent 1px);
+      background-size: 20px 20px;
+    }
+    .article-tag {
+      position: relative;
+      z-index: 1;
+      background: rgba(255,255,255,0.25);
+      backdrop-filter: blur(8px);
+      border: 1px solid rgba(255,255,255,0.4);
+      color: #fff;
+      font-size: 0.58rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      padding: 0.3rem 0.7rem;
+      border-radius: var(--radius-pill);
+      font-weight: 500;
+    }
+    .article-body {
+      padding: 1.4rem 1.6rem 1.6rem;
+    }
+    .article-cat {
+      display: block;
+      color: var(--terracotta);
+      margin-bottom: 0.5rem;
+    }
+    .article-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.2rem;
+      font-weight: 300;
+      line-height: 1.3;
+      margin-bottom: 0.8rem;
+      color: var(--text);
+    }
+    .article-meta {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      font-size: 0.7rem;
+      color: var(--text-muted);
+    }
+    .article-meta span { display: flex; align-items: center; gap: 0.3rem; }
+
+    /* ═══════════════════════════════
+       SECTION 6 — NEWSLETTER
+    ════════════════════════════════*/
+    #newsletter {
+      background: linear-gradient(160deg, var(--cream) 0%, var(--dusty-rose) 100%);
+      padding: 7rem 0;
+      position: relative;
+      overflow: hidden;
+    }
+    .nl-circle-1, .nl-circle-2, .nl-circle-3 {
+      position: absolute;
+      border-radius: 50%;
+      border: 1px solid rgba(184,106,75,0.12);
+      pointer-events: none;
+    }
+    .nl-circle-1 { width: 500px; height: 500px; top: -200px; left: -150px; }
+    .nl-circle-2 { width: 400px; height: 400px; bottom: -150px; right: -100px; }
+    .nl-circle-3 { width: 250px; height: 250px; top: 50%; right: 20%; transform: translateY(-50%); }
+    .nl-inner {
+      position: relative;
+      z-index: 1;
+      text-align: center;
+      max-width: 560px;
+      margin: 0 auto;
+      padding: 0 2rem;
+    }
+    .nl-icon {
+      font-size: 2.5rem;
+      margin-bottom: 1.5rem;
+      display: block;
+    }
+    .nl-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(2rem, 4vw, 2.8rem);
+      font-weight: 300;
+      line-height: 1.2;
+      margin-bottom: 0.8rem;
+    }
+    .nl-sub {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      line-height: 1.8;
+      margin-bottom: 2rem;
+    }
+    .nl-form {
+      display: flex;
+      background: #fff;
+      border-radius: var(--radius-pill);
+      box-shadow: 0 4px 24px rgba(46,35,26,0.1);
+      overflow: hidden;
+      border: 1px solid rgba(216,204,186,0.5);
+    }
+    .nl-input {
+      flex: 1;
+      border: none;
+      outline: none;
+      background: transparent;
+      padding: 0.9rem 1.5rem;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.85rem;
+      color: var(--text);
+    }
+    .nl-input::placeholder { color: var(--text-muted); opacity: 0.6; }
+    .nl-submit {
+      background: var(--terracotta);
+      color: #fff;
+      border: none;
+      padding: 0.9rem 1.6rem;
+      border-radius: var(--radius-pill);
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.78rem;
+      letter-spacing: 0.08em;
+      cursor: pointer;
+      transition: background 0.2s;
+      margin: 3px;
+      font-weight: 500;
+    }
+    .nl-submit:hover { background: var(--terracotta-dark); }
+    .nl-note {
+      font-size: 0.65rem;
+      color: var(--text-muted);
+      opacity: 0.7;
+      margin-top: 1rem;
+      letter-spacing: 0.08em;
+    }
+
+    /* ═══════════════════════════════
+       FOOTER
+    ════════════════════════════════*/
+    #footer {
+      background: var(--deep-brown);
+      padding: 3rem 0;
+    }
+    .footer-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 2rem;
+      display: grid;
+      grid-template-columns: 1fr 1.5fr 1fr;
+      align-items: center;
+      gap: 2rem;
+    }
+    .footer-logo-name {
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 300;
+      font-size: 1.3rem;
+      letter-spacing: 0.1em;
+      color: #fff;
+    }
+    .footer-tagline {
+      font-size: 0.62rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: rgba(216,204,186,0.45);
+      margin-top: 0.2rem;
+    }
+    .footer-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.3rem 1rem;
+      justify-content: center;
+    }
+    .footer-links a {
+      font-size: 0.6rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: rgba(216,204,186,0.4);
+      transition: color 0.2s;
+    }
+    .footer-links a:hover { color: rgba(216,204,186,0.9); }
+    .footer-copy {
+      text-align: right;
+      font-size: 0.65rem;
+      color: rgba(216,204,186,0.3);
+      line-height: 1.7;
+    }
+    .footer-divider {
+      border: none;
+      border-top: 1px solid rgba(216,204,186,0.1);
+      margin: 2rem 2rem 0;
+    }
+    .footer-bottom {
+      max-width: 1200px;
+      margin: 1.2rem auto 0;
+      padding: 0 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .footer-bottom span {
+      font-size: 0.6rem;
+      color: rgba(216,204,186,0.25);
+      letter-spacing: 0.1em;
+    }
+
+    /* ═══════════════════════════════
+       SECTION GUIDES — 10 PROTOCOLES
+    ════════════════════════════════*/
+    #guides-hp {
+      background: var(--deep-brown);
+      padding: 7rem 0;
+      position: relative;
+      overflow: hidden;
+    }
+    /* Fond étoilé léger */
+    #guides-hp::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(ellipse 60% 70% at 80% 50%, rgba(184,106,75,0.12) 0%, transparent 65%),
+        radial-gradient(ellipse 40% 50% at 15% 30%, rgba(201,169,110,0.08) 0%, transparent 60%);
+      pointer-events: none;
+    }
+    .guides-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 2rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 5rem;
+      align-items: center;
+      position: relative;
+      z-index: 1;
+    }
+    /* LEFT — texte */
+    .guides-left {}
+    .guides-eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: rgba(201,169,110,0.12);
+      border: 1px solid rgba(201,169,110,0.25);
+      color: var(--gold);
+      font-size: 0.62rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      padding: 0.35rem 0.9rem;
+      border-radius: var(--radius-pill);
+      margin-bottom: 1.6rem;
+      font-weight: 500;
+    }
+    .guides-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 300;
+      font-size: clamp(2rem, 3.5vw, 3rem);
+      color: #fff;
+      line-height: 1.15;
+      margin-bottom: 1.2rem;
+    }
+    .guides-desc {
+      font-size: 0.9rem;
+      color: rgba(216,204,186,0.7);
+      line-height: 1.8;
+      margin-bottom: 2rem;
+      max-width: 440px;
+    }
+    /* Liste des 10 protocoles */
+    .guides-list {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.5rem 1.5rem;
+      margin-bottom: 2.2rem;
+    }
+    .guides-list-item {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 0.78rem;
+      color: rgba(216,204,186,0.75);
+    }
+    .guides-list-item::before {
+      content: '✦';
+      color: var(--gold);
+      font-size: 0.6rem;
+      flex-shrink: 0;
+    }
+    .guides-cta-wrap {
+      display: flex;
+      align-items: center;
+      gap: 1.2rem;
+      flex-wrap: wrap;
+    }
+    .btn-guides {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: var(--terracotta);
+      color: #fff;
+      font-size: 0.78rem;
+      letter-spacing: 0.08em;
+      padding: 0.85rem 1.8rem;
+      border-radius: var(--radius-pill);
+      font-weight: 500;
+      transition: background 0.2s, transform 0.2s, box-shadow 0.2s;
+      box-shadow: 0 4px 20px rgba(184,106,75,0.35);
+    }
+    .btn-guides:hover {
+      background: var(--terracotta-dark);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 28px rgba(184,106,75,0.45);
+    }
+    .btn-guides-ghost {
+      font-size: 0.75rem;
+      color: rgba(216,204,186,0.5);
+      letter-spacing: 0.06em;
+      transition: color 0.2s;
+    }
+    .btn-guides-ghost:hover { color: rgba(216,204,186,0.9); }
+    .guides-note {
+      margin-top: 1rem;
+      font-size: 0.62rem;
+      color: rgba(216,204,186,0.35);
+      letter-spacing: 0.1em;
+    }
+
+    /* RIGHT — Mockup PDF */
+    .guides-right {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .guides-mockup {
+      position: relative;
+      width: 300px;
+    }
+    /* Lueur derrière */
+    .guides-mockup::before {
+      content: '';
+      position: absolute;
+      width: 200px;
+      height: 200px;
+      background: radial-gradient(circle, rgba(184,106,75,0.3) 0%, transparent 70%);
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border-radius: 50%;
+      filter: blur(30px);
+    }
+    /* Carte principale */
+    .guide-card-main {
+      position: relative;
+      z-index: 2;
+      background: linear-gradient(145deg, #2A1D2E 0%, #1E1520 100%);
+      border: 1px solid rgba(201,169,110,0.25);
+      border-radius: 20px;
+      padding: 2.5rem 2rem;
+      text-align: center;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.4), 0 0 0 1px rgba(201,169,110,0.1);
+      animation: guidesFloat 7s ease-in-out infinite;
+    }
+    @keyframes guidesFloat {
+      0%, 100% { transform: translateY(0) rotate(-1deg); }
+      50% { transform: translateY(-10px) rotate(-1deg); }
+    }
+    .guide-card-badge {
+      display: inline-block;
+      background: rgba(184,106,75,0.2);
+      border: 1px solid rgba(184,106,75,0.35);
+      color: var(--terracotta);
+      font-size: 0.58rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      padding: 0.3rem 0.8rem;
+      border-radius: var(--radius-pill);
+      margin-bottom: 1.2rem;
+      font-weight: 500;
+    }
+    .guide-card-big-num {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 4.5rem;
+      font-weight: 300;
+      color: #fff;
+      line-height: 1;
+      margin-bottom: 0.2rem;
+    }
+    .guide-card-num-label {
+      font-size: 0.62rem;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.45);
+      margin-bottom: 0.8rem;
+      display: block;
+    }
+    .guide-card-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.25rem;
+      font-weight: 300;
+      font-style: italic;
+      color: rgba(255,255,255,0.9);
+      margin-bottom: 0.4rem;
+    }
+    .guide-card-sub {
+      font-size: 0.68rem;
+      color: rgba(201,169,110,0.7);
+      letter-spacing: 0.1em;
+    }
+    /* Étoiles déco sur la carte */
+    .guide-stars {
+      display: flex;
+      justify-content: center;
+      gap: 0.3rem;
+      margin: 1rem 0 0;
+    }
+    .guide-stars span {
+      font-size: 0.7rem;
+      opacity: 0.5;
+      animation: starFade 2s ease-in-out infinite;
+    }
+    .guide-stars span:nth-child(2) { animation-delay: 0.4s; }
+    .guide-stars span:nth-child(3) { animation-delay: 0.8s; }
+    @keyframes starFade {
+      0%, 100% { opacity: 0.3; }
+      50% { opacity: 0.9; }
+    }
+    /* Carte ombre derrière */
+    .guide-card-shadow {
+      position: absolute;
+      top: 12px;
+      left: 12px;
+      right: -12px;
+      bottom: -12px;
+      background: rgba(184,106,75,0.08);
+      border: 1px solid rgba(184,106,75,0.12);
+      border-radius: 20px;
+      z-index: 1;
+    }
+    /* Badge flottant */
+    .guide-badge-free {
+      position: absolute;
+      top: -16px;
+      right: -20px;
+      z-index: 3;
+      background: var(--gold);
+      color: var(--deep-brown);
+      font-size: 0.6rem;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 0.4rem 0.8rem;
+      border-radius: var(--radius-pill);
+      box-shadow: 0 4px 16px rgba(201,169,110,0.4);
+      animation: guidesFloat 5s ease-in-out infinite reverse;
+    }
+    /* Étoiles décoratives flottantes autour */
+    .deco-star {
+      position: absolute;
+      color: rgba(201,169,110,0.5);
+      font-size: 0.9rem;
+      animation: starFade 3s ease-in-out infinite;
+      pointer-events: none;
+    }
+    .deco-star:nth-child(1) { top: 10%; left: 5%; animation-delay: 0s; }
+    .deco-star:nth-child(2) { top: 20%; right: 0%; animation-delay: 1s; font-size: 0.6rem; }
+    .deco-star:nth-child(3) { bottom: 15%; left: 0%; animation-delay: 1.5s; font-size: 0.7rem; }
+    .deco-star:nth-child(4) { bottom: 30%; right: -5%; animation-delay: 0.5s; }
+
+    /* ═══════════════════════════════
+       RESPONSIVE
+    ════════════════════════════════*/
+    @media (max-width: 1024px) {
+      .hero-left { padding: 3rem 2rem 3rem 2.5rem; }
+      .strip-col { padding: 1.5rem 1.5rem; }
+      .articles-grid { grid-template-columns: 1fr 1fr; }
+      .articles-grid .article-card:last-child { display: none; }
+    }
+
+    @media (max-width: 768px) {
+      .nav-links { display: none; }
+      .hamburger { display: flex; }
+      .nav-cta { display: none; }
+      #lead-magnet { display: none; }
+
+      #hero { grid-template-columns: 1fr; }
+      .hero-left { padding: 2rem 1.5rem; order: 2; }
+      .hero-right { min-height: 55vw; order: 1; }
+      .hero-orb { width: 160px; height: 160px; }
+      .orb-number { font-size: 3.5rem; }
+      .hero-floating-cards { gap: 0.5rem; }
+      .float-card { min-width: 75px; padding: 0.5rem 0.6rem; }
+
+      .strip-inner { grid-template-columns: 1fr; }
+      .strip-divider { display: none; }
+      .strip-col { padding: 1.2rem 1.5rem; }
+
+      .guides-inner { grid-template-columns: 1fr; gap: 3rem; }
+      .guides-right { order: -1; }
+      .guides-mockup { width: 260px; }
+      .guides-list { grid-template-columns: 1fr; }
+      .cat-grid { grid-template-columns: 1fr 1fr; }
+      .cat-card.large { grid-row: span 1; min-height: 200px; }
+      .articles-grid { grid-template-columns: 1fr; }
+      .articles-grid .article-card:last-child { display: block; }
+      .articles-header { flex-direction: column; align-items: flex-start; gap: 0.5rem; }
+      .footer-inner { grid-template-columns: 1fr; text-align: center; gap: 1.2rem; }
+      .footer-copy { text-align: center; }
+      .footer-links { justify-content: center; }
+      .footer-bottom { flex-direction: column; gap: 0.4rem; text-align: center; }
+    }
+
+    @media (max-width: 480px) {
+      .cat-grid { grid-template-columns: 1fr; }
+      .hero-floating-cards { flex-wrap: wrap; justify-content: center; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ════════════════════════════
+       NAVIGATION
+  ═════════════════════════════ -->
+  <header id="navbar" role="banner">
+    <nav class="nav-inner" aria-label="Navigation principale">
+      <!-- Logo -->
+      <a href="/" class="nav-logo" aria-label="LÜMISPIRA — Accueil">
+        <span class="nav-logo-name">LÜMISPIRA</span>
+        <span class="nav-logo-tagline">Lumière · Équilibre · Guérison</span>
+      </a>
+
+      <!-- Desktop links -->
+      <ul class="nav-links" role="list">
+        <li><a href="#categories" title="Nos protocoles bien-être">Protocoles</a></li>
+        <li><a href="#articles" title="Recettes sacrées ancestrales">Recettes</a></li>
+        <li><a href="#articles" title="Cuisine Sacrée">Cuisine Sacrée</a></li>
+        <li><a href="#pour-toi" title="Éveil spirituel">Éveil</a></li>
+        <li><a href="#articles" title="Nos coups de cœur bien-être">Coups de cœur</a></li>
+        <li><a href="#newsletter" title="Guides LÜMISPIRA">Guides</a></li>
+      </ul>
+
+      <!-- CTA -->
+      <a href="#newsletter" class="nav-cta" aria-label="Télécharger le guide offert">
+        ✦ Guide offert
+      </a>
+
+      <!-- Hamburger -->
+      <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- Mobile menu -->
+  <nav class="mobile-menu" id="mobile-menu" aria-label="Menu mobile">
+    <a href="#categories">Protocoles</a>
+    <a href="#articles">Recettes</a>
+    <a href="#articles">Cuisine Sacrée</a>
+    <a href="#pour-toi">Éveil</a>
+    <a href="#articles">Coups de cœur</a>
+    <a href="#newsletter">Guides</a>
+    <a href="#newsletter" class="nav-cta">✦ Guide offert</a>
+  </nav>
+
+  <!-- ════════════════════════════
+       FLOATING LEAD MAGNET
+  ═════════════════════════════ -->
+  <aside id="lead-magnet" aria-label="Cadeau gratuit — 10 Protocoles Bien-être">
+    <div class="lead-card">
+      <div class="lead-icon">✨</div>
+      <span class="lead-cadeau label">Cadeau gratuit</span>
+      <p class="lead-title serif">10 Protocoles<br><em>Bien-être</em></p>
+      <p class="lead-sub">PDF offert — vie alignée</p>
+      <a href="#newsletter" class="lead-btn">Je télécharge →</a>
+      <span class="lead-note">Gratuit · Sans engagement</span>
+    </div>
+  </aside>
+
+  <main>
+
+    <!-- ════════════════════════════
+         HERO
+    ═════════════════════════════ -->
+    <section id="hero" aria-labelledby="hero-title">
+      <!-- LEFT -->
+      <div class="hero-left">
+        <div class="hero-badge fade-up" aria-label="Catégorie">
+          ✦ Magazine bien-être &amp; sagesse ancestrale
+        </div>
+
+        <h1 id="hero-title" class="hero-h1 fade-up delay-1">
+          Un espace pour les<br>
+          <em class="terracotta italic">âmes sensibles</em>
+        </h1>
+
+        <div class="hero-why-box fade-up delay-2" role="list">
+          <div class="why-row" role="listitem">
+            <span class="why-label">Pourquoi</span>
+            <p class="why-text">Parce que tu mérites un espace doux pour retrouver tes repères et te reconnecter à toi-même.</p>
+          </div>
+          <div class="why-row" role="listitem">
+            <span class="why-label">Quoi</span>
+            <p class="why-text">Des protocoles bien-être, recettes sacrées, rituels et coups de cœur pour le corps et l'âme.</p>
+          </div>
+          <div class="why-row" role="listitem">
+            <span class="why-label">Comment</span>
+            <p class="why-text">Pas à pas, avec douceur — comme un retour à la maison.</p>
+          </div>
+        </div>
+
+        <div class="hero-btns fade-up delay-3">
+          <a href="#categories" class="btn-primary">
+            Explorer le sanctuaire ✦
+          </a>
+          <a href="#newsletter" class="btn-ghost">
+            Découvrir les guides →
+          </a>
+        </div>
+
+        <p class="hero-trust fade-up delay-4">
+          Lumière · Équilibre · Guérison — By LÜMISPIRA
+        </p>
+      </div>
+
+      <!-- RIGHT — Univers étoilé -->
+      <div class="hero-right" aria-hidden="true">
+        <canvas id="star-canvas"></canvas>
+        <div class="hero-cosmos-wrap">
+          <div class="cosmos-orb">
+            <!-- Planètes orbitales -->
+            <div class="orbit-planet"></div>
+            <div class="orbit-planet orbit-planet-2"></div>
+            <div class="cosmos-inner">
+              <span class="cosmos-icon">✨</span>
+              <p class="cosmos-title serif">Lumière · Équilibre</p>
+              <p class="cosmos-sub">Guérison</p>
+              <span class="cosmos-tagline">Sanctuaire numérique</span>
+            </div>
+          </div>
+          <div class="cosmos-cards">
+            <div class="cosmos-card">
+              <span class="cosmos-card-icon">🌬️</span>
+              <p class="cosmos-card-text">Rituel<br>du matin</p>
+            </div>
+            <div class="cosmos-card">
+              <span class="cosmos-card-icon">🌿</span>
+              <p class="cosmos-card-text">Cuisine<br>Sacrée</p>
+            </div>
+            <div class="cosmos-card">
+              <span class="cosmos-card-icon">🔮</span>
+              <p class="cosmos-card-text">Chakras<br>&amp; Éveil</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════════════════════════
+         STRIP DARK
+    ═════════════════════════════ -->
+    <section id="strip" aria-label="Notre philosophie">
+      <div class="strip-inner">
+        <div class="strip-col fade-up">
+          <span class="label sage-color strip-label">Pourquoi LÜMISPIRA ?</span>
+          <p class="strip-question serif">Un sanctuaire numérique</p>
+          <p class="strip-answer">Parce que la guérison mérite un espace doux, ancré dans la sagesse ancestrale et la bienveillance.</p>
+        </div>
+        <div class="strip-divider" aria-hidden="true"></div>
+        <div class="strip-col fade-up delay-1">
+          <span class="label sage-color strip-label">Quoi ?</span>
+          <p class="strip-question serif">Protocoles &amp; Rituels</p>
+          <p class="strip-answer">Des guides bien-être, recettes sacrées, méditations et pratiques pour réaligner le corps et l'esprit.</p>
+        </div>
+        <div class="strip-divider" aria-hidden="true"></div>
+        <div class="strip-col fade-up delay-2">
+          <span class="label sage-color strip-label">Comment ?</span>
+          <p class="strip-question serif">Douceur &amp; Cohérence</p>
+          <p class="strip-answer">Avec des contenus profonds mais accessibles, semaine après semaine, à ton propre rythme.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════════════════════════
+         SECTION 3 — POUR TOI
+    ═════════════════════════════ -->
+    <section id="pour-toi" aria-labelledby="pour-toi-title">
+      <div class="container">
+        <header class="pour-toi-header fade-up">
+          <span class="label terracotta section-label">Ce lieu est fait pour toi</span>
+          <h2 id="pour-toi-title" class="section-title">
+            Tu cherches à <em class="italic">te retrouver</em>
+          </h2>
+          <p class="pour-toi-sub">
+            LÜMISPIRA est né pour les âmes sensibles qui sentent qu'il manque quelque chose — 
+            et qui ont envie de reprendre soin d'elles, en douceur.
+          </p>
+        </header>
+        <div class="cards-3">
+          <article class="soul-card fade-up delay-1">
+            <span class="soul-emoji" role="img" aria-label="Brume">🌫️</span>
+            <span class="soul-card-label label">Reconnexion</span>
+            <h3 class="serif">Tu te sens déconnectée</h3>
+            <p>Nos protocoles bien-être t'offrent des pas concrets pour revenir à toi — des rituels simples, porteurs de sens, à intégrer dès aujourd'hui.</p>
+          </article>
+          <article class="soul-card fade-up delay-2">
+            <span class="soul-emoji" role="img" aria-label="Thé">🍵</span>
+            <span class="soul-card-label label">Nourrissante</span>
+            <h3 class="serif">Tu veux nourrir ton âme</h3>
+            <p>La Cuisine Sacrée t'invite à retrouver les recettes ancestrales — des élixirs, infusions et préparations qui soignent de l'intérieur.</p>
+          </article>
+          <article class="soul-card fade-up delay-3">
+            <span class="soul-emoji" role="img" aria-label="Étoile scintillante">✨</span>
+            <span class="soul-card-label label">Éveil</span>
+            <h3 class="serif">Tu cherches du sens</h3>
+            <p>De la spiritualité douce aux chakras, en passant par l'intuition et les synchronicités — explore ce chemin intérieur à ton rythme.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════════════════════════
+         SECTION 4 — CATEGORIES
+    ═════════════════════════════ -->
+    <section id="categories" aria-labelledby="categories-title">
+      <div class="container">
+        <header class="categories-header fade-up">
+          <span class="label terracotta" style="display:block;margin-bottom:0.6rem;">Explorer</span>
+          <h2 id="categories-title" class="section-title">
+            Nos <em class="italic">univers</em>
+          </h2>
+        </header>
+        <div class="cat-grid" role="list">
+          <article class="cat-card cat-rituels large fade-up" role="listitem">
+            <div class="cat-card-bg" aria-hidden="true"></div>
+            <div class="cat-card-overlay" aria-hidden="true"></div>
+            <div class="cat-card-content">
+              <h3 class="cat-card-name serif">Rituels &amp; Protocoles</h3>
+              <span class="cat-card-count label">24 guides</span>
+            </div>
+          </article>
+          <article class="cat-card cat-cuisine fade-up delay-1" role="listitem">
+            <div class="cat-card-bg" aria-hidden="true"></div>
+            <div class="cat-card-overlay" aria-hidden="true"></div>
+            <div class="cat-card-content">
+              <h3 class="cat-card-name serif">Cuisine Sacrée</h3>
+              <span class="cat-card-count label">18 recettes</span>
+            </div>
+          </article>
+          <article class="cat-card cat-eveil fade-up delay-2" role="listitem">
+            <div class="cat-card-bg" aria-hidden="true"></div>
+            <div class="cat-card-overlay" aria-hidden="true"></div>
+            <div class="cat-card-content">
+              <h3 class="cat-card-name serif">Éveil &amp; Spiritualité</h3>
+              <span class="cat-card-count label">12 articles</span>
+            </div>
+          </article>
+          <article class="cat-card cat-coups fade-up delay-1" role="listitem">
+            <div class="cat-card-bg" aria-hidden="true"></div>
+            <div class="cat-card-overlay" aria-hidden="true"></div>
+            <div class="cat-card-content">
+              <h3 class="cat-card-name serif">Coups de cœur</h3>
+              <span class="cat-card-count label">30 sélections</span>
+            </div>
+          </article>
+          <article class="cat-card cat-guides fade-up delay-2" role="listitem">
+            <div class="cat-card-bg" aria-hidden="true"></div>
+            <div class="cat-card-overlay" aria-hidden="true"></div>
+            <div class="cat-card-content">
+              <h3 class="cat-card-name serif">Guides LÜMISPIRA</h3>
+              <span class="cat-card-count label">8 PDF offerts</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════════════════════════
+         SECTION 5 — ARTICLES
+    ═════════════════════════════ -->
+    <section id="articles" aria-labelledby="articles-title">
+      <div class="container">
+        <header class="articles-header fade-up">
+          <div>
+            <span class="label terracotta" style="display:block;margin-bottom:0.5rem;">Récemment publié</span>
+            <h2 id="articles-title" class="section-title">
+              Derniers <em class="italic">articles</em>
+            </h2>
+          </div>
+          <a href="#categories" class="see-all" aria-label="Voir tous les articles">
+            Tout voir →
+          </a>
+        </header>
+        <div class="articles-grid">
+          <!-- Article 1 -->
+          <article class="article-card fade-up">
+            <div class="article-thumb article-thumb-1">
+              <span class="article-tag">Protocoles</span>
+            </div>
+            <div class="article-body">
+              <span class="article-cat label">Rituels du matin</span>
+              <h3 class="article-title serif">Créer ton rituel matinal aligné : le guide complet pour les âmes sensibles</h3>
+              <p class="article-meta">
+                <span>🕐 8 min</span>
+                <span>Par Lumispira</span>
+              </p>
+            </div>
+          </article>
+          <!-- Article 2 -->
+          <article class="article-card fade-up delay-1">
+            <div class="article-thumb article-thumb-2">
+              <span class="article-tag">Recettes</span>
+            </div>
+            <div class="article-body">
+              <span class="article-cat label">Cuisine Sacrée</span>
+              <h3 class="article-title serif">L'élixir d'ortie de ma grand-mère : minéraux &amp; vitalité</h3>
+              <p class="article-meta">
+                <span>🕐 5 min</span>
+                <span>Par Lumispira</span>
+              </p>
+            </div>
+          </article>
+          <!-- Article 3 -->
+          <article class="article-card fade-up delay-2">
+            <div class="article-thumb article-thumb-3">
+              <span class="article-tag">Éveil</span>
+            </div>
+            <div class="article-body">
+              <span class="article-cat label">Chakras &amp; Énergie</span>
+              <h3 class="article-title serif">Équilibrer les 7 chakras : rituels doux pour une harmonie profonde</h3>
+              <p class="article-meta">
+                <span>🕐 10 min</span>
+                <span>Par Lumispira</span>
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════════════════════════
+         SECTION GUIDES — "NOS GUIDES"
+         (Ancienne orbe 10 protocoles, déplacée ici)
+    ═════════════════════════════ -->
+    <section id="guides-hp" aria-labelledby="guides-title">
+      <div class="guides-inner">
+        <!-- LEFT -->
+        <div class="guides-left">
+          <div class="guides-eyebrow fade-up">✦ Ressources offertes</div>
+          <h2 id="guides-title" class="guides-title fade-up delay-1">
+            <em class="italic" style="color:var(--gold);">10 Protocoles</em><br>
+            pour une vie alignée
+          </h2>
+          <p class="guides-desc fade-up delay-2">
+            Des guides pratiques et doux, nés de la sagesse ancestrale et du bien-être holistique. 
+            Télécharge-les gratuitement et commence ta transformation dès aujourd'hui.
+          </p>
+          <ul class="guides-list fade-up delay-2">
+            <li class="guides-list-item">Rituel du matin ancré</li>
+            <li class="guides-list-item">Détox émotionnelle douce</li>
+            <li class="guides-list-item">Équilibre des 7 chakras</li>
+            <li class="guides-list-item">Cuisine Sacrée — bases</li>
+            <li class="guides-list-item">Méditation des sens</li>
+            <li class="guides-list-item">Journal de reconnexion</li>
+            <li class="guides-list-item">Soins ancestraux corps</li>
+            <li class="guides-list-item">Cycles lunaires & soi</li>
+            <li class="guides-list-item">Respiration consciente</li>
+            <li class="guides-list-item">Sanctuaire intérieur</li>
+          </ul>
+          <div class="guides-cta-wrap fade-up delay-3">
+            <a href="/guides" class="btn-guides">
+              Découvrir tous les guides →
+            </a>
+            <a href="#newsletter" class="btn-guides-ghost">
+              Recevoir par email
+            </a>
+          </div>
+          <p class="guides-note fade-up delay-4">Gratuit · PDF téléchargeables · Sans engagement</p>
+        </div>
+        <!-- RIGHT — Mockup -->
+        <div class="guides-right fade-up delay-1">
+          <div class="guides-mockup">
+            <span class="deco-star">✦</span>
+            <span class="deco-star">✧</span>
+            <span class="deco-star">✦</span>
+            <span class="deco-star">✧</span>
+            <div class="guide-card-shadow"></div>
+            <div class="guide-card-main">
+              <span class="guide-card-badge">PDF Offert</span>
+              <p class="guide-card-big-num">10</p>
+              <span class="guide-card-num-label">Protocoles Bien-être</span>
+              <p class="guide-card-title">Pour une vie alignée</p>
+              <p class="guide-card-sub">By LÜMISPIRA · Lumière &amp; Guérison</p>
+              <div class="guide-stars">
+                <span>✦</span><span>✦</span><span>✦</span><span>✦</span><span>✦</span>
+              </div>
+            </div>
+            <div class="guide-badge-free">100% gratuit</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════════════════════════
+         SECTION 6 — NEWSLETTER
+    ═════════════════════════════ -->
+    <section id="newsletter" aria-labelledby="newsletter-title">
+      <div class="nl-circle-1" aria-hidden="true"></div>
+      <div class="nl-circle-2" aria-hidden="true"></div>
+      <div class="nl-circle-3" aria-hidden="true"></div>
+      <div class="nl-inner fade-up">
+        <span class="nl-icon" role="img" aria-label="Colombe">🕊️</span>
+        <h2 id="newsletter-title" class="nl-title serif">
+          La lettre de <em class="italic terracotta">l'âme</em>
+        </h2>
+        <p class="nl-sub">
+          Chaque semaine, un rituel doux, une recette sacrée, un soin pour l'esprit — 
+          livré avec amour dans ta boîte mail.
+        </p>
+        <form class="nl-form" action="#" method="post" aria-label="Inscription à la newsletter">
+          <label for="email-input" class="sr-only">Ton adresse e-mail</label>
+          <input
+            type="email"
+            id="email-input"
+            name="email"
+            class="nl-input"
+            placeholder="ton@email.com"
+            required
+            autocomplete="email"
+          />
+          <button type="submit" class="nl-submit">
+            Je m'abonne ✦
+          </button>
+        </form>
+        <p class="nl-note">Gratuit · Sans spam · Désabonnement en 1 clic</p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ════════════════════════════
+       FOOTER
+  ═════════════════════════════ -->
+  <footer id="footer" role="contentinfo">
+    <div class="footer-inner">
+      <div>
+        <p class="footer-logo-name serif">LÜMISPIRA</p>
+        <p class="footer-tagline">Lumière · Équilibre · Guérison</p>
+      </div>
+      <nav class="footer-links" aria-label="Liens du pied de page">
+        <a href="#categories">Protocoles</a>
+        <a href="#articles">Recettes</a>
+        <a href="#articles">Cuisine Sacrée</a>
+        <a href="#pour-toi">Éveil</a>
+        <a href="#articles">Coups de cœur</a>
+        <a href="#newsletter">Guides</a>
+        <a href="#newsletter">Newsletter</a>
+        <a href="#">Mentions légales</a>
+        <a href="#">Confidentialité</a>
+      </nav>
+      <div class="footer-copy">
+        <p>© 2025 LÜMISPIRA</p>
+        <p style="opacity:0.5;">Tous droits réservés</p>
+      </div>
+    </div>
+    <hr class="footer-divider" />
+    <div class="footer-bottom">
+      <span>Fait avec amour · Pour les âmes sensibles</span>
+      <span>lumispira.com</span>
+    </div>
+  </footer>
+
+  <!-- ════════════════════════════
+       JAVASCRIPT
+  ═════════════════════════════ -->
+  <script>
+    // ── Hamburger menu ──
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobile-menu');
+    hamburger.addEventListener('click', () => {
+      const isOpen = mobileMenu.classList.toggle('open');
+      hamburger.setAttribute('aria-expanded', isOpen);
+    });
+    // Close on link click
+    mobileMenu.querySelectorAll('a').forEach(a => {
+      a.addEventListener('click', () => {
+        mobileMenu.classList.remove('open');
+        hamburger.setAttribute('aria-expanded', false);
+      });
+    });
+
+    // ── Lead magnet slide in ──
+    const leadMagnet = document.getElementById('lead-magnet');
+    setTimeout(() => {
+      if (leadMagnet) leadMagnet.classList.add('visible');
+    }, 1400);
+
+    // ── Intersection Observer — fade-up ──
+    const fadeEls = document.querySelectorAll('.fade-up');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+
+    fadeEls.forEach(el => observer.observe(el));
+
+    // ── Star canvas animation ──
+    const canvas = document.getElementById('star-canvas');
+    if (canvas) {
+      const ctx = canvas.getContext('2d');
+      let stars = [];
+      let shootingStars = [];
+      let animFrame;
+
+      function resizeCanvas() {
+        canvas.width = canvas.offsetWidth;
+        canvas.height = canvas.offsetHeight;
+      }
+      resizeCanvas();
+      window.addEventListener('resize', resizeCanvas);
+
+      // Generate stars
+      for (let i = 0; i < 160; i++) {
+        stars.push({
+          x: Math.random(),
+          y: Math.random(),
+          r: Math.random() * 1.4 + 0.2,
+          alpha: Math.random() * 0.7 + 0.2,
+          speed: Math.random() * 0.004 + 0.001,
+          phase: Math.random() * Math.PI * 2,
+          color: Math.random() > 0.85 ? '#C9A96E' : '#ffffff'
+        });
+      }
+
+      function spawnShootingStar() {
+        shootingStars.push({
+          x: Math.random() * canvas.width,
+          y: Math.random() * canvas.height * 0.5,
+          len: Math.random() * 80 + 40,
+          speed: Math.random() * 6 + 4,
+          alpha: 1,
+          angle: Math.PI / 4 + (Math.random() - 0.5) * 0.3
+        });
+      }
+
+      setInterval(spawnShootingStar, 3500);
+
+      function draw(ts) {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        // Draw stars
+        stars.forEach(s => {
+          const a = s.alpha * (0.6 + 0.4 * Math.sin(ts * s.speed + s.phase));
+          ctx.beginPath();
+          ctx.arc(s.x * canvas.width, s.y * canvas.height, s.r, 0, Math.PI * 2);
+          ctx.fillStyle = s.color === '#C9A96E'
+            ? `rgba(201,169,110,${a})`
+            : `rgba(255,255,255,${a})`;
+          ctx.fill();
+        });
+        // Draw shooting stars
+        shootingStars = shootingStars.filter(ss => ss.alpha > 0);
+        shootingStars.forEach(ss => {
+          const grad = ctx.createLinearGradient(
+            ss.x, ss.y,
+            ss.x - Math.cos(ss.angle) * ss.len,
+            ss.y - Math.sin(ss.angle) * ss.len
+          );
+          grad.addColorStop(0, `rgba(255,255,220,${ss.alpha})`);
+          grad.addColorStop(1, 'rgba(255,255,220,0)');
+          ctx.beginPath();
+          ctx.moveTo(ss.x, ss.y);
+          ctx.lineTo(ss.x - Math.cos(ss.angle) * ss.len, ss.y - Math.sin(ss.angle) * ss.len);
+          ctx.strokeStyle = grad;
+          ctx.lineWidth = 1.5;
+          ctx.stroke();
+          ss.x += Math.cos(ss.angle) * ss.speed;
+          ss.y += Math.sin(ss.angle) * ss.speed;
+          ss.alpha -= 0.018;
+        });
+        animFrame = requestAnimationFrame(draw);
+      }
+      animFrame = requestAnimationFrame(draw);
+    }
+    const nlForm = document.querySelector('.nl-form');
+    if (nlForm) {
+      nlForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const btn = nlForm.querySelector('.nl-submit');
+        const input = nlForm.querySelector('.nl-input');
+        btn.textContent = 'Bienvenue ✦';
+        btn.style.background = 'var(--sage)';
+        input.value = '';
+        input.placeholder = 'Merci ! Vérifie ta boîte mail 🌿';
+        setTimeout(() => {
+          btn.textContent = 'Je m\'abonne ✦';
+          btn.style.background = '';
+          input.placeholder = 'ton@email.com';
+        }, 4000);
+      });
+    }
+
+    // ── Schema.org BreadcrumbList ──
+    const breadcrumb = document.createElement('script');
+    breadcrumb.type = 'application/ld+json';
+    breadcrumb.textContent = JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://lumispira.com/" },
+        { "@type": "ListItem", "position": 2, "name": "Protocoles", "item": "https://lumispira.com/protocoles/" },
+        { "@type": "ListItem", "position": 3, "name": "Recettes Sacrées", "item": "https://lumispira.com/recettes/" }
+      ]
+    });
+    document.head.appendChild(breadcrumb);
+  </script>
+
+  <!-- Screen-reader only utility -->
+  <style>.sr-only { position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0; }</style>
+</body>
+</html>

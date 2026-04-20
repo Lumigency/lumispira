@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>L'élixir d'ortie de ma grand-mère : minéraux & vitalité — LÜMISPIRA</title>
+  <meta name="description" content="Recette ancestrale de l'élixir d'ortie transmis de génération en génération. Riche en minéraux et vitamines, ce tonique naturel booste la vitalité et reminéralise en profondeur." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://lumispira.com/articles/elixir-ortie-grand-mere/" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="L'élixir d'ortie de ma grand-mère : minéraux & vitalité — LÜMISPIRA" />
+  <meta property="og:description" content="Recette ancestrale de l'élixir d'ortie transmis de génération en génération. Riche en minéraux et vitamines, ce tonique naturel booste la vitalité et reminéralise en profondeur." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../../assets/css/global.css" />
+  <style>
+    /* Article page styles */
+    .article-hero {
+      padding-top: 60px;
+      min-height: 420px;
+      background: linear-gradient(135deg, #A0B498 0%, #7A9172 100%);
+      position: relative; overflow: hidden;
+      display: flex; align-items: flex-end;
+    }
+    .article-hero::before {
+      content: '';
+      position: absolute; inset: 0;
+      background: linear-gradient(0deg, rgba(46,35,26,0.6) 0%, rgba(46,35,26,0.1) 60%, transparent 100%);
+    }
+    .article-hero::after {
+      content: '';
+      position: absolute; inset: 0;
+      opacity: 0.05;
+      background-image: radial-gradient(circle, rgba(255,255,255,0.8) 1px, transparent 1px);
+      background-size: 24px 24px;
+    }
+    .article-hero-inner {
+      position: relative; z-index: 2;
+      padding: 3rem 2rem;
+      max-width: 900px; margin: 0 auto; width: 100%;
+    }
+    .article-hero-cat {
+      display: inline-flex;
+      align-items: center; gap: 0.4rem;
+      background: rgba(255,255,255,0.2);
+      backdrop-filter: blur(8px);
+      border: 1px solid rgba(255,255,255,0.3);
+      color: #fff; font-size: 0.62rem;
+      letter-spacing: 0.18em; text-transform: uppercase;
+      padding: 0.35rem 0.9rem; border-radius: var(--radius-pill);
+      margin-bottom: 1.2rem; font-weight: 500;
+    }
+    .article-hero-h1 {
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 300;
+      font-size: clamp(1.8rem, 4vw, 3rem);
+      line-height: 1.2; color: #fff;
+      margin-bottom: 1rem;
+    }
+    .article-hero-meta {
+      display: flex; gap: 1.5rem; flex-wrap: wrap;
+      font-size: 0.7rem; color: rgba(255,255,255,0.7);
+    }
+    /* Article body */
+    .article-layout {
+      max-width: 900px; margin: 0 auto;
+      padding: 4rem 2rem;
+      display: grid;
+      grid-template-columns: 1fr 280px;
+      gap: 4rem;
+      align-items: start;
+    }
+    .article-content { min-width: 0; }
+    .article-intro {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.3rem; font-weight: 300;
+      line-height: 1.7; color: var(--text);
+      margin-bottom: 2rem;
+      padding-bottom: 2rem;
+      border-bottom: 1px solid rgba(216,204,186,0.5);
+    }
+    .article-content h2 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.6rem; font-weight: 300;
+      margin: 2.5rem 0 1rem;
+      color: var(--text);
+    }
+    .article-content h3 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.25rem; font-weight: 300;
+      font-style: italic;
+      margin: 2rem 0 0.8rem;
+      color: var(--terracotta);
+    }
+    .article-content p {
+      font-size: 0.95rem; line-height: 1.9;
+      color: var(--text-muted); margin-bottom: 1.3rem;
+    }
+    .article-content ul {
+      list-style: none; margin-bottom: 1.5rem;
+    }
+    .article-content ul li {
+      font-size: 0.92rem; color: var(--text-muted);
+      line-height: 1.7; padding: 0.4rem 0;
+      padding-left: 1.5rem; position: relative;
+    }
+    .article-content ul li::before {
+      content: '✦';
+      position: absolute; left: 0;
+      color: var(--terracotta); font-size: 0.6rem;
+      top: 0.55rem;
+    }
+    .article-quote {
+      border-left: 3px solid var(--terracotta);
+      background: rgba(234,216,208,0.2);
+      border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+      padding: 1.5rem 1.8rem;
+      margin: 2rem 0;
+    }
+    .article-quote p {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.15rem; font-style: italic;
+      color: var(--text); line-height: 1.7;
+      margin: 0;
+    }
+    .article-tip-box {
+      background: rgba(159,175,151,0.12);
+      border: 1px solid rgba(159,175,151,0.3);
+      border-radius: var(--radius);
+      padding: 1.4rem 1.6rem;
+      margin: 2rem 0;
+    }
+    .article-tip-box h4 {
+      font-size: 0.65rem; letter-spacing: 0.18em;
+      text-transform: uppercase; color: var(--sage);
+      font-weight: 500; margin-bottom: 0.6rem;
+    }
+    .article-tip-box p {
+      font-size: 0.88rem; color: var(--text-muted);
+      line-height: 1.7; margin: 0;
+    }
+    /* Sidebar */
+    .article-sidebar { position: sticky; top: 80px; }
+    .sidebar-card {
+      background: var(--cream-2);
+      border: 1px solid rgba(216,204,186,0.4);
+      border-radius: var(--radius);
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+    .sidebar-card h3 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1rem; font-weight: 300;
+      margin-bottom: 1rem; color: var(--text);
+    }
+    .sidebar-card ul li {
+      font-size: 0.8rem; color: var(--text-muted);
+      padding: 0.4rem 0;
+      border-bottom: 1px solid rgba(216,204,186,0.3);
+      display: flex; align-items: center; gap: 0.5rem;
+    }
+    .sidebar-card ul li:last-child { border-bottom: none; }
+    .sidebar-dl {
+      background: var(--deep-brown);
+      border-radius: var(--radius);
+      padding: 1.5rem;
+      text-align: center;
+    }
+    .sidebar-dl span { font-size: 1.8rem; display: block; margin-bottom: 0.8rem; }
+    .sidebar-dl h3 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1rem; font-weight: 300;
+      color: #fff; margin-bottom: 0.5rem;
+    }
+    .sidebar-dl p { font-size: 0.75rem; color: rgba(216,204,186,0.55); margin-bottom: 1rem; line-height: 1.6; }
+    .sidebar-dl a {
+      display: block; background: var(--terracotta);
+      color: #fff; font-size: 0.7rem; letter-spacing: 0.08em;
+      padding: 0.7rem 1rem; border-radius: var(--radius-pill);
+      font-weight: 500; transition: background 0.2s;
+    }
+    .sidebar-dl a:hover { background: var(--terracotta-dark); }
+    /* Related articles */
+    .related-section {
+      background: var(--cream-2);
+      padding: 5rem 0;
+    }
+    .related-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+      margin-top: 2.5rem;
+    }
+    @media (max-width: 768px) {
+      .article-layout { grid-template-columns: 1fr; gap: 2.5rem; }
+      .article-sidebar { position: static; }
+      .related-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "L'élixir d'ortie de ma grand-mère : minéraux & vitalité",
+    "description": "Recette ancestrale de l'élixir d'ortie transmis de génération en génération. Riche en minéraux et vitamines, ce tonique naturel booste la vitalité et reminéralise en profondeur.",
+    "author": { "@type": "Organization", "name": "LÜMISPIRA" },
+    "publisher": { "@type": "Organization", "name": "LÜMISPIRA", "url": "https://lumispira.com" },
+    "url": "https://lumispira.com/articles/elixir-ortie-grand-mere/",
+    "inLanguage": "fr",
+    "datePublished": "2025-01-22"
+  }
+  </script>
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <header id="navbar" role="banner">
+    <nav class="nav-inner" aria-label="Navigation principale">
+      <a href="../../index.html" class="nav-logo">
+        <span class="nav-logo-name">LÜMISPIRA</span>
+        <span class="nav-logo-tagline">Lumière · Équilibre · Guérison</span>
+      </a>
+      <ul class="nav-links" role="list">
+        <li><a href="../../protocoles/index.html">Protocoles</a></li>
+        <li><a href="../../recettes/index.html">Recettes</a></li>
+        <li><a href="../../cuisine-sacree/index.html">Cuisine Sacrée</a></li>
+        <li><a href="../../eveil/index.html">Éveil</a></li>
+        <li><a href="../../coups-de-coeur/index.html">Coups de cœur</a></li>
+        <li><a href="../../guides/index.html">Guides</a></li>
+      </ul>
+      <a href="../../guides/index.html" class="nav-cta">✦ Guide offert</a>
+      <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+  <nav class="mobile-menu" id="mobile-menu">
+    <a href="../../protocoles/index.html">Protocoles</a>
+    <a href="../../recettes/index.html">Recettes</a>
+    <a href="../../cuisine-sacree/index.html">Cuisine Sacrée</a>
+    <a href="../../eveil/index.html">Éveil</a>
+    <a href="../../coups-de-coeur/index.html">Coups de cœur</a>
+    <a href="../../guides/index.html">Guides</a>
+    <a href="../../guides/index.html" class="nav-cta">✦ Guide offert</a>
+  </nav>
+
+  <!-- FLOATING LEAD MAGNET -->
+  <aside id="lead-magnet">
+    <div class="lead-card">
+      <div class="lead-icon">✨</div>
+      <span class="lead-cadeau label">Cadeau gratuit</span>
+      <p class="lead-title serif">10 Protocoles<br><em>Bien-être</em></p>
+      <p class="lead-sub">PDF offert — vie alignée</p>
+      <a href="../../guides/index.html" class="lead-btn">Je télécharge →</a>
+      <span class="lead-note">Gratuit · Sans engagement</span>
+    </div>
+  </aside>
+
+  <main>
+    <!-- HERO -->
+    <section class="article-hero" aria-labelledby="article-h1">
+      <div class="article-hero-inner">
+        <nav class="breadcrumb" aria-label="Fil d'Ariane">
+          <a href="../../index.html">Accueil</a>
+          <span>›</span>
+          <a href="../../recettes/index.html">Recettes Sacrées</a>
+          <span>›</span>
+          <span>Élixir d'ortie</span>
+        </nav>
+        <span class="article-hero-cat">✦ Élixirs ancestraux</span>
+        <h1 id="article-h1" class="article-hero-h1">L'élixir d'ortie de ma grand-mère : minéraux & vitalité</h1>
+        <div class="article-hero-meta">
+          <span>🕐 5 min de lecture</span>
+          <span>📅 22 janvier 2025</span>
+          <span>✍️ Par LÜMISPIRA</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ARTICLE BODY -->
+    <div class="article-layout">
+      <article class="article-content" aria-label="Contenu de l'article">
+        <p class="article-intro fade-up">Parmi toutes les recettes que ma grand-mère m'a transmises, l'élixir d'ortie est celle que je prépare encore aujourd'hui avec le plus d'amour. Une préparation ancestrale, simple et puissante, pour recharger le corps en profondeur quand il en a besoin.</p>
+        
+        <h2>L'ortie, plante souveraine oubliée</h2>
+        <p>L'ortie (Urtica dioica) est l'une des plantes médicinales les plus complètes qui existe — et aussi l'une des plus méconnues, cachée derrière sa réputation de "mauvaise herbe". Ma grand-mère, elle, ne s'y trompait jamais. Chaque printemps, elle partait en cueillette avec ses gants et revenait avec des brassées de cette plante qu'elle appelait "l'or vert".</p>
+        <p>Sa richesse nutritionnelle est stupéfiante : fer, calcium, magnésium, potassium, vitamines A, C, K, B et une concentration en protéines rare dans le règne végétal. Un vrai concentré de vie.</p>
+
+        <div class="article-quote">
+          <p>"L'ortie pousse là où la terre est vivante et riche. Elle porte en elle la force de la terre nourricière."</p>
+        </div>
+
+        <h2>Recette de l'élixir d'ortie</h2>
+        <h3>Ingrédients (pour 1 litre)</h3>
+        <ul>
+          <li>100g d'orties fraîches (cueillis avec des gants, en évitant les bords de route)</li>
+          <li>1 litre d'eau filtrée froide</li>
+          <li>Le jus d'un demi-citron bio</li>
+          <li>1 cuillère à café de miel de fleurs sauvages (facultatif)</li>
+          <li>Une pincée de sel de mer non raffiné</li>
+        </ul>
+
+        <h3>Préparation rituelle</h3>
+        <p>La veille, cueille les orties en prenant soin de remercier la plante — ce geste d'intention n'est pas anodin. Il ancre la cueillette dans une relation de respect et de réciprocité avec le vivant.</p>
+        <p>Rince les feuilles abondamment sous l'eau froide. Plonge-les dans ton litre d'eau froide et laisse macérer au réfrigérateur toute une nuit. La macération à froid préserve les minéraux et enzymes que la chaleur détruirait.</p>
+        <p>Le matin, filtre la préparation, ajoute le jus de citron et le miel si tu le souhaites. Conserve au réfrigérateur et consomme dans les 48 heures.</p>
+
+        <div class="article-tip-box">
+          <h4>✦ Le rituel de ma grand-mère</h4>
+          <p>Elle buvait son élixir d'ortie chaque matin à jeun, dans un verre en verre (jamais en plastique), debout face à la fenêtre ouverte. "Il faut accueillir la force de la plante avec toute ton attention," disait-elle.</p>
+        </div>
+
+        <h2>Bienfaits de l'élixir d'ortie</h2>
+        <ul>
+          <li>Reminéralisation profonde (idéal après l'hiver ou en période de fatigue)</li>
+          <li>Soutien du système immunitaire grâce à la vitamine C et aux antioxydants</li>
+          <li>Effet détoxifiant doux — drainant rénal et hépatique</li>
+          <li>Soutien de la santé capillaire et cutanée (richesse en silice)</li>
+          <li>Anti-inflammatoire naturel — utile en cas de douleurs articulaires légères</li>
+        </ul>
+
+        <h2>Quand et comment le consommer</h2>
+        <p>L'élixir d'ortie se consomme idéalement à jeun le matin, 15 minutes avant le premier repas. Une cure de 21 jours est recommandée pour ressentir pleinement ses bienfaits. Commence par un petit verre (100ml) les premiers jours et augmente progressivement jusqu'à 300ml.</p>
+        <p>Contre-indications : déconseillé aux femmes enceintes, aux personnes sous anticoagulants et à celles souffrant de troubles rénaux sévères. En cas de doute, consulte ton médecin ou herboriste.</p>
+
+      </article>
+
+      <!-- SIDEBAR -->
+      <aside class="article-sidebar" aria-label="Barre latérale">
+        <div class="sidebar-card fade-up">
+          <h3 class="serif">Dans cet article</h3>
+          <ul>
+            <li>🌿 L'ortie, plante souveraine</li>
+            <li>🧪 La recette complète</li>
+            <li>✨ Bienfaits de l'élixir</li>
+            <li>📅 Quand le consommer</li>
+          </ul>
+        </div>
+        <div class="sidebar-dl fade-up delay-1">
+          <span>✨</span>
+          <h3 class="serif">Guide PDF offert</h3>
+          <p>Télécharge nos 10 protocoles bien-être gratuitement.</p>
+          <a href="../../guides/index.html">Je télécharge →</a>
+        </div>
+        <div class="sidebar-card fade-up delay-2">
+          <h3 class="serif">Articles liés</h3>
+          <ul>
+            <li>🌅 Rituel matinal aligné</li>
+            <li>✨ Équilibrer les chakras</li>
+            <li>🍵 Infusion du soir</li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+
+    <!-- RELATED -->
+    <section class="related-section">
+      <div class="container">
+        <div class="fade-up">
+          <span class="label terracotta" style="display:block;margin-bottom:0.5rem;">Continuer la lecture</span>
+          <h2 class="section-title serif">Articles <em class="italic">recommandés</em></h2>
+        </div>
+        <div class="related-grid">
+          
+          <article class="article-card fade-up">
+            <a href="../rituel-matinal-aligne/index.html">
+              <div class="article-thumb thumb-sage"><span class="article-tag">Protocoles</span></div>
+              <div class="article-body">
+                <span class="article-cat label">Rituels</span>
+                <h3 class="article-title serif">Créer ton rituel matinal aligné</h3>
+                <p class="article-excerpt">Un protocole doux pour commencer chaque journée avec intention et paix.</p>
+                <span class="article-read-more">Lire →</span>
+              </div>
+            </a>
+          </article>
+          <article class="article-card fade-up">
+            <a href="../equilibrer-7-chakras/index.html">
+              <div class="article-thumb thumb-purple"><span class="article-tag">Éveil</span></div>
+              <div class="article-body">
+                <span class="article-cat label">Chakras</span>
+                <h3 class="article-title serif">Équilibrer les 7 chakras</h3>
+                <p class="article-excerpt">Un protocole complet pour harmoniser chaque centre énergétique.</p>
+                <span class="article-read-more">Lire →</span>
+              </div>
+            </a>
+          </article>
+          <article class="article-card fade-up">
+            <a href="../../cuisine-sacree/index.html">
+              <div class="article-thumb thumb-amber"><span class="article-tag">Cuisine Sacrée</span></div>
+              <div class="article-body">
+                <span class="article-cat label">Anti-inflammatoire</span>
+                <h3 class="article-title serif">Golden milk de cérémonie</h3>
+                <p class="article-excerpt">La boisson dorée qui réchauffe et apaise l'inflammation.</p>
+                <span class="article-read-more">Lire →</span>
+              </div>
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- NEWSLETTER -->
+    <section class="nl-mini" aria-label="Newsletter">
+      <div class="nl-mini-inner fade-up">
+        <span style="font-size:2rem;display:block;margin-bottom:1rem;">🕊️</span>
+        <h2 class="serif">La lettre de <em class="italic terracotta">l'âme</em></h2>
+        <p>Chaque semaine, un rituel doux, une recette sacrée et un soin pour l'esprit.</p>
+        <form class="nl-form" action="#" method="post">
+          <label for="email-article" class="sr-only">Ton adresse e-mail</label>
+          <input type="email" id="email-article" name="email" class="nl-input" placeholder="ton@email.com" required autocomplete="email" />
+          <button type="submit" class="nl-submit">Je m'abonne ✦</button>
+        </form>
+        <p class="nl-note">Gratuit · Sans spam · Désabonnement en 1 clic</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer id="footer" role="contentinfo">
+    <div class="footer-inner">
+      <div>
+        <p class="footer-logo-name serif">LÜMISPIRA</p>
+        <p class="footer-tagline">Lumière · Équilibre · Guérison</p>
+      </div>
+      <nav class="footer-links">
+        <a href="../../protocoles/index.html">Protocoles</a>
+        <a href="../../recettes/index.html">Recettes</a>
+        <a href="../../cuisine-sacree/index.html">Cuisine Sacrée</a>
+        <a href="../../eveil/index.html">Éveil</a>
+        <a href="../../coups-de-coeur/index.html">Coups de cœur</a>
+        <a href="../../guides/index.html">Guides</a>
+      </nav>
+      <div class="footer-copy">
+        <p>© 2025 LÜMISPIRA</p>
+        <p style="opacity:0.5;">Tous droits réservés</p>
+      </div>
+    </div>
+    <hr class="footer-divider" />
+    <div class="footer-bottom">
+      <span>Fait avec amour · Pour les âmes sensibles</span>
+      <span>lumispira.com</span>
+    </div>
+  </footer>
+
+  <script src="../../assets/js/global.js"></script>
+</body>
+</html>
