@@ -5,6 +5,10 @@
 
 document.addEventListener('DOMContentLoaded', () => {
 
+  if (window.LUMISPIRA_COMPONENTS?.mountShell) {
+    window.LUMISPIRA_COMPONENTS.mountShell();
+  }
+
   // ── Hamburger menu ──
   const hamburger = document.getElementById('hamburger');
   const mobileMenu = document.getElementById('mobile-menu');
