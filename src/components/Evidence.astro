@@ -1,0 +1,18 @@
+---
+import { EVIDENCE } from '../config/site';
+import Gauge from './Gauge.astro';
+interface Props { claim: string; level: number }
+const { claim, level } = Astro.props;
+const levels = [1, 2, 3, 4, 5] as const;
+const current = EVIDENCE[level as keyof typeof EVIDENCE];
+---
+<aside class="evidence" aria-label="Indice de preuve">
+  <div class="evidence-top">
+    <p class="evidence-claim">« {claim} »</p>
+    <Gauge level={level} label={`Indice de preuve : ${current.label}`} />
+  </div>
+  <ol class="evidence-scale">
+    {levels.map((l) => <li class={l === level ? 'on' : ''} data-l={l} aria-current={l === level ? 'true' : undefined}>{EVIDENCE[l].label}</li>)}
+  </ol>
+  <p class="evidence-note"><b>{current.label} :</b> {current.text} <a href="/methode/#indice">Comment on attribue l'indice</a></p>
+</aside>

@@ -1,0 +1,26 @@
+---
+import Gauge from './Gauge.astro';
+import { CATEGORIES, EVIDENCE } from '../config/site';
+import type { CollectionEntry } from 'astro:content';
+
+interface Props { article: CollectionEntry<'articles'>; showCategory?: boolean }
+const { article, showCategory = true } = Astro.props;
+const d = article.data;
+const cat = CATEGORIES[d.category];
+const href = `/${d.category}/${article.id}/`;
+const date = d.updated ?? d.date;
+---
+<li class="fiche">
+  <div>{d.evidence ? <Gauge level={d.evidence.level} label={`Indice de preuve : ${EVIDENCE[d.evidence.level as 1].label}`} /> : null}</div>
+  <div>
+    <div class="fiche-cat">
+      {showCategory && <span><span class="dot" style={`background:${cat.color}`}></span> {cat.name}</span>}
+      {d.evidence && <span>{EVIDENCE[d.evidence.level as 1].label}</span>}
+      {d.affiliate && <span class="tag-deal">Guide d'achat</span>}
+      <time datetime={date.toISOString()}>{date.toLocaleDateString('fr-FR', { day: 'numeric', month: 'long', year: 'numeric' })}</time>
+    </div>
+    <h3><a href={href}>{d.title}</a></h3>
+    <p>{d.description}</p>
+    <p class="fiche-verdict"><b>Notre verdict :</b> {d.verdict}</p>
+  </div>
+</li>

@@ -1,0 +1,17 @@
+---
+import Page from '../layouts/Page.astro';
+import { SITE } from '../config/site';
+---
+<Page title="Mentions légales" h1="Mentions légales" description="Mentions légales du site Lumispira : éditeur, directrice de la publication, hébergeur." path="/mentions-legales/" crumb="Mentions légales" noindex>
+  <h2>Éditeur</h2>
+  <p>[À COMPLÉTER : raison sociale, forme juridique, capital, adresse du siège, RCS et numéro SIREN, numéro de TVA intracommunautaire]</p>
+  <p>Contact : <a href={`mailto:${SITE.email}`}>{SITE.email}</a></p>
+  <h2>Directrice de la publication</h2>
+  <p>Tiphaine [NOM À COMPLÉTER]</p>
+  <h2>Hébergement</h2>
+  <p>Vercel Inc., 440 N Barranca Ave #4133, Covina, CA 91723, États-Unis.</p>
+  <h2>Avertissement santé</h2>
+  <p>Les contenus publiés sur ce site sont fournis à titre informatif. Ils ne constituent ni un diagnostic, ni une prescription, et ne remplacent pas une consultation auprès d'un professionnel de santé.</p>
+  <h2>Liens d'affiliation</h2>
+  <p>Le site contient des liens d'affiliation, signalés comme tels. Voir la page <a href="/transparence/">transparence</a>.</p>
+</Page>

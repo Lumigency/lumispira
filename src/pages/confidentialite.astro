@@ -1,0 +1,15 @@
+---
+import Page from '../layouts/Page.astro';
+import { SITE } from '../config/site';
+---
+<Page title="Politique de confidentialité" h1="Politique de confidentialité" description="Comment Lumispira collecte et utilise tes données : newsletter, mesure d'audience, liens d'affiliation et tes droits RGPD." path="/confidentialite/" crumb="Confidentialité" noindex>
+  <p>[À FAIRE VALIDER par un conseil juridique avant mise en ligne.]</p>
+  <h2>Les données collectées</h2>
+  <ul>
+    <li><strong>Newsletter :</strong> ton adresse e-mail, uniquement si tu t'inscris, pour t'envoyer la lettre. Tu peux te désinscrire à tout moment par le lien présent dans chaque envoi.</li>
+    <li><strong>Mesure d'audience :</strong> des statistiques de visite anonymisées, pour savoir quels articles sont lus.</li>
+    <li><strong>Liens d'affiliation :</strong> lorsque tu cliques sur un lien affilié, le site marchand peut déposer ses propres cookies, soumis à sa propre politique de confidentialité.</li>
+  </ul>
+  <h2>Tes droits</h2>
+  <p>Conformément au RGPD, tu disposes d'un droit d'accès, de rectification, d'effacement et d'opposition. Pour l'exercer : <a href={`mailto:${SITE.email}`}>{SITE.email}</a>. Tu peux aussi saisir la CNIL.</p>
+</Page>

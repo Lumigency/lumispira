@@ -1,0 +1,35 @@
+---
+import Base from '../../layouts/Base.astro';
+import Crumbs from '../../components/Crumbs.astro';
+import Fiche from '../../components/Fiche.astro';
+import { getCollection } from 'astro:content';
+import { AUTHORS, SITE } from '../../config/site';
+
+const a = AUTHORS.tiphaine;
+const articles = (await getCollection('articles', (x) => x.data.author === 'tiphaine')).sort((x, y) => y.data.date.valueOf() - x.data.date.valueOf());
+const jsonLd = [{
+  '@context': 'https://schema.org',
+  '@type': 'ProfilePage',
+  mainEntity: { '@type': 'Person', name: a.name, jobTitle: a.role, description: a.bio, url: `${SITE.url}/auteurs/${a.slug}/`, worksFor: { '@id': `${SITE.url}/#organization` }, sameAs: [SITE.instagram] },
+}];
+---
+<Base title={`${a.name}, ${a.role.toLowerCase()}`} description={`${a.name}, ${a.role.toLowerCase()} de Lumispira. Son parcours, sa méthode et ses articles.`} jsonLd={jsonLd}>
+  <header class="page-head">
+    <div class="wrap">
+      <Crumbs items={[{ name: 'L’équipe', href: '/auteurs/tiphaine/' }]} />
+      <div style="display:flex;gap:1.5rem;align-items:center;flex-wrap:wrap">
+        <div class="avatar" style="width:96px;height:96px;font-size:2.4rem" aria-hidden="true">T</div>
+        <div><h1>{a.name}</h1><p class="lede" style="margin-top:.4rem">{a.role}</p></div>
+      </div>
+    </div>
+  </header>
+  <div class="wrap layout-split">
+    <div class="prose prose-block">
+      <p>{a.bio}</p>
+      <p>Chez Lumispira, Tiphaine définit la ligne éditoriale, choisit les sujets, écrit une partie des articles et veille au respect de la <a href="/methode/">méthode</a> et des <a href="/transparence/">règles d'indépendance</a>.</p>
+      <h2>Ses articles</h2>
+      <ul class="fiche-list">{articles.map((x) => <Fiche article={x} />)}</ul>
+    </div>
+    <aside><div class="side-box"><h2>La suivre</h2><ul><li><a href={SITE.instagram}>Instagram</a></li></ul></div></aside>
+  </div>
+</Base>

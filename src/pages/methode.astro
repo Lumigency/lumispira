@@ -1,0 +1,35 @@
+---
+import Page from '../layouts/Page.astro';
+import Gauge from '../components/Gauge.astro';
+import { EVIDENCE } from '../config/site';
+const levels = [5, 4, 3, 2, 1] as const;
+---
+<Page title="Notre méthode et l'indice de preuve" h1="Notre méthode : comment on passe un sujet au tamis" description="La charte éditoriale de Lumispira : sources utilisées, indice de preuve de 1 à 5, relecture, mises à jour et indépendance vis-à-vis des marques." lede="La même méthode pour chaque article, qu'il parle de magnésium, d'huile de ricin ou de motivation. Elle est publique pour que tu puisses la vérifier." path="/methode/" crumb="Notre méthode">
+  <h2>Les quatre étapes de chaque article</h2>
+  <ol>
+    <li><strong>La question précise.</strong> On transforme un sujet flou (« le magnésium, c'est bien ? ») en question vérifiable (« quelle forme de magnésium est la mieux absorbée et la mieux tolérée ? »).</li>
+    <li><strong>Les preuves.</strong> On cherche d'abord les synthèses : méta-analyses, revues systématiques, avis de l'Anses, de l'EFSA, de la HAS ou de l'OMS. Puis les essais cliniques chez l'humain. Les études sur l'animal ou en laboratoire sont citées comme pistes, jamais comme preuves.</li>
+    <li><strong>La tradition.</strong> Beaucoup de plantes et de pratiques ont des siècles d'usage. Cet usage est une information utile et on le respecte, mais on le distingue toujours de ce qui a été démontré.</li>
+    <li><strong>Le verdict.</strong> En haut de chaque article : ce qu'on retient, pour qui c'est pertinent, les précautions, et l'indice de preuve.</li>
+  </ol>
+
+  <h2 id="indice">L'indice de preuve</h2>
+  <p>L'indice porte sur l'affirmation principale de l'article, affichée entre guillemets. Il mesure la solidité des données scientifiques disponibles, pas notre avis sur le produit. Un ingrédient peut avoir un indice faible et rester agréable à utiliser : on le dit aussi.</p>
+  <table>
+    <thead><tr><th>Indice</th><th>Niveau</th><th>Ce que ça veut dire</th></tr></thead>
+    <tbody>
+      {levels.map((l) => (
+        <tr><td><Gauge level={l} /></td><td><strong>{EVIDENCE[l].label}</strong></td><td>{EVIDENCE[l].text}</td></tr>
+      ))}
+    </tbody>
+  </table>
+
+  <h2>Relecture et mises à jour</h2>
+  <p>Les articles santé ont vocation à être relus par un professionnel de santé, dont le nom et la qualification sont affichés en haut de l'article. Chaque article indique sa date de dernière mise à jour. Quand une nouvelle étude importante ou un nouvel avis d'agence sanitaire est publié, on met l'article à jour et on change l'indice si nécessaire.</p>
+
+  <h2>Les erreurs</h2>
+  <p>On peut se tromper. Si tu repères une erreur ou une source plus récente, écris-nous : chaque correction significative est signalée en bas de l'article concerné.</p>
+
+  <h2>Indépendance</h2>
+  <p>Aucune marque ne relit nos articles avant publication, ne choisit les produits recommandés ou n'achète un indice de preuve. Le financement du média et l'affiliation sont expliqués sur la page <a href="/transparence/">transparence</a>.</p>
+</Page>

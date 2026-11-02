@@ -1,0 +1,18 @@
+---
+import Base from './Base.astro';
+import Crumbs from '../components/Crumbs.astro';
+interface Props { title: string; h1: string; description: string; lede?: string; path: string; crumb: string; noindex?: boolean; jsonLd?: object[] }
+const { title, h1, description, lede, path, crumb, noindex, jsonLd } = Astro.props;
+---
+<Base title={title} description={description} noindex={noindex} jsonLd={jsonLd}>
+  <header class="page-head">
+    <div class="wrap">
+      <Crumbs items={[{ name: crumb, href: path }]} />
+      <h1>{h1}</h1>
+      {lede && <p class="lede">{lede}</p>}
+    </div>
+  </header>
+  <div class="wrap" style="padding-top:2.5rem;padding-bottom:4rem">
+    <div class="prose prose-block"><slot /></div>
+  </div>
+</Base>

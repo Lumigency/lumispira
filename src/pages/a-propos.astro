@@ -1,0 +1,24 @@
+---
+import Page from '../layouts/Page.astro';
+import { SITE } from '../config/site';
+---
+<Page title="Qui sommes-nous" h1="Un média bien-être qui fait le tri" description="Lumispira est un média indépendant de santé naturelle, beauté, fait maison et développement personnel. Notre mission : séparer ce qui marche de ce qui se vend bien." lede="Lumispira est né d'un constat simple : il n'a jamais été aussi facile de trouver un conseil bien-être, ni aussi difficile de savoir s'il est fiable." path="/a-propos/" crumb="Qui sommes-nous">
+  <h2>Pourquoi Lumispira existe</h2>
+  <p>D'un côté, il y a les sites médicaux : sérieux, mais froids, et souvent méfiants envers tout ce qui est naturel. De l'autre, les comptes et blogs bien-être : inspirants, mais qui partagent des promesses sans les vérifier, et dont beaucoup sont financés par les marques qu'ils recommandent.</p>
+  <p>Nous voulions un média entre les deux. Un endroit où l'on peut aimer les plantes, les rituels et le fait maison, et exiger des preuves. Où une tradition est respectée sans être confondue avec une démonstration. Où un « bon plan » est d'abord un bon produit.</p>
+
+  <h2>Ce que l'on promet</h2>
+  <ul>
+    <li>Un verdict clair en haut de chaque article, sans avoir à tout lire.</li>
+    <li>Un <a href="/methode/#indice">indice de preuve</a> sur chaque sujet.</li>
+    <li>Des sources publiques, listées et cliquables.</li>
+    <li>Les précautions et contre-indications en évidence, pas cachées.</li>
+    <li>Une <a href="/transparence/">transparence totale</a> sur l'argent.</li>
+  </ul>
+
+  <h2>Qui écrit</h2>
+  <p>Lumispira est dirigé par <a href="/auteurs/tiphaine/">Tiphaine</a>, sa fondatrice et rédactrice en chef. Les articles santé ont vocation à être relus par des professionnels de santé, dont le nom apparaît sur chaque article relu.</p>
+
+  <h2>Nous contacter</h2>
+  <p>Une question, une erreur repérée, une idée de sujet : <a href={`mailto:${SITE.email}`}>{SITE.email}</a>.</p>
+</Page>

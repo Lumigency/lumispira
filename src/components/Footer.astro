@@ -1,0 +1,43 @@
+---
+import Logo from './Logo.astro';
+import { SITE, CATEGORIES, CATEGORY_KEYS } from '../config/site';
+const year = new Date().getFullYear();
+---
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="logo" href="/"><Logo />{SITE.name}</a>
+        <p>{SITE.tagline} Ce que dit la science, ce que dit la tradition, et notre verdict.</p>
+      </div>
+      <div>
+        <h2>Rubriques</h2>
+        <ul>
+          {CATEGORY_KEYS.map((k) => <li><a href={`/${k}/`}>{CATEGORIES[k].name}</a></li>)}
+        </ul>
+      </div>
+      <div>
+        <h2>Le média</h2>
+        <ul>
+          <li><a href="/a-propos/">Qui sommes-nous</a></li>
+          <li><a href="/methode/">Notre méthode et l'indice de preuve</a></li>
+          <li><a href="/transparence/">Transparence et affiliation</a></li>
+          <li><a href="/auteurs/tiphaine/">L'équipe</a></li>
+          <li><a href="/blog/">Tous les articles</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Suivre</h2>
+        <ul>
+          <li><a href={SITE.instagram} rel="me">Instagram</a></li>
+          <li><a href="/rss.xml">Flux RSS</a></li>
+          <li><a href={`mailto:${SITE.email}`}>Nous écrire</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© {year} {SITE.name}. Les contenus de ce site ne remplacent pas l'avis d'un professionnel de santé.</span>
+      <span><a href="/mentions-legales/">Mentions légales</a> &nbsp; <a href="/confidentialite/">Confidentialité</a></span>
+    </div>
+  </div>
+</footer>

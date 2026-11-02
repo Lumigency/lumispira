@@ -1,0 +1,82 @@
+---
+import Base from '../layouts/Base.astro';
+import Fiche from '../components/Fiche.astro';
+import Gauge from '../components/Gauge.astro';
+import { getCollection } from 'astro:content';
+import { CATEGORIES, CATEGORY_KEYS, EVIDENCE, SITE } from '../config/site';
+
+const all = (await getCollection('articles')).sort((a, b) => (b.data.updated ?? b.data.date).valueOf() - (a.data.updated ?? a.data.date).valueOf());
+const sieved = all.filter((a) => a.data.evidence).slice(0, 4);
+const latest = all.slice(0, 6);
+
+const blurbs: Record<string, string> = {
+  sante: 'Compléments, plantes, sommeil : les études avant les promesses.',
+  'beaute-naturelle': 'Les ingrédients naturels qui font vraiment quelque chose.',
+  'fait-maison': 'Recettes saines et cosmétiques DIY sûrs, testés.',
+  'developpement-personnel': 'Habitudes et mental, sans gourou.',
+  'bons-plans': 'Les réductions qui valent le coup, et nos guides d’achat.',
+};
+---
+<Base title={`${SITE.name} : le média bien-être qui passe tout au tamis`} description={SITE.description}>
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <h1>Le bien-être, passé au tamis.</h1>
+        <p class="hero-lede">Santé naturelle, beauté, fait maison, développement personnel. Ce que dit la science, ce que dit la tradition, et notre verdict, sources à l'appui.</p>
+        <div class="hero-actions">
+          <a class="btn" href="/blog/">Lire les derniers verdicts</a>
+          <a class="btn btn-ghost" href="/methode/">Comment on trie</a>
+        </div>
+      </div>
+      <div class="sieve">
+        <div class="sieve-head">
+          <h2>Récemment passé au tamis</h2>
+          <span>Indice de preuve</span>
+        </div>
+        {sieved.map((a) => (
+          <a class="sieve-row" href={`/${a.data.category}/${a.id}/`}>
+            <span class="sieve-claim">{a.data.evidence!.claim}</span>
+            <Gauge level={a.data.evidence!.level} label={`Indice de preuve : ${EVIDENCE[a.data.evidence!.level as 1].label}`} />
+            <span class="sieve-level">{EVIDENCE[a.data.evidence!.level as 1].label}</span>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <nav class="rubriques" aria-label="Rubriques">
+    {CATEGORY_KEYS.map((k) => (
+      <a class={`rubrique ${k === 'bons-plans' ? 'deals' : ''}`} href={`/${k}/`}>
+        {k !== 'bons-plans' && <span class="bar" style={`background:${CATEGORIES[k].color}`}></span>}
+        <strong>{CATEGORIES[k].name}</strong>
+        <span>{blurbs[k]}</span>
+      </a>
+    ))}
+  </nav>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Les derniers articles</h2>
+        <a href="/blog/">Tous les articles</a>
+      </div>
+      <ul class="fiche-list">{latest.map((a) => <Fiche article={a} />)}</ul>
+    </div>
+  </section>
+
+  <section class="section manifesto" aria-labelledby="method-title">
+    <div class="wrap">
+      <div>
+        <h2 id="method-title">Ni gourou, ni blouse blanche.</h2>
+        <p style="margin-top:1.25rem">Le bien-être en ligne se partage entre des sites médicaux qui parlent comme des notices et des comptes inspirants qui ne vérifient rien. Lumispira est entre les deux : la chaleur d'un média que tu as envie de lire, et l'exigence d'une rédaction qui lit les études.</p>
+        <p>Chaque article répond à la même question : est-ce que ça marche, pour qui, et à quel prix ? <a href="/methode/">Lire notre charte éditoriale</a>.</p>
+      </div>
+      <ol class="method-steps">
+        <li><strong>On lit les études chez l'humain</strong><span>Essais cliniques, méta-analyses, et les avis de l'Anses, de l'EFSA ou de la HAS.</span></li>
+        <li><strong>On écoute la tradition</strong><span>L'usage ancien d'une plante ou d'un rituel est une piste, pas une preuve. On le dit clairement.</span></li>
+        <li><strong>On attribue un indice de preuve</strong><span>De Non démontré à Prouvé, sur l'affirmation principale de chaque article.</span></li>
+        <li><strong>On rend un verdict, sans marque derrière</strong><span>Aucune marque ne peut acheter un avis. L'affiliation est toujours signalée.</span></li>
+      </ol>
+    </div>
+  </section>
+</Base>
