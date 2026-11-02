@@ -52,3 +52,4 @@ redirections 301 des anciennes URL (`vercel.json`).
 - `src/pages/confidentialite.astro` : à faire valider
 - `src/components/Newsletter.astro` : brancher le formulaire Brevo
 - Relecteur santé : ajouter `reviewer` aux articles santé
+- **Lancement** : dans `src/config/site.ts`, mettre l'URL définitive et passer `indexable` à `true`

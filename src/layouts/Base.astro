@@ -50,7 +50,7 @@ const baseLd = [
     <title>{fullTitle}</title>
     <meta name="description" content={description} />
     <link rel="canonical" href={canonical} />
-    {noindex && <meta name="robots" content="noindex, follow" />}
+    {(noindex || !SITE.indexable) && <meta name="robots" content={SITE.indexable ? 'noindex, follow' : 'noindex, nofollow'} />}
     <meta property="og:site_name" content={SITE.name} />
     <meta property="og:locale" content={SITE.locale} />
     <meta property="og:type" content={type} />

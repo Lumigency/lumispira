@@ -4,7 +4,9 @@
 
 export const SITE = {
   name: 'Lumispira',
-  url: 'https://lumispira.com',
+  url: 'https://lumispira.vercel.app',
+  // Refonte en cours : false = site caché de Google. Passer à true le jour du lancement.
+  indexable: false,
   locale: 'fr_FR',
   lang: 'fr',
   tagline: 'Le bien-être, passé au tamis.',
