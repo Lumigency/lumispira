@@ -72,11 +72,11 @@ C'est l'idée reçue la plus ancienne, et paradoxalement la moins bien étudiée
 ## Ce qu'on peut faire concrètement
 
 1. **Réduire les sucres rapides** : sodas, jus, biscuits, viennoiseries, bonbons. C'est le changement le mieux soutenu par les données, et il est bon pour la santé en général.
-2. **Privilégier les aliments à faible charge glycémique** : légumes, légumineuses, céréales complètes, fruits entiers, oléagineux.
+2. **Privilégier les aliments à faible charge glycémique** : légumes, légumineuses, céréales complètes, fruits entiers, oléagineux. Un petit-déjeuner comme notre [granola maison peu sucré](/recettes-grand-mere/granola-maison-peu-sucre/) va dans ce sens.
 3. **Tester les produits laitiers si tu le souhaites** : réduis-les pendant deux à trois mois, observe ta peau, et veille à garder assez de calcium.
 4. **Ne pas te priver de tout** : un régime trop strict est difficile à tenir et peut nuire à ton rapport à l'alimentation.
 5. **Garder un traitement adapté** : l'alimentation est un levier d'appoint, pas un traitement.
 
 ## Notre conclusion
 
-L'acné n'est pas une punition pour ce qu'on mange. Mais l'alimentation peut faire pencher la balance : les sucres rapides ont les données les plus sérieuses, les produits laitiers une association plus fragile, et le chocolat seul est largement innocenté faute de preuves. Si ton acné est étendue, douloureuse ou laisse des marques, consulte : des traitements efficaces existent.
+L'acné n'est pas une punition pour ce qu'on mange. Mais l'alimentation peut faire pencher la balance : les sucres rapides ont les données les plus sérieuses, les produits laitiers une association plus fragile, et le chocolat seul est largement innocenté faute de preuves. Si ton acné est étendue, douloureuse ou laisse des marques, consulte : des traitements efficaces existent. Retrouve tous nos dossiers dans la rubrique [Peau & acné](/peau-acne/).

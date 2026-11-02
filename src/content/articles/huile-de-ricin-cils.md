@@ -72,9 +72,9 @@ Pour les sourcils, tu peux appliquer un peu plus d'huile et masser légèrement.
 ## Les précautions
 
 - **Si l'huile entre dans l'œil**, rince abondamment à l'eau claire. Elle peut provoquer une sensation de voile et des picotements.
-- **Fais un test de tolérance** 48 heures avant, au pli du coude. Des allergies de contact à l'huile de ricin ont été décrites.
+- **Fais un test de tolérance** 48 heures avant, au pli du coude, comme pour tout soin naturel ou [cosmétique maison](/beaute-naturelle/deodorant-maison-sans-bicarbonate/). Des allergies de contact à l'huile de ricin ont été décrites.
 - **Ne l'utilise pas** si tu as une infection de l'œil ou des paupières, ou si tu portes des lentilles au moment de l'application.
 
 ## Notre conclusion
 
-L'huile de ricin est un bon soin gainant, simple et bon marché, mais pas un sérum de pousse. Si tu l'aimes, garde-la dans ta routine pour la souplesse et la brillance de tes cils. Si tu cherches une vraie pousse, sache que seul un médicament sur prescription a fait ses preuves, avec des effets indésirables à discuter avec un médecin.
+L'huile de ricin est un bon soin gainant, simple et bon marché, mais pas un sérum de pousse. Si tu l'aimes, garde-la dans ta routine pour la souplesse et la brillance de tes cils. Si tu cherches une vraie pousse, sache que seul un médicament sur prescription a fait ses preuves, avec des effets indésirables à discuter avec un médecin. Pour d'autres ingrédients passés au tamis, explore la rubrique [Beauté naturelle](/beaute-naturelle/).

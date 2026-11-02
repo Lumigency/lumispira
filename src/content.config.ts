@@ -31,6 +31,9 @@ const articles = defineCollection({
     recipe: z
       .object({
         kind: z.enum(['food', 'diy']).default('food'),
+        recipeCategory: z.string().optional(),
+        recipeCuisine: z.string().default('Française'),
+        keywords: z.string().optional(),
         prepTime: z.string(),
         cookTime: z.string(),
         yield: z.string(),

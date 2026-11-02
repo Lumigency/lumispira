@@ -28,6 +28,8 @@ sources:
     url: "https://pharmaceutical-journal.com/article/news/honey-effective-at-relieving-urti-symptoms-analysis-concludes"
 recipe:
   kind: food
+  recipeCategory: "Boisson"
+  keywords: "lait chaud au miel, remède de grand-mère toux, miel contre la toux"
   prepTime: "PT5M"
   cookTime: "PT3M"
   yield: "1 tasse"
@@ -55,7 +57,7 @@ Une cuillère de miel quand la toux empêche de dormir : c'est le remède de gra
 
 ## Ce que dit la tradition
 
-Le miel est utilisé depuis l'Antiquité pour adoucir la gorge et calmer la toux. On le prend pur, dans du lait chaud, dans une tisane de thym ou avec un filet de citron. Nos grands-mères n'avaient pas d'essais cliniques, mais elles avaient un bon instinct.
+Le miel est utilisé depuis l'Antiquité pour adoucir la gorge et calmer la toux. On le prend pur, dans du lait chaud, dans une tisane de thym ou avec un filet de citron. Nos grands-mères n'avaient pas d'essais cliniques, mais elles avaient un bon instinct. C'est tout l'esprit de notre rubrique [Recettes & remèdes de grand-mère](/recettes-grand-mere/) : vérifier ce que la tradition a vu juste.
 
 ## Ce que dit la science
 
@@ -86,7 +88,7 @@ Plusieurs mécanismes sont avancés. La texture épaisse du miel **enrobe la gor
 
 ## La recette du lait chaud au miel
 
-La version la plus réconfortante : un lait tiède avec une cuillère de miel, éventuellement une pincée de cannelle ou un peu de gingembre. Le secret de grand-mère, c'est de **laisser tiédir le lait avant d'ajouter le miel**, pour préserver son goût. Les étapes sont détaillées ci-dessous.
+La version la plus réconfortante : un lait tiède avec une cuillère de miel, éventuellement une pincée de cannelle ou un peu de gingembre. Le secret de grand-mère, c'est de **laisser tiédir le lait avant d'ajouter le miel**, pour préserver son goût. Les étapes sont détaillées ci-dessous. Et le miel sert aussi à sucrer légèrement notre [granola maison](/recettes-grand-mere/granola-maison-peu-sucre/).
 
 ## Notre conclusion
 

@@ -58,7 +58,7 @@ Le déodorant maison au bicarbonate a fait le tour des blogs zéro déchet. Beau
 
 Le bicarbonate de soude est efficace contre les odeurs, car il neutralise les acides produits par les bactéries de la transpiration. Mais il est **basique**. Une étude de référence en cosmétologie a montré que le pH naturel de la surface de la peau est en moyenne **inférieur à 5**, c'est-à-dire légèrement acide. Une solution de bicarbonate, elle, se situe autour de 8.
 
-Sur la peau fine des aisselles, souvent rasée ou épilée, cet écart fragilise la barrière cutanée. D'où notre indice de preuve **Prometteur** : le mécanisme est solide et les témoignages sont très nombreux, mais il existe peu d'études cliniques dédiées au bicarbonate sous les bras.
+Sur la peau fine des aisselles, souvent rasée ou épilée, cet écart fragilise la barrière cutanée. D'où notre indice de preuve **Prometteur** : le mécanisme est solide et les témoignages sont très nombreux, mais il existe peu d'études cliniques dédiées au bicarbonate sous les bras. C'est le même réflexe que pour tous les remèdes beauté qui circulent en ligne, comme [l'huile de ricin sur les cils](/beaute-naturelle/huile-de-ricin-cils/) : vérifier avant d'adopter.
 
 ## La recette sans bicarbonate
 

@@ -8,7 +8,7 @@ export default defineConfig({
   build: { format: 'directory' },
   integrations: [
     sitemap({
-      filter: (page) => !page.includes('/404'),
+      filter: (page) => !['/404', '/mentions-legales/', '/confidentialite/'].some((p) => page.includes(p)),
       changefreq: 'weekly',
       i18n: { defaultLocale: 'fr', locales: { fr: 'fr-FR' } },
     }),

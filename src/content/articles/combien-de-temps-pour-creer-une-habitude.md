@@ -66,7 +66,7 @@ Une habitude ne s'installe pas en un nombre fixe de jours. Elle s'installe **pro
 
 ### 1. Choisis une version minuscule
 
-Commence par une version si petite qu'elle semble presque ridicule : deux minutes de lecture, une seule pompe, un verre d'eau. L'objectif des premières semaines n'est pas le résultat, c'est la **répétition**.
+Commence par une version si petite qu'elle semble presque ridicule : deux minutes de lecture, une seule pompe, un verre d'eau. L'objectif des premières semaines n'est pas le résultat, c'est la **répétition**. Envie de yoga ? Commence par dérouler ton tapis chaque matin, même sans séance ; notre guide pour [bien choisir son tapis](/bons-plans/tapis-de-yoga-comment-choisir/) t'évite les mauvais achats.
 
 ### 2. Accroche-la à un moment fixe
 
@@ -74,7 +74,7 @@ Dans l'étude de Lally, chaque habitude était liée à une situation précise d
 
 > Après avoir [action déjà automatique], je vais [nouvelle habitude].
 
-Par exemple : « Après m'être brossé les dents le soir, je note trois choses de ma journée. »
+Par exemple : « Après m'être brossé les dents le soir, je note trois choses de ma journée. » Ou : « Le dimanche après le marché, je prépare le [granola de la semaine](/recettes-grand-mere/granola-maison-peu-sucre/). »
 
 ### 3. Rate sans culpabiliser
 

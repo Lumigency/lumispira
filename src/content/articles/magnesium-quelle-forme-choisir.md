@@ -48,9 +48,9 @@ Le magnésium est l'un des compléments alimentaires les plus vendus en France, 
 
 L'Anses fixe l'apport satisfaisant en magnésium à **380 mg par jour pour un homme adulte et 300 mg pour une femme adulte**. Ces chiffres incluent tout ce que tu manges.
 
-Une alimentation qui fait la place aux céréales complètes, aux légumineuses, aux oléagineux, au chocolat noir et aux légumes verts couvre souvent une grande partie de ces besoins. Quelques repères issus de la table Ciqual de l'Anses montrent que les graines de courge, les amandes, les noix de cajou, le sarrasin ou les haricots secs comptent parmi les aliments les plus riches.
+Une alimentation qui fait la place aux céréales complètes, aux légumineuses, aux oléagineux, au chocolat noir et aux légumes verts couvre souvent une grande partie de ces besoins. Quelques repères issus de la table Ciqual de l'Anses montrent que les graines de courge, les amandes, les noix de cajou, le sarrasin ou les haricots secs comptent parmi les aliments les plus riches. Un petit-déjeuner comme notre [granola maison peu sucré](/recettes-grand-mere/granola-maison-peu-sucre/), plein d'amandes et de graines de courge, en apporte une bonne part.
 
-Un complément peut être utile si ton alimentation est pauvre en ces aliments, en période de stress intense ou de fatigue, ou sur conseil médical. Mais il ne rattrape pas une alimentation déséquilibrée.
+Un complément peut être utile si ton alimentation est pauvre en ces aliments, en période de stress intense ou de fatigue, ou sur conseil médical. Mais il ne rattrape pas une alimentation déséquilibrée. Si c'est le stress qui te pousse vers les compléments, lis aussi notre analyse de [l'ashwagandha](/sante/ashwagandha-avis-science/), qui n'est pas sans précautions.
 
 ## Les formes de magnésium comparées
 

@@ -37,7 +37,7 @@ export const CATEGORIES = {
     soft: 'var(--herb-soft)',
     title: 'Santé naturelle : compléments et plantes passés au crible',
     description:
-      "Magnésium, ashwagandha, sommeil, digestion : on analyse les compléments et remèdes naturels avec les études, les avis des agences sanitaires et un verdict honnête.",
+      "Magnésium, ashwagandha, sommeil, digestion : les compléments et remèdes naturels analysés avec les études, les agences sanitaires et un verdict honnête.",
   },
   'peau-acne': {
     slug: 'peau-acne',
@@ -55,7 +55,7 @@ export const CATEGORIES = {
     short: 'Beauté',
     color: 'var(--clay)',
     soft: 'var(--apricot-soft)',
-    title: 'Beauté naturelle : ingrédients et cosmétiques maison au banc d’essai',
+    title: 'Beauté naturelle : ingrédients et cosmétiques maison',
     description:
       "Huiles végétales, soins bio, cosmétiques maison : ce que les ingrédients naturels font vraiment pour la peau et les cheveux, et des recettes DIY sûres.",
   },
@@ -87,7 +87,7 @@ export const CATEGORIES = {
     soft: 'var(--pollen)',
     title: 'Bons plans bien-être et comparatifs indépendants',
     description:
-      "Compléments, cosmétiques bio, matériel de yoga, livres et box : nos guides d’achat indépendants et les bons plans du moment, sélectionnés avec une méthode publique.",
+      "Compléments, soins visage et corps, bien-être, livres : nos guides d’achat indépendants et les bons plans du moment, choisis avec une méthode publique.",
   },
 } as const;
 

@@ -62,7 +62,7 @@ Un tapis en caoutchouc naturel peut peser 2 à 3 fois plus qu'un tapis en TPE. S
 
 ## Notre recommandation selon ton profil
 
-- **Tu débutes et tu veux tester** : un tapis en TPE de 5 à 6 mm, léger et peu coûteux.
+- **Tu débutes et tu veux tester** : un tapis en TPE de 5 à 6 mm, léger et peu coûteux. Le plus dur sera de pratiquer régulièrement : voici [combien de temps il faut vraiment pour créer une habitude](/developpement-personnel/combien-de-temps-pour-creer-une-habitude/).
 - **Tu pratiques plusieurs fois par semaine** : un tapis en caoutchouc naturel de 4 à 5 mm, pour l'adhérence et la durée de vie.
 - **Tu transpires beaucoup ou pratiques le yoga chaud** : un tapis en liège.
 - **Tu as les genoux sensibles** : un tapis de 5 à 6 mm, et un coussin de genoux pour les postures au sol plutôt qu'un tapis très épais.

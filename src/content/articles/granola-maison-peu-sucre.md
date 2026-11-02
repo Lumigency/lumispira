@@ -1,7 +1,7 @@
 ---
 title: "Granola maison peu sucré : la recette croustillante qui cale vraiment"
 seoTitle: "Granola maison peu sucré : recette facile et croustillante"
-description: "Un granola maison croustillant avec environ 5 g de sucres ajoutés pour 100 g, riche en fibres d'avoine. La recette, l'astuce des gros morceaux et la conservation."
+description: "Un granola maison croustillant, environ 5 g de sucres ajoutés pour 100 g, riche en fibres d'avoine : la recette, l'astuce des gros morceaux, la conservation."
 category: recettes-grand-mere
 date: 2026-11-02
 author: tiphaine
@@ -27,6 +27,8 @@ sources:
     url: "https://www.who.int/publications/i/item/9789241549028"
 recipe:
   kind: food
+  recipeCategory: "Petit-déjeuner"
+  keywords: "granola maison, granola peu sucré, petit-déjeuner sain, recette granola"
   prepTime: "PT10M"
   cookTime: "PT25M"
   yield: "8 portions de 50 g environ"
@@ -62,9 +64,11 @@ Le granola a une image de petit-déjeuner santé, mais beaucoup de versions du c
 
 ## Pourquoi faire son granola soi-même
 
-La première raison, c'est le **sucre**. Cette recette apporte environ **5 g de sucres ajoutés pour 100 g**. Avec une portion de 50 g, tu restes très loin de la limite de 50 g de sucres libres par jour recommandée par l'OMS pour un adulte, et même de l'objectif idéal de 25 g. Compare avec la ligne « dont sucres » de ton granola habituel : la différence est souvent nette.
+La première raison, c'est le **sucre**. Cette recette apporte environ **5 g de sucres ajoutés pour 100 g**. Avec une portion de 50 g, tu restes très loin de la limite de 50 g de sucres libres par jour recommandée par l'OMS pour un adulte, et même de l'objectif idéal de 25 g. Compare avec la ligne « dont sucres » de ton granola habituel : la différence est souvent nette. Limiter les sucres rapides est d'ailleurs la piste la plus sérieuse sur le lien entre [acné et alimentation](/peau-acne/acne-et-alimentation/).
 
 La deuxième raison, ce sont les **fibres d'avoine**. Les flocons d'avoine contiennent des bêta-glucanes, des fibres dont l'effet sur le cholestérol sanguin est l'une des rares allégations santé validées par l'EFSA, à partir de **3 g de bêta-glucanes par jour**. Une portion de ce granola en apporte environ 1 g : ce n'est pas suffisant à elle seule, mais c'est une vraie contribution, d'où notre indice **Prouvé** sur l'effet des bêta-glucanes.
+
+Bonus : les amandes et les graines de courge comptent parmi les aliments les plus riches en [magnésium](/sante/magnesium-quelle-forme-choisir/).
 
 La troisième raison, c'est le **prix** : acheter flocons et graines en vrac revient généralement bien moins cher qu'un granola premium.
 

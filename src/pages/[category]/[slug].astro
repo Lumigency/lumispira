@@ -34,7 +34,7 @@ const related = (await getCollection('articles', (a) => a.id !== article.id))
 
 const articleLd: Record<string, unknown> = {
   '@context': 'https://schema.org',
-  '@type': d.category === 'sante' ? 'MedicalWebPage' : 'Article',
+  '@type': d.category === 'sante' || d.category === 'peau-acne' ? 'MedicalWebPage' : 'Article',
   headline: d.title,
   description: d.description,
   url,
@@ -65,6 +65,8 @@ const iso = (s: string) => {
   const h = Number(m[1] ?? 0), mn = Number(m[2] ?? 0);
   return [h ? `${h} h` : '', mn ? `${mn} min` : ''].filter(Boolean).join(' ');
 };
+const mins = (s: string) => { const m = s.match(/PT(?:(\d+)H)?(?:(\d+)M)?/); return m ? Number(m[1] ?? 0) * 60 + Number(m[2] ?? 0) : 0; };
+const totalTime = (a: string, b: string) => { const t = mins(a) + mins(b); return `PT${Math.floor(t / 60) ? Math.floor(t / 60) + 'H' : ''}${t % 60 ? (t % 60) + 'M' : ''}`; };
 if (d.recipe && d.recipe.kind === 'food') {
   jsonLd.push({
     '@context': 'https://schema.org',
@@ -74,6 +76,10 @@ if (d.recipe && d.recipe.kind === 'food') {
     author: { '@type': 'Person', name: author.name },
     datePublished: d.date.toISOString(),
     prepTime: d.recipe.prepTime,
+    totalTime: totalTime(d.recipe.prepTime, d.recipe.cookTime),
+    recipeCategory: d.recipe.recipeCategory,
+    recipeCuisine: d.recipe.recipeCuisine,
+    keywords: d.recipe.keywords,
     cookTime: d.recipe.cookTime,
     recipeYield: d.recipe.yield,
     recipeIngredient: d.recipe.ingredients,
