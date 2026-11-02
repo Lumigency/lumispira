@@ -29,7 +29,7 @@ Copie un article existant dans `src/content/articles/`. Le nom du fichier devien
 Champs principaux du haut de fichier :
 
 - `title`, `seoTitle` (≤ 60 caractères), `description` (≤ 160 caractères)
-- `category` : `sante`, `beaute-naturelle`, `fait-maison`, `developpement-personnel`, `bons-plans`
+- `category` : `sante`, `peau-acne`, `beaute-naturelle`, `fait-maison`, `recettes-grand-mere`, `developpement-personnel`, `bons-plans`
 - `topics` : les sujets de la rubrique traités (mêmes libellés que dans `src/data/categories.ts`) ; ils rendent le filtre cliquable
 - `evidence` : l'affirmation testée et son indice de 1 (Non démontré) à 5 (Prouvé)
 - `verdict` et `keyPoints` : le résumé affiché en haut
