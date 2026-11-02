@@ -14,12 +14,13 @@ interface Props {
   newsletter?: boolean;
   published?: Date;
   modified?: Date;
+  image?: string;
 }
 
-const { title, description, type = 'website', jsonLd = [], noindex = false, newsletter = true, published, modified } = Astro.props;
+const { title, description, type = 'website', jsonLd = [], noindex = false, newsletter = true, published, modified, image } = Astro.props;
 const canonical = new URL(Astro.url.pathname, Astro.site).href;
 const fullTitle = title.includes(SITE.name) || title.length + SITE.name.length > 58 ? title : `${title} | ${SITE.name}`;
-const ogImage = new URL('/og-default.png', Astro.site).href;
+const ogImage = image ?? new URL('/og-default.png', Astro.site).href;
 
 const baseLd = [
   {

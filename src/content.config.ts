@@ -39,6 +39,10 @@ const articles = defineCollection({
       })
       .optional(),
     featured: z.boolean().default(false),
+    // Photo Unsplash : id = la partie après « photo- » dans l'URL images.unsplash.com
+    cover: z
+      .object({ id: z.string(), alt: z.string(), credit: z.string(), handle: z.string() })
+      .optional(),
   }),
 });
 

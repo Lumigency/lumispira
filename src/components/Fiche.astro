@@ -2,6 +2,7 @@
 import Gauge from './Gauge.astro';
 import { CATEGORIES, EVIDENCE } from '../config/site';
 import type { CollectionEntry } from 'astro:content';
+import { img, srcset } from '../lib/unsplash';
 
 interface Props { article: CollectionEntry<'articles'>; showCategory?: boolean }
 const { article, showCategory = true } = Astro.props;
@@ -10,7 +11,7 @@ const cat = CATEGORIES[d.category];
 const href = `/${d.category}/${article.id}/`;
 const date = d.updated ?? d.date;
 ---
-<li class="fiche" data-topics={JSON.stringify(d.topics)}>
+<li class={`fiche ${d.cover ? 'has-thumb' : ''}`} data-topics={JSON.stringify(d.topics)}>
   <div>{d.evidence ? <Gauge level={d.evidence.level} label={`Indice de preuve : ${EVIDENCE[d.evidence.level as 1].label}`} /> : null}</div>
   <div>
     <div class="fiche-cat">
@@ -23,4 +24,9 @@ const date = d.updated ?? d.date;
     <p>{d.description}</p>
     <p class="fiche-verdict"><b>Notre verdict :</b> {d.verdict}</p>
   </div>
+  {d.cover && (
+    <a class="fiche-thumb" href={href} tabindex="-1" aria-hidden="true">
+      <img src={img(d.cover.id, 360, 270)} srcset={srcset(d.cover.id, [240, 360, 560], 4 / 3)} sizes="(max-width: 640px) 100vw, 220px" width="360" height="270" alt="" loading="lazy" decoding="async" />
+    </a>
+  )}
 </li>

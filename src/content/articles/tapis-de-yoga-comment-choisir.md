@@ -6,6 +6,11 @@ category: bons-plans
 date: 2026-11-02
 author: tiphaine
 topics: ["Yoga et sport à la maison"]
+cover:
+  id: "1646239646963-b0b9be56d6b5"
+  alt: "Un tapis de yoga avec deux briques posées dessus"
+  credit: "Samantha Sheppard"
+  handle: "samsheppardphoto"
 verdict: "Pour la plupart des pratiques, un tapis de 4 à 5 mm en caoutchouc naturel offre le meilleur équilibre entre adhérence, stabilité et confort. Choisis du TPE si tu cherches léger et petit budget, du liège si tu transpires beaucoup, et évite le caoutchouc naturel en cas d'allergie au latex."
 keyPoints:
   - "Épaisseur : 3 à 4 mm pour le yoga dynamique, 5 à 6 mm pour plus de confort sous les genoux."

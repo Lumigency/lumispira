@@ -9,6 +9,11 @@ evidence:
   claim: "Une alimentation riche en sucres rapides peut aggraver l'acné"
   level: 3
 topics: ["Acné et alimentation", "Idées reçues"]
+cover:
+  id: "1523035274455-b2e5c6d5c2e0"
+  alt: "Une tablette de chocolat et du cacao en poudre dans un bol"
+  credit: "Monika Grabkowska"
+  handle: "moniqa"
 verdict: "L'alimentation n'est pas la cause principale de l'acné, mais elle peut jouer. Les sucres rapides ont les données les plus sérieuses, les produits laitiers une association plus fragile, et le chocolat seul n'est pas le coupable qu'on imagine. Changer son assiette peut aider, sans remplacer un traitement."
 keyPoints:
   - "Un essai randomisé a montré moins de lésions d'acné avec une alimentation à faible charge glycémique pendant 12 semaines."

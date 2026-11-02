@@ -9,6 +9,11 @@ evidence:
   claim: "Les formes organiques de magnésium sont mieux absorbées que l'oxyde"
   level: 3
 topics: ["Compléments alimentaires", "Fatigue et énergie"]
+cover:
+  id: "1430163393927-3dab9af7ea38"
+  alt: "Des amandes dans un bol en céramique blanche"
+  credit: "Juan José Valencia Antía"
+  handle: "juanantia"
 verdict: "Si tu as besoin d'un complément, choisis une forme organique (bisglycinate ou citrate) plutôt que l'oxyde ou le magnésium marin, dose autour de 150 à 250 mg par jour, et commence par vérifier ton alimentation."
 keyPoints:
   - "Les apports de référence de l'Anses sont de 380 mg par jour pour un homme et 300 mg pour une femme, aliments compris."

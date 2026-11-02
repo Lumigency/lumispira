@@ -9,6 +9,11 @@ evidence:
   claim: "Le miel soulage la toux aiguë"
   level: 4
 topics: ["Toux et gorge", "Rhume et nez bouché"]
+cover:
+  id: "1676313779351-9648c6eaae8a"
+  alt: "Un pot de miel à côté d'un bol de miel"
+  credit: "Bermix Studio"
+  handle: "bermixstudio"
 verdict: "C'est l'un des rares remèdes de grand-mère validés : chez l'enfant de plus d'un an comme chez l'adulte, le miel soulage la toux d'un rhume au moins aussi bien que beaucoup de sirops. Jamais avant 1 an, à cause du risque de botulisme."
 keyPoints:
   - "Une revue Cochrane de 2018 (6 essais, 899 enfants) conclut que le miel soulage probablement mieux la toux que l'absence de traitement ou un placebo."
