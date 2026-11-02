@@ -8,6 +8,7 @@ author: tiphaine
 evidence:
   claim: "L'ashwagandha réduit le stress perçu"
   level: 3
+topics: ["Compléments alimentaires", "Plantes adaptogènes", "Stress"]
 verdict: "Des essais encourageants sur le stress, mais petits, courts et souvent financés par les fabricants. L'Anses déconseille l'ashwagandha à plusieurs publics : si tu n'en fais pas partie et que tu veux essayer, fais-le sur une durée limitée et en connaissance de cause."
 keyPoints:
   - "Une méta-analyse de 2024 portant sur 9 essais et 558 personnes montre une baisse du stress perçu et du cortisol par rapport au placebo."

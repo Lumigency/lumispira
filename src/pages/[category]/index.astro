@@ -51,9 +51,15 @@ const jsonLd = [
         <div>
           <h1>{content.h1}</h1>
           <p class="lede">{content.lede}</p>
-          <ul class="topics" aria-label="Sujets de la rubrique">
-            {content.topics.map((t) => <li>{t}</li>)}
-          </ul>
+          <div class="topics" role="group" aria-label="Filtrer par sujet">
+            <button type="button" class="topic" aria-pressed="true" data-topic="">Tous les sujets</button>
+            {content.topics.map((t) => {
+              const n = articles.filter((a) => a.data.topics.includes(t)).length;
+              return n > 0
+                ? <button type="button" class="topic" aria-pressed="false" data-topic={t}>{t} <span class="topic-count">{n}</span></button>
+                : <span class="topic topic-soon" title="Articles à venir">{t} <span class="topic-count">bientôt</span></span>;
+            })}
+          </div>
         </div>
         <Illus name={key} class="page-head-illus" />
       </div>
@@ -96,7 +102,7 @@ const jsonLd = [
           <h2 id="list-title" style="font-size:var(--t-lg)">{key === 'bons-plans' ? 'Nos guides d’achat' : 'Les derniers articles'}</h2>
         </div>
         {articles.length ? (
-          <ul class="fiche-list">{articles.map((a) => <Fiche article={a} showCategory={false} />)}</ul>
+          <ul class="fiche-list" id="liste-articles" aria-live="polite">{articles.map((a) => <Fiche article={a} showCategory={false} />)}</ul>
         ) : (
           <p class="empty">Les premiers articles de cette rubrique arrivent très bientôt.</p>
         )}
@@ -129,3 +135,16 @@ const jsonLd = [
     </aside>
   </div>
 </Base>
+<script>
+  const pills = document.querySelectorAll<HTMLButtonElement>('.topic[data-topic]');
+  const items = document.querySelectorAll<HTMLElement>('#liste-articles .fiche');
+  pills.forEach((pill) => pill.addEventListener('click', () => {
+    const topic = pill.dataset.topic ?? '';
+    pills.forEach((p) => p.setAttribute('aria-pressed', String(p === pill)));
+    items.forEach((li) => {
+      const topics: string[] = JSON.parse(li.dataset.topics ?? '[]');
+      li.hidden = topic !== '' && !topics.includes(topic);
+    });
+    if (topic) document.getElementById('list-title')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }));
+</script>

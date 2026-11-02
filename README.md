@@ -30,6 +30,7 @@ Champs principaux du haut de fichier :
 
 - `title`, `seoTitle` (≤ 60 caractères), `description` (≤ 160 caractères)
 - `category` : `sante`, `beaute-naturelle`, `fait-maison`, `developpement-personnel`, `bons-plans`
+- `topics` : les sujets de la rubrique traités (mêmes libellés que dans `src/data/categories.ts`) ; ils rendent le filtre cliquable
 - `evidence` : l'affirmation testée et son indice de 1 (Non démontré) à 5 (Prouvé)
 - `verdict` et `keyPoints` : le résumé affiché en haut
 - `reviewer` : `{ name, title }` du professionnel de santé relecteur, quand il y en a un

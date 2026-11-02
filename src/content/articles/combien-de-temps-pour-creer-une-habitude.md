@@ -8,6 +8,7 @@ author: tiphaine
 evidence:
   claim: "Il faut 21 jours pour créer une habitude"
   level: 1
+topics: ["Habitudes", "Motivation et procrastination"]
 verdict: "Le chiffre de 21 jours ne vient d'aucune étude sur les habitudes. La recherche de référence trouve une médiane de 66 jours, avec des écarts de 18 à 254 jours. Bonne nouvelle : rater un jour ne remet pas les compteurs à zéro."
 keyPoints:
   - "La règle des 21 jours vient d'un livre de chirurgie esthétique des années 1960, pas d'une étude sur les habitudes."

@@ -10,7 +10,7 @@ const cat = CATEGORIES[d.category];
 const href = `/${d.category}/${article.id}/`;
 const date = d.updated ?? d.date;
 ---
-<li class="fiche">
+<li class="fiche" data-topics={JSON.stringify(d.topics)}>
   <div>{d.evidence ? <Gauge level={d.evidence.level} label={`Indice de preuve : ${EVIDENCE[d.evidence.level as 1].label}`} /> : null}</div>
   <div>
     <div class="fiche-cat">

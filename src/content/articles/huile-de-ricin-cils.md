@@ -8,6 +8,7 @@ author: tiphaine
 evidence:
   claim: "L'huile de ricin fait pousser les cils"
   level: 1
+topics: ["Huiles végétales", "Cils et sourcils"]
 verdict: "Aucune étude chez l'humain ne montre que l'huile de ricin fait pousser les cils. Elle les gaine et les rend plus souples, ce qui peut donner un effet plus fourni. Agréable à utiliser, à condition de ne pas en mettre dans l'œil."
 keyPoints:
   - "Pas d'essai clinique démontrant une pousse des cils ou des sourcils."

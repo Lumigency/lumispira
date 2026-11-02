@@ -21,6 +21,8 @@ const articles = defineCollection({
       .optional(),
     verdict: z.string(),
     keyPoints: z.array(z.string()).default([]),
+    // Sujets de la rubrique (doivent correspondre aux libellés de src/data/categories.ts)
+    topics: z.array(z.string()).default([]),
     sources: z.array(z.object({ label: z.string(), url: z.string().url().optional() })).default([]),
     faq: z.array(z.object({ q: z.string(), a: z.string() })).default([]),
     affiliate: z.boolean().default(false),

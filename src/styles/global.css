@@ -144,7 +144,7 @@ p { margin: 0 0 1em; }
 .crumbs li + li::before { content: '/'; margin-right: .4rem; color: var(--line); }
 .crumbs a { color: var(--ink-soft); }
 
-.layout-split { display: grid; grid-template-columns: minmax(0, 1fr) 320px; gap: clamp(2rem, 5vw, 4.5rem); padding: 3rem 0 4rem; }
+.layout-split { display: grid; grid-template-columns: minmax(0, 1fr) 320px; gap: clamp(2rem, 5vw, 4.5rem); padding-top: 3rem; padding-bottom: 4rem; }
 @media (max-width: 960px) { .layout-split { grid-template-columns: 1fr; } }
 
 .fiche-list { list-style: none; padding: 0; margin: 0; }
@@ -372,3 +372,14 @@ p { margin: 0 0 1em; }
 .sieve-strip .sieve-row { border-top: 1px solid var(--line); }
 @media (max-width: 960px) { .sieve-strip { grid-template-columns: 1fr 1fr; } }
 @media (max-width: 560px) { .sieve-strip { grid-template-columns: 1fr; } }
+
+/* Sujets cliquables (filtres) */
+.topics { display: flex; flex-wrap: wrap; gap: .5rem; margin: 1.5rem 0 0; padding: 0; }
+.topic { font: inherit; font-size: var(--t-sm); border: 1.5px solid var(--plum); border-radius: 999px; padding: .4rem .9rem; background: var(--card); color: var(--plum); cursor: pointer; display: inline-flex; gap: .45rem; align-items: center; }
+.topic:hover { background: var(--plum-soft); }
+.topic[aria-pressed='true'] { background: var(--plum); color: var(--on-plum); }
+.topic-count { font-size: var(--t-xs); opacity: .75; }
+.topic-soon { border-style: dashed; border-color: var(--ink-soft); color: var(--ink-soft); background: transparent; cursor: default; opacity: .7; }
+.topic-soon:hover { background: transparent; }
+.fiche[hidden] { display: none; }
+#list-title { scroll-margin-top: 90px; }

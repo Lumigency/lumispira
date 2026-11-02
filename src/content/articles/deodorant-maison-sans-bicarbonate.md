@@ -8,6 +8,7 @@ author: tiphaine
 evidence:
   claim: "Le bicarbonate de soude peut irriter les aisselles"
   level: 3
+topics: ["Déodorant maison", "Baumes et soins anhydres", "Conservation des cosmétiques"]
 verdict: "Le bicarbonate est efficace contre les odeurs mais trop basique pour beaucoup de peaux, d'où les rougeurs. Une base beurre de karité, huile de coco et fécule, sans bicarbonate, fonctionne bien au quotidien pour une transpiration normale."
 keyPoints:
   - "Un déodorant ne bloque pas la transpiration : il limite les odeurs."

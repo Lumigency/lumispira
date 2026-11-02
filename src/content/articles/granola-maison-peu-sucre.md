@@ -8,6 +8,7 @@ author: tiphaine
 evidence:
   claim: "Les bêta-glucanes de l'avoine contribuent à réduire le cholestérol"
   level: 5
+topics: ["Petit-déjeuner sain", "Recettes peu sucrées", "Batch cooking"]
 verdict: "Un granola maison est l'un des meilleurs échanges pour le petit-déjeuner : beaucoup moins sucré que la plupart des versions du commerce, riche en fibres d'avoine, et prêt en 35 minutes pour toute la semaine."
 keyPoints:
   - "Environ 5 g de sucres ajoutés pour 100 g dans cette recette."
