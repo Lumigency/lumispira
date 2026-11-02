@@ -42,6 +42,8 @@ const articles = defineCollection({
       })
       .optional(),
     featured: z.boolean().default(false),
+    // L'avis personnel de l'auteure (expérience vécue) : affiché seulement s'il est rempli
+    personalNote: z.string().optional(),
     // Photo Unsplash : id = la partie après « photo- » dans l'URL images.unsplash.com
     cover: z
       .object({ id: z.string(), alt: z.string(), credit: z.string(), handle: z.string() })

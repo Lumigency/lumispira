@@ -37,6 +37,7 @@ Champs principaux du haut de fichier :
 - `sources`, `faq` (génère les données structurées FAQ)
 - `affiliate: true` si l'article contient des liens affiliés (affiche l'encadré)
 - `healthWarning: true` pour l'encadré santé
+- `personalNote` : ton avis personnel (expérience vécue), affiché dans un encadré « L'avis de Tiphaine » ; facultatif
 - `recipe` (avec `kind: food` pour une recette de cuisine → données structurées Recipe)
 
 Les liens affiliés dans les articles doivent porter `rel="sponsored nofollow"`.

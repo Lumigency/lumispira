@@ -147,6 +147,16 @@ if (d.recipe && d.recipe.kind === 'food') {
           )}
         </div>
 
+        {d.personalNote && (
+          <aside class="personal-note" aria-label={`L'avis de ${author.name}`}>
+            <div class="avatar" aria-hidden="true">{author.name[0]}</div>
+            <div>
+              <p class="personal-note-title">L'avis de {author.name}</p>
+              <p>{d.personalNote}</p>
+            </div>
+          </aside>
+        )}
+
         {d.healthWarning && (
           <p class="health-note">Cet article informe, il ne remplace pas un avis médical. Avant de commencer un complément, surtout si tu prends un traitement, es enceinte ou allaites, parles-en à ton médecin ou ton pharmacien. Un effet indésirable lié à un complément peut être déclaré sur le portail de nutrivigilance de l'Anses.</p>
         )}
