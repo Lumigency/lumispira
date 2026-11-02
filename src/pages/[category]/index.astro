@@ -1,0 +1,125 @@
+---
+import Base from '../../layouts/Base.astro';
+import Crumbs from '../../components/Crumbs.astro';
+import Fiche from '../../components/Fiche.astro';
+import { getCollection } from 'astro:content';
+import { CATEGORIES, CATEGORY_KEYS, SITE, type CategoryKey } from '../../config/site';
+import { CATEGORY_CONTENT } from '../../data/categories';
+import { DEALS, DEAL_CATEGORIES } from '../../data/deals';
+
+export function getStaticPaths() {
+  return CATEGORY_KEYS.map((category) => ({ params: { category } }));
+}
+
+const key = Astro.params.category as CategoryKey;
+const cat = CATEGORIES[key];
+const content = CATEGORY_CONTENT[key];
+const articles = (await getCollection('articles', (a) => a.data.category === key)).sort(
+  (a, b) => (b.data.updated ?? b.data.date).valueOf() - (a.data.updated ?? a.data.date).valueOf()
+);
+
+const today = new Date().toISOString().slice(0, 10);
+const deals = key === 'bons-plans' ? DEALS.filter((d) => d.expires >= today) : [];
+const dealGroups = Object.entries(DEAL_CATEGORIES)
+  .map(([k, label]) => ({ label, items: deals.filter((d) => d.category === k) }))
+  .filter((g) => g.items.length);
+
+const jsonLd = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'CollectionPage',
+    name: cat.title,
+    description: cat.description,
+    url: `${SITE.url}/${key}/`,
+    inLanguage: 'fr-FR',
+    isPartOf: { '@id': `${SITE.url}/#website` },
+    hasPart: articles.map((a) => ({ '@type': 'Article', headline: a.data.title, url: `${SITE.url}/${key}/${a.id}/` })),
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: content.faq.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })),
+  },
+];
+---
+<Base title={cat.title} description={cat.description} jsonLd={jsonLd}>
+  <header class="page-head">
+    <div class="wrap">
+      <Crumbs items={[{ name: cat.name, href: `/${key}/` }]} />
+      <h1>{content.h1}</h1>
+      <p class="lede">{content.lede}</p>
+      <ul class="topics" aria-label="Sujets de la rubrique">
+        {content.topics.map((t) => <li>{t}</li>)}
+      </ul>
+    </div>
+  </header>
+
+  <div class="wrap layout-split">
+    <div>
+      {key === 'bons-plans' && (
+        <section aria-labelledby="deals-title" style="margin-bottom:3rem">
+          <div class="section-head"><h2 id="deals-title" style="font-size:var(--t-lg)">Les bons plans du moment</h2></div>
+          <p class="disclosure">Les liens de cette sélection sont des liens d'affiliation : si tu achètes, nous touchons une commission, sans surcoût pour toi. <a href="/transparence/">Notre règle</a>.</p>
+          {dealGroups.length ? (
+            dealGroups.map((g) => (
+              <div style="margin-bottom:2rem">
+                <h3 style="font-size:var(--t-md);margin-bottom:1rem">{g.label}</h3>
+                <ul class="deal-grid">
+                  {g.items.map((d) => (
+                    <li class="deal">
+                      <span class="brand">{d.brand}</span>
+                      <h4 style="font-family:var(--f-display);font-weight:400;font-size:var(--t-md);margin:0">{d.title}</h4>
+                      <span class="offer">{d.offer}</span>
+                      <p class="why">{d.why}</p>
+                      {d.guide && <a href={d.guide} style="font-size:var(--t-sm)">Lire notre guide</a>}
+                      <a class="btn" href={d.url} rel="sponsored nofollow noopener" target="_blank">Voir l'offre chez {d.brand}</a>
+                      <span class="expires">Valable jusqu'au {new Date(d.expires).toLocaleDateString('fr-FR')}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))
+          ) : (
+            <p class="empty">Les prochaines offres sont en cours de sélection. Inscris-toi à la lettre du dimanche pour les recevoir dès leur publication.</p>
+          )}
+        </section>
+      )}
+
+      <section aria-labelledby="list-title">
+        <div class="section-head">
+          <h2 id="list-title" style="font-size:var(--t-lg)">{key === 'bons-plans' ? 'Nos guides d’achat' : 'Les derniers articles'}</h2>
+        </div>
+        {articles.length ? (
+          <ul class="fiche-list">{articles.map((a) => <Fiche article={a} showCategory={false} />)}</ul>
+        ) : (
+          <p class="empty">Les premiers articles de cette rubrique arrivent très bientôt.</p>
+        )}
+      </section>
+
+      <section class="prose-block" style="margin-top:3.5rem" set:html={content.intro} />
+
+      <section class="faq prose-block" aria-labelledby="faq-title">
+        <h2 id="faq-title">Questions fréquentes</h2>
+        {content.faq.map((f) => (
+          <details><summary>{f.q}</summary><p>{f.a}</p></details>
+        ))}
+      </section>
+    </div>
+
+    <aside>
+      <div class="side-sticky">
+        <div class={`side-box ${key === 'bons-plans' ? 'pollen' : key === 'developpement-personnel' ? 'lilac' : ''}`}>
+          <h2>{content.aside.title}</h2>
+          <p>{content.aside.text}</p>
+          <a href="/methode/" style="font-size:var(--t-sm)">Notre méthode</a>
+        </div>
+        <div class="side-box">
+          <h2>Les autres rubriques</h2>
+          <ul>
+            {CATEGORY_KEYS.filter((k) => k !== key).map((k) => <li><a href={`/${k}/`}>{CATEGORIES[k].name}</a></li>)}
+          </ul>
+        </div>
+      </div>
+    </aside>
+  </div>
+</Base>

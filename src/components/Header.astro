@@ -1,0 +1,35 @@
+---
+import Logo from './Logo.astro';
+import { SITE, CATEGORIES } from '../config/site';
+
+const path = Astro.url.pathname;
+const links = [
+  { href: '/sante/', label: CATEGORIES.sante.short },
+  { href: '/beaute-naturelle/', label: CATEGORIES['beaute-naturelle'].short },
+  { href: '/fait-maison/', label: CATEGORIES['fait-maison'].short },
+  { href: '/developpement-personnel/', label: CATEGORIES['developpement-personnel'].short },
+  { href: '/blog/', label: 'Tous les articles' },
+  { href: '/methode/', label: 'Notre méthode' },
+];
+---
+<header class="site-header">
+  <div class="wrap">
+    <a class="logo" href="/" aria-label={`${SITE.name}, accueil`}><Logo />{SITE.name}</a>
+    <button class="menu-btn" aria-expanded="false" aria-controls="nav">Menu</button>
+    <nav class="nav" id="nav" aria-label="Navigation principale">
+      {links.map((l) => (
+        <a href={l.href} aria-current={path.startsWith(l.href) ? 'page' : undefined}>{l.label}</a>
+      ))}
+      <a class="nav-deals" href="/bons-plans/" aria-current={path.startsWith('/bons-plans/') ? 'page' : undefined}>Bons plans</a>
+    </nav>
+  </div>
+</header>
+<script>
+  const btn = document.querySelector('.menu-btn');
+  const nav = document.getElementById('nav');
+  btn?.addEventListener('click', () => {
+    const open = nav?.classList.toggle('open');
+    btn.setAttribute('aria-expanded', String(!!open));
+    btn.textContent = open ? 'Fermer' : 'Menu';
+  });
+</script>

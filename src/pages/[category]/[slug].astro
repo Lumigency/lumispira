@@ -1,0 +1,179 @@
+---
+import Base from '../../layouts/Base.astro';
+import Crumbs from '../../components/Crumbs.astro';
+import Evidence from '../../components/Evidence.astro';
+import Fiche from '../../components/Fiche.astro';
+import { getCollection, render } from 'astro:content';
+import { AUTHORS, CATEGORIES, SITE } from '../../config/site';
+
+export async function getStaticPaths() {
+  const articles = await getCollection('articles');
+  return articles.map((a) => ({ params: { category: a.data.category, slug: a.id }, props: { article: a } }));
+}
+
+const { article } = Astro.props;
+const d = article.data;
+const { Content, headings } = await render(article);
+const cat = CATEGORIES[d.category];
+const author = AUTHORS[d.author];
+const url = `${SITE.url}/${d.category}/${article.id}/`;
+const fmt = (date: Date) => date.toLocaleDateString('fr-FR', { day: 'numeric', month: 'long', year: 'numeric' });
+const toc = headings.filter((h) => h.depth === 2);
+
+const words = article.body?.split(/\s+/).length ?? 0;
+const minutes = d.readingTime ?? Math.max(3, Math.round(words / 220));
+
+const related = (await getCollection('articles', (a) => a.id !== article.id))
+  .sort((a, b) => Number(b.data.category === d.category) - Number(a.data.category === d.category))
+  .slice(0, 3);
+
+const articleLd: Record<string, unknown> = {
+  '@context': 'https://schema.org',
+  '@type': d.category === 'sante' ? 'MedicalWebPage' : 'Article',
+  headline: d.title,
+  description: d.description,
+  url,
+  mainEntityOfPage: url,
+  inLanguage: 'fr-FR',
+  datePublished: d.date.toISOString(),
+  dateModified: (d.updated ?? d.date).toISOString(),
+  author: { '@type': 'Person', name: author.name, url: `${SITE.url}/auteurs/${author.slug}/`, jobTitle: author.role },
+  publisher: { '@id': `${SITE.url}/#organization` },
+  image: `${SITE.url}/og-default.png`,
+  citation: d.sources.filter((s) => s.url).map((s) => s.url),
+};
+if (d.reviewer) {
+  articleLd.reviewedBy = { '@type': 'Person', name: d.reviewer.name, jobTitle: d.reviewer.title };
+  articleLd.lastReviewed = (d.updated ?? d.date).toISOString();
+}
+const jsonLd: object[] = [articleLd];
+if (d.faq.length) {
+  jsonLd.push({
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: d.faq.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })),
+  });
+}
+const iso = (s: string) => {
+  const m = s.match(/PT(?:(\d+)H)?(?:(\d+)M)?/);
+  if (!m) return s;
+  const h = Number(m[1] ?? 0), mn = Number(m[2] ?? 0);
+  return [h ? `${h} h` : '', mn ? `${mn} min` : ''].filter(Boolean).join(' ');
+};
+if (d.recipe && d.recipe.kind === 'food') {
+  jsonLd.push({
+    '@context': 'https://schema.org',
+    '@type': 'Recipe',
+    name: d.title,
+    description: d.description,
+    author: { '@type': 'Person', name: author.name },
+    datePublished: d.date.toISOString(),
+    prepTime: d.recipe.prepTime,
+    cookTime: d.recipe.cookTime,
+    recipeYield: d.recipe.yield,
+    recipeIngredient: d.recipe.ingredients,
+    recipeInstructions: d.recipe.steps.map((s) => ({ '@type': 'HowToStep', text: s })),
+    image: `${SITE.url}/og-default.png`,
+  });
+}
+---
+<Base title={d.seoTitle ?? d.title} description={d.description} type="article" jsonLd={jsonLd} published={d.date} modified={d.updated ?? d.date}>
+  <article>
+    <header class="article-head">
+      <div class="wrap">
+        <Crumbs items={[{ name: cat.name, href: `/${d.category}/` }, { name: d.title, href: `/${d.category}/${article.id}/` }]} />
+        <h1>{d.title}</h1>
+        <p class="lede">{d.description}</p>
+        <div class="byline">
+          <span>Par <a href={`/auteurs/${author.slug}/`}>{author.name}</a></span>
+          {d.reviewer && <span>Relu par <b>{d.reviewer.name}</b>, {d.reviewer.title}</span>}
+          <span>{d.updated ? `Mis à jour le ${fmt(d.updated)}` : `Publié le ${fmt(d.date)}`}</span>
+          <span>{minutes} min de lecture</span>
+        </div>
+      </div>
+    </header>
+
+    <div class="wrap article-grid">
+      <div>
+        {d.affiliate && (
+          <p class="disclosure">Cet article contient des liens d'affiliation. Si tu achètes via ces liens, nous touchons une commission sans surcoût pour toi. Les produits sont choisis selon <a href="/transparence/">notre méthode</a>, jamais par les marques.</p>
+        )}
+
+        <section class="verdict-box" aria-labelledby="verdict">
+          <h2 id="verdict">Notre verdict en bref</h2>
+          <p>{d.verdict}</p>
+          {d.keyPoints.length > 0 && <ul>{d.keyPoints.map((k) => <li>{k}</li>)}</ul>}
+        </section>
+
+        {d.evidence && <Evidence claim={d.evidence.claim} level={d.evidence.level} />}
+
+        <div class="prose">
+          <Content />
+          {d.recipe && (
+            <section class="recipe-card" id="recette" aria-labelledby="recipe-title">
+              <h2 id="recipe-title">{d.recipe.kind === 'food' ? 'La recette' : 'La formule'}</h2>
+              <div class="recipe-meta">
+                <span>Préparation <b>{iso(d.recipe.prepTime)}</b></span>
+                <span>{d.recipe.kind === 'food' ? 'Cuisson' : 'Chauffe'} <b>{iso(d.recipe.cookTime)}</b></span>
+                <span>Pour <b>{d.recipe.yield}</b></span>
+              </div>
+              <h3>Ingrédients</h3>
+              <ul>{d.recipe.ingredients.map((i) => <li>{i}</li>)}</ul>
+              <h3>Étapes</h3>
+              <ol>{d.recipe.steps.map((s) => <li>{s}</li>)}</ol>
+            </section>
+          )}
+        </div>
+
+        {d.healthWarning && (
+          <p class="health-note">Cet article informe, il ne remplace pas un avis médical. Avant de commencer un complément, surtout si tu prends un traitement, es enceinte ou allaites, parles-en à ton médecin ou ton pharmacien. Un effet indésirable lié à un complément peut être déclaré sur le portail de nutrivigilance de l'Anses.</p>
+        )}
+
+        {d.faq.length > 0 && (
+          <section class="faq" aria-labelledby="faq-title">
+            <h2 id="faq-title">Questions fréquentes</h2>
+            {d.faq.map((f) => <details><summary>{f.q}</summary><p>{f.a}</p></details>)}
+          </section>
+        )}
+
+        {d.sources.length > 0 && (
+          <section class="sources" aria-labelledby="src-title">
+            <h2 id="src-title">Sources</h2>
+            <ol>{d.sources.map((s) => <li>{s.url ? <a href={s.url} rel="noopener">{s.label}</a> : s.label}</li>)}</ol>
+          </section>
+        )}
+
+        <div class="author-box">
+          <div class="avatar" aria-hidden="true">{author.name[0]}</div>
+          <div>
+            <a href={`/auteurs/${author.slug}/`}><b>{author.name}</b></a>, {author.role}
+            <p>{author.bio}</p>
+          </div>
+        </div>
+      </div>
+
+      <aside class="article-aside">
+        <div class="side-sticky">
+          {toc.length > 2 && (
+            <nav class="side-box toc" aria-label="Sommaire">
+              <h2>Sommaire</h2>
+              <ol>{toc.map((h) => <li><a href={`#${h.slug}`}>{h.text}</a></li>)}</ol>
+            </nav>
+          )}
+          <div class="side-box pollen">
+            <h2>Les bons plans</h2>
+            <p>Les offres du moment sur les produits qu'on recommande vraiment.</p>
+            <a href="/bons-plans/" style="font-size:var(--t-sm)">Voir les bons plans</a>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </article>
+
+  <section class="section" style="border-top:1px solid var(--line);padding-top:3rem">
+    <div class="wrap">
+      <div class="section-head"><h2 style="font-size:var(--t-lg)">À lire ensuite</h2></div>
+      <ul class="fiche-list">{related.map((a) => <Fiche article={a} />)}</ul>
+    </div>
+  </section>
+</Base>

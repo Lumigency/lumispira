@@ -1,0 +1,7 @@
+---
+interface Props { level: number; label?: string }
+const { level, label } = Astro.props;
+---
+<span class="gauge-mini" data-level={level} role="img" aria-label={label ?? `Indice de preuve ${level} sur 5`}>
+  <i></i><i></i><i></i><i></i><i></i>
+</span>

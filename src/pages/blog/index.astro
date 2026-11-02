@@ -1,0 +1,24 @@
+---
+import Base from '../../layouts/Base.astro';
+import Crumbs from '../../components/Crumbs.astro';
+import Fiche from '../../components/Fiche.astro';
+import { getCollection } from 'astro:content';
+import { CATEGORIES, CATEGORY_KEYS } from '../../config/site';
+
+const all = (await getCollection('articles')).sort((a, b) => (b.data.updated ?? b.data.date).valueOf() - (a.data.updated ?? a.data.date).valueOf());
+---
+<Base title="Le blog : tous nos articles santé, beauté et bien-être" description="Tous les articles Lumispira : santé naturelle, beauté, recettes maison, développement personnel et guides d'achat, avec un indice de preuve pour chaque sujet.">
+  <header class="page-head">
+    <div class="wrap">
+      <Crumbs items={[{ name: 'Tous les articles', href: '/blog/' }]} />
+      <h1>Tous les articles</h1>
+      <p class="lede">Chaque sujet passé au tamis, du plus récent au plus ancien. Filtre par rubrique ou parcours tout.</p>
+      <ul class="topics" aria-label="Rubriques">
+        {CATEGORY_KEYS.map((k) => <li><a href={`/${k}/`} style="text-decoration:none">{CATEGORIES[k].name}</a></li>)}
+      </ul>
+    </div>
+  </header>
+  <div class="wrap" style="padding-top:2rem;padding-bottom:4rem">
+    <ul class="fiche-list">{all.map((a) => <Fiche article={a} />)}</ul>
+  </div>
+</Base>

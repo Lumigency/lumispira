@@ -1,58 +1,54 @@
-# LÜMISPIRA — Site éditorial statique (architecture scalable)
+# Lumispira — le bien-être, passé au tamis
 
-Magazine bien-être & sagesse ancestrale pour les âmes sensibles.
+Média indépendant : santé naturelle, beauté, fait maison, développement personnel, bons plans.
+Site statique Astro, déployé sur Vercel.
 
-## Structure du projet
+## Lancer en local
 
-```text
-lumispira/
-├── index.html
-├── assets/
-│   ├── css/
-│   │   └── global.css              # Design system et styles partagés
-│   └── js/
-│       ├── content.js              # Contenu global (nav, footer, CTA, lead magnet)
-│       ├── components.js           # Composants réutilisables (header/footer/shell)
-│       └── global.js               # Interactions globales (menu, anims, filtres)
-├── content/
-│   └── site.json                   # Source de vérité éditoriale (future CMS)
-├── protocoles/index.html
-├── recettes/index.html
-├── cuisine-sacree/index.html
-├── eveil/index.html
-├── coups-de-coeur/index.html
-├── guides/index.html
-└── articles/
-    ├── rituel-matinal-aligne/index.html
-    ├── equilibrer-7-chakras/index.html
-    └── elixir-ortie-grand-mere/index.html
+```bash
+npm install
+npm run dev      # http://localhost:4321
+npm run build    # génère dist/
 ```
 
-## Principes de la refonte
+## Où modifier quoi
 
-- **UI inchangée** : aucune refonte visuelle, styles conservés.
-- **Composants réutilisables** : navigation, lead magnet et footer injectés depuis `components.js`.
-- **Contenu séparé de la présentation** : les données globales vivent dans `content.js` (+ miroir JSON dans `content/site.json`).
-- **URLs préservées** : aucune route éditoriale modifiée.
-- **Prêt CMS** : la structure `content/` permet un futur mapping vers collections (Astro Content Collections, Sanity, Contentful, etc.).
+| Je veux… | Fichier |
+|---|---|
+| Changer le nom, l'URL, l'e-mail, l'Instagram | `src/config/site.ts` |
+| Modifier les textes d'une page catégorie | `src/data/categories.ts` |
+| Ajouter un bon plan | `src/data/deals.ts` (une offre expirée disparaît seule) |
+| Ajouter un article | un fichier `.md` dans `src/content/articles/` |
+| Changer les couleurs ou la typo | `src/styles/global.css` (variables en haut) |
 
-## Déploiement GitHub Pages
+## Ajouter un article
 
-1. Push le repo sur GitHub.
-2. Ouvrir **Settings → Pages**.
-3. Sélectionner **Deploy from a branch** → `main` → `/ (root)`.
+Copie un article existant dans `src/content/articles/`. Le nom du fichier devient l'URL :
+`mon-sujet.md` → `/<categorie>/mon-sujet/`.
 
-## Ajouter une nouvelle catégorie
+Champs principaux du haut de fichier :
 
-1. Créer la page `/<slug>/index.html` en copiant une page catégorie existante.
-2. Ajouter l’entrée de navigation dans `assets/js/content.js`.
-3. Mettre à jour `content/site.json` avec la même entrée.
+- `title`, `seoTitle` (≤ 60 caractères), `description` (≤ 160 caractères)
+- `category` : `sante`, `beaute-naturelle`, `fait-maison`, `developpement-personnel`, `bons-plans`
+- `evidence` : l'affirmation testée et son indice de 1 (Non démontré) à 5 (Prouvé)
+- `verdict` et `keyPoints` : le résumé affiché en haut
+- `reviewer` : `{ name, title }` du professionnel de santé relecteur, quand il y en a un
+- `sources`, `faq` (génère les données structurées FAQ)
+- `affiliate: true` si l'article contient des liens affiliés (affiche l'encadré)
+- `healthWarning: true` pour l'encadré santé
+- `recipe` (avec `kind: food` pour une recette de cuisine → données structurées Recipe)
 
-## Ajouter un nouvel article
+Les liens affiliés dans les articles doivent porter `rel="sponsored nofollow"`.
 
-1. Créer `articles/<slug>/index.html` à partir d’un article existant.
-2. Lier l’article dans la page catégorie souhaitée.
-3. (Optionnel) Synchroniser les métadonnées dans `content/` pour préparer la migration CMS.
+## SEO technique inclus
 
----
-© 2025 LÜMISPIRA · Lumière · Équilibre · Guérison
+Sitemap automatique, RSS, robots.txt, balises canonical et Open Graph, données structurées
+(Organization, WebSite, Article / MedicalWebPage, BreadcrumbList, FAQPage, Recipe, ProfilePage),
+redirections 301 des anciennes URL (`vercel.json`).
+
+## À compléter avant la mise en ligne
+
+- `src/pages/mentions-legales.astro` : éditeur, SIREN, directrice de publication
+- `src/pages/confidentialite.astro` : à faire valider
+- `src/components/Newsletter.astro` : brancher le formulaire Brevo
+- Relecteur santé : ajouter `reviewer` aux articles santé
