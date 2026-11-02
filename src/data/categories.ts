@@ -52,40 +52,26 @@ export const CATEGORY_CONTENT: Record<CategoryKey, CategoryContent> = {
 <p>Huile de ricin pour les cils, bakuchiol à la place du rétinol, vinaigre de cidre pour les cheveux : la beauté naturelle regorge de conseils qui se transmettent d'un réseau social à l'autre sans que personne ne vérifie. Certains sont excellents. D'autres ne font rien. Quelques-uns irritent la peau.</p>
 <p>On applique ici la même exigence qu'en santé : ce que dit la recherche en dermatologie et en cosmétologie, ce que dit l'usage traditionnel, les risques (allergies, photosensibilité, irritation), puis un verdict. Et parce que la beauté se vit aussi, on te dit comment utiliser un ingrédient pour en tirer le meilleur, avec des gestes précis.</p>
 <h2>Nos sujets de prédilection</h2>
-<p>Les huiles végétales et leurs vrais usages, les actifs naturels qui ont des études derrière eux, la lecture des listes d'ingrédients (INCI), les cosmétiques bio et leurs labels, et les routines simples pour les peaux sensibles.</p>`,
-    topics: ['Huiles végétales', 'Cils et sourcils', 'Peau sensible', 'Cheveux', 'Labels bio', 'Lire une liste INCI', 'Alternatives au rétinol'],
+<p>Les huiles végétales et leurs vrais usages, les actifs naturels qui ont des études derrière eux, la lecture des listes d'ingrédients (INCI), les cosmétiques bio et leurs labels, et les routines simples pour les peaux sensibles.</p>
+<h2>Les cosmétiques maison</h2>
+<p>Déodorant, baume, gommage : on partage des formules courtes, de préférence sans eau pour se passer de conservateur, avec les quantités précises, la durée de conservation réaliste et les erreurs à éviter. Un cosmétique maison mal formulé peut irriter ou se contaminer vite : chaque recette est expliquée pour être sûre.</p>`,
+    topics: ['Huiles végétales', 'Cosmétiques maison', 'Cils et sourcils', 'Peau sensible', 'Cheveux', 'Labels bio', 'Lire une liste INCI'],
     faq: [
       { q: 'Un cosmétique naturel est-il forcément meilleur ?', a: "Non. Un ingrédient naturel peut être très efficace, sans effet, ou allergisant, comme certaines huiles essentielles. Ce qui compte, c'est la formule, la concentration et ta peau. Nos articles jugent l'ingrédient, pas son origine." },
       { q: 'Comment savoir si un ingrédient me convient ?', a: "Avant toute nouvelle huile ou tout soin maison, fais un test sur une petite zone, par exemple le pli du coude, et attends 48 heures. En cas de rougeur ou de démangeaison, n'utilise pas le produit." },
     ],
     aside: { title: 'Le bon réflexe', text: "Un test de tolérance de 48 heures au pli du coude avant tout nouveau soin, même 100 % naturel." },
   },
-  'fait-maison': {
-    h1: 'Recettes maison : cuisine saine et cosmétiques DIY',
-    lede: "Des recettes de cuisine saine qui restent gourmandes, et des cosmétiques maison sûrs, expliqués étape par étape avec les erreurs à éviter.",
-    intro: `
-<h2>Faire soi-même, mais bien</h2>
-<p>Préparer son granola, son déodorant ou son baume à lèvres, c'est savoir exactement ce qu'on mange ou ce qu'on applique sur sa peau. C'est souvent moins cher, et c'est un vrai plaisir. Encore faut-il que la recette fonctionne, et qu'elle soit sûre : un cosmétique maison mal formulé peut irriter, rancir ou se contaminer en quelques jours.</p>
-<p>Toutes nos recettes donnent les quantités précises, le temps de préparation, la durée de conservation réaliste et les points de vigilance. Pour la cuisine, on vise des recettes peu sucrées, riches en fibres, et faciles à intégrer à une semaine chargée. Pour les cosmétiques, on privilégie les formules courtes, anhydres (sans eau) quand c'est possible, et on t'explique pourquoi.</p>
-<h2>Cuisine ou cosmétique, la même règle</h2>
-<p>Une recette maison doit être meilleure que ce que tu trouves en magasin sur au moins un point : le goût, la composition ou le prix. Sinon, on te le dit, et on t'oriente vers une alternative du commerce bien choisie.</p>`,
-    topics: ['Petit-déjeuner sain', 'Recettes peu sucrées', 'Batch cooking', 'Déodorant maison', 'Baumes et soins anhydres', 'Conservation des cosmétiques'],
-    faq: [
-      { q: 'Combien de temps se conserve un cosmétique maison ?', a: "Une formule sans eau (baume, déodorant solide, huile) se garde généralement quelques mois à l'abri de la chaleur et de la lumière. Dès qu'une recette contient de l'eau, un hydrolat ou de l'aloe vera, elle devient fragile et doit être utilisée très vite ou contenir un conservateur adapté." },
-      { q: 'Faut-il du matériel spécial ?', a: "Pour la plupart de nos recettes, non : une balance de cuisine précise, un bain-marie et des contenants propres suffisent. Pour les cosmétiques, désinfecte ton matériel à l'alcool avant de commencer." },
-    ],
-    aside: { title: 'Avant de commencer', text: "Balance précise, ustensiles désinfectés, étiquette avec la date du jour : trois gestes qui évitent la plupart des ratés." },
-  },
   'recettes-grand-mere': {
-    h1: 'Recettes et remèdes de grand-mère passés au tamis',
-    lede: "Miel contre la toux, tisanes, cataplasmes, recettes d'antan toutes simples. Ce que la tradition transmet, ce que la science confirme, et les précautions à connaître.",
+    h1: 'Recettes simples et remèdes de grand-mère',
+    lede: "Des recettes saines et d'antan, sans chichi, et les remèdes qu'on se transmet en famille : ce que la tradition transmet, ce que la science confirme, et les précautions à connaître.",
     intro: `
 <h2>La sagesse des grands-mères, vérifiée</h2>
 <p>Les remèdes de grand-mère sont souvent la première chose qu'on essaie : un miel-citron quand la gorge gratte, une tisane de thym, une compresse chaude. Ils sont simples, peu coûteux, et rassurants. Certains ont aujourd'hui des études solides derrière eux, comme le miel contre la toux. D'autres relèvent surtout de l'habitude. Quelques-uns sont dangereux pour certaines personnes.</p>
 <p>Chaque remède est passé au tamis : d'où il vient, ce qu'en dit la recherche, pour qui il est déconseillé, et comment le préparer correctement. Le respect de la tradition n'empêche pas l'honnêteté : on te dit quand un remède est surtout un plaisir réconfortant, et quand il a un vrai effet.</p>
-<h2>Les recettes d'antan</h2>
-<p>On partage aussi des recettes simples et anciennes, celles qu'on se transmet en famille : bouillons, soupes, confitures, pain perdu, desserts de saison. Des recettes sans chichi, avec des ingrédients du quotidien, et quelques ajustements quand ils les rendent meilleures pour la santé.</p>`,
-    topics: ['Toux et gorge', 'Rhume et nez bouché', 'Digestion', 'Sommeil', 'Tisanes', 'Recettes d’antan'],
+<h2>Les recettes simples et d'antan</h2>
+<p>On partage aussi des recettes simples, anciennes ou du quotidien : granola maison, bouillons, soupes, confitures, pain perdu, desserts de saison. Des recettes sans chichi, avec des ingrédients du quotidien, peu sucrées, et quelques ajustements quand ils les rendent meilleures pour la santé. Chaque recette donne les quantités précises, le temps de préparation et la conservation.</p>`,
+    topics: ['Recettes simples', 'Petit-déjeuner', 'Recettes d’antan', 'Toux et gorge', 'Rhume et nez bouché', 'Digestion', 'Tisanes'],
     faq: [
       { q: 'Les remèdes de grand-mère sont-ils sans danger ?', a: "Pas toujours. Le miel est déconseillé avant 1 an à cause du risque de botulisme, certaines huiles essentielles sont dangereuses pour les jeunes enfants et pendant la grossesse, et certaines plantes interagissent avec des médicaments. Chaque article indique les précautions en évidence." },
       { q: 'Un remède de grand-mère peut-il remplacer un médecin ?', a: "Non. Il peut soulager des symptômes bénins et passagers. Si les symptômes durent, s'aggravent, s'accompagnent de fièvre élevée ou concernent un nourrisson, une femme enceinte ou une personne fragile, il faut consulter." },
@@ -117,7 +103,7 @@ export const CATEGORY_CONTENT: Record<CategoryKey, CategoryContent> = {
 <p>Nos <strong>guides d'achat</strong> t'expliquent les critères qui comptent vraiment pour choisir un complément, un tapis de yoga ou un soin bio, pour que tu puisses juger par toi-même, même sans passer par nos liens.</p>
 <h2>Comment on gagne de l'argent, en clair</h2>
 <p>Certains liens de cette rubrique sont des liens d'affiliation : si tu achètes, la marque nous verse une commission, sans surcoût pour toi. C'est ce qui finance le média. Mais aucune marque ne choisit les produits recommandés, et un produit peut être déconseillé même s'il nous rapporterait. Tout est détaillé sur <a href="/transparence/">notre page transparence</a>.</p>`,
-    topics: ['Compléments alimentaires', 'Cosmétiques bio', 'Yoga et sport à la maison', 'Sommeil', 'Livres et formations', 'Box beauté et bien-être'],
+    topics: ['Compléments alimentaires', 'Visage et peau', 'Soin du corps', 'Produits bien-être', 'Livres et podcasts'],
     faq: [
       { q: 'Les bons plans sont-ils sponsorisés ?', a: "Les offres peuvent passer par des liens d'affiliation, ce qui est toujours indiqué. En revanche, aucune marque ne paie pour apparaître dans nos sélections ou pour obtenir un meilleur classement." },
       { q: 'Les codes promo sont-ils vérifiés ?', a: "Oui, chaque offre affiche sa date de validité. Une offre expirée est retirée de la page." },

@@ -7,7 +7,7 @@ const articles = defineCollection({
     title: z.string(),
     seoTitle: z.string().optional(),
     description: z.string().max(170),
-    category: z.enum(['sante', 'peau-acne', 'beaute-naturelle', 'fait-maison', 'recettes-grand-mere', 'developpement-personnel', 'bons-plans']),
+    category: z.enum(['sante', 'peau-acne', 'beaute-naturelle', 'recettes-grand-mere', 'developpement-personnel', 'bons-plans']),
     date: z.coerce.date(),
     updated: z.coerce.date().optional(),
     author: z.enum(['tiphaine']).default('tiphaine'),

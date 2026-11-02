@@ -24,7 +24,7 @@ export type Deal = {
   offer: string;
   why: string;
   url: string;
-  category: 'complements' | 'cosmetiques' | 'yoga-sport' | 'livres-box';
+  category: 'complements' | 'visage' | 'corps' | 'bien-etre' | 'inspirations';
   expires: string;
   discount?: string;
   code?: string;
@@ -34,9 +34,10 @@ export type Deal = {
 
 export const DEAL_CATEGORIES = {
   complements: { label: 'Compléments alimentaires', short: 'Compléments', illus: 'sante', tint: 'var(--herb-soft)', blurb: 'Les bonnes formes, les bons dosages, au bon prix.' },
-  cosmetiques: { label: 'Cosmétiques bio et naturels', short: 'Cosmétiques', illus: 'beaute-naturelle', tint: 'var(--apricot-soft)', blurb: 'Des formules courtes et honnêtes, sans marketing.' },
-  'yoga-sport': { label: 'Yoga, sport et bien-être maison', short: 'Yoga & maison', illus: 'yoga', tint: 'var(--lilac-soft)', blurb: 'Tapis, accessoires, sommeil : du matériel qui dure.' },
-  'livres-box': { label: 'Livres, formations et box', short: 'Livres & box', illus: 'livres', tint: 'var(--rose-soft)', blurb: 'Les lectures et box qui valent leur prix.' },
+  visage: { label: 'Visage & peau', short: 'Visage & peau', illus: 'peau-acne', tint: 'var(--rose-soft)', blurb: 'Soins visage, routines peau et anti-imperfections qui tiennent leurs promesses.' },
+  corps: { label: 'Soin du corps', short: 'Soin du corps', illus: 'corps', tint: 'var(--apricot-soft)', blurb: 'Hydratants, huiles, déodorants, gommages : des formules courtes et honnêtes.' },
+  'bien-etre': { label: 'Produits bien-être', short: 'Bien-être', illus: 'yoga', tint: 'var(--lilac-soft)', blurb: 'Yoga, sommeil, maison, box : du matériel et des objets qui durent.' },
+  inspirations: { label: 'Inspirations : livres & podcasts', short: 'Livres & podcasts', illus: 'inspirations', tint: 'var(--oat-soft)', blurb: 'Les lectures, livres audio et podcasts qui font vraiment avancer.' },
 } as const;
 
 export const DEALS: Deal[] = [];

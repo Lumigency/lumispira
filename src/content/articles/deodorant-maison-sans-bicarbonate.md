@@ -2,13 +2,13 @@
 title: "Déodorant maison sans bicarbonate : la recette qui n'irrite pas"
 seoTitle: "Déodorant maison sans bicarbonate : recette peau sensible"
 description: "Le bicarbonate irrite beaucoup d'aisselles. Notre recette de déodorant maison sans bicarbonate, en 3 ingrédients, avec les erreurs à éviter et la conservation."
-category: fait-maison
+category: beaute-naturelle
 date: 2026-11-02
 author: tiphaine
 evidence:
   claim: "Le bicarbonate de soude peut irriter les aisselles"
   level: 3
-topics: ["Déodorant maison", "Baumes et soins anhydres", "Conservation des cosmétiques"]
+topics: ["Cosmétiques maison", "Peau sensible"]
 cover:
   id: "1598779795578-2afceafed88e"
   alt: "Deux flacons de soin à côté d'une fleur blanche, sur une table en bois"

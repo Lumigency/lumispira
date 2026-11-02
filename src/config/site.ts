@@ -11,7 +11,7 @@ export const SITE = {
   lang: 'fr',
   tagline: 'Le bien-être, passé au tamis.',
   description:
-    "Santé naturelle, acné, beauté, remèdes de grand-mère, développement personnel : ce que dit la science, ce que dit la tradition, et notre verdict.",
+    "Santé naturelle, acné, beauté, recettes et remèdes de grand-mère, développement personnel : ce que dit la science, ce que dit la tradition, et notre verdict.",
   instagram: 'https://www.instagram.com/lumispira/',
   email: 'bonjour@lumispira.com',
   publisher: 'Lumispira',
@@ -55,29 +55,19 @@ export const CATEGORIES = {
     short: 'Beauté',
     color: 'var(--clay)',
     soft: 'var(--apricot-soft)',
-    title: 'Beauté naturelle : les ingrédients au banc d’essai',
+    title: 'Beauté naturelle : ingrédients et cosmétiques maison au banc d’essai',
     description:
-      "Huile de ricin, rétinol végétal, soins bio : ce que les ingrédients naturels font vraiment pour la peau et les cheveux, sans promesse marketing.",
-  },
-  'fait-maison': {
-    slug: 'fait-maison',
-    name: 'Recettes & fait maison',
-    short: 'Fait maison',
-    color: 'var(--pollen-deep)',
-    soft: 'var(--pollen-soft)',
-    title: 'Recettes maison : cuisine saine et cosmétiques DIY',
-    description:
-      "Recettes de cuisine saine et cosmétiques maison testés : des formules simples, sûres et expliquées, avec les erreurs à éviter.",
+      "Huiles végétales, soins bio, cosmétiques maison : ce que les ingrédients naturels font vraiment pour la peau et les cheveux, et des recettes DIY sûres.",
   },
   'recettes-grand-mere': {
     slug: 'recettes-grand-mere',
-    name: 'Recettes de grand-mère',
+    name: 'Recettes & remèdes de grand-mère',
     short: 'Grand-mère',
     color: 'var(--oat)',
     soft: 'var(--oat-soft)',
-    title: 'Recettes et remèdes de grand-mère passés au tamis',
+    title: 'Recettes simples et remèdes de grand-mère passés au tamis',
     description:
-      "Miel contre la toux, tisanes, cataplasmes, recettes d'antan : les remèdes et recettes de grand-mère, ce qui marche, ce qui ne marche pas et les précautions.",
+      "Recettes simples et d'antan, miel contre la toux, tisanes : les recettes et remèdes de grand-mère, ce qui marche, ce qui ne marche pas, et les précautions.",
   },
   'developpement-personnel': {
     slug: 'developpement-personnel',

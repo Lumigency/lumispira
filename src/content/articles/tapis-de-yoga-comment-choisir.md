@@ -5,7 +5,7 @@ description: "PVC, TPE, caoutchouc naturel ou liège ? 4 mm ou 6 mm ? Notre guid
 category: bons-plans
 date: 2026-11-02
 author: tiphaine
-topics: ["Yoga et sport à la maison"]
+topics: ["Produits bien-être"]
 cover:
   id: "1646239646963-b0b9be56d6b5"
   alt: "Un tapis de yoga avec deux briques posées dessus"

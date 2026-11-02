@@ -2,13 +2,13 @@
 title: "Granola maison peu sucré : la recette croustillante qui cale vraiment"
 seoTitle: "Granola maison peu sucré : recette facile et croustillante"
 description: "Un granola maison croustillant avec environ 5 g de sucres ajoutés pour 100 g, riche en fibres d'avoine. La recette, l'astuce des gros morceaux et la conservation."
-category: fait-maison
+category: recettes-grand-mere
 date: 2026-11-02
 author: tiphaine
 evidence:
   claim: "Les bêta-glucanes de l'avoine contribuent à réduire le cholestérol"
   level: 5
-topics: ["Petit-déjeuner sain", "Recettes peu sucrées", "Batch cooking"]
+topics: ["Recettes simples", "Petit-déjeuner"]
 cover:
   id: "1725883691833-97103ecd582a"
   alt: "Un bol de granola avec du yaourt et des myrtilles"
