@@ -1,0 +1,228 @@
+---
+import Base from '../../layouts/Base.astro';
+import Crumbs from '../../components/Crumbs.astro';
+import Illus from '../../components/Illus.astro';
+import { getCollection } from 'astro:content';
+import { CATEGORIES, SITE } from '../../config/site';
+import { CATEGORY_CONTENT } from '../../data/categories';
+import { DEALS, DEAL_CATEGORIES, type Deal } from '../../data/deals';
+import { img, srcset } from '../../lib/unsplash';
+
+const cat = CATEGORIES['bons-plans'];
+const content = CATEGORY_CONTENT['bons-plans'];
+
+// Les offres expirées sont retirées au build, et masquées côté navigateur entre deux builds.
+const today = new Date().toISOString().slice(0, 10);
+const live = DEALS.filter((d) => d.expires >= today);
+const featured = live.find((d) => d.featured);
+const others = live.filter((d) => d !== featured);
+const universes = (Object.keys(DEAL_CATEGORIES) as Deal['category'][]).map((k) => ({
+  key: k,
+  ...DEAL_CATEGORIES[k],
+  items: others.filter((d) => d.category === k),
+}));
+
+// Guides d'achat : la rubrique bons plans + les articles comparatifs des autres rubriques
+const GUIDE_EXTRAS = ['magnesium-quelle-forme-choisir'];
+const guides = (await getCollection('articles', (a) => a.data.category === 'bons-plans' || GUIDE_EXTRAS.includes(a.id)))
+  .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
+
+const fmt = (d: string) => new Date(d).toLocaleDateString('fr-FR', { day: 'numeric', month: 'long' });
+
+const jsonLd = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'CollectionPage',
+    name: cat.title,
+    description: cat.description,
+    url: `${SITE.url}/bons-plans/`,
+    inLanguage: 'fr-FR',
+    isPartOf: { '@id': `${SITE.url}/#website` },
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: content.faq.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })),
+  },
+];
+---
+<Base title={cat.title} description={cat.description} jsonLd={jsonLd} newsletter={false}>
+  <header class="deals-hero">
+    <div class="wrap">
+      <Crumbs items={[{ name: cat.name, href: '/bons-plans/' }]} />
+      <div class="deals-hero-grid">
+        <div>
+          <h1>Les bons plans bien-être qui valent vraiment le coup</h1>
+          <p class="lede">Chaque offre est d'abord un bon produit : on vérifie la composition, la qualité et le prix habituel avant de te la proposer. Le reste, on le laisse en rayon.</p>
+          <ul class="deals-promises">
+            <li><b>Sélection indépendante</b><span>Aucune marque ne paie pour apparaître</span></li>
+            <li><b>Réductions vérifiées</b><span>Comparées au prix habituel</span></li>
+            <li><b>Offres datées</b><span>Retirées dès qu'elles expirent</span></li>
+          </ul>
+          <a class="btn" href="#alerte">Recevoir les alertes bons plans</a>
+        </div>
+        <Illus name="bons-plans" class="deals-hero-illus" />
+      </div>
+    </div>
+  </header>
+
+  <nav class="wrap deals-universes" aria-label="Univers de bons plans">
+    {universes.map((u) => (
+      <a class="deals-universe" href={live.length ? `#${u.key}` : '#alerte'} style={`--tint:${u.tint}`}>
+        <Illus name={u.illus as any} class="deals-universe-illus" />
+        <span class="deals-universe-name">{u.short}</span>
+        <span class="deals-universe-count">{u.items.length + (featured?.category === u.key ? 1 : 0) > 0 ? `${u.items.length + (featured?.category === u.key ? 1 : 0)} offre${u.items.length + (featured?.category === u.key ? 1 : 0) > 1 ? 's' : ''}` : 'Sélection en cours'}</span>
+      </a>
+    ))}
+  </nav>
+
+  {featured && (
+    <section class="wrap deal-featured-wrap" aria-labelledby="featured-title">
+      <article class="deal-featured" data-expires={featured.expires}>
+        <div class="deal-featured-art" style={`--tint:${DEAL_CATEGORIES[featured.category].tint}`}>
+          <Illus name={DEAL_CATEGORIES[featured.category].illus as any} class="deal-featured-illus" />
+          {featured.discount && <span class="deal-badge deal-badge-xl">{featured.discount}</span>}
+        </div>
+        <div class="deal-featured-body">
+          <p class="deal-kicker">À la une · {featured.brand}</p>
+          <h2 id="featured-title">{featured.title}</h2>
+          <p class="deal-offer">{featured.offer}</p>
+          <p class="deal-why"><b>Pourquoi on le recommande :</b> {featured.why}</p>
+          <div class="deal-actions">
+            {featured.code && <button type="button" class="deal-code" data-code={featured.code}><span>Code</span> <b>{featured.code}</b> <span class="deal-code-hint">Copier</span></button>}
+            <a class="btn" href={featured.url} rel="sponsored nofollow noopener" target="_blank">Voir l'offre chez {featured.brand}</a>
+          </div>
+          <p class="deal-expiry" data-countdown={featured.expires}>Valable jusqu'au {fmt(featured.expires)}</p>
+          {featured.guide && <a class="deal-guide" href={featured.guide}>Lire notre guide avant d'acheter</a>}
+        </div>
+      </article>
+    </section>
+  )}
+
+  <div class="wrap deals-body">
+    <p class="disclosure">Les liens de cette page sont des liens d'affiliation : si tu achètes, nous touchons une commission, sans surcoût pour toi. Elle finance le média, jamais nos choix. <a href="/transparence/">Notre règle</a>.</p>
+
+    {live.length === 0 ? (
+      <section class="deals-soon" aria-labelledby="soon-title">
+        <div>
+          <h2 id="soon-title">Les premières offres arrivent</h2>
+          <p>On teste en ce moment des compléments, des cosmétiques bio et du matériel de yoga. Seules les offres qui passent notre méthode seront publiées ici. Plutôt rien qu'un mauvais plan.</p>
+        </div>
+        <a class="btn" href="#alerte">Être prévenue en premier</a>
+      </section>
+    ) : (
+      <>{universes.map((u) => (
+        <section class="deals-section" id={u.key} aria-labelledby={`t-${u.key}`}>
+          <div class="deals-section-head">
+            <Illus name={u.illus as any} class="deals-section-illus" />
+            <div>
+              <h2 id={`t-${u.key}`}>{u.label}</h2>
+              <p>{u.blurb}</p>
+            </div>
+          </div>
+          {u.items.length ? (
+            <ul class="deal-grid">
+              {u.items.map((d) => (
+                <li class="deal-card" data-expires={d.expires}>
+                  <div class="deal-card-top" style={`--tint:${u.tint}`}>
+                    <span class="deal-brand">{d.brand}</span>
+                    {d.discount && <span class="deal-badge">{d.discount}</span>}
+                  </div>
+                  <div class="deal-card-body">
+                    <h3>{d.title}</h3>
+                    <p class="deal-offer">{d.offer}</p>
+                    <p class="deal-why">{d.why}</p>
+                    {d.code && <button type="button" class="deal-code" data-code={d.code}><span>Code</span> <b>{d.code}</b> <span class="deal-code-hint">Copier</span></button>}
+                    <a class="btn deal-cta" href={d.url} rel="sponsored nofollow noopener" target="_blank">Voir l'offre</a>
+                    <div class="deal-meta">
+                      <span data-countdown={d.expires}>Jusqu'au {fmt(d.expires)}</span>
+                      {d.guide && <a href={d.guide}>Notre guide</a>}
+                    </div>
+                  </div>
+                </li>
+              ))}
+            </ul>
+          ) : (
+            <div class="deals-empty" style={`--tint:${u.tint}`}>
+              <p><b>On teste encore.</b> Aucune offre ne passe notre sélection pour l'instant dans cet univers. Plutôt rien qu'un mauvais plan.</p>
+              <a href="#alerte">Être prévenue de la prochaine offre</a>
+            </div>
+          )}
+        </section>
+      ))}</>
+    )}
+
+    <section class="deals-method" aria-labelledby="method-title">
+      <h2 id="method-title">Comment une offre arrive sur cette page</h2>
+      <ol>
+        <li><b>Le produit d'abord</b><span>On vérifie la composition, la qualité et ce que disent les études, avec la même méthode que nos articles.</span></li>
+        <li><b>Le prix ensuite</b><span>On compare la réduction au prix habituel du produit. Une fausse promo ne passe pas.</span></li>
+        <li><b>Une date de fin</b><span>Chaque offre affiche sa validité et disparaît dès qu'elle expire.</span></li>
+      </ol>
+    </section>
+
+    {guides.length > 0 && (
+      <section class="deals-guides" aria-labelledby="guides-title">
+        <h2 id="guides-title">Nos guides d'achat</h2>
+        <p class="deals-guides-lede">Pour savoir quoi regarder avant d'acheter, avec ou sans nos liens.</p>
+        <ul>
+          {guides.map((g) => (
+            <li>
+              <a href={`/${g.data.category}/${g.id}/`}>
+                {g.data.cover && <img src={img(g.data.cover.id, 560, 360)} srcset={srcset(g.data.cover.id, [400, 560, 840], 560 / 360)} sizes="(max-width: 700px) 100vw, 380px" width="560" height="360" alt="" loading="lazy" decoding="async" />}
+                <span class="deals-guide-title">{g.data.title}</span>
+                <span class="deals-guide-verdict">{g.data.verdict}</span>
+              </a>
+            </li>
+          ))}
+        </ul>
+      </section>
+    )}
+
+    <section class="deals-alert" id="alerte" aria-labelledby="alert-title">
+      <Illus name="newsletter" class="deals-alert-illus" />
+      <div>
+        <h2 id="alert-title">Les vrais bons plans, avant tout le monde</h2>
+        <p>Une sélection courte dans la lettre du dimanche, et une alerte quand une offre exceptionnelle tombe. Jamais de promo déguisée.</p>
+      </div>
+      <form class="nl-form" action="#" method="post">
+        <label for="deal-email">Ton adresse e-mail</label>
+        <input id="deal-email" name="email" type="email" autocomplete="email" required placeholder="prenom@exemple.fr" />
+        <button class="btn" type="submit">Recevoir les alertes</button>
+      </form>
+    </section>
+
+    <section class="faq prose-block" aria-labelledby="faq-title">
+      <h2 id="faq-title">Questions fréquentes</h2>
+      {content.faq.map((f) => <details><summary>{f.q}</summary><p>{f.a}</p></details>)}
+    </section>
+  </div>
+</Base>
+
+<script>
+  // Masque les offres expirées entre deux builds, affiche un compte à rebours, copie les codes.
+  const now = new Date();
+  now.setHours(0, 0, 0, 0);
+  document.querySelectorAll<HTMLElement>('[data-expires]').forEach((el) => {
+    if (new Date(el.dataset.expires + 'T23:59:59') < now) el.hidden = true;
+  });
+  document.querySelectorAll<HTMLElement>('[data-countdown]').forEach((el) => {
+    const days = Math.ceil((new Date(el.dataset.countdown + 'T23:59:59').getTime() - Date.now()) / 864e5);
+    if (days >= 0 && days <= 7) {
+      el.textContent = days <= 1 ? 'Dernier jour' : `Plus que ${days} jours`;
+      el.classList.add('is-urgent');
+    }
+  });
+  document.querySelectorAll<HTMLButtonElement>('.deal-code').forEach((btn) => {
+    btn.addEventListener('click', async () => {
+      const hint = btn.querySelector('.deal-code-hint');
+      try {
+        await navigator.clipboard.writeText(btn.dataset.code ?? '');
+        if (hint) hint.textContent = 'Copié';
+      } catch {
+        if (hint) hint.textContent = 'Sélectionne le code';
+      }
+      setTimeout(() => { if (hint) hint.textContent = 'Copier'; }, 2000);
+    });
+  });
+</script>

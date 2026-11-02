@@ -1,7 +1,7 @@
 ---
 // Illustrations botaniques maison : formes douces, trait prune arrondi.
 // Toutes originales, en SVG, sans dépendance. name = la scène à dessiner.
-interface Props { name: 'hero' | 'sante' | 'peau-acne' | 'beaute-naturelle' | 'fait-maison' | 'recettes-grand-mere' | 'developpement-personnel' | 'bons-plans' | 'newsletter' | 'sprig'; class?: string }
+interface Props { name: 'hero' | 'sante' | 'peau-acne' | 'beaute-naturelle' | 'fait-maison' | 'recettes-grand-mere' | 'developpement-personnel' | 'bons-plans' | 'yoga' | 'livres' | 'newsletter' | 'sprig'; class?: string }
 const { name, class: cls } = Astro.props;
 const ink = 'var(--ink)';
 const s = { stroke: ink, 'stroke-width': 3, 'stroke-linecap': 'round', 'stroke-linejoin': 'round' };
@@ -120,6 +120,29 @@ const s = { stroke: ink, 'stroke-width': 3, 'stroke-linecap': 'round', 'stroke-l
       <circle cx="144" cy="74" r="6" fill="var(--card)" {...s} />
     </g>
     <path d="M150 64c4-20 22-26 26-16" {...s} stroke-width="2.5" />
+  </svg>
+)}
+{name === 'yoga' && (
+  <svg class={cls} viewBox="0 0 200 200" aria-hidden="true" fill="none">
+    <circle cx="100" cy="104" r="78" fill="var(--lilac-soft)" />
+    <rect x="34" y="128" width="132" height="22" rx="11" fill="var(--plum)" {...s} />
+    <circle cx="150" cy="139" r="16" fill="var(--lilac)" {...s} />
+    <circle cx="150" cy="139" r="7" {...s} stroke-width="2.5" />
+    <rect x="52" y="92" width="44" height="36" rx="6" fill="var(--apricot-soft)" {...s} />
+    <rect x="98" y="100" width="40" height="28" rx="6" fill="var(--apricot)" {...s} />
+    <path d="M70 76c-6-10 0-22 12-24 2 12-4 22-12 24zM82 70c8-8 20-6 24 2-8 8-20 6-24-2z" fill="var(--herb)" {...s} stroke-width="2.5" />
+  </svg>
+)}
+{name === 'livres' && (
+  <svg class={cls} viewBox="0 0 200 200" aria-hidden="true" fill="none">
+    <circle cx="100" cy="104" r="78" fill="var(--rose-soft)" />
+    <rect x="46" y="138" width="104" height="22" rx="4" fill="var(--plum)" {...s} />
+    <rect x="54" y="116" width="92" height="22" rx="4" fill="var(--apricot)" {...s} />
+    <rect x="42" y="94" width="100" height="22" rx="4" fill="var(--herb-soft)" {...s} />
+    <path d="M60 94v22M132 116v22M70 138v22" {...s} stroke-width="2.5" />
+    <path d="M110 70h40v24h-40z" fill="var(--pollen)" {...s} />
+    <path d="M130 70v24M110 80h40" {...s} stroke-width="2.5" />
+    <path d="M130 70c-6-12-20-10-14 0M130 70c6-12 20-10 14 0" {...s} stroke-width="2.5" />
   </svg>
 )}
 {name === 'newsletter' && (

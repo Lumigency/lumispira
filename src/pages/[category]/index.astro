@@ -9,7 +9,8 @@ import { CATEGORY_CONTENT } from '../../data/categories';
 import { DEALS, DEAL_CATEGORIES } from '../../data/deals';
 
 export function getStaticPaths() {
-  return CATEGORY_KEYS.map((category) => ({ params: { category } }));
+  // Bons plans a sa propre page : src/pages/bons-plans/index.astro
+  return CATEGORY_KEYS.filter((k) => k !== 'bons-plans').map((category) => ({ params: { category } }));
 }
 
 const key = Astro.params.category as CategoryKey;

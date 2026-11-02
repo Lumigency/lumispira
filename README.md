@@ -17,7 +17,7 @@ npm run build    # génère dist/
 |---|---|
 | Changer le nom, l'URL, l'e-mail, l'Instagram | `src/config/site.ts` |
 | Modifier les textes d'une page catégorie | `src/data/categories.ts` |
-| Ajouter un bon plan | `src/data/deals.ts` (une offre expirée disparaît seule) |
+| Ajouter un bon plan | `src/data/deals.ts` : marque, offre, pourquoi, lien, date de fin ; en option `discount` (badge), `code` (bouton copier), `featured` (à la une). Une offre expirée disparaît seule |
 | Ajouter un article | un fichier `.md` dans `src/content/articles/` |
 | Changer les couleurs ou la typo | `src/styles/global.css` (variables en haut) |
 
