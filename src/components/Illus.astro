@@ -1,0 +1,110 @@
+---
+// Illustrations botaniques maison : formes douces, trait prune arrondi.
+// Toutes originales, en SVG, sans dépendance. name = la scène à dessiner.
+interface Props { name: 'hero' | 'sante' | 'beaute-naturelle' | 'fait-maison' | 'developpement-personnel' | 'bons-plans' | 'newsletter' | 'sprig'; class?: string }
+const { name, class: cls } = Astro.props;
+const ink = 'var(--ink)';
+const s = { stroke: ink, 'stroke-width': 3, 'stroke-linecap': 'round', 'stroke-linejoin': 'round' };
+---
+{name === 'hero' && (
+  <svg class={cls} viewBox="0 0 420 380" aria-hidden="true" fill="none">
+    <path d="M70 360V170c0-80 62-140 140-140s140 60 140 140v190z" fill="var(--plum-soft)" />
+    <circle cx="282" cy="118" r="38" fill="var(--apricot)" />
+    <path d="M70 290c50-30 96-34 140-14s92 18 140-10v94H70z" fill="var(--herb-soft)" />
+    {/* plante en pot */}
+    <path d="M104 262h70l-9 76c-1 9-8 14-16 14h-20c-8 0-15-5-16-14z" fill="var(--apricot-soft)" {...s} />
+    <path d="M139 262c-2-40 4-76 26-104" {...s} />
+    <path d="M165 158c18-6 34 0 40 14-18 8-34 4-40-14z" fill="var(--herb)" {...s} />
+    <path d="M149 196c-22-10-42-6-50 8 20 10 40 8 50-8z" fill="var(--herb)" {...s} />
+    <path d="M141 232c16-14 36-14 46-2-16 14-34 14-46 2z" fill="var(--herb)" {...s} />
+    {/* tasse fumante */}
+    <path d="M232 300h76v26c0 16-13 28-28 28h-20c-15 0-28-12-28-28z" fill="var(--card)" {...s} />
+    <path d="M308 306h10c10 0 16 8 16 16s-6 15-16 15h-12" {...s} />
+    <path d="M254 284c-8-10 8-16 0-28M278 284c-8-10 8-16 0-28" {...s} stroke-width="2.5" />
+    {/* livre ouvert */}
+    <path d="M196 352c20-10 44-10 60 0M256 352c16-10 40-10 60 0" {...s} />
+    <circle cx="358" cy="62" r="5" fill="var(--pollen)" />
+    <circle cx="66" cy="96" r="4" fill="var(--lilac)" />
+    <path d="M44 150l6 6m0-6l-6 6M376 210l6 6m0-6l-6 6" {...s} stroke-width="2.5" />
+  </svg>
+)}
+{name === 'sante' && (
+  <svg class={cls} viewBox="0 0 200 200" aria-hidden="true" fill="none">
+    <circle cx="100" cy="104" r="78" fill="var(--herb-soft)" />
+    <g transform="rotate(-32 92 108)">
+      <rect x="52" y="88" width="84" height="40" rx="20" fill="var(--card)" {...s} />
+      <path d="M94 88h22c11 0 20 9 20 20s-9 20-20 20H94z" fill="var(--apricot)" {...s} />
+    </g>
+    <path d="M140 170c-4-34 2-62 18-84" {...s} />
+    <path d="M158 86c12-2 22 4 24 14-12 4-22-2-24-14z" fill="var(--herb)" {...s} />
+    <path d="M148 118c-14-6-26-2-30 8 12 6 24 4 30-8z" fill="var(--herb)" {...s} />
+    <path d="M144 146c12-8 24-6 30 2-10 8-22 8-30-2z" fill="var(--herb)" {...s} />
+  </svg>
+)}
+{name === 'beaute-naturelle' && (
+  <svg class={cls} viewBox="0 0 200 200" aria-hidden="true" fill="none">
+    <circle cx="100" cy="104" r="78" fill="var(--apricot-soft)" />
+    <path d="M66 96h44v70c0 6-5 10-10 10H76c-5 0-10-4-10-10z" fill="var(--card)" {...s} />
+    <path d="M66 128h44v38c0 6-5 10-10 10H76c-5 0-10-4-10-10z" fill="var(--pollen)" opacity=".85" />
+    <path d="M66 96h44v70c0 6-5 10-10 10H76c-5 0-10-4-10-10z" {...s} />
+    <rect x="76" y="78" width="24" height="18" rx="3" fill="var(--plum)" {...s} />
+    <path d="M80 78V60c0-10 16-10 16 0v18" fill="var(--plum-soft)" {...s} />
+    <g transform="translate(146 82)">
+      <circle r="10" fill="var(--pollen)" {...s} />
+      <path d="M0-10c-8-22 8-22 0 0M10 0c22-8 22 8 0 0M0 10c8 22-8 22 0 0M-10 0c-22 8-22-8 0 0" fill="var(--lilac)" {...s} />
+      <circle r="8" fill="var(--pollen)" {...s} />
+    </g>
+    <path d="M146 112v56M146 146c10-12 22-12 26-4-10 8-20 8-26 4z" {...s} />
+  </svg>
+)}
+{name === 'fait-maison' && (
+  <svg class={cls} viewBox="0 0 200 200" aria-hidden="true" fill="none">
+    <circle cx="100" cy="104" r="78" fill="var(--pollen-soft)" />
+    <path d="M58 82h70v78c0 10-8 18-18 18H76c-10 0-18-8-18-18z" fill="var(--card)" {...s} />
+    <path d="M60 116c18 6 46-6 66 2v42c0 10-8 18-18 18H76c-10 0-16-8-16-18z" fill="var(--apricot)" />
+    <circle cx="78" cy="138" r="4" fill="var(--ink)" /><circle cx="98" cy="128" r="3.5" fill="var(--ink)" /><circle cx="112" cy="150" r="4" fill="var(--ink)" /><circle cx="86" cy="160" r="3" fill="var(--ink)" />
+    <path d="M58 82h70v78c0 10-8 18-18 18H76c-10 0-18-8-18-18z" {...s} />
+    <rect x="52" y="66" width="82" height="16" rx="6" fill="var(--plum)" {...s} />
+    <path d="M150 58l16 104" {...s} />
+    <ellipse cx="148" cy="48" rx="12" ry="18" transform="rotate(-9 148 48)" fill="var(--apricot-soft)" {...s} />
+  </svg>
+)}
+{name === 'developpement-personnel' && (
+  <svg class={cls} viewBox="0 0 200 200" aria-hidden="true" fill="none">
+    <circle cx="100" cy="104" r="78" fill="var(--lilac-soft)" />
+    <circle cx="100" cy="112" r="34" fill="var(--apricot)" />
+    <path d="M100 64v-14M60 80l-10-10M140 80l10-10M48 112H34M152 112h14" {...s} />
+    <path d="M24 150c26-18 50-20 76-6s50 14 76-4v24c-30 14-122 14-152 0z" fill="var(--herb-soft)" />
+    <path d="M24 150c26-18 50-20 76-6s50 14 76-4" {...s} />
+    <path d="M86 182c4-12 14-16 14-26s-8-10-6-18" {...s} stroke-dasharray="2 9" />
+  </svg>
+)}
+{name === 'bons-plans' && (
+  <svg class={cls} viewBox="0 0 200 200" aria-hidden="true" fill="none">
+    <circle cx="100" cy="104" r="78" fill="var(--pollen-soft)" />
+    <rect x="44" y="110" width="74" height="60" rx="8" fill="var(--plum-soft)" {...s} />
+    <path d="M40 98h82v16H40zM81 98v72" fill="var(--lilac)" {...s} />
+    <path d="M81 98c-10-24-36-18-24-2M81 98c10-24 36-18 24-2" {...s} />
+    <g transform="rotate(18 146 88)">
+      <path d="M124 58h40v60l-20 18-20-18z" fill="var(--pollen)" {...s} />
+      <circle cx="144" cy="74" r="6" fill="var(--card)" {...s} />
+    </g>
+    <path d="M150 64c4-20 22-26 26-16" {...s} stroke-width="2.5" />
+  </svg>
+)}
+{name === 'newsletter' && (
+  <svg class={cls} viewBox="0 0 200 160" aria-hidden="true" fill="none">
+    <circle cx="100" cy="84" r="70" fill="var(--card)" opacity=".7" />
+    <rect x="40" y="52" width="120" height="80" rx="10" fill="var(--card)" {...s} />
+    <path d="M44 58l56 42 56-42" {...s} />
+    <path d="M148 52c-2-22 10-38 26-42" {...s} />
+    <path d="M168 14c10 0 16 8 16 16-10 0-16-8-16-16z" fill="var(--herb)" {...s} />
+    <path d="M156 30c-12 0-18 8-16 16 10-2 16-8 16-16z" fill="var(--herb)" {...s} />
+  </svg>
+)}
+{name === 'sprig' && (
+  <svg class={cls} viewBox="0 0 120 40" aria-hidden="true" fill="none">
+    <path d="M6 30c30-16 70-20 108-12" {...s} stroke-width="2.5" />
+    <path d="M34 22c-2-10 6-16 14-14-2 10-8 14-14 14zM62 18c4-10 14-12 20-6-6 8-14 10-20 6zM88 18c-2 8 4 14 12 14 0-8-6-14-12-14z" fill="var(--herb)" {...s} stroke-width="2.5" />
+  </svg>
+)}

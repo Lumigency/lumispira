@@ -2,6 +2,7 @@
 import Base from '../layouts/Base.astro';
 import Fiche from '../components/Fiche.astro';
 import Gauge from '../components/Gauge.astro';
+import Illus from '../components/Illus.astro';
 import { getCollection } from 'astro:content';
 import { CATEGORIES, CATEGORY_KEYS, EVIDENCE, SITE } from '../config/site';
 
@@ -28,7 +29,14 @@ const blurbs: Record<string, string> = {
           <a class="btn btn-ghost" href="/methode/">Comment on trie</a>
         </div>
       </div>
-      <div class="sieve">
+      <div class="hero-art">
+        <Illus name="hero" class="hero-illus" />
+      </div>
+    </div>
+  </section>
+
+  <div class="wrap sieve-wrap">
+      <div class="sieve sieve-strip">
         <div class="sieve-head">
           <h2>Récemment passé au tamis</h2>
           <span>Indice de preuve</span>
@@ -41,13 +49,12 @@ const blurbs: Record<string, string> = {
           </a>
         ))}
       </div>
-    </div>
-  </section>
+  </div>
 
-  <nav class="rubriques" aria-label="Rubriques">
+  <nav class="rubriques wrap" aria-label="Rubriques">
     {CATEGORY_KEYS.map((k) => (
-      <a class={`rubrique ${k === 'bons-plans' ? 'deals' : ''}`} href={`/${k}/`}>
-        {k !== 'bons-plans' && <span class="bar" style={`background:${CATEGORIES[k].color}`}></span>}
+      <a class={`rubrique ${k === 'bons-plans' ? 'deals' : ''}`} href={`/${k}/`} style={`--tint:${CATEGORIES[k].soft}`}>
+        <Illus name={k} class="rubrique-illus" />
         <strong>{CATEGORIES[k].name}</strong>
         <span>{blurbs[k]}</span>
       </a>
@@ -56,6 +63,7 @@ const blurbs: Record<string, string> = {
 
   <section class="section">
     <div class="wrap">
+      <Illus name="sprig" class="sprig" />
       <div class="section-head">
         <h2>Les derniers articles</h2>
         <a href="/blog/">Tous les articles</a>

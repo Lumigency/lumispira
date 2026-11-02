@@ -3,6 +3,7 @@ import Base from '../../layouts/Base.astro';
 import Crumbs from '../../components/Crumbs.astro';
 import Evidence from '../../components/Evidence.astro';
 import Fiche from '../../components/Fiche.astro';
+import Illus from '../../components/Illus.astro';
 import { getCollection, render } from 'astro:content';
 import { AUTHORS, CATEGORIES, SITE } from '../../config/site';
 
@@ -79,11 +80,16 @@ if (d.recipe && d.recipe.kind === 'food') {
 ---
 <Base title={d.seoTitle ?? d.title} description={d.description} type="article" jsonLd={jsonLd} published={d.date} modified={d.updated ?? d.date}>
   <article>
-    <header class="article-head">
+    <header class="article-head tinted" style={`--tint:${d.category === 'bons-plans' ? 'var(--pollen-soft)' : cat.soft}`}>
       <div class="wrap">
         <Crumbs items={[{ name: cat.name, href: `/${d.category}/` }, { name: d.title, href: `/${d.category}/${article.id}/` }]} />
-        <h1>{d.title}</h1>
-        <p class="lede">{d.description}</p>
+        <div class="article-head-grid">
+          <div>
+            <h1>{d.title}</h1>
+            <p class="lede">{d.description}</p>
+          </div>
+          <Illus name={d.category} class="article-head-illus" />
+        </div>
         <div class="byline">
           <span>Par <a href={`/auteurs/${author.slug}/`}>{author.name}</a></span>
           {d.reviewer && <span>Relu par <b>{d.reviewer.name}</b>, {d.reviewer.title}</span>}

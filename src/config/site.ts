@@ -34,6 +34,7 @@ export const CATEGORIES = {
     name: 'Santé & corps',
     short: 'Santé',
     color: 'var(--herb)',
+    soft: 'var(--herb-soft)',
     title: 'Santé naturelle : compléments et plantes passés au crible',
     description:
       "Magnésium, ashwagandha, sommeil, digestion : on analyse les compléments et remèdes naturels avec les études, les avis des agences sanitaires et un verdict honnête.",
@@ -43,6 +44,7 @@ export const CATEGORIES = {
     name: 'Beauté naturelle',
     short: 'Beauté',
     color: 'var(--clay)',
+    soft: 'var(--apricot-soft)',
     title: 'Beauté naturelle : les ingrédients au banc d’essai',
     description:
       "Huile de ricin, rétinol végétal, soins bio : ce que les ingrédients naturels font vraiment pour la peau et les cheveux, sans promesse marketing.",
@@ -52,6 +54,7 @@ export const CATEGORIES = {
     name: 'Recettes & fait maison',
     short: 'Fait maison',
     color: 'var(--pollen-deep)',
+    soft: 'var(--pollen-soft)',
     title: 'Recettes maison : cuisine saine et cosmétiques DIY',
     description:
       "Recettes de cuisine saine et cosmétiques maison testés : des formules simples, sûres et expliquées, avec les erreurs à éviter.",
@@ -61,6 +64,7 @@ export const CATEGORIES = {
     name: 'Développement personnel',
     short: 'Dev perso',
     color: 'var(--lilac-deep)',
+    soft: 'var(--lilac-soft)',
     title: 'Développement personnel : habitudes et méthodes prouvées',
     description:
       "Habitudes, motivation, stress, routines : le développement personnel sans gourou, avec ce que la psychologie a vraiment démontré.",
@@ -69,7 +73,8 @@ export const CATEGORIES = {
     slug: 'bons-plans',
     name: 'Bons plans & comparatifs',
     short: 'Bons plans',
-    color: 'var(--ink)',
+    color: 'var(--plum)',
+    soft: 'var(--pollen)',
     title: 'Bons plans bien-être et comparatifs indépendants',
     description:
       "Compléments, cosmétiques bio, matériel de yoga, livres et box : nos guides d’achat indépendants et les bons plans du moment, sélectionnés avec une méthode publique.",

@@ -2,6 +2,7 @@
 import Base from '../../layouts/Base.astro';
 import Crumbs from '../../components/Crumbs.astro';
 import Fiche from '../../components/Fiche.astro';
+import Illus from '../../components/Illus.astro';
 import { getCollection } from 'astro:content';
 import { CATEGORIES, CATEGORY_KEYS, SITE, type CategoryKey } from '../../config/site';
 import { CATEGORY_CONTENT } from '../../data/categories';
@@ -43,14 +44,19 @@ const jsonLd = [
 ];
 ---
 <Base title={cat.title} description={cat.description} jsonLd={jsonLd}>
-  <header class="page-head">
+  <header class="page-head tinted" style={`--tint:${key === 'bons-plans' ? 'var(--pollen-soft)' : cat.soft}`}>
     <div class="wrap">
       <Crumbs items={[{ name: cat.name, href: `/${key}/` }]} />
-      <h1>{content.h1}</h1>
-      <p class="lede">{content.lede}</p>
-      <ul class="topics" aria-label="Sujets de la rubrique">
-        {content.topics.map((t) => <li>{t}</li>)}
-      </ul>
+      <div class="page-head-grid">
+        <div>
+          <h1>{content.h1}</h1>
+          <p class="lede">{content.lede}</p>
+          <ul class="topics" aria-label="Sujets de la rubrique">
+            {content.topics.map((t) => <li>{t}</li>)}
+          </ul>
+        </div>
+        <Illus name={key} class="page-head-illus" />
+      </div>
     </div>
   </header>
 
