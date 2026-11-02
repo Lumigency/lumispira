@@ -1,7 +1,7 @@
 ---
 // Illustrations botaniques maison : formes douces, trait prune arrondi.
 // Toutes originales, en SVG, sans dépendance. name = la scène à dessiner.
-interface Props { name: 'hero' | 'sante' | 'beaute-naturelle' | 'fait-maison' | 'developpement-personnel' | 'bons-plans' | 'newsletter' | 'sprig'; class?: string }
+interface Props { name: 'hero' | 'sante' | 'peau-acne' | 'beaute-naturelle' | 'fait-maison' | 'recettes-grand-mere' | 'developpement-personnel' | 'bons-plans' | 'newsletter' | 'sprig'; class?: string }
 const { name, class: cls } = Astro.props;
 const ink = 'var(--ink)';
 const s = { stroke: ink, 'stroke-width': 3, 'stroke-linecap': 'round', 'stroke-linejoin': 'round' };
@@ -39,6 +39,36 @@ const s = { stroke: ink, 'stroke-width': 3, 'stroke-linecap': 'round', 'stroke-l
     <path d="M158 86c12-2 22 4 24 14-12 4-22-2-24-14z" fill="var(--herb)" {...s} />
     <path d="M148 118c-14-6-26-2-30 8 12 6 24 4 30-8z" fill="var(--herb)" {...s} />
     <path d="M144 146c12-8 24-6 30 2-10 8-22 8-30-2z" fill="var(--herb)" {...s} />
+  </svg>
+)}
+{name === 'peau-acne' && (
+  <svg class={cls} viewBox="0 0 200 200" aria-hidden="true" fill="none">
+    <circle cx="100" cy="104" r="78" fill="var(--rose-soft)" />
+    <path d="M60 96c0-28 18-48 40-48s40 20 40 48c0 30-18 54-40 54s-40-24-40-54z" fill="var(--apricot-soft)" {...s} />
+    <path d="M60 92c4-30 26-48 52-42 16 4 26 16 28 34-16-2-30-10-38-22-6 14-22 26-42 30z" fill="var(--plum)" {...s} />
+    <path d="M78 104c4 4 10 4 14 0M108 104c4 4 10 4 14 0" {...s} stroke-width="2.5" />
+    <path d="M90 128c6 5 14 5 20 0" {...s} stroke-width="2.5" />
+    <circle cx="76" cy="120" r="7" fill="var(--rose)" opacity=".35" />
+    <circle cx="124" cy="120" r="7" fill="var(--rose)" opacity=".35" />
+    <circle cx="118" cy="88" r="2.5" fill="var(--rose)" />
+    <path d="M150 54v12M144 60h12M42 140v10M37 145h10" {...s} stroke-width="2.5" />
+    <path d="M134 160c10-12 24-14 32-6-10 10-24 12-32 6z" fill="var(--herb)" {...s} />
+  </svg>
+)}
+{name === 'recettes-grand-mere' && (
+  <svg class={cls} viewBox="0 0 200 200" aria-hidden="true" fill="none">
+    <circle cx="100" cy="104" r="78" fill="var(--oat-soft)" />
+    <path d="M40 116c0-20 18-34 40-34s40 14 40 34v18c0 14-12 26-26 26H66c-14 0-26-12-26-26z" fill="var(--rose-soft)" {...s} />
+    <path d="M120 116c14-2 22 6 20 16" {...s} />
+    <path d="M40 120c-14-4-22 4-20 14 2 8 10 12 20 10" {...s} />
+    <path d="M60 82c0-10 8-16 20-16s20 6 20 16" fill="var(--plum)" {...s} />
+    <circle cx="80" cy="62" r="5" fill="var(--plum)" {...s} />
+    <path d="M58 118h44" {...s} stroke-width="2.5" stroke-dasharray="1 8" />
+    <path d="M70 52c-6-8 6-12 0-20M90 52c-6-8 6-12 0-20" {...s} stroke-width="2.5" />
+    <path d="M142 128h34v26c0 6-5 10-10 10h-14c-5 0-10-4-10-10z" fill="var(--pollen)" {...s} />
+    <path d="M138 128h42v-8h-42z" fill="var(--oat)" {...s} />
+    <path d="M168 120l12-34" {...s} />
+    <path d="M176 82l8 4-4 10-8-4z" fill="var(--pollen)" {...s} stroke-width="2.5" />
   </svg>
 )}
 {name === 'beaute-naturelle' && (

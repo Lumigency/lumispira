@@ -27,6 +27,23 @@ export const CATEGORY_CONTENT: Record<CategoryKey, CategoryContent> = {
     ],
     aside: { title: "L'indice de preuve", text: "Chaque article affiche un indice de 1 à 5 sur son affirmation principale. Il mesure la solidité des études, pas notre enthousiasme." },
   },
+  'peau-acne': {
+    h1: 'Acné et problèmes de peau : démêler le vrai du faux',
+    lede: "Boutons, acné adulte, rougeurs, peau grasse ou sensible. Les causes, les idées reçues, et ce qui aide vraiment, d'après les études et les recommandations des dermatologues.",
+    intro: `
+<h2>Pourquoi une rubrique dédiée à la peau</h2>
+<p>L'acné touche une grande majorité d'adolescents, et beaucoup d'adultes, en particulier des femmes. C'est aussi l'un des sujets où circulent le plus de conseils contradictoires : supprimer le chocolat, mettre du dentifrice sur un bouton, tout miser sur l'huile essentielle de tea tree, se laver le visage plusieurs fois par jour. Certains aident, d'autres aggravent.</p>
+<p>Ici, chaque conseil est passé au tamis : ce que disent les études et les sociétés de dermatologie, le rôle réel de l'alimentation, des hormones et du stress, et un <a href="/methode/#indice">indice de preuve</a> clair. On parle aussi des soins naturels qui ont des données sérieuses derrière eux, et de ceux qui n'en ont pas.</p>
+<h2>Ce que tu trouveras ici</h2>
+<p>Des dossiers sur l'acné de l'adolescent et de l'adulte, les routines simples pour peau grasse ou mixte, les marques post-acné, la peau sensible et les rougeurs, et des réponses franches aux idées reçues. Quand un problème de peau est étendu, douloureux, laisse des cicatrices ou dure, la bonne étape reste le médecin ou le dermatologue : des traitements efficaces existent.</p>`,
+    topics: ['Acné adulte', 'Acné et alimentation', 'Routine peau grasse', 'Marques et cicatrices', 'Peau sensible et rougeurs', 'Idées reçues'],
+    faq: [
+      { q: "Faut-il arrêter le chocolat quand on a de l'acné ?", a: "Les données sur le chocolat seul sont faibles et contradictoires. Ce qui est mieux étudié, c'est l'effet d'une alimentation globalement riche en sucres rapides, et dans une moindre mesure des produits laitiers. Notre article sur l'acné et l'alimentation fait le point." },
+      { q: "Quand faut-il consulter pour de l'acné ?", a: "Si l'acné est étendue, douloureuse, laisse des marques ou des cicatrices, ne s'améliore pas après plusieurs semaines de soins adaptés, ou te pèse moralement. Un médecin ou un dermatologue peut proposer des traitements efficaces." },
+      { q: 'Les soins naturels peuvent-ils traiter l’acné ?', a: "Certains ingrédients ont des données encourageantes pour l'acné légère, mais leur effet est généralement plus modeste que celui des traitements médicaux. Nous indiquons pour chacun le niveau de preuve et les risques d'irritation." },
+    ],
+    aside: { title: 'Le bon réflexe', text: "Une acné qui laisse des marques ou qui dure mérite un avis médical. Des traitements efficaces existent, ne reste pas seule avec." },
+  },
   'beaute-naturelle': {
     h1: 'Beauté naturelle : les ingrédients au banc d’essai',
     lede: "Huiles végétales, actifs naturels, routines de soin : ce qu'ils font vraiment pour ta peau et tes cheveux, et ce qui relève du marketing.",
@@ -58,6 +75,22 @@ export const CATEGORY_CONTENT: Record<CategoryKey, CategoryContent> = {
       { q: 'Faut-il du matériel spécial ?', a: "Pour la plupart de nos recettes, non : une balance de cuisine précise, un bain-marie et des contenants propres suffisent. Pour les cosmétiques, désinfecte ton matériel à l'alcool avant de commencer." },
     ],
     aside: { title: 'Avant de commencer', text: "Balance précise, ustensiles désinfectés, étiquette avec la date du jour : trois gestes qui évitent la plupart des ratés." },
+  },
+  'recettes-grand-mere': {
+    h1: 'Recettes et remèdes de grand-mère passés au tamis',
+    lede: "Miel contre la toux, tisanes, cataplasmes, recettes d'antan toutes simples. Ce que la tradition transmet, ce que la science confirme, et les précautions à connaître.",
+    intro: `
+<h2>La sagesse des grands-mères, vérifiée</h2>
+<p>Les remèdes de grand-mère sont souvent la première chose qu'on essaie : un miel-citron quand la gorge gratte, une tisane de thym, une compresse chaude. Ils sont simples, peu coûteux, et rassurants. Certains ont aujourd'hui des études solides derrière eux, comme le miel contre la toux. D'autres relèvent surtout de l'habitude. Quelques-uns sont dangereux pour certaines personnes.</p>
+<p>Chaque remède est passé au tamis : d'où il vient, ce qu'en dit la recherche, pour qui il est déconseillé, et comment le préparer correctement. Le respect de la tradition n'empêche pas l'honnêteté : on te dit quand un remède est surtout un plaisir réconfortant, et quand il a un vrai effet.</p>
+<h2>Les recettes d'antan</h2>
+<p>On partage aussi des recettes simples et anciennes, celles qu'on se transmet en famille : bouillons, soupes, confitures, pain perdu, desserts de saison. Des recettes sans chichi, avec des ingrédients du quotidien, et quelques ajustements quand ils les rendent meilleures pour la santé.</p>`,
+    topics: ['Toux et gorge', 'Rhume et nez bouché', 'Digestion', 'Sommeil', 'Tisanes', 'Recettes d’antan'],
+    faq: [
+      { q: 'Les remèdes de grand-mère sont-ils sans danger ?', a: "Pas toujours. Le miel est déconseillé avant 1 an à cause du risque de botulisme, certaines huiles essentielles sont dangereuses pour les jeunes enfants et pendant la grossesse, et certaines plantes interagissent avec des médicaments. Chaque article indique les précautions en évidence." },
+      { q: 'Un remède de grand-mère peut-il remplacer un médecin ?', a: "Non. Il peut soulager des symptômes bénins et passagers. Si les symptômes durent, s'aggravent, s'accompagnent de fièvre élevée ou concernent un nourrisson, une femme enceinte ou une personne fragile, il faut consulter." },
+    ],
+    aside: { title: 'Avant d’essayer', text: "Un remède naturel n'est pas forcément sans risque : vérifie toujours la rubrique précautions, surtout pour un enfant." },
   },
   'developpement-personnel': {
     h1: 'Développement personnel : ce que la psychologie a vraiment démontré',

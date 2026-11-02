@@ -11,7 +11,7 @@ export const SITE = {
   lang: 'fr',
   tagline: 'Le bien-être, passé au tamis.',
   description:
-    "Santé naturelle, beauté, fait maison, développement personnel : ce que dit la science, ce que dit la tradition, et notre verdict. Sources à l'appui.",
+    "Santé naturelle, acné, beauté, remèdes de grand-mère, développement personnel : ce que dit la science, ce que dit la tradition, et notre verdict.",
   instagram: 'https://www.instagram.com/lumispira/',
   email: 'bonjour@lumispira.com',
   publisher: 'Lumispira',
@@ -39,6 +39,16 @@ export const CATEGORIES = {
     description:
       "Magnésium, ashwagandha, sommeil, digestion : on analyse les compléments et remèdes naturels avec les études, les avis des agences sanitaires et un verdict honnête.",
   },
+  'peau-acne': {
+    slug: 'peau-acne',
+    name: 'Peau & acné',
+    short: 'Peau & acné',
+    color: 'var(--rose)',
+    soft: 'var(--rose-soft)',
+    title: 'Acné et problèmes de peau : ce qui marche vraiment',
+    description:
+      "Acné, boutons, rougeurs, eczéma : causes, idées reçues, routines et traitements, avec ce que disent les études et les dermatologues.",
+  },
   'beaute-naturelle': {
     slug: 'beaute-naturelle',
     name: 'Beauté naturelle',
@@ -58,6 +68,16 @@ export const CATEGORIES = {
     title: 'Recettes maison : cuisine saine et cosmétiques DIY',
     description:
       "Recettes de cuisine saine et cosmétiques maison testés : des formules simples, sûres et expliquées, avec les erreurs à éviter.",
+  },
+  'recettes-grand-mere': {
+    slug: 'recettes-grand-mere',
+    name: 'Recettes de grand-mère',
+    short: 'Grand-mère',
+    color: 'var(--oat)',
+    soft: 'var(--oat-soft)',
+    title: 'Recettes et remèdes de grand-mère passés au tamis',
+    description:
+      "Miel contre la toux, tisanes, cataplasmes, recettes d'antan : les remèdes et recettes de grand-mère, ce qui marche, ce qui ne marche pas et les précautions.",
   },
   'developpement-personnel': {
     slug: 'developpement-personnel',

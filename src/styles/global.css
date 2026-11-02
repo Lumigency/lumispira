@@ -27,6 +27,10 @@
   --lilac-soft: #f2e4ef;
   --lilac-deep: #7a5683;
   --clay: #b0603f;
+  --rose: #c06a74;
+  --rose-soft: #f8dfe0;
+  --oat: #8f7446;
+  --oat-soft: #efe5d0;
 
   --f-display: 'Young Serif', Georgia, serif;
   --f-text: 'Atkinson Hyperlegible', system-ui, sans-serif;
@@ -383,3 +387,17 @@ p { margin: 0 0 1em; }
 .topic-soon:hover { background: transparent; }
 .fiche[hidden] { display: none; }
 #list-title { scroll-margin-top: 90px; }
+
+/* 7 rubriques : grille souple */
+.rubriques { grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); }
+.nav { gap: 1.15rem; }
+@media (max-width: 1100px) and (min-width: 961px) { .nav a { font-size: .875rem; } }
+
+/* 7 rubriques : 4 + 4 (bons plans sur deux colonnes) */
+.rubriques { grid-template-columns: repeat(4, 1fr); }
+.rubrique.deals { grid-column: span 2; display: grid; grid-template-columns: 112px 1fr; column-gap: 1.25rem; align-items: center; }
+.rubrique.deals .rubrique-illus { grid-row: span 2; margin: 0; }
+@media (max-width: 960px) { .rubriques { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 520px) { .rubriques { grid-template-columns: 1fr; } .rubrique.deals { grid-column: auto; grid-template-columns: 88px 1fr; } .rubrique.deals .rubrique-illus { width: 88px; height: 88px; } }
+.rubrique.deals { align-content: center; row-gap: .35rem; }
+.evidence-scale { padding: 0; }
