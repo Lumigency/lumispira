@@ -1,0 +1,12 @@
+---
+// Symbole Lumispira : une tige, deux feuilles et un soleil.
+// Sert d'icône (onglet, écran d'accueil, réseaux) ; la signature reste le logo principal.
+interface Props { class?: string; stroke?: string }
+const { class: cls, stroke = 'currentColor' } = Astro.props;
+---
+<svg class={cls} viewBox="0 0 48 48" aria-hidden="true" fill="none">
+  <path d="M24 44c0-10 1-17 6-24" stroke={stroke} stroke-width="2.6" stroke-linecap="round" />
+  <path d="M30 20c-2-9 4-16 13-16 1 10-5 16-13 16z" fill="#5f7f4e" stroke={stroke} stroke-width="2.2" stroke-linejoin="round" />
+  <path d="M25 30c-8 1-15-3-16-11 8-2 15 3 16 11z" fill="#eba57c" stroke={stroke} stroke-width="2.2" stroke-linejoin="round" />
+  <circle cx="38" cy="36" r="4.5" fill="#e6c043" />
+</svg>
