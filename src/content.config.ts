@@ -10,8 +10,9 @@ const articles = defineCollection({
     category: z.enum(['sante', 'peau-acne', 'beaute-naturelle', 'recettes-grand-mere', 'developpement-personnel', 'bons-plans']),
     date: z.coerce.date(),
     updated: z.coerce.date().optional(),
-    author: z.enum(['tiphaine']).default('tiphaine'),
-    reviewer: z.object({ name: z.string(), title: z.string() }).optional(),
+    author: z.enum(['tiphaine', 'marie', 'redaction']).default('tiphaine'),
+    // Relecteur santé : une clé de REVIEWERS (src/config/site.ts) ou { name, title }
+    reviewer: z.union([z.string(), z.object({ name: z.string(), title: z.string() })]).optional(),
     // Indice de preuve sur l'affirmation principale de l'article
     evidence: z
       .object({
@@ -42,8 +43,8 @@ const articles = defineCollection({
       })
       .optional(),
     featured: z.boolean().default(false),
-    // L'avis personnel de l'auteure (expérience vécue) : affiché seulement s'il est rempli
-    personalNote: z.string().optional(),
+    // Encadré « On a testé » : un texte (signé par l'auteur de l'article) ou { by, text }
+    personalNote: z.union([z.string(), z.object({ by: z.enum(['tiphaine', 'marie', 'redaction']), text: z.string() })]).optional(),
     // Photo Unsplash : id = la partie après « photo- » dans l'URL images.unsplash.com
     cover: z
       .object({ id: z.string(), alt: z.string(), credit: z.string(), handle: z.string() })

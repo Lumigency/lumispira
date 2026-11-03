@@ -17,16 +17,58 @@ export const SITE = {
   publisher: 'Lumispira',
 };
 
+// ─────────────────────────────────────────────────────────────
+// LA RÉDACTION
+// kind 'person' : une signature nominative, avec sa page /auteurs/<slug>/
+// kind 'team'   : la signature collective « La rédaction » (guides, bons plans)
+// ─────────────────────────────────────────────────────────────
+type Author = { slug: string; name: string; role: string; bio: string; kind: 'person' | 'team'; initials: string; sameAs?: string[] };
+
 export const AUTHORS = {
   tiphaine: {
     slug: 'tiphaine',
     name: 'Tiphaine',
     role: 'Fondatrice et rédactrice en chef',
-    bio: "Entrepreneuse depuis toujours, Tiphaine a passé des années dans les coulisses des marques de cosmétiques et de compléments alimentaires. Elle sait comment on vend un produit — et c'est exactement pour ça qu'elle a créé Lumispira : pour séparer ce qui marche de ce qui se vend bien.",
+    kind: 'person',
+    initials: 'T',
+    bio: "Entrepreneuse depuis toujours, Tiphaine a passé des années dans les coulisses des marques de cosmétiques et de compléments alimentaires. Elle sait comment on vend un produit, et c'est exactement pour ça qu'elle a créé Lumispira : pour séparer ce qui marche de ce qui se vend bien. Elle définit la ligne éditoriale et veille au respect de la méthode.",
   },
-} as const;
+  marie: {
+    slug: 'marie-dedeban',
+    name: 'Marie Dedeban',
+    role: 'Journaliste',
+    kind: 'person',
+    initials: 'MD',
+    bio: "Journaliste depuis huit ans, Marie Dedeban s'est spécialisée dans l'interview et le reportage de terrain, notamment pour La Dépêche et L'Indépendant. Chez Lumispira, elle apporte les réflexes du métier : vérifier, recouper les sources et donner la parole aux spécialistes.",
+  },
+  redaction: {
+    slug: 'redaction',
+    name: 'La rédaction',
+    role: 'Lumispira',
+    kind: 'team',
+    initials: 'L',
+    bio: "Les guides d'achat et les sélections de Lumispira sont préparés collectivement par la rédaction, selon notre méthode publique et nos règles d'indépendance.",
+  },
+} as const satisfies Record<string, Author>;
 
 export type AuthorKey = keyof typeof AUTHORS;
+export const PERSON_KEYS = (Object.keys(AUTHORS) as AuthorKey[]).filter((k) => AUTHORS[k].kind === 'person');
+export const authorUrl = (k: AuthorKey) => (AUTHORS[k].kind === 'team' ? '/redaction/' : `/auteurs/${AUTHORS[k].slug}/`);
+
+// ─────────────────────────────────────────────────────────────
+// RELECTEURS SANTÉ — à compléter quand la relectrice a validé.
+// Puis dans un article : reviewer: dieteticienne
+// Exemple :
+// dieteticienne: {
+//   name: 'Prénom Nom',
+//   title: 'Diététicienne-nutritionniste diplômée',
+//   bio: 'Une phrase sur son parcours.',
+//   url: 'https://www.linkedin.com/in/...', // facultatif
+// },
+// ─────────────────────────────────────────────────────────────
+export type Reviewer = { name: string; title: string; bio?: string; url?: string };
+export const REVIEWERS: Record<string, Reviewer> = {};
+
 
 export const CATEGORIES = {
   sante: {

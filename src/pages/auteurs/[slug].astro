@@ -1,0 +1,59 @@
+---
+import Base from '../../layouts/Base.astro';
+import Crumbs from '../../components/Crumbs.astro';
+import Fiche from '../../components/Fiche.astro';
+import { getCollection } from 'astro:content';
+import { AUTHORS, PERSON_KEYS, SITE, type AuthorKey } from '../../config/site';
+
+export function getStaticPaths() {
+  return PERSON_KEYS.map((key) => ({ params: { slug: AUTHORS[key].slug }, props: { key } }));
+}
+
+const { key } = Astro.props as { key: AuthorKey };
+const a = AUTHORS[key];
+const articles = (await getCollection('articles', (x) => x.data.author === key)).sort((x, y) => y.data.date.valueOf() - x.data.date.valueOf());
+const jsonLd = [{
+  '@context': 'https://schema.org',
+  '@type': 'ProfilePage',
+  mainEntity: {
+    '@type': 'Person',
+    name: a.name,
+    jobTitle: a.role,
+    description: a.bio,
+    url: `${SITE.url}/auteurs/${a.slug}/`,
+    worksFor: { '@id': `${SITE.url}/#organization` },
+  },
+}];
+---
+<Base title={`${a.name}, ${a.role.toLowerCase()} chez ${SITE.name}`} description={`${a.name}, ${a.role.toLowerCase()} chez ${SITE.name} : son parcours, son rôle dans la rédaction et ses articles.`} jsonLd={jsonLd}>
+  <header class="page-head">
+    <div class="wrap">
+      <Crumbs items={[{ name: 'La rédaction', href: '/redaction/' }, { name: a.name, href: `/auteurs/${a.slug}/` }]} />
+      <div class="profile-head">
+        <div class="avatar avatar-xl" aria-hidden="true">{a.initials}</div>
+        <div>
+          <h1>{a.name}</h1>
+          <p class="lede" style="margin-top:.4rem">{a.role} chez {SITE.name}</p>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="wrap layout-split">
+    <div class="prose prose-block">
+      <p>{a.bio}</p>
+      <h2>Ses articles</h2>
+      {articles.length ? (
+        <ul class="fiche-list">{articles.map((x) => <Fiche article={x} />)}</ul>
+      ) : (
+        <p class="empty">Ses premiers articles arrivent bientôt.</p>
+      )}
+    </div>
+    <aside>
+      <div class="side-box">
+        <h2>La rédaction</h2>
+        <p>Chaque article suit la même méthode : sources vérifiées, indice de preuve et relecture.</p>
+        <a href="/redaction/" style="font-size:var(--t-sm)">Toute l'équipe</a>
+      </div>
+    </aside>
+  </div>
+</Base>

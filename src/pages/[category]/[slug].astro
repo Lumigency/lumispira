@@ -6,7 +6,7 @@ import Fiche from '../../components/Fiche.astro';
 import Illus from '../../components/Illus.astro';
 import { img, srcset, creditLinks } from '../../lib/unsplash';
 import { getCollection, render } from 'astro:content';
-import { AUTHORS, CATEGORIES, SITE } from '../../config/site';
+import { AUTHORS, CATEGORIES, REVIEWERS, SITE, authorUrl, type AuthorKey } from '../../config/site';
 
 export async function getStaticPaths() {
   const articles = await getCollection('articles');
@@ -18,6 +18,12 @@ const d = article.data;
 const { Content, headings } = await render(article);
 const cat = CATEGORIES[d.category];
 const author = AUTHORS[d.author];
+const authorHref = authorUrl(d.author);
+// Relecteur : clé de REVIEWERS ou objet { name, title }
+const reviewer = typeof d.reviewer === 'string' ? REVIEWERS[d.reviewer] : d.reviewer;
+// Encadré « On a testé »
+const note = typeof d.personalNote === 'string' ? { by: d.author as AuthorKey, text: d.personalNote } : d.personalNote;
+const noteAuthor = note ? AUTHORS[note.by] : null;
 const url = `${SITE.url}/${d.category}/${article.id}/`;
 const cover = d.cover;
 const shareImage = cover ? img(cover.id, 1200, 630) : `${SITE.url}/og-default.png`;
@@ -51,15 +57,17 @@ const articleLd: Record<string, unknown> = {
   inLanguage: 'fr-FR',
   datePublished: d.date.toISOString(),
   dateModified: (d.updated ?? d.date).toISOString(),
-  author: { '@type': 'Person', name: author.name, url: `${SITE.url}/auteurs/${author.slug}/`, jobTitle: author.role },
+  author: author.kind === 'team'
+    ? { '@type': 'Organization', name: `${author.name} ${SITE.name}`, url: `${SITE.url}/redaction/` }
+    : { '@type': 'Person', name: author.name, url: `${SITE.url}${authorHref}`, jobTitle: author.role, worksFor: { '@id': `${SITE.url}/#organization` } },
   publisher: { '@id': `${SITE.url}/#organization` },
   image: schemaImages,
   articleSection: cat.name,
   keywords: d.topics.join(', '),
   citation: d.sources.filter((s) => s.url).map((s) => s.url),
 };
-if (d.reviewer) {
-  articleLd.reviewedBy = { '@type': 'Person', name: d.reviewer.name, jobTitle: d.reviewer.title };
+if (reviewer) {
+  articleLd.reviewedBy = { '@type': 'Person', name: reviewer.name, jobTitle: reviewer.title, ...(reviewer.url ? { sameAs: [reviewer.url] } : {}) };
   articleLd.lastReviewed = (d.updated ?? d.date).toISOString();
 }
 const jsonLd: object[] = [articleLd];
@@ -84,7 +92,7 @@ if (d.recipe && d.recipe.kind === 'food') {
     '@type': 'Recipe',
     name: d.title,
     description: d.description,
-    author: { '@type': 'Person', name: author.name },
+    author: author.kind === 'team' ? { '@type': 'Organization', name: `${author.name} ${SITE.name}` } : { '@type': 'Person', name: author.name },
     datePublished: d.date.toISOString(),
     prepTime: d.recipe.prepTime,
     totalTime: totalTime(d.recipe.prepTime, d.recipe.cookTime),
@@ -112,8 +120,8 @@ if (d.recipe && d.recipe.kind === 'food') {
           <Illus name={d.category} class="article-head-illus" />
         </div>
         <div class="byline">
-          <span>Par <a href={`/auteurs/${author.slug}/`}>{author.name}</a></span>
-          {d.reviewer && <span>Relu par <b>{d.reviewer.name}</b>, {d.reviewer.title}</span>}
+          <span>Par <a href={authorHref}>{author.kind === 'team' ? 'la rédaction' : author.name}</a>{author.kind === 'person' && <>, {author.role.toLowerCase()}</>}</span>
+          {reviewer && <span>Relu par <b>{reviewer.name}</b>, {reviewer.title}</span>}
           <span>{d.updated ? `Mis à jour le ${fmt(d.updated)}` : `Publié le ${fmt(d.date)}`}</span>
           <span>{minutes} min de lecture</span>
         </div>
@@ -158,12 +166,13 @@ if (d.recipe && d.recipe.kind === 'food') {
           )}
         </div>
 
-        {d.personalNote && (
-          <aside class="personal-note" aria-label={`L'avis de ${author.name}`}>
-            <div class="avatar" aria-hidden="true">{author.name[0]}</div>
+        {note && noteAuthor && (
+          <aside class="personal-note" aria-label="On a testé">
+            <div class="avatar" aria-hidden="true">{noteAuthor.initials}</div>
             <div>
-              <p class="personal-note-title">L'avis de {author.name}</p>
-              <p>{d.personalNote}</p>
+              <p class="personal-note-title">On a testé</p>
+              <p>{note.text}</p>
+              <p class="personal-note-by">{noteAuthor.kind === 'team' ? 'La rédaction' : `${noteAuthor.name}, ${noteAuthor.role.toLowerCase()}`}</p>
             </div>
           </aside>
         )}
@@ -186,13 +195,15 @@ if (d.recipe && d.recipe.kind === 'food') {
           </section>
         )}
 
-        <div class="author-box">
-          <div class="avatar" aria-hidden="true">{author.name[0]}</div>
+        <section class="author-box" aria-label="À propos de l'auteur">
+          <div class="avatar" aria-hidden="true">{author.initials}</div>
           <div>
-            <a href={`/auteurs/${author.slug}/`}><b>{author.name}</b></a>, {author.role}
+            <a href={authorHref}><b>{author.kind === 'team' ? `${author.name} ${SITE.name}` : author.name}</b></a>{author.kind === 'person' && <>, {author.role.toLowerCase()}</>}
             <p>{author.bio}</p>
+            {reviewer && <p><b>Relecture :</b> {reviewer.name}, {reviewer.title}.</p>}
+            <p class="author-box-team">Lumispira est un média indépendant : découvre <a href="/redaction/">la rédaction</a> et <a href="/methode/">notre méthode</a>.</p>
           </div>
-        </div>
+        </section>
       </div>
 
       <aside class="article-aside">

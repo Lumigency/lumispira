@@ -4,7 +4,7 @@ seoTitle: "Quel tapis de yoga choisir ? Le guide d'achat complet"
 description: "PVC, TPE, caoutchouc naturel ou liège ? 4 mm ou 6 mm ? Notre guide d'achat indépendant pour choisir un tapis de yoga adapté à ta pratique et ton budget."
 category: bons-plans
 date: 2026-11-02
-author: tiphaine
+author: redaction
 topics: ["Produits bien-être"]
 cover:
   id: "1646239646963-b0b9be56d6b5"

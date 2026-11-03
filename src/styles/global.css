@@ -539,3 +539,19 @@ a:hover { color: var(--herb-ink); }
 .topic-soon .topic-count { opacity: 1; }
 .side-box a, .deal-guide, .deals-guides a:hover .deals-guide-title { color: var(--plum); }
 .evidence-scale li.on[data-l='4'], .evidence-scale li.on[data-l='5'] { background: var(--herb-ink); }
+.personal-note-by { font-size: var(--t-sm); color: var(--ink-soft); margin-top: .5rem !important; }
+.author-box .avatar { font-size: 1.2rem; }
+.author-box-team { border-top: 1px solid var(--line); padding-top: .6rem; margin-top: .75rem !important; }
+
+/* La rédaction */
+.avatar-lg { width: 72px; height: 72px; font-size: 1.5rem; }
+.avatar-xl { width: 96px; height: 96px; font-size: 2rem; }
+.profile-head { display: flex; gap: 1.5rem; align-items: center; flex-wrap: wrap; }
+.team-grid { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 1.25rem; }
+.team-card { background: var(--card); border-radius: 26px; padding: 1.6rem; box-shadow: 0 16px 34px -28px rgba(67, 42, 69, .5); }
+.team-card h3 { font-size: var(--t-md); margin: 1rem 0 .15rem; }
+.team-card h3 a { text-decoration: none; }
+.team-card h3 a:hover { text-decoration: underline; }
+.team-role { color: var(--plum); font-weight: 700; font-size: var(--t-sm); margin-bottom: .75rem; }
+.team-card p { font-size: var(--t-sm); color: var(--ink-soft); }
+.team-count { margin: 0; font-size: var(--t-xs) !important; }

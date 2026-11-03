@@ -33,11 +33,12 @@ Champs principaux du haut de fichier :
 - `topics` : les sujets de la rubrique traités (mêmes libellés que dans `src/data/categories.ts`) ; ils rendent le filtre cliquable
 - `evidence` : l'affirmation testée et son indice de 1 (Non démontré) à 5 (Prouvé)
 - `verdict` et `keyPoints` : le résumé affiché en haut
-- `reviewer` : `{ name, title }` du professionnel de santé relecteur, quand il y en a un
+- `author` : `tiphaine`, `marie` ou `redaction` (signature collective, pour les guides et sélections). L'équipe se gère dans `src/config/site.ts` (AUTHORS)
+- `reviewer` : la clé d'un relecteur santé déclaré dans `REVIEWERS` (`src/config/site.ts`), par exemple `dieteticienne`
 - `sources`, `faq` (génère les données structurées FAQ)
 - `affiliate: true` si l'article contient des liens affiliés (affiche l'encadré)
 - `healthWarning: true` pour l'encadré santé
-- `personalNote` : ton avis personnel (expérience vécue), affiché dans un encadré « L'avis de Tiphaine » ; facultatif
+- `personalNote` : encadré « On a testé » (expérience vécue). Un texte, signé par l'auteur de l'article, ou `{ by: marie, text: "..." }` pour le signer par quelqu'un d'autre ; facultatif
 - `recipe` (avec `kind: food` pour une recette de cuisine → données structurées Recipe)
 
 Les liens affiliés dans les articles doivent porter `rel="sponsored nofollow"`.

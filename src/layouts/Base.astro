@@ -34,12 +34,16 @@ const ogImage = image ?? new URL('/og-default.png', Astro.site).href;
 const baseLd = [
   {
     '@context': 'https://schema.org',
-    '@type': 'Organization',
+    '@type': 'NewsMediaOrganization',
     '@id': `${SITE.url}/#organization`,
     name: SITE.name,
     url: SITE.url,
     logo: { '@type': 'ImageObject', url: `${SITE.url}/logo.png`, width: 512, height: 512 },
     sameAs: [SITE.instagram],
+    founder: { '@type': 'Person', name: 'Tiphaine', url: `${SITE.url}/auteurs/tiphaine/` },
+    publishingPrinciples: `${SITE.url}/methode/`,
+    ethicsPolicy: `${SITE.url}/transparence/`,
+    actionableFeedbackPolicy: `${SITE.url}/redaction/`,
   },
   {
     '@context': 'https://schema.org',

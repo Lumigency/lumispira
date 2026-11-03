@@ -1,0 +1,73 @@
+---
+import Base from '../layouts/Base.astro';
+import Crumbs from '../components/Crumbs.astro';
+import { getCollection } from 'astro:content';
+import { AUTHORS, PERSON_KEYS, REVIEWERS, SITE } from '../config/site';
+
+const articles = await getCollection('articles');
+const count = (k: string) => articles.filter((a) => a.data.author === k).length;
+const reviewers = Object.values(REVIEWERS);
+
+const jsonLd = [{
+  '@context': 'https://schema.org',
+  '@type': 'AboutPage',
+  name: `La rédaction de ${SITE.name}`,
+  url: `${SITE.url}/redaction/`,
+  mainEntity: {
+    '@id': `${SITE.url}/#organization`,
+    '@type': 'NewsMediaOrganization',
+    name: SITE.name,
+    member: PERSON_KEYS.map((k) => ({ '@type': 'Person', name: AUTHORS[k].name, jobTitle: AUTHORS[k].role, url: `${SITE.url}/auteurs/${AUTHORS[k].slug}/` })),
+  },
+}];
+---
+<Base title={`La rédaction de ${SITE.name}`} description={`Qui écrit ${SITE.name} : la rédaction, son fonctionnement, la relecture des articles santé et nos engagements d'indépendance.`} jsonLd={jsonLd}>
+  <header class="page-head">
+    <div class="wrap">
+      <Crumbs items={[{ name: 'La rédaction', href: '/redaction/' }]} />
+      <h1>La rédaction</h1>
+      <p class="lede">Une petite rédaction indépendante, une méthode commune, et un principe : ne rien publier qu'on ne puisse pas sourcer.</p>
+    </div>
+  </header>
+
+  <div class="wrap" style="padding-top:2.5rem;padding-bottom:4rem">
+    <section aria-labelledby="team-title">
+      <h2 id="team-title" class="sr-only">Les membres de la rédaction</h2>
+      <ul class="team-grid">
+        {PERSON_KEYS.map((k) => {
+          const a = AUTHORS[k];
+          return (
+            <li class="team-card">
+              <div class="avatar avatar-lg" aria-hidden="true">{a.initials}</div>
+              <h3><a href={`/auteurs/${a.slug}/`}>{a.name}</a></h3>
+              <p class="team-role">{a.role}</p>
+              <p>{a.bio}</p>
+              {count(k) > 0 && <p class="team-count">{count(k)} article{count(k) > 1 ? 's' : ''}</p>}
+            </li>
+          );
+        })}
+      </ul>
+    </section>
+
+    <div class="prose prose-block" style="margin-top:3.5rem">
+      <h2>Comment on travaille</h2>
+      <p>Chaque sujet suit <a href="/methode/">la même méthode</a> : une question précise, les études chez l'humain et les avis des agences sanitaires, la tradition quand elle a son mot à dire, puis un verdict et un <a href="/methode/#indice">indice de preuve</a>. Les guides d'achat et les sélections de bons plans sont signés collectivement par la rédaction.</p>
+
+      <h2>La relecture santé</h2>
+      {reviewers.length ? (
+        <>
+          <p>Nos articles santé sont relus avant publication par :</p>
+          <ul>{reviewers.map((r) => <li><b>{r.url ? <a href={r.url} rel="noopener">{r.name}</a> : r.name}</b>, {r.title}{r.bio ? `. ${r.bio}` : ''}</li>)}</ul>
+        </>
+      ) : (
+        <p>Les articles santé ont vocation à être relus par un professionnel de santé. Quand c'est le cas, son nom et sa qualification apparaissent en tête de l'article.</p>
+      )}
+
+      <h2>Notre indépendance</h2>
+      <p>Aucune marque ne relit nos articles ni ne choisit les produits que nous recommandons. Le financement du média et l'affiliation sont expliqués sur la page <a href="/transparence/">transparence</a>.</p>
+
+      <h2>Écrire à la rédaction</h2>
+      <p>Une erreur repérée, une source plus récente, une idée de sujet : <a href={`mailto:${SITE.email}`}>{SITE.email}</a>. On lit tout, et chaque correction significative est signalée dans l'article concerné.</p>
+    </div>
+  </div>
+</Base>
