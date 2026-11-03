@@ -21,6 +21,8 @@ const author = AUTHORS[d.author];
 const url = `${SITE.url}/${d.category}/${article.id}/`;
 const cover = d.cover;
 const shareImage = cover ? img(cover.id, 1200, 630) : `${SITE.url}/og-default.png`;
+// Google recommande plusieurs formats d'image pour les résultats enrichis
+const schemaImages = cover ? [img(cover.id, 1200, 675), img(cover.id, 1200, 900), img(cover.id, 1200, 1200)] : [`${SITE.url}/og-default.png`];
 const credit = cover ? creditLinks(cover.handle) : null;
 const fmt = (date: Date) => date.toLocaleDateString('fr-FR', { day: 'numeric', month: 'long', year: 'numeric' });
 const toc = headings.filter((h) => h.depth === 2);
@@ -28,8 +30,15 @@ const toc = headings.filter((h) => h.depth === 2);
 const words = article.body?.split(/\s+/).length ?? 0;
 const minutes = d.readingTime ?? Math.max(3, Math.round(words / 220));
 
+// À lire ensuite : sujets en commun d'abord, puis même rubrique, puis le plus récent
+const selfUrl = `/${d.category}/${article.id}/`;
+const relScore = (a: typeof article) =>
+  a.data.topics.filter((t) => d.topics.includes(t)).length * 3 +
+  (a.data.category === d.category ? 2 : 0) +
+  // articles déjà liés entre eux dans le texte : sujets proches
+  ((article.body ?? '').includes(`/${a.data.category}/${a.id}/`) || (a.body ?? '').includes(selfUrl) ? 2 : 0);
 const related = (await getCollection('articles', (a) => a.id !== article.id))
-  .sort((a, b) => Number(b.data.category === d.category) - Number(a.data.category === d.category))
+  .sort((a, b) => relScore(b) - relScore(a) || (b.data.updated ?? b.data.date).valueOf() - (a.data.updated ?? a.data.date).valueOf())
   .slice(0, 3);
 
 const articleLd: Record<string, unknown> = {
@@ -44,7 +53,9 @@ const articleLd: Record<string, unknown> = {
   dateModified: (d.updated ?? d.date).toISOString(),
   author: { '@type': 'Person', name: author.name, url: `${SITE.url}/auteurs/${author.slug}/`, jobTitle: author.role },
   publisher: { '@id': `${SITE.url}/#organization` },
-  image: shareImage,
+  image: schemaImages,
+  articleSection: cat.name,
+  keywords: d.topics.join(', '),
   citation: d.sources.filter((s) => s.url).map((s) => s.url),
 };
 if (d.reviewer) {
@@ -84,11 +95,11 @@ if (d.recipe && d.recipe.kind === 'food') {
     recipeYield: d.recipe.yield,
     recipeIngredient: d.recipe.ingredients,
     recipeInstructions: d.recipe.steps.map((s) => ({ '@type': 'HowToStep', text: s })),
-    image: shareImage,
+    image: schemaImages,
   });
 }
 ---
-<Base title={d.seoTitle ?? d.title} description={d.description} type="article" jsonLd={jsonLd} published={d.date} modified={d.updated ?? d.date} image={shareImage}>
+<Base title={d.seoTitle ?? d.title} description={d.description} type="article" jsonLd={jsonLd} published={d.date} modified={d.updated ?? d.date} image={shareImage} imageAlt={cover?.alt} section={cat.name} tags={d.topics}>
   <article>
     <header class="article-head tinted" style={`--tint:${d.category === 'bons-plans' ? 'var(--pollen-soft)' : cat.soft}`}>
       <div class="wrap">

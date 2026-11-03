@@ -12,6 +12,7 @@
   --line: #e6d6c9;
   --herb: #5f7f4e;
   --herb-soft: #e3ead6;
+  --herb-ink: #4f6b40; /* vert lisible pour le texte et les liens (contraste AA) */
   --plum: #5a3a5c;
   --plum-deep: #432a45;
   --plum-soft: #efe0ea;
@@ -244,7 +245,7 @@ p { margin: 0 0 1em; }
 .prose table { width: 100%; border-collapse: collapse; margin: 1.5rem 0 2rem; font-size: var(--t-sm); display: block; overflow-x: auto; }
 .prose th, .prose td { text-align: left; padding: .7rem .75rem; border-bottom: 1px solid var(--line); vertical-align: top; }
 .prose th { font-weight: 700; background: var(--paper-2); }
-.prose a { color: var(--herb); }
+.prose a { color: var(--herb-ink); }
 
 .toc ol { padding-left: 1.1rem; margin: 0; }
 .toc li { font-size: var(--t-sm); margin-bottom: .45rem; }
@@ -531,3 +532,10 @@ p { margin: 0 0 1em; }
 .personal-note .avatar { width: 56px; height: 56px; font-size: 1.4rem; background: var(--plum); }
 .personal-note-title { font-family: var(--f-display); font-size: var(--t-md); margin: 0 0 .35rem; }
 .personal-note p:last-child { margin: 0; }
+
+/* Contrastes AA (audit Lighthouse) */
+a:hover { color: var(--herb-ink); }
+.topic-soon { opacity: 1; color: var(--ink-soft); border-color: var(--ink-soft); }
+.topic-soon .topic-count { opacity: 1; }
+.side-box a, .deal-guide, .deals-guides a:hover .deals-guide-title { color: var(--plum); }
+.evidence-scale li.on[data-l='4'], .evidence-scale li.on[data-l='5'] { background: var(--herb-ink); }

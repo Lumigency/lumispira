@@ -84,6 +84,8 @@ Un jour manqué n'efface rien. La seule règle : **ne pas rater deux fois de sui
 
 Quand l'habitude te paraît automatique, et seulement à ce moment-là, augmente un peu la durée ou l'intensité.
 
+Si le stress te pousse à chercher des solutions express, lis aussi notre analyse de [l'ashwagandha](/sante/ashwagandha-avis-science/) : une bonne habitude fait souvent mieux qu'un complément.
+
 ## Notre conclusion
 
 Oublie les 21 jours. Une habitude prend en moyenne plus de deux mois à s'installer, parfois beaucoup plus, et c'est normal. Ce qui fait la différence, ce n'est pas la volonté, c'est une version minuscule de l'habitude, accrochée à un moment fixe de ta journée, répétée sans culpabilité quand tu rates.

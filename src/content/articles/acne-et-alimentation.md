@@ -75,7 +75,7 @@ C'est l'idée reçue la plus ancienne, et paradoxalement la moins bien étudiée
 2. **Privilégier les aliments à faible charge glycémique** : légumes, légumineuses, céréales complètes, fruits entiers, oléagineux. Un petit-déjeuner comme notre [granola maison peu sucré](/recettes-grand-mere/granola-maison-peu-sucre/) va dans ce sens.
 3. **Tester les produits laitiers si tu le souhaites** : réduis-les pendant deux à trois mois, observe ta peau, et veille à garder assez de calcium.
 4. **Ne pas te priver de tout** : un régime trop strict est difficile à tenir et peut nuire à ton rapport à l'alimentation.
-5. **Garder un traitement adapté** : l'alimentation est un levier d'appoint, pas un traitement.
+5. **Garder un traitement adapté** : l'alimentation est un levier d'appoint, pas un traitement. Et pour un bouton isolé, oublie [le dentifrice](/peau-acne/dentifrice-sur-un-bouton/) : un [patch hydrocolloïde](/peau-acne/patch-bouton-efficace/) fait bien mieux.
 
 ## Notre conclusion
 

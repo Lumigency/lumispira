@@ -86,6 +86,8 @@ Plusieurs mécanismes sont avancés. La texture épaisse du miel **enrobe la gor
 - **Brossage des dents** : si tu le prends au coucher, brosse-toi les dents après, surtout pour les enfants.
 - **Toux qui dure ou signes inquiétants** : le miel soulage, il ne remplace pas une consultation.
 
+Si c'est surtout la nuit que la toux te réveille, nos [remèdes contre la toux sèche nocturne](/recettes-grand-mere/remede-toux-seche-nuit/) complètent le miel. Et inutile de tester [l'oignon dans les chaussettes](/recettes-grand-mere/oignon-dans-les-chaussettes-rhume/) : aucune preuve.
+
 ## La recette du lait chaud au miel
 
 La version la plus réconfortante : un lait tiède avec une cuillère de miel, éventuellement une pincée de cannelle ou un peu de gingembre. Le secret de grand-mère, c'est de **laisser tiédir le lait avant d'ajouter le miel**, pour préserver son goût. Les étapes sont détaillées ci-dessous. Et le miel sert aussi à sucrer légèrement notre [granola maison](/recettes-grand-mere/granola-maison-peu-sucre/).

@@ -3,11 +3,22 @@ import Base from '../../layouts/Base.astro';
 import Crumbs from '../../components/Crumbs.astro';
 import Fiche from '../../components/Fiche.astro';
 import { getCollection } from 'astro:content';
-import { CATEGORIES, CATEGORY_KEYS } from '../../config/site';
+import { CATEGORIES, CATEGORY_KEYS, SITE } from '../../config/site';
 
 const all = (await getCollection('articles')).sort((a, b) => (b.data.updated ?? b.data.date).valueOf() - (a.data.updated ?? a.data.date).valueOf());
+const jsonLd = [{
+  '@context': 'https://schema.org',
+  '@type': 'CollectionPage',
+  name: 'Tous les articles Lumispira',
+  url: `${SITE.url}/blog/`,
+  inLanguage: 'fr-FR',
+  mainEntity: {
+    '@type': 'ItemList',
+    itemListElement: all.map((a, i) => ({ '@type': 'ListItem', position: i + 1, url: `${SITE.url}/${a.data.category}/${a.id}/` })),
+  },
+}];
 ---
-<Base title="Le blog : tous nos articles santé, beauté et bien-être" description="Tous les articles Lumispira : santé naturelle, beauté, recettes maison, développement personnel et guides d'achat, avec un indice de preuve pour chaque sujet.">
+<Base jsonLd={jsonLd} title="Le blog : tous nos articles santé, beauté et bien-être" description="Tous les articles Lumispira : santé naturelle, beauté, recettes maison, développement personnel et guides d'achat, avec un indice de preuve pour chaque sujet.">
   <header class="page-head">
     <div class="wrap">
       <Crumbs items={[{ name: 'Tous les articles', href: '/blog/' }]} />
@@ -19,6 +30,7 @@ const all = (await getCollection('articles')).sort((a, b) => (b.data.updated ?? 
     </div>
   </header>
   <div class="wrap" style="padding-top:2rem;padding-bottom:4rem">
+    <h2 class="sr-only">Les articles, du plus récent au plus ancien</h2>
     <ul class="fiche-list">{all.map((a) => <Fiche article={a} />)}</ul>
   </div>
 </Base>

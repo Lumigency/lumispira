@@ -89,7 +89,7 @@ Comme pour [le magnésium](/sante/magnesium-quelle-forme-choisir/), tout se joue
 
 ## Ce qu'on recommande avant l'ashwagandha
 
-Pour le stress du quotidien, plusieurs approches ont des preuves plus solides et aucun effet indésirable : l'activité physique régulière, la régularité des horaires de sommeil, les exercices de respiration lente, et, si le stress devient envahissant, un accompagnement psychologique. L'ashwagandha peut venir en complément, pas à la place. Pour transformer ces bases en habitudes qui tiennent, notre article sur [le temps qu'il faut pour créer une habitude](/developpement-personnel/combien-de-temps-pour-creer-une-habitude/) donne la méthode.
+Pour le stress du quotidien, plusieurs approches ont des preuves plus solides et aucun effet indésirable : l'activité physique régulière (le yoga, par exemple, avec un [tapis bien choisi](/bons-plans/tapis-de-yoga-comment-choisir/)), la régularité des horaires de sommeil, les exercices de respiration lente, et, si le stress devient envahissant, un accompagnement psychologique. L'ashwagandha peut venir en complément, pas à la place. Pour transformer ces bases en habitudes qui tiennent, notre article sur [le temps qu'il faut pour créer une habitude](/developpement-personnel/combien-de-temps-pour-creer-une-habitude/) donne la méthode.
 
 ## Notre conclusion
 

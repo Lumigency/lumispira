@@ -83,6 +83,8 @@ En été, l'huile de coco peut devenir liquide au-dessus de 24 °C environ. Gard
 - **Appliquer juste après le rasage** : laisse la peau au repos quelques heures.
 - **Utiliser du matériel non désinfecté** : un simple passage à l'alcool suffit.
 
+La même prudence vaut pour les autres soins maison très en vogue, comme le [rinçage au vinaigre de cidre](/beaute-naturelle/vinaigre-de-cidre-cheveux/) : toujours dilué, jamais pur sur la peau.
+
 ## Et si ça ne te suffit pas ?
 
 Certaines personnes transpirent beaucoup, et aucun déodorant, maison ou non, ne suffira. Dans ce cas, un **anti-transpirant** est plus adapté. Si la transpiration est très abondante et te gêne au quotidien, parles-en à ton médecin : il existe des traitements.

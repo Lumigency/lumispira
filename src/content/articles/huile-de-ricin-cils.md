@@ -77,4 +77,4 @@ Pour les sourcils, tu peux appliquer un peu plus d'huile et masser légèrement.
 
 ## Notre conclusion
 
-L'huile de ricin est un bon soin gainant, simple et bon marché, mais pas un sérum de pousse. Si tu l'aimes, garde-la dans ta routine pour la souplesse et la brillance de tes cils. Si tu cherches une vraie pousse, sache que seul un médicament sur prescription a fait ses preuves, avec des effets indésirables à discuter avec un médecin. Pour d'autres ingrédients passés au tamis, explore la rubrique [Beauté naturelle](/beaute-naturelle/).
+L'huile de ricin est un bon soin gainant, simple et bon marché, mais pas un sérum de pousse. Si tu l'aimes, garde-la dans ta routine pour la souplesse et la brillance de tes cils. Si tu cherches une vraie pousse, sache que seul un médicament sur prescription a fait ses preuves, avec des effets indésirables à discuter avec un médecin. Pour d'autres ingrédients passés au tamis, comme [le vinaigre de cidre sur les cheveux](/beaute-naturelle/vinaigre-de-cidre-cheveux/), explore la rubrique [Beauté naturelle](/beaute-naturelle/).
