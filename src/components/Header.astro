@@ -4,11 +4,12 @@ import { SITE, CATEGORIES } from '../config/site';
 
 const path = Astro.url.pathname;
 const links = [
-  { href: '/sante/', label: CATEGORIES.sante.short },
-  { href: '/peau-acne/', label: CATEGORIES['peau-acne'].short },
-  { href: '/beaute-naturelle/', label: CATEGORIES['beaute-naturelle'].short },
   { href: '/recettes-grand-mere/', label: CATEGORIES['recettes-grand-mere'].short },
+  { href: '/maison-naturelle/', label: CATEGORIES['maison-naturelle'].short },
+  { href: '/beaute-naturelle/', label: CATEGORIES['beaute-naturelle'].short },
   { href: '/developpement-personnel/', label: CATEGORIES['developpement-personnel'].short },
+  { href: '/peau-acne/', label: CATEGORIES['peau-acne'].short },
+  { href: '/sante/', label: CATEGORIES.sante.short },
   { href: '/blog/', label: 'Le blog' },
 ];
 ---

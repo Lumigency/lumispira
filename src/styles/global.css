@@ -32,6 +32,8 @@
   --rose-soft: #f8dfe0;
   --oat: #8f7446;
   --oat-soft: #efe5d0;
+  --eucalyptus: #3f6f68;
+  --eucalyptus-soft: #dcebe7;
 
   --f-display: 'Young Serif', Georgia, serif;
   --f-text: 'Atkinson Hyperlegible', system-ui, sans-serif;
@@ -561,3 +563,12 @@ a:hover { color: var(--herb-ink); }
 .team-role { color: var(--plum); font-weight: 700; font-size: var(--t-sm); margin-bottom: .75rem; }
 .team-card p { font-size: var(--t-sm); color: var(--ink-soft); }
 .team-count { margin: 0; font-size: var(--t-xs) !important; }
+
+/* 7 rubriques à l'accueil : 4 + (2 + bons plans sur deux colonnes) */
+.rubriques { grid-template-columns: repeat(4, 1fr); }
+.rubrique.deals { grid-column: span 2; display: grid; grid-template-columns: 112px 1fr; column-gap: 1.25rem; align-content: center; align-items: center; }
+.rubrique.deals .rubrique-illus { grid-row: span 2; margin: 0; }
+@media (max-width: 960px) { .rubriques { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 520px) { .rubriques { grid-template-columns: 1fr; } .rubrique.deals { grid-column: auto; grid-template-columns: 88px 1fr; } }
+.nav { gap: 1rem; }
+@media (max-width: 1180px) and (min-width: 961px) { .nav { gap: .8rem; } .nav a { font-size: .86rem; } }

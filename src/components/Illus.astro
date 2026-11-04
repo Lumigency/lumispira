@@ -1,7 +1,7 @@
 ---
 // Illustrations botaniques maison : formes douces, trait prune arrondi.
 // Toutes originales, en SVG, sans dépendance. name = la scène à dessiner.
-interface Props { name: 'hero' | 'sante' | 'peau-acne' | 'beaute-naturelle' | 'fait-maison' | 'recettes-grand-mere' | 'developpement-personnel' | 'bons-plans' | 'yoga' | 'livres' | 'corps' | 'inspirations' | 'newsletter' | 'sprig'; class?: string }
+interface Props { name: 'hero' | 'sante' | 'peau-acne' | 'beaute-naturelle' | 'fait-maison' | 'recettes-grand-mere' | 'maison-naturelle' | 'developpement-personnel' | 'bons-plans' | 'yoga' | 'livres' | 'corps' | 'inspirations' | 'newsletter' | 'sprig'; class?: string }
 const { name, class: cls } = Astro.props;
 const ink = 'var(--ink)';
 const s = { stroke: ink, 'stroke-width': 3, 'stroke-linecap': 'round', 'stroke-linejoin': 'round' };
@@ -69,6 +69,20 @@ const s = { stroke: ink, 'stroke-width': 3, 'stroke-linecap': 'round', 'stroke-l
     <path d="M138 128h42v-8h-42z" fill="var(--oat)" {...s} />
     <path d="M168 120l12-34" {...s} />
     <path d="M176 82l8 4-4 10-8-4z" fill="var(--pollen)" {...s} stroke-width="2.5" />
+  </svg>
+)}
+{name === 'maison-naturelle' && (
+  <svg class={cls} viewBox="0 0 200 200" aria-hidden="true" fill="none">
+    <circle cx="100" cy="104" r="78" fill="var(--eucalyptus-soft)" />
+    <path d="M66 92h40l6 18v52c0 6-4 10-10 10H70c-6 0-10-4-10-10v-52z" fill="var(--card)" {...s} />
+    <path d="M62 124h48v38c0 6-4 10-10 10H72c-6 0-10-4-10-10z" fill="var(--eucalyptus)" opacity=".3" />
+    <path d="M66 92h40l6 18v52c0 6-4 10-10 10H70c-6 0-10-4-10-10v-52z" {...s} />
+    <rect x="74" y="74" width="24" height="18" rx="3" fill="var(--plum)" {...s} />
+    <path d="M98 78h16l6 8h-22" fill="var(--plum)" {...s} />
+    <path d="M126 76l8-4M126 84h9M126 92l8 4" {...s} stroke-width="2.5" />
+    <ellipse cx="148" cy="150" rx="22" ry="16" fill="var(--pollen)" {...s} />
+    <path d="M136 146c6-4 16-4 22 0" {...s} stroke-width="2.5" />
+    <path d="M150 134c2-8 10-12 16-8-4 8-10 10-16 8z" fill="var(--herb)" {...s} stroke-width="2.5" />
   </svg>
 )}
 {name === 'beaute-naturelle' && (

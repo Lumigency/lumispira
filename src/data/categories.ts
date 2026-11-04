@@ -44,6 +44,23 @@ export const CATEGORY_CONTENT: Record<CategoryKey, CategoryContent> = {
     ],
     aside: { title: 'Le bon réflexe', text: "Une acné qui laisse des marques ou qui dure mérite un avis médical. Des traitements efficaces existent, ne reste pas seule avec." },
   },
+  'maison-naturelle': {
+    h1: 'Maison naturelle : ce qui nettoie vraiment',
+    lede: "Vinaigre blanc, bicarbonate, savon noir, lessive maison. Les bons usages, les mélanges inutiles, ceux qui sont dangereux, et les dosages qui marchent.",
+    intro: `
+<h2>Le ménage au naturel, sans les recettes miracles</h2>
+<p>Le vinaigre blanc, le bicarbonate et le savon noir ont remplacé une bonne partie des produits ménagers dans beaucoup de foyers. Ils sont efficaces, économiques et souvent plus simples. Mais les astuces qui circulent en ligne mélangent le vrai et le faux : certains mélanges ne servent à rien, d'autres abîment les surfaces, et quelques-uns sont franchement dangereux.</p>
+<p>Ici, chaque astuce passe au tamis : ce que dit la chimie, ce qu'en disent les associations de consommateurs et les autorités sanitaires, et un <a href="/methode/#indice">indice de preuve</a> clair. Avec, à chaque fois, les dosages précis et les surfaces à éviter.</p>
+<h2>Les règles de base</h2>
+<p>Un produit à la fois, toujours dilué selon l'usage, testé sur une petite zone cachée, et rangé dans son flacon d'origine, hors de portée des enfants. Et une règle absolue : ne jamais mélanger l'eau de Javel avec un autre produit, en particulier un acide comme le vinaigre.</p>`,
+    topics: ['Vinaigre blanc', 'Bicarbonate', 'Savon noir', 'Lessive et linge', 'Cuisine et salle de bain', 'Sécurité des produits'],
+    faq: [
+      { q: 'Peut-on mélanger vinaigre blanc et bicarbonate ?', a: "On peut, mais c'est inutile : l'acide du vinaigre et la base du bicarbonate se neutralisent. Il reste surtout de l'eau salée qui mousse. Mieux vaut les utiliser séparément, chacun pour ce qu'il fait bien." },
+      { q: 'Le vinaigre blanc désinfecte-t-il ?', a: "Il assainit et limite certaines bactéries, mais il n'est pas un désinfectant au même titre que les produits biocides homologués. Pour désinfecter après un aliment cru ou en cas de maladie, suis les indications d'un produit prévu pour cet usage." },
+      { q: 'Quels produits ne faut-il jamais mélanger ?', a: "L'eau de Javel ne doit jamais être mélangée avec un autre produit, en particulier les acides comme le vinaigre ou les détartrants, ni avec l'ammoniaque : ces mélanges dégagent des gaz toxiques." },
+    ],
+    aside: { title: 'La règle d’or', text: "Un produit à la fois, bien dilué, testé sur une zone cachée. Et jamais de Javel mélangée à autre chose." },
+  },
   'beaute-naturelle': {
     h1: 'Beauté naturelle : les ingrédients au banc d’essai',
     lede: "Huiles végétales, actifs naturels, routines de soin : ce qu'ils font vraiment pour ta peau et tes cheveux, et ce qui relève du marketing.",
