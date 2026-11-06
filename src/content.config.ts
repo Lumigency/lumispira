@@ -2,7 +2,12 @@ import { defineCollection, z } from 'astro:content';
 import { glob } from 'astro/loaders';
 
 const articles = defineCollection({
-  loader: glob({ pattern: '**/*.md', base: './src/content/articles' }),
+  // Articles du dépôt + articles publiés dans Sanity (copiés dans _sanity/ au moment du build)
+  loader: glob({
+    pattern: '**/*.md',
+    base: './src/content/articles',
+    generateId: ({ entry }) => entry.split('/').pop()!.replace(/\.md$/, ''),
+  }),
   schema: z.object({
     title: z.string(),
     seoTitle: z.string().optional(),

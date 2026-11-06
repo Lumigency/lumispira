@@ -79,3 +79,10 @@ Les ingrédients sont reconnus par mot-clé dans `src/components/Ingredients.ast
 - **Vouvoiement** partout (articles, rubriques, formulaires).
 - Ton **bienveillant, grande sœur**, avec une **pointe d'humour** ; jamais moralisateur, jamais culpabilisant.
 - Chaque article se termine par **« Le mot de Tiph »** : champ `tiphNote` dans le front-matter, 2 à 3 phrases dans la voix de Tiphaine (conseil, regard personnel, un peu d'humour). L'encadré « On a testé » (`personalNote`) reste réservé aux vrais tests.
+
+## CMS Sanity
+
+- Interface d'édition : https://lumispira.sanity.studio (projet `w2n6bpsf`, dataset `production`, organisation Lumigency, séparé de JAUGE).
+- **Articles** : seuls les articles **publiés** dans Sanity arrivent sur le site. Au build, `scripts/sanity-pull.mjs` les récupère et les convertit en Markdown dans `src/content/articles/_sanity/` (dossier ignoré par Git). Un article publié dans Sanity remplace la version du dépôt qui a la même adresse.
+- **Idées de sujets** : type « Idée de sujet » avec un statut (proposée, validée, rédigée, refusée). La tâche planifiée du lundi et du jeudi rédige un brouillon à partir de l'idée validée la plus prioritaire.
+- Si Sanity est injoignable, le build continue avec les articles du dépôt.
