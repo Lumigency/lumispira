@@ -45,6 +45,8 @@ L'acné naît dans le follicule pileux : la peau produit trop de sébum, les por
 
 L'alimentation n'est donc pas la cause principale. La vraie question est : peut-elle aggraver ou améliorer une acné existante ?
 
+![Un verre de lait posé sur une table avec des fruits](https://images.unsplash.com/photo-1685156328634-e336397c9d38 "novila misastra|sastravila")
+
 ## Les sucres rapides : la piste la plus sérieuse
 
 C'est le lien le mieux étudié. L'idée : les aliments qui font monter fortement la glycémie, comme les sodas, les pâtisseries ou le pain blanc, augmentent l'insuline et certaines hormones de croissance, qui stimulent la production de sébum.
@@ -76,6 +78,8 @@ C'est l'idée reçue la plus ancienne, et paradoxalement la moins bien étudiée
 3. **Tester les produits laitiers si tu le souhaites** : réduis-les pendant deux à trois mois, observe ta peau, et veille à garder assez de calcium.
 4. **Ne pas te priver de tout** : un régime trop strict est difficile à tenir et peut nuire à ton rapport à l'alimentation.
 5. **Garder un traitement adapté** : l'alimentation est un levier d'appoint, pas un traitement. Et pour un bouton isolé, oublie [le dentifrice](/peau-acne/dentifrice-sur-un-bouton/) : un [patch hydrocolloïde](/peau-acne/patch-bouton-efficace/) fait bien mieux.
+
+![Une salade de légumes verts et orange dans un bol blanc](https://images.unsplash.com/photo-1592578630143-fac65cda7a67 "Ravi Sharma|ravinepz")
 
 ## Notre conclusion
 

@@ -56,3 +56,20 @@ redirections 301 des anciennes URL (`vercel.json`).
 - `src/components/Newsletter.astro` : brancher le formulaire Brevo
 - Relecteur santé : ajouter `reviewer` aux articles santé
 - **Lancement** : dans `src/config/site.ts`, mettre l'URL définitive et passer `indexable` à `true`
+
+## Photos dans le texte d'un article
+
+Chaque article contient au moins deux photos Unsplash (licence gratuite uniquement, jamais Unsplash+), en plus de la couverture.
+On les écrit directement dans le Markdown :
+
+```md
+![Texte alternatif en français](https://images.unsplash.com/photo-ID "Nom du photographe|handle")
+```
+
+Un troisième champ facultatif ajoute une légende : `"Nom|handle|Ma légende"`.
+Le site transforme automatiquement l'image en photo responsive avec le crédit (`src/lib/rehype-unsplash.mjs`).
+
+## Ingrédients illustrés
+
+Toute recette ou formule (`recipe:`) affiche en tête d'article un bandeau « Ce qu'il te faut » dessiné à la main.
+Les ingrédients sont reconnus par mot-clé dans `src/components/Ingredients.astro` : pour un nouvel ingrédient, ajoute une ligne dans `ICONS` et son dessin SVG.

@@ -59,6 +59,8 @@ Une cuillère de miel quand la toux empêche de dormir : c'est le remède de gra
 
 Le miel est utilisé depuis l'Antiquité pour adoucir la gorge et calmer la toux. On le prend pur, dans du lait chaud, dans une tisane de thym ou avec un filet de citron. Nos grands-mères n'avaient pas d'essais cliniques, mais elles avaient un bon instinct. C'est tout l'esprit de notre rubrique [Recettes & remèdes de grand-mère](/recettes-grand-mere/) : vérifier ce que la tradition a vu juste.
 
+![Un bocal en verre rempli de miel](https://images.unsplash.com/photo-1608158454932-bec5a8364a30 "Deniz Rona|denizrona")
+
 ## Ce que dit la science
 
 ### Chez l'enfant
@@ -91,6 +93,8 @@ Si c'est surtout la nuit que la toux te réveille, nos [remèdes contre la toux 
 ## La recette du lait chaud au miel
 
 La version la plus réconfortante : un lait tiède avec une cuillère de miel, éventuellement une pincée de cannelle ou un peu de gingembre. Le secret de grand-mère, c'est de **laisser tiédir le lait avant d'ajouter le miel**, pour préserver son goût. Les étapes sont détaillées ci-dessous. Et le miel sert aussi à sucrer légèrement notre [granola maison](/recettes-grand-mere/granola-maison-peu-sucre/).
+
+![Du miel dans un verre posé sur une table](https://images.unsplash.com/photo-1555211652-5c6222f971bc "Heather Barnes|heatherbarnes")
 
 ## Notre conclusion
 

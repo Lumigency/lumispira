@@ -60,6 +60,8 @@ Le bicarbonate de soude est efficace contre les odeurs, car il neutralise les ac
 
 Sur la peau fine des aisselles, souvent rasée ou épilée, cet écart fragilise la barrière cutanée. D'où notre indice de preuve **Prometteur** : le mécanisme est solide et les témoignages sont très nombreux, mais il existe peu d'études cliniques dédiées au bicarbonate sous les bras. C'est le même réflexe que pour tous les remèdes beauté qui circulent en ligne, comme [l'huile de ricin sur les cils](/beaute-naturelle/huile-de-ricin-cils/) : vérifier avant d'adopter.
 
+![Deux flacons de soin à côté d'une fleur blanche sur une table en bois](https://images.unsplash.com/photo-1598779795578-2afceafed88e "Clarita|peonyyy")
+
 ## La recette sans bicarbonate
 
 Cette formule repose sur trois ingrédients faciles à trouver :
@@ -88,6 +90,8 @@ La même prudence vaut pour les autres soins maison très en vogue, comme le [ri
 ## Et si ça ne te suffit pas ?
 
 Certaines personnes transpirent beaucoup, et aucun déodorant, maison ou non, ne suffira. Dans ce cas, un **anti-transpirant** est plus adapté. Si la transpiration est très abondante et te gêne au quotidien, parles-en à ton médecin : il existe des traitements.
+
+![Des savons faits main empilés](https://images.unsplash.com/photo-1542038335240-86aea625b913 "Annie Spratt|anniespratt")
 
 ## Notre conclusion
 

@@ -49,6 +49,8 @@ L'hypothèse de la pousse repose sur un enchaînement de deux études qui ne por
 
 C'est tout. Il n'existe pas, à notre connaissance, d'essai clinique comparant des cils traités à l'huile de ricin à des cils non traités. D'où notre indice : **Non démontré**.
 
+![Une femme se maquille les yeux devant un miroir](https://images.unsplash.com/photo-1583241801076-37b30763b0ff "Kelly Sikkema|kellysikkema")
+
 ## Ce que l'huile de ricin fait vraiment
 
 Ne pas faire pousser les cils ne veut pas dire ne rien faire. L'huile de ricin forme un **film protecteur** autour de chaque cil. Résultat :
@@ -74,6 +76,8 @@ Pour les sourcils, tu peux appliquer un peu plus d'huile et masser légèrement.
 - **Si l'huile entre dans l'œil**, rince abondamment à l'eau claire. Elle peut provoquer une sensation de voile et des picotements.
 - **Fais un test de tolérance** 48 heures avant, au pli du coude, comme pour tout soin naturel ou [cosmétique maison](/beaute-naturelle/deodorant-maison-sans-bicarbonate/). Des allergies de contact à l'huile de ricin ont été décrites.
 - **Ne l'utilise pas** si tu as une infection de l'œil ou des paupières, ou si tu portes des lentilles au moment de l'application.
+
+![Des produits de beauté vus du dessus](https://images.unsplash.com/photo-1512207426415-91c2e14fbe36 "Annie Spratt|anniespratt")
 
 ## Notre conclusion
 

@@ -3,6 +3,7 @@ import sitemap from '@astrojs/sitemap';
 import { SITE } from './src/config/site.ts';
 import fs from 'node:fs';
 import path from 'node:path';
+import rehypeUnsplash from './src/lib/rehype-unsplash.mjs';
 
 // Date de dernière modification de chaque article (updated, sinon date) pour le sitemap
 const ARTICLES_DIR = './src/content/articles';
@@ -18,6 +19,7 @@ export default defineConfig({
   site: SITE.url,
   trailingSlash: 'always',
   build: { format: 'directory', inlineStylesheets: 'always' },
+  markdown: { rehypePlugins: [rehypeUnsplash] },
   integrations: [
     sitemap({
       filter: (page) => !['/404', '/mentions-legales/', '/confidentialite/'].some((p) => page.includes(p)),

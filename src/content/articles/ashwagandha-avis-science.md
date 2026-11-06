@@ -45,6 +45,8 @@ L'ashwagandha est passé en quelques années d'une plante de la médecine ayurv�
 
 L'ashwagandha (*Withania somnifera*), parfois appelé ginseng indien, est une plante dont on utilise surtout la racine. Dans la médecine ayurvédique, elle est classée parmi les « rasayana », des plantes censées renforcer l'organisme, et elle est utilisée depuis des siècles. Aujourd'hui, on la range dans la famille des **plantes adaptogènes**, un terme marketing plus que scientifique qui désigne les plantes censées aider le corps à faire face au stress.
 
+![Des bocaux en verre remplis de plantes séchées et d'épices](https://images.unsplash.com/photo-1545840716-c82e9eec6930 "Bundo Kim|bundo")
+
 ## Ce que disent les études sur le stress
 
 C'est le sujet le mieux étudié. Une méta-analyse publiée en 2024 a regroupé **9 essais randomisés contre placebo, avec 558 participants**. Par rapport au placebo, l'ashwagandha était associé à :
@@ -90,6 +92,8 @@ Comme pour [le magnésium](/sante/magnesium-quelle-forme-choisir/), tout se joue
 ## Ce qu'on recommande avant l'ashwagandha
 
 Pour le stress du quotidien, plusieurs approches ont des preuves plus solides et aucun effet indésirable : l'activité physique régulière (le yoga, par exemple, avec un [tapis bien choisi](/bons-plans/tapis-de-yoga-comment-choisir/)), la régularité des horaires de sommeil, les exercices de respiration lente, et, si le stress devient envahissant, un accompagnement psychologique. L'ashwagandha peut venir en complément, pas à la place. Pour transformer ces bases en habitudes qui tiennent, notre article sur [le temps qu'il faut pour créer une habitude](/developpement-personnel/combien-de-temps-pour-creer-une-habitude/) donne la méthode.
+
+![Des bocaux de tisanes et de plantes séchées dans une boutique](https://images.unsplash.com/photo-1757802412806-433e4e60eec7 "Zoshua Colah|zoshuacolah")
 
 ## Notre conclusion
 

@@ -72,6 +72,8 @@ Bonus : les amandes et les graines de courge comptent parmi les aliments les plu
 
 La troisième raison, c'est le **prix** : acheter flocons et graines en vrac revient généralement bien moins cher qu'un granola premium.
 
+![Un bol de granola et une cuillère sur une table en bois](https://images.unsplash.com/photo-1686182689848-283fdd34e72f "Jacinto|longlivehaas")
+
 ## L'astuce des gros morceaux
 
 Le secret des granolas de boutique, ce sont les gros morceaux croustillants. Deux gestes suffisent :
@@ -90,6 +92,8 @@ Pour une version végétale, remplace le blanc d'œuf par 2 cuillères à soupe 
 ## Conservation
 
 Range le granola **complètement refroidi** dans un bocal hermétique, à l'abri de la chaleur. Il reste croustillant 2 à 3 semaines. S'il ramollit, repasse-le 5 minutes au four à 160 °C.
+
+![Un bol de yaourt avec des mûres et du granola](https://images.unsplash.com/photo-1692071106919-01bc0b9b0919 "Natalie Behn|natalie_behn")
 
 ## Notre conclusion
 

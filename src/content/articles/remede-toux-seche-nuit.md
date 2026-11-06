@@ -59,6 +59,8 @@ Une toux sèche qui reprend dès qu'on pose la tête sur l'oreiller, c'est épui
 
 En position allongée, les sécrétions du nez peuvent couler vers la gorge et l'irriter. L'air des chambres chauffées est souvent sec, ce qui irrite aussi. Et dans le calme de la nuit, chaque quinte paraît plus forte. Une toux sèche après un rhume peut durer **trois à quatre semaines** : c'est long, mais souvent normal.
 
+![Une boisson chaude au citron dans un contenant en verre](https://images.unsplash.com/photo-1443131307017-4097c8ac7763 "Anda Ambrosini|andadot")
+
 ## Les remèdes qui marchent
 
 ### Le miel, le champion validé
@@ -90,6 +92,8 @@ Un demi-citron pressé, de l'eau chaude mais pas bouillante, une ou deux cuillè
 ## Quand consulter
 
 D'après les recommandations du NHS, il faut voir un médecin si la toux **dure plus de trois semaines** ou s'accompagne d'une perte de poids inexpliquée. Il faut consulter **rapidement** si la toux s'aggrave fortement, en cas de difficulté à respirer, de douleur dans la poitrine ou de sang dans les crachats. Pour un nourrisson, demande un avis sans attendre.
+
+![Un pot en céramique, un pichet et des tranches de citron](https://images.unsplash.com/photo-1484406528157-81e9e4d24931 "Hans Vivek|oneshotespresso")
 
 ## Notre conclusion
 

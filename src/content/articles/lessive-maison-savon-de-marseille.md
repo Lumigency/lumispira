@@ -67,6 +67,8 @@ Son seul point positif relevé : l'absence de conservateurs allergisants.
 
 D'où notre indice **Fragile** : rien ne montre qu'une lessive maison lave aussi bien qu'une lessive du commerce, et le seul test indépendant que nous ayons trouvé dit plutôt le contraire.
 
+![Une buanderie avec un lave-linge et un panier à linge](https://images.unsplash.com/photo-1696546761269-a8f9d2b80512 "Anton Savinov|tonchik")
+
 ## Pourquoi elle grise le linge : l'eau calcaire
 
 Le savon de Marseille est un vrai savon. Dans une **eau calcaire**, il réagit avec le calcium et forme des dépôts insolubles, comme le voile qui se dépose sur une paroi de douche. Ces dépôts se fixent dans les fibres et ternissent le linge, lavage après lavage. Ils peuvent aussi encrasser la machine.
@@ -92,6 +94,8 @@ Pour assouplir le linge, un fond de [vinaigre blanc](/maison-naturelle/vinaigre-
 ## L'alternative du milieu
 
 Si tu cherches surtout à réduire les ingrédients controversés et les emballages, une **lessive du commerce écolabellisée**, bien dosée selon la dureté de ton eau, offre souvent le meilleur compromis entre efficacité et impact.
+
+![Un panier à linge blanc à côté d'un lave-linge jaune](https://images.unsplash.com/photo-1585318518669-3365d350fcfa "Anca Gabriela Zosin|agzed")
 
 ## Notre conclusion
 

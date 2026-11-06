@@ -46,6 +46,8 @@ Le patch classique est fait d'**hydrocolloïde**, la même matière que les pans
 2. il **protège** la plaie des frottements et des bactéries ;
 3. il **t'empêche d'y toucher**, ce qui est peut-être son plus grand mérite.
 
+![Gros plan sur le visage d'une femme](https://images.unsplash.com/photo-1675773051474-55c4b7d2cf53 "omid armin|itsomidarmin")
+
 ## Ce que montrent les études
 
 Les essais sont encore peu nombreux, mais ils vont dans le même sens :
@@ -77,6 +79,8 @@ Certains patchs contiennent de l'acide salicylique, de l'huile de tea tree ou de
 4. Ne perce pas le bouton pour « l'aider » : laisse le patch faire.
 
 C'est en tout cas une bien meilleure idée que [le dentifrice sur un bouton](/peau-acne/dentifrice-sur-un-bouton/).
+
+![Portrait en gros plan d'une peau avec des taches de rousseur et des rougeurs](https://images.unsplash.com/photo-1730288951113-9cc087c14b83 "Muthia Ashifa Salsabella|muthiasalsabella511")
 
 ## Notre conclusion
 

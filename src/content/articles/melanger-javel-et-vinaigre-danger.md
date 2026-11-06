@@ -46,6 +46,8 @@ L'eau de Javel contient de l'hypochlorite de sodium. Au contact d'un **acide**, 
 
 D'où notre indice **Prouvé** : c'est une réaction chimique connue, et les autorités sanitaires de plusieurs pays mettent en garde contre ce mélange.
 
+![Des voilages blancs soulevés par l'air d'une fenêtre ouverte](https://images.unsplash.com/photo-1780155968749-2b45bcd44884 "Jon Tyson|jontyson")
+
 ## Ce qu'a constaté l'Anses
 
 En avril 2023, l'Anses a alerté sur l'explosion des intoxications liées à ce mélange, souvent utilisé comme **désherbant fait maison** depuis l'interdiction des herbicides chimiques pour les particuliers en 2019 :
@@ -78,6 +80,8 @@ Pour le ménage du quotidien, la Javel est rarement nécessaire. Un savon comme 
 ## En cas d'exposition
 
 Sors à l'air libre et aère la pièce. Si la toux persiste ou si tu as du mal à respirer, appelle un **centre antipoison**. En cas de détresse respiratoire, appelle le **15** ou le **112**. Garde l'étiquette des produits sous la main : elle aide les secours.
+
+![Une fenêtre ouverte avec un rideau](https://images.unsplash.com/photo-1547166993-fc34f81b9aec "Lotus Design N Print|lotusdnp")
 
 ## Notre conclusion
 

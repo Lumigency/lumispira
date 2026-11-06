@@ -52,6 +52,8 @@ Une alimentation qui fait la place aux céréales complètes, aux légumineuses,
 
 Un complément peut être utile si ton alimentation est pauvre en ces aliments, en période de stress intense ou de fatigue, ou sur conseil médical. Mais il ne rattrape pas une alimentation déséquilibrée. Si c'est le stress qui te pousse vers les compléments, lis aussi notre analyse de [l'ashwagandha](/sante/ashwagandha-avis-science/), qui n'est pas sans précautions.
 
+![Des amandes dans un bol en céramique blanche](https://images.unsplash.com/photo-1430163393927-3dab9af7ea38 "Juan José Valencia Antía|juanantia")
+
 ## Les formes de magnésium comparées
 
 Un complément de magnésium associe toujours le minéral à une autre molécule, appelée « sel ». C'est ce sel qui change l'absorption et la tolérance.
@@ -92,6 +94,8 @@ L'EFSA a fixé une limite de sécurité de **250 mg par jour de magnésium appor
 ## Les précautions à connaître
 
 Le magnésium en complément est généralement bien toléré. Les personnes atteintes d'**insuffisance rénale** doivent demander l'avis de leur médecin, car leurs reins éliminent moins bien l'excès. Le magnésium peut aussi réduire l'absorption de certains médicaments, notamment certains antibiotiques et traitements de l'ostéoporose : un écart de quelques heures entre les prises est souvent conseillé. Ton pharmacien peut te le confirmer pour ton traitement.
+
+![Un tas de feuilles d'épinards frais](https://images.unsplash.com/photo-1557648493-6e5f8afda63d "Monika Grabkowska|moniqa")
 
 ## Notre conclusion
 

@@ -40,6 +40,8 @@ On le voit revenir chaque hiver sur les réseaux : couper un oignon en rondelles
 
 L'origine exacte est floue. Le remède est souvent rattaché aux anciennes croyances selon lesquelles les maladies se transmettaient par un « mauvais air », et qu'un oignon coupé pouvait l'absorber. Il s'est ajouté à cela l'idée, venue de la réflexologie, que les pieds seraient reliés à tout le corps. Aucune de ces deux idées ne résiste à ce qu'on sait aujourd'hui.
 
+![Un bol rempli d'oignons](https://images.unsplash.com/photo-1538200002235-924f1147e5d0 "Deepu Vasant|deepuvasant")
+
 ## Ce que dit la science
 
 Un rhume est une infection par des **virus** qui se transmettent par les gouttelettes et par les mains, puis se multiplient dans le nez et la gorge. Pour qu'un oignon agisse, il faudrait qu'il atteigne ces virus. Posé sous la plante des pieds, il n'a aucun moyen de le faire.
@@ -62,6 +64,8 @@ Si la toux te réveille la nuit, nos [remèdes contre la toux sèche nocturne](/
 ## Quand consulter
 
 Un rhume banal ne nécessite pas de consultation. Il faut en revanche voir un médecin en cas de forte fièvre qui dure, de difficulté à respirer, de douleur au visage ou aux oreilles qui s'aggrave, ou si les symptômes durent plus de dix jours sans s'améliorer. Pour un nourrisson, demande conseil plus tôt.
+
+![Une paire de chaussettes](https://images.unsplash.com/photo-1615486364462-ef6363adbc18 "Mockup Graphics|mockupgraphics")
 
 ## Notre conclusion
 

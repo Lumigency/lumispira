@@ -48,6 +48,8 @@ Les auteurs recommandent donc que les produits capillaires ne dépassent pas un 
 
 Le raisonnement du rinçage au vinaigre est là : un rinçage acide, après un shampoing trop basique, pourrait refermer la cuticule et rendre les cheveux plus lisses et plus brillants.
 
+![Deux bouteilles de cidre de pomme sur une table](https://images.unsplash.com/photo-1601055892144-5a86fc4155e2 "Sidral Mundet|sidralmundet")
+
 ## Ce qui manque : la preuve directe
 
 C'est plausible. Mais **aucune étude clinique** n'a comparé des cheveux rincés au vinaigre de cidre à des cheveux non rincés. Les bénéfices annoncés reposent sur ce mécanisme, sur l'usage traditionnel et sur des témoignages. D'où notre indice **Fragile**.
@@ -71,6 +73,8 @@ Comme pour tout soin maison, fais d'abord un test de tolérance. On t'explique p
 ## Une alternative plus simple
 
 Si ton objectif est d'avoir des cheveux moins frisottants et plus brillants, choisir un **shampoing doux au pH acide** et un après-shampoing règle souvent la question, sans odeur de vinaigre.
+
+![Une femme aux longs cheveux bruns vue de dos](https://images.unsplash.com/photo-1596911647169-7085321c81b8 "Thalia Ruiz|thalia_s_ruiz")
 
 ## Notre conclusion
 

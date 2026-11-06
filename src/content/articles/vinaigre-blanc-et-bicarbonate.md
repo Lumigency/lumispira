@@ -50,6 +50,8 @@ Comme l'explique la Bibliothèque municipale de Lyon dans son service de répons
 
 D'où notre indice **Non démontré** : non seulement rien ne montre que le mélange nettoie mieux, mais la chimie montre qu'il annule les qualités de chacun.
 
+![Des bouteilles en verre brun posées sur une table](https://images.unsplash.com/photo-1671493234071-93f7b9a1f937 "Denise Chan|elchan")
+
 ## Le seul cas où ça peut servir
 
 L'effervescence crée un petit mouvement mécanique. Versée dans une canalisation, elle peut aider à **décoller un léger dépôt**. Mais elle ne dissout pas les cheveux ni les graisses accumulées. Pour un évier vraiment bouché, une ventouse ou un furet restent les meilleures options.
@@ -72,6 +74,8 @@ Pour aller plus loin, on a détaillé [les vrais usages du vinaigre blanc et les
 ## Le vrai mélange à ne jamais faire
 
 Le duo vinaigre et bicarbonate est inutile, mais sans danger. Ce n'est pas le cas de **l'eau de Javel mélangée à du vinaigre**, qui dégage un gaz toxique. On explique pourquoi dans notre article sur [le mélange javel et vinaigre](/maison-naturelle/melanger-javel-et-vinaigre-danger/).
+
+![Un évier de cuisine avec des ustensiles](https://images.unsplash.com/photo-1709891733205-094e35e1fd23 "Marc Pell|blinky264")
 
 ## Notre conclusion
 

@@ -1,0 +1,113 @@
+---
+// Bandeau illustré « Ce qu'il te faut », en tête des recettes et formules.
+// Chaque ingrédient de la recette est reconnu par mot-clé et dessiné à la main (SVG maison).
+interface Props { items: string[]; kind: 'food' | 'diy' }
+const { items, kind } = Astro.props;
+
+type Icon = { key: string; label: string; re: RegExp };
+// L'ordre compte : les expressions les plus précises d'abord.
+const ICONS: Icon[] = [
+  { key: 'karite', label: 'Beurre de karité', re: /karit/ },
+  { key: 'coco', label: 'Huile de coco', re: /coco/ },
+  { key: 'cristaux', label: 'Cristaux de soude', re: /cristaux/ },
+  { key: 'savon', label: 'Savon', re: /savon/ },
+  { key: 'argile', label: 'Argile', re: /argile|kaolin/ },
+  { key: 'poudre', label: 'Fécule', re: /fécule|arrow|maïzena|amidon/ },
+  { key: 'oeuf', label: 'Œufs', re: /œuf|oeuf/ },
+  { key: 'lait', label: 'Lait', re: /\blait\b|boisson végétale/ },
+  { key: 'farine', label: 'Farine', re: /farine/ },
+  { key: 'beurre', label: 'Beurre', re: /beurre/ },
+  { key: 'miel', label: 'Miel', re: /miel|sirop d'érable/ },
+  { key: 'sucre', label: 'Sucre', re: /sucre|cassonade|vergeoise/ },
+  { key: 'sel', label: 'Sel', re: /\bsel\b|fleur de sel/ },
+  { key: 'poivre', label: 'Poivre', re: /poivre/ },
+  { key: 'pain', label: 'Pain', re: /\bpain\b|baguette|brioche/ },
+  { key: 'pomme', label: 'Pommes', re: /pomme/ },
+  { key: 'citron', label: 'Citron', re: /citron/ },
+  { key: 'oignon', label: 'Oignons', re: /oignon/ },
+  { key: 'ail', label: 'Ail', re: /\bail\b|gousses? d'ail/ },
+  { key: 'carotte', label: 'Carottes', re: /carotte/ },
+  { key: 'poireau', label: 'Poireau', re: /poireau/ },
+  { key: 'celeri', label: 'Céleri', re: /céleri/ },
+  { key: 'herbes', label: 'Herbes', re: /thym|laurier|bouquet garni|persil|herbes/ },
+  { key: 'fromage', label: 'Fromage', re: /fromage|comté|gruyère|emmental/ },
+  { key: 'vin', label: 'Vin blanc', re: /\bvin\b/ },
+  { key: 'avoine', label: "Flocons d'avoine", re: /avoine|flocons/ },
+  { key: 'amande', label: 'Amandes', re: /amande|noisette|noix\b/ },
+  { key: 'graines', label: 'Graines', re: /graines/ },
+  { key: 'cannelle', label: 'Cannelle', re: /cannelle/ },
+  { key: 'vanille', label: 'Vanille', re: /vanille/ },
+  { key: 'gingembre', label: 'Gingembre', re: /gingembre/ },
+  { key: 'huile', label: 'Huile', re: /huile/ },
+  { key: 'bouillon', label: 'Bouillon', re: /bouillon/ },
+  { key: 'eau', label: 'Eau', re: /\beau\b|d'eau/ },
+];
+
+// Un dessin par ingrédient, une seule fois même s'il revient dans plusieurs lignes
+const seen = new Set<string>();
+const picked: { key: string; label: string; optional: boolean }[] = [];
+for (const raw of items) {
+  const line = raw.toLowerCase();
+  const optional = /facultatif/.test(line);
+  for (const icon of ICONS) {
+    if (icon.re.test(line) && !seen.has(icon.key)) {
+      seen.add(icon.key);
+      picked.push({ key: icon.key, label: icon.label, optional });
+    }
+  }
+}
+
+const s = { stroke: 'var(--ink)', 'stroke-width': 2.2, 'stroke-linecap': 'round', 'stroke-linejoin': 'round' } as const;
+---
+{picked.length > 0 && (
+  <section class="ingredients-strip" aria-labelledby="ing-strip-title">
+    <div class="ingredients-strip-head">
+      <h2 id="ing-strip-title">{kind === 'food' ? "Ce qu'il te faut" : 'Les ingrédients de la formule'}</h2>
+      <a href="#recette">{kind === 'food' ? 'Voir la recette' : 'Voir la formule'} <span aria-hidden="true">↓</span></a>
+    </div>
+    <ul>
+      {picked.map(({ key, label, optional }) => (
+        <li class={optional ? 'is-optional' : undefined}>
+          <svg viewBox="0 0 64 64" fill="none" aria-hidden="true">
+            <circle cx="32" cy="34" r="26" fill="var(--paper)" />
+            {key === 'oeuf' && (<><ellipse cx="26" cy="36" rx="11" ry="14" fill="var(--card)" {...s} /><ellipse cx="40" cy="38" rx="10" ry="12.5" fill="var(--apricot-soft)" {...s} /></>)}
+            {key === 'lait' && (<><path d="M25 18h14v6l5 8v22a3 3 0 0 1-3 3H23a3 3 0 0 1-3-3V32l5-8z" fill="var(--card)" {...s} /><path d="M20 38h24" {...s} /><path d="M25 18h14" {...s} /></>)}
+            {key === 'farine' && (<><path d="M20 22c4-3 20-3 24 0l3 30c0 4-30 4-30 0z" fill="var(--oat)" {...s} /><path d="M22 22c3 3 17 3 20 0" {...s} /><path d="M28 38c2-4 6-4 8 0" {...s} /></>)}
+            {key === 'beurre' && (<><path d="M14 38l10-12h28l-10 12z" fill="var(--pollen)" {...s} /><path d="M14 38v8h28v-8M42 46l10-12v-8" fill="var(--pollen)" {...s} /></>)}
+            {key === 'miel' && (<><path d="M20 28h24v20a6 6 0 0 1-6 6H26a6 6 0 0 1-6-6z" fill="var(--pollen)" {...s} /><path d="M18 22h28v6H18z" fill="var(--apricot)" {...s} /><path d="M38 14v18" {...s} /><path d="M35 32h6" {...s} /></>)}
+            {key === 'sucre' && (<><rect x="16" y="32" width="14" height="14" rx="2" fill="var(--card)" {...s} /><rect x="32" y="32" width="14" height="14" rx="2" fill="var(--card)" {...s} /><rect x="24" y="18" width="14" height="14" rx="2" fill="var(--card)" {...s} /></>)}
+            {key === 'sel' && (<><path d="M24 26h16l2 26H22z" fill="var(--card)" {...s} /><path d="M24 26c0-8 16-8 16 0" fill="var(--lilac)" {...s} /><circle cx="29" cy="20" r=".8" fill="var(--ink)" /><circle cx="35" cy="20" r=".8" fill="var(--ink)" /></>)}
+            {key === 'poivre' && (<><path d="M26 24h12l3 28H23z" fill="var(--plum-soft)" {...s} /><path d="M28 24v-6h8v6M32 18v-4" {...s} /></>)}
+            {key === 'pain' && (<><path d="M10 40c0-10 12-16 22-16s22 6 22 16-10 10-22 10-22 0-22-10z" fill="var(--apricot)" {...s} /><path d="M22 32l4 6M30 30l4 6M38 30l4 6" {...s} /></>)}
+            {key === 'pomme' && (<><path d="M32 24c-6-6-18-4-18 10 0 12 8 20 14 20 2 0 3-1 4-1s2 1 4 1c6 0 14-8 14-20 0-14-12-16-18-10z" fill="var(--rose)" {...s} /><path d="M32 24c0-4 1-8 4-10" {...s} /><path d="M35 17c4-4 10-3 11 0-4 3-8 3-11 0z" fill="var(--herb)" {...s} /></>)}
+            {key === 'citron' && (<><ellipse cx="32" cy="36" rx="18" ry="13" fill="var(--pollen)" {...s} /><path d="M13 36l-3-1M51 36l3-1" {...s} /><path d="M30 23c2-5 8-7 12-5-2 4-8 6-12 5z" fill="var(--herb)" {...s} /></>)}
+            {key === 'oignon' && (<><path d="M32 18c-2 6-16 12-16 24 0 8 7 12 16 12s16-4 16-12c0-12-14-18-16-24z" fill="var(--apricot-soft)" {...s} /><path d="M32 18v-6M28 54c-4-8-4-18 2-26M36 54c4-8 4-18-2-26" {...s} /></>)}
+            {key === 'ail' && (<><path d="M32 20c-4 6-14 12-14 22 0 8 6 12 14 12s14-4 14-12c0-10-10-16-14-22z" fill="var(--card)" {...s} /><path d="M32 20v-6M26 52c-2-6-2-14 2-20M38 52c2-6 2-14-2-20M32 54V34" {...s} /></>)}
+            {key === 'carotte' && (<><path d="M20 46c6-12 16-24 24-26 2 8-10 20-22 28-2 1-3 0-2-2z" fill="var(--apricot)" {...s} /><path d="M44 20c2-4 6-6 8-6M44 20c4-1 8 0 10 2M44 20c0-4 0-8-2-10" {...s} /><path d="M28 38l3 2M34 32l3 2" {...s} /></>)}
+            {key === 'poireau' && (<><path d="M18 50l20-20" stroke="var(--ink)" stroke-width="10" stroke-linecap="round" /><path d="M18 50l20-20" stroke="var(--card)" stroke-width="6" stroke-linecap="round" /><path d="M36 32c2-8 6-14 12-18M38 30c6-4 12-6 16-6M36 32c0-6-2-12-6-16" stroke="var(--herb)" stroke-width="4" stroke-linecap="round" /></>)}
+            {key === 'celeri' && (<><path d="M24 52c0-10 2-24 6-32M32 52c0-10 0-24 0-34M40 52c0-10-2-24-6-32" {...s} stroke="var(--herb)" stroke-width="4" /><path d="M24 20c-4-4-2-8 2-8 0 4 2 6 4 8M40 20c4-4 2-8-2-8 0 4-2 6-4 8" fill="var(--herb-soft)" {...s} /></>)}
+            {key === 'herbes' && (<><path d="M30 54c0-14 2-28 8-38" {...s} /><path d="M38 16c6-2 10 2 10 6-6 2-10 0-10-6zM34 28c-6-4-12-2-12 2 6 4 10 2 12-2zM36 32c6-2 10 2 10 6-6 2-10 0-10-6zM32 42c-6-4-12-2-12 2 6 4 10 2 12-2z" fill="var(--herb)" {...s} /></>)}
+            {key === 'fromage' && (<><path d="M12 42l34-18 8 6v14H12z" fill="var(--pollen)" {...s} /><path d="M12 42l34-18" {...s} /><circle cx="22" cy="49" r="2.2" fill="var(--card)" {...s} /><circle cx="36" cy="40" r="2.6" fill="var(--card)" {...s} /><circle cx="46" cy="48" r="2" fill="var(--card)" {...s} /></>)}
+            {key === 'vin' && (<><path d="M22 14h20c0 14-4 22-10 22s-10-8-10-22z" fill="var(--card)" {...s} /><path d="M23 24h18c-1 8-4 12-9 12s-8-4-9-12z" fill="var(--pollen)" /><path d="M22 14h20c0 14-4 22-10 22s-10-8-10-22zM32 36v14M24 52h16" {...s} /></>)}
+            {key === 'avoine' && (<><path d="M14 40h36c0 8-8 14-18 14s-18-6-18-14z" fill="var(--card)" {...s} /><ellipse cx="24" cy="36" rx="5" ry="3" fill="var(--oat)" {...s} /><ellipse cx="34" cy="34" rx="5" ry="3" fill="var(--oat)" {...s} /><ellipse cx="42" cy="37" rx="4" ry="2.5" fill="var(--oat)" {...s} /></>)}
+            {key === 'amande' && (<><path d="M24 50c-8-6-8-20 2-28 6 8 6 22-2 28z" fill="var(--apricot)" {...s} /><path d="M40 52c-8-6-8-20 2-28 6 8 6 22-2 28z" fill="var(--apricot)" {...s} /></>)}
+            {key === 'graines' && (<><path d="M20 46h24c0 6-6 8-12 8s-12-2-12-8z" fill="var(--card)" {...s} /><ellipse cx="24" cy="30" rx="3" ry="5" fill="var(--herb)" {...s} /><ellipse cx="34" cy="26" rx="3" ry="5" fill="var(--oat)" {...s} /><ellipse cx="42" cy="34" rx="3" ry="5" fill="var(--herb)" {...s} /></>)}
+            {key === 'cannelle' && (<><rect x="14" y="26" width="36" height="8" rx="4" fill="var(--apricot)" {...s} /><rect x="16" y="36" width="34" height="8" rx="4" fill="var(--apricot)" {...s} /></>)}
+            {key === 'vanille' && (<><path d="M16 50c10-6 22-20 30-34" stroke="var(--ink)" stroke-width="7" stroke-linecap="round" /><path d="M16 50c10-6 22-20 30-34" stroke="var(--plum)" stroke-width="3" stroke-linecap="round" /><path d="M46 16c2-2 4-2 6 0" {...s} /></>)}
+            {key === 'gingembre' && (<><path d="M14 40c0-6 6-8 10-6 2-6 10-8 14-4 4-4 12-2 12 4 4 2 4 10-2 12-8 2-26 2-32 0-2-1-2-4-2-6z" fill="var(--oat)" {...s} /><path d="M30 36l2 4M40 34l1 4" {...s} /></>)}
+            {key === 'huile' && (<><path d="M27 12h10v8l6 8v24a3 3 0 0 1-3 3H24a3 3 0 0 1-3-3V28l6-8z" fill="var(--pollen)" {...s} /><path d="M21 36h22" {...s} /></>)}
+            {key === 'coco' && (<><circle cx="32" cy="38" r="15" fill="var(--apricot)" {...s} /><path d="M20 30c8 6 16 6 24 0" fill="var(--card)" {...s} /><circle cx="28" cy="40" r="1.5" fill="var(--ink)" /><circle cx="36" cy="40" r="1.5" fill="var(--ink)" /></>)}
+            {key === 'karite' && (<><path d="M18 30h28v18a6 6 0 0 1-6 6H24a6 6 0 0 1-6-6z" fill="var(--card)" {...s} /><path d="M16 24h32v6H16z" fill="var(--lilac)" {...s} /><path d="M24 38c4-4 12-4 16 0" {...s} /></>)}
+            {key === 'poudre' && (<><path d="M14 42h36c0 8-8 12-18 12s-18-4-18-12z" fill="var(--card)" {...s} /><path d="M20 42c2-10 22-10 24 0" fill="var(--paper)" {...s} /><path d="M44 30l8-12" {...s} /><ellipse cx="54" cy="16" rx="4" ry="3" fill="var(--oat)" {...s} /></>)}
+            {key === 'argile' && (<><path d="M14 42h36c0 8-8 12-18 12s-18-4-18-12z" fill="var(--card)" {...s} /><path d="M20 42c2-10 22-10 24 0" fill="var(--rose)" {...s} /></>)}
+            {key === 'savon' && (<><rect x="14" y="30" width="36" height="20" rx="8" fill="var(--herb-soft)" {...s} /><circle cx="22" cy="22" r="4" fill="var(--card)" {...s} /><circle cx="34" cy="18" r="3" fill="var(--card)" {...s} /><circle cx="44" cy="24" r="2.5" fill="var(--card)" {...s} /></>)}
+            {key === 'cristaux' && (<><path d="M20 48l6-16 8 4-4 14zM34 50l4-18 10 2-4 16zM24 30l6-12 8 6-4 10z" fill="var(--card)" {...s} /></>)}
+            {key === 'bouillon' && (<><path d="M12 34h40c0 12-9 20-20 20s-20-8-20-20z" fill="var(--apricot-soft)" {...s} /><path d="M12 34h40" {...s} /><path d="M24 26c-3-4 3-6 0-10M32 26c-3-4 3-6 0-10M40 26c-3-4 3-6 0-10" {...s} /></>)}
+            {key === 'eau' && (<><path d="M32 12c-6 10-14 18-14 28a14 14 0 0 0 28 0c0-10-8-18-14-28z" fill="var(--eucalyptus-soft)" {...s} /><path d="M26 42c0 4 3 7 6 7" {...s} /></>)}
+          </svg>
+          <span>{label}{optional && <small> (facultatif)</small>}</span>
+        </li>
+      ))}
+    </ul>
+  </section>
+)}

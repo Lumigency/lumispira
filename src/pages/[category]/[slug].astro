@@ -4,6 +4,7 @@ import Crumbs from '../../components/Crumbs.astro';
 import Evidence from '../../components/Evidence.astro';
 import Fiche from '../../components/Fiche.astro';
 import Illus from '../../components/Illus.astro';
+import Ingredients from '../../components/Ingredients.astro';
 import { img, srcset, creditLinks } from '../../lib/unsplash';
 import { getCollection, render } from 'astro:content';
 import { AUTHORS, CATEGORIES, REVIEWERS, SITE, authorUrl, type AuthorKey } from '../../config/site';
@@ -147,6 +148,8 @@ if (d.recipe && d.recipe.kind === 'food') {
         </section>
 
         {d.evidence && <Evidence claim={d.evidence.claim} level={d.evidence.level} />}
+
+        {d.recipe && <Ingredients items={d.recipe.ingredients} kind={d.recipe.kind} />}
 
         <div class="prose">
           <Content />

@@ -60,6 +60,8 @@ La largeur standard est d'environ 61 cm. Pour la longueur, les tapis standards f
 
 Un tapis en caoutchouc naturel peut peser 2 à 3 fois plus qu'un tapis en TPE. Si tu le transportes au studio à pied ou à vélo, c'est un vrai critère.
 
+![Une femme s'étire assise sur un tapis de yoga](https://images.unsplash.com/photo-1758599880788-e49f6ee77bc7 "Vitaly Gariev|silverkblack")
+
 ## Notre recommandation selon ton profil
 
 - **Tu débutes et tu veux tester** : un tapis en TPE de 5 à 6 mm, léger et peu coûteux. Le plus dur sera de pratiquer régulièrement : voici [combien de temps il faut vraiment pour créer une habitude](/developpement-personnel/combien-de-temps-pour-creer-une-habitude/).
@@ -71,6 +73,8 @@ Un tapis en caoutchouc naturel peut peser 2 à 3 fois plus qu'un tapis en TPE. S
 ## Ce qui ne vaut pas la peine de payer plus
 
 Les lignes d'alignement imprimées, les sangles de transport « exclusives » et les motifs. Ce qui justifie un prix plus élevé, c'est la matière, la densité et la durabilité.
+
+![Une femme penchée vers ses jambes sur un tapis, dans un studio lumineux](https://images.unsplash.com/photo-1758599879178-e5be0375dee9 "Vitaly Gariev|silverkblack")
 
 ## Les bons plans
 

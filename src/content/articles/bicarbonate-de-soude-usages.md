@@ -45,6 +45,8 @@ C'est une **base douce**, sous forme de poudre fine. Deux propriétés expliquen
 - il est **légèrement abrasif**, juste assez pour décoller la saleté sans rayer la plupart des surfaces ;
 - il est **basique**, ce qui lui permet de neutraliser certaines odeurs acides.
 
+![Un pot de poudre blanche et une cuillère sur une table](https://images.unsplash.com/photo-1693996047008-1b6210099be1 "Alex Saks|alexsaks")
+
 ## Ce qui marche vraiment
 
 | Usage | Comment |
@@ -71,6 +73,8 @@ Si tu veux essayer, étale-le dans une **coupelle large** plutôt que dans une b
 Les **cristaux de soude**, ou carbonate de sodium, sont souvent vendus juste à côté. Ils sont **beaucoup plus basiques** et irritants pour la peau et les yeux. On les utilise avec des gants, pour dégraisser fortement ou dans la [lessive maison](/maison-naturelle/lessive-maison-savon-de-marseille/), et on les évite sur l'aluminium.
 
 Le bicarbonate, lui, est assez doux pour entrer dans des recettes de cosmétiques maison. Mais attention à la peau : on a expliqué pourquoi il irrite beaucoup d'aisselles dans notre article sur le [déodorant maison sans bicarbonate](/beaute-naturelle/deodorant-maison-sans-bicarbonate/).
+
+![Un plan de travail de cuisine en bois](https://images.unsplash.com/photo-1580280126518-3bcec8e0492b "Dylan Brown|dylanbrown_")
 
 ## Notre conclusion
 

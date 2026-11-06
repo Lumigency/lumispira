@@ -40,6 +40,8 @@ C'est l'astuce de salle de bain la plus connue : une noisette de dentifrice sur 
 
 Les anciens dentifrices contenaient souvent du triclosan, un antibactérien, et laissent une sensation fraîche et « asséchante ». De là est née l'idée qu'ils pourraient assécher un bouton et tuer les bactéries en cause. Le triclosan a depuis été retiré de la plupart des dentifrices, et l'idée, elle, est restée.
 
+![Une brosse à dents et un tube de dentifrice sur le rebord d'un lavabo](https://images.unsplash.com/photo-1760184762833-7c6bd9ef1415 "Po-Hsuan Huang|aben20807")
+
 ## Ce que dit la science
 
 Il n'existe **aucune étude** qui ait testé le dentifrice sur l'acné. Ce que l'on sait, en revanche, c'est ce que contient un dentifrice, et pourquoi la peau du visage le supporte mal :
@@ -63,6 +65,8 @@ Un bouton enflammé est une petite plaie. L'irriter davantage, avec du dentifric
 4. **Ne pas percer** avec les doigts, et nettoyer doucement le visage matin et soir.
 
 Si les boutons sont nombreux, douloureux ou laissent des marques, c'est le moment de consulter. Et si tu te demandes si ton assiette joue un rôle, lis notre dossier [acné et alimentation](/peau-acne/acne-et-alimentation/).
+
+![Gros plan sur une brosse à dents et un tube de dentifrice](https://images.unsplash.com/photo-1549924327-093737b3bb46 "Rich Smith|richwilliamsmith")
 
 ## Notre conclusion
 

@@ -43,6 +43,8 @@ On la doit à **Maxwell Maltz**, un chirurgien esthétique américain. Dans son 
 
 Trois choses se sont perdues en route : il parlait d'adaptation à un changement, pas de création d'habitude ; il donnait un **minimum**, pas une durée ; et il s'agissait d'une observation de praticien, pas d'une étude. Le chiffre, rond et rassurant, a ensuite été repris de livre en livre.
 
+![Une personne écrit dans un carnet](https://images.unsplash.com/photo-1644412448740-40e5b6ded2dc "Nubelson Fernandes|nublson")
+
 ## Ce qu'a mesuré l'étude de référence
 
 En 2010, une équipe de l'University College de Londres, menée par la psychologue **Phillippa Lally**, a publié la première étude qui mesure la formation d'habitudes dans la vraie vie.
@@ -85,6 +87,8 @@ Un jour manqué n'efface rien. La seule règle : **ne pas rater deux fois de sui
 Quand l'habitude te paraît automatique, et seulement à ce moment-là, augmente un peu la durée ou l'intensité.
 
 Si le stress te pousse à chercher des solutions express, lis aussi notre analyse de [l'ashwagandha](/sante/ashwagandha-avis-science/) : une bonne habitude fait souvent mieux qu'un complément.
+
+![Un agenda ouvert pour suivre ses habitudes](https://images.unsplash.com/photo-1569360368368-7d00bbdebe33 "Prophsee Journals|prophsee")
 
 ## Notre conclusion
 

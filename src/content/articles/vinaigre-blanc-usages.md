@@ -44,6 +44,8 @@ Le calcaire est surtout du carbonate de calcium. L'acide acétique du vinaigre l
 
 L'association de consommateurs belge écoconso conseille un vinaigre d'alcool autour de **8 % d'acide acétique**, et jamais en dessous de 5 %.
 
+![Gros plan sur un pommeau de douche](https://images.unsplash.com/photo-1697652973421-0d688f661d89 "Caleb Wright|calecrunchy")
+
 ## Ce qu'il nettoie vraiment
 
 | Usage | Comment |
@@ -79,6 +81,8 @@ Le vinaigre **assainit** et limite certaines bactéries, mais il n'est pas un d�
 2. **Inutile avec le bicarbonate** : les deux se neutralisent, comme on l'a montré dans [vinaigre blanc et bicarbonate](/maison-naturelle/vinaigre-blanc-et-bicarbonate/).
 
 Le vinaigre a aussi sa place dans la salle de bain côté beauté, en [rinçage pour les cheveux](/beaute-naturelle/vinaigre-de-cidre-cheveux/), mais avec un vinaigre de cidre et toujours très dilué.
+
+![De l'eau qui jaillit d'un pommeau de douche sur un mur carrelé](https://images.unsplash.com/photo-1685949546169-0d6e2505acae "Igal Ness|igalness")
 
 ## Notre conclusion
 

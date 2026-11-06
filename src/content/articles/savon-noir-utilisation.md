@@ -42,6 +42,8 @@ Le savon noir de ménage est un savon obtenu à partir d'huiles végétales, sou
 
 À ne pas confondre avec le **savon noir de hammam**, à l'huile d'olive, qui est un **cosmétique** pour la peau. Ce sont deux produits différents, à ne pas intervertir.
 
+![Un pain de savon posé sur une table en bois](https://images.unsplash.com/photo-1726235812628-23558521686f "Towfiqu barbhuiya|towfiqu999999")
+
 ## À quoi il sert
 
 C'est un nettoyant **multi-usage** :
@@ -74,6 +76,8 @@ Plus de savon ne lave pas mieux : un surdosage laisse des traces et rend les sol
 - **Teste sur une zone cachée** avant de l'utiliser sur un textile délicat.
 - **Range-le hors de portée des enfants** et à l'abri de la chaleur. Il se conserve plusieurs années.
 - Comme pour tout produit ménager, **ne le mélange pas avec l'eau de Javel**, et utilise un seul produit à la fois. On t'explique pourquoi dans notre article sur [le mélange javel et vinaigre](/maison-naturelle/melanger-javel-et-vinaigre-danger/).
+
+![Une cuisine aux murs blancs avec un parquet clair](https://images.unsplash.com/photo-1674217444141-d8ca3bc66584 "David Libeert|deefbelgium")
 
 ## Notre conclusion
 
