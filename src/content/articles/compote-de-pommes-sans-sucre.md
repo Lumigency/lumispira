@@ -9,6 +9,7 @@ evidence:
   claim: "Une compote de pommes n'a pas besoin de sucre ajouté pour être sucrée"
   level: 4
 topics: ["Recettes simples", "Recettes d’antan", "Petit-déjeuner"]
+tiphNote: "Le sucre dans la compote, c'est souvent une habitude plus qu'un besoin. Misez sur des pommes bien mûres et une pincée de cannelle : vos papilles s'habituent plus vite qu'on ne le croit, promis."
 cover:
   id: "1664196500111-cc5770c4bd2c"
   alt: "Un panier rempli de pommes rouges et vertes"
@@ -17,7 +18,7 @@ cover:
 verdict: "Pas besoin de sucre : les pommes en contiennent déjà naturellement, environ 11 g pour 100 g de compote. Le secret d'une compote douce, c'est de mélanger les variétés et de choisir des pommes bien mûres. Vingt-cinq minutes suffisent."
 keyPoints:
   - "Une compote du commerce sans sucres ajoutés contient environ 11 g de sucres pour 100 g, tous apportés par les pommes."
-  - "Mélange une pomme douce et une pomme acidulée pour une compote équilibrée."
+  - "Mélangez une pomme douce et une pomme acidulée pour une compote équilibrée."
   - "Une pincée de cannelle ou de vanille donne une impression de douceur sans sucre."
   - "Elle se garde 4 à 5 jours au réfrigérateur, ou plusieurs mois au congélateur."
 sources:
@@ -36,20 +37,20 @@ recipe:
     - "Facultatif : 1 pincée de cannelle ou une demi-gousse de vanille"
     - "Facultatif : quelques gouttes de jus de citron"
   steps:
-    - "Épluche les pommes, retire le cœur et coupe-les en morceaux."
-    - "Mets-les dans une casserole avec l'eau, et la cannelle ou la vanille si tu en utilises."
-    - "Couvre et laisse cuire à feu doux 15 à 20 minutes, en remuant de temps en temps."
-    - "Quand les pommes sont fondantes, écrase-les à la fourchette pour une compote rustique, ou mixe-les pour une texture lisse."
-    - "Goûte, ajoute quelques gouttes de citron si tu la trouves trop douce, puis laisse refroidir avant de la mettre en pots."
+    - "Épluchez les pommes, retirez le cœur et coupez-les en morceaux."
+    - "Mettez-les dans une casserole avec l'eau, et la cannelle ou la vanille si vous en utilisez."
+    - "Couvrez et laissez cuire à feu doux 15 à 20 minutes, en remuant de temps en temps."
+    - "Quand les pommes sont fondantes, écrasez-les à la fourchette pour une compote rustique, ou mixez-les pour une texture lisse."
+    - "Goûtez, ajoutez quelques gouttes de citron si vous la trouvez trop douce, puis laissez refroidir avant de la mettre en pots."
 faq:
   - q: "Quelles pommes choisir pour une compote sans sucre ?"
-    a: "Mélange une variété douce, comme la Golden ou la Gala, et une variété plus acidulée et fondante, comme la Reine des reinettes ou la Boskoop. Plus les pommes sont mûres, plus la compote sera douce."
+    a: "Mélangez une variété douce, comme la Golden ou la Gala, et une variété plus acidulée et fondante, comme la Reine des reinettes ou la Boskoop. Plus les pommes sont mûres, plus la compote sera douce."
   - q: "Combien de temps se conserve une compote maison ?"
-    a: "Quatre à cinq jours au réfrigérateur, dans un pot fermé. Au congélateur, elle se garde plusieurs mois : pense à ne pas remplir les pots à ras bord."
+    a: "Quatre à cinq jours au réfrigérateur, dans un pot fermé. Au congélateur, elle se garde plusieurs mois : pensez à ne pas remplir les pots à ras bord."
   - q: "Peut-on garder la peau des pommes ?"
-    a: "Oui, si les pommes sont bien lavées. La compote sera un peu plus rustique, et tu gardes les fibres de la peau. Mixe-la pour une texture plus lisse."
+    a: "Oui, si les pommes sont bien lavées. La compote sera un peu plus rustique, et vous gardez les fibres de la peau. Mixez-la pour une texture plus lisse."
   - q: "Ma compote est trop acide, que faire ?"
-    a: "Ajoute une pomme bien mûre et poursuis la cuisson, ou une pincée de cannelle. En dernier recours, une petite cuillère de miel suffit souvent."
+    a: "Ajoutez une pomme bien mûre et poursuis la cuisson, ou une pincée de cannelle. En dernier recours, une petite cuillère de miel suffit souvent."
 ---
 
 Une casserole, des pommes, un peu d'eau : la compote est sans doute la plus simple des recettes de grand-mère. Pourtant, beaucoup de recettes ajoutent du sucre par habitude. Avec les bonnes pommes, ce n'est pas nécessaire.
@@ -84,4 +85,4 @@ Nature, tiède ou froide, la compote se suffit à elle-même. Elle accompagne au
 
 ## Notre conclusion
 
-Une compote de pommes n'a pas besoin de sucre pour être douce. Choisis des pommes mûres, mélange les variétés, ajoute une pincée de cannelle, et laisse cuire doucement. Vingt-cinq minutes, et tu as un dessert de grand-mère qui plaît à toute la famille.
+Une compote de pommes n'a pas besoin de sucre pour être douce. Choisissez des pommes mûres, mélangez les variétés, ajoutez une pincée de cannelle, et laissez cuire doucement. Vingt-cinq minutes, et vous avez un dessert de grand-mère qui plaît à toute la famille.

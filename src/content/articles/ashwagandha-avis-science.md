@@ -9,19 +9,20 @@ evidence:
   claim: "L'ashwagandha réduit le stress perçu"
   level: 3
 topics: ["Compléments alimentaires", "Plantes adaptogènes", "Stress"]
+tiphNote: "L'ashwagandha est partout sur les réseaux, et les études sont encourageantes. Mais une plante n'est pas un bonbon : si vous prenez un traitement ou attendez un bébé, parlez-en d'abord à votre médecin."
 cover:
   id: "1665757516805-ead01c014ceb"
   alt: "Une gélule de complément alimentaire"
   credit: "Supliful"
   handle: "supliful"
-verdict: "Des essais encourageants sur le stress, mais petits, courts et souvent financés par les fabricants. L'Anses déconseille l'ashwagandha à plusieurs publics : si tu n'en fais pas partie et que tu veux essayer, fais-le sur une durée limitée et en connaissance de cause."
+verdict: "Des essais encourageants sur le stress, mais petits, courts et souvent financés par les fabricants. L'Anses déconseille l'ashwagandha à plusieurs publics : si vous n'en faites pas partie et que vous voulez essayer, faites-le sur une durée limitée et en connaissance de cause."
 keyPoints:
   - "Une méta-analyse de 2024 portant sur 9 essais et 558 personnes montre une baisse du stress perçu et du cortisol par rapport au placebo."
   - "Les études sont de petite taille, de courte durée, et la sécurité à long terme n'est pas établie."
   - "En 2024, l'Anses a déconseillé l'ashwagandha aux femmes enceintes ou allaitantes, aux moins de 18 ans, et aux personnes ayant certains problèmes de santé ou traitements."
 healthWarning: true
 sources:
-  - label: "Effects of Ashwagandha (Withania somnifera) on stress and anxiety: a systematic review and meta-analysis. Explore (NY) 2024;20(6):103062."
+  - label: "Effects of Ashwagandha (Withania somnifera) on stress and anxiety: a systematic review and meta-analysis. Explorez (NY) 2024;20(6):103062."
     url: "https://pubmed.ncbi.nlm.nih.gov/39348746/"
   - label: "Chandrasekhar K et al. (2012). A prospective, randomized double-blind, placebo-controlled study of safety and efficacy of a high-concentration full-spectrum extract of Ashwagandha root in reducing stress and anxiety in adults. Indian J Psychol Med 34(3):255-262."
     url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC3573577/"
@@ -32,9 +33,9 @@ faq:
   - q: "L'ashwagandha est-il interdit en France ?"
     a: "Non, l'ashwagandha n'est pas interdit en France à la date de mise à jour de cet article. L'Anses le déconseille en revanche à plusieurs publics précis : femmes enceintes ou allaitantes, moins de 18 ans, personnes ayant des troubles de la thyroïde ou un excès d'hormones androgènes, des problèmes de foie ou de cœur, ou prenant un traitement qui agit sur le système nerveux central."
   - q: "Combien de temps pour sentir les effets de l'ashwagandha ?"
-    a: "Dans les essais cliniques, les effets sur le stress sont généralement mesurés après 6 à 8 semaines de prise. Ne t'attends pas à un effet immédiat comme avec un anxiolytique."
+    a: "Dans les essais cliniques, les effets sur le stress sont généralement mesurés après 6 à 8 semaines de prise. Ne vous attendez pas à un effet immédiat comme avec un anxiolytique."
   - q: "Peut-on prendre de l'ashwagandha avec des antidépresseurs ou des somnifères ?"
-    a: "L'Anses déconseille l'ashwagandha aux personnes qui prennent un traitement dépresseur du système nerveux central. Si tu prends un traitement pour l'anxiété, la dépression ou le sommeil, demande l'avis de ton médecin avant toute prise."
+    a: "L'Anses déconseille l'ashwagandha aux personnes qui prennent un traitement dépresseur du système nerveux central. Si vous prenez un traitement pour l'anxiété, la dépression ou le sommeil, demandez l'avis de votre médecin avant toute prise."
   - q: "L'ashwagandha aide-t-il à dormir ?"
     a: "Quelques essais suggèrent une amélioration de la qualité du sommeil, mais les données sont encore plus limitées que pour le stress. Les bases restent plus efficaces : horaires réguliers, lumière le matin, écran coupé le soir."
 ---
@@ -78,16 +79,16 @@ L'Anses **déconseille l'ashwagandha** aux personnes suivantes :
 - les personnes ayant des problèmes de foie ou de cœur ;
 - les personnes qui prennent un traitement dépresseur du système nerveux central (certains anxiolytiques, somnifères, antidépresseurs ou antiépileptiques, par exemple).
 
-## Comment choisir un complément d'ashwagandha si tu veux essayer
+## Comment choisir un complément d'ashwagandha si vous voulez essayer
 
-Si tu ne fais partie d'aucun de ces publics, que ton médecin n'y voit pas d'objection et que tu veux tester :
+Si vous ne faites partie d'aucun de ces publics, que votre médecin n'y voit pas d'objection et que vous voulez tester :
 
 Comme pour [le magnésium](/sante/magnesium-quelle-forme-choisir/), tout se joue à la lecture de l'étiquette.
 
-1. **Préfère un extrait de racine standardisé**, avec un dosage clair en withanolides. Les extraits à base de feuilles sont moins étudiés.
-2. **Reste sur les doses utilisées dans les essais** et ne cumule pas plusieurs produits qui en contiennent.
-3. **Limite la durée**, par exemple une cure de 8 semaines, puis fais le point.
-4. **Arrête en cas de symptômes inhabituels** : troubles digestifs, fatigue anormale, jaunissement de la peau ou des yeux, urines foncées. Ces deux derniers signes doivent te faire consulter rapidement.
+1. **Préférez un extrait de racine standardisé**, avec un dosage clair en withanolides. Les extraits à base de feuilles sont moins étudiés.
+2. **Restez sur les doses utilisées dans les essais** et ne cumulez pas plusieurs produits qui en contiennent.
+3. **Limitez la durée**, par exemple une cure de 8 semaines, puis faites le point.
+4. **Arrêtez en cas de symptômes inhabituels** : troubles digestifs, fatigue anormale, jaunissement de la peau ou des yeux, urines foncées. Ces deux derniers signes doivent vous faire consulter rapidement.
 
 ## Ce qu'on recommande avant l'ashwagandha
 
@@ -97,4 +98,4 @@ Pour le stress du quotidien, plusieurs approches ont des preuves plus solides et
 
 ## Notre conclusion
 
-L'ashwagandha n'est ni une arnaque ni une plante miracle. Les essais sur le stress sont réellement encourageants, mais trop petits et trop courts pour parler de preuve solide, et l'Anses a identifié des publics pour qui le risque n'en vaut pas la peine. Si tu n'en fais pas partie, un essai limité dans le temps est envisageable, de préférence après en avoir parlé à ton médecin ou ton pharmacien.
+L'ashwagandha n'est ni une arnaque ni une plante miracle. Les essais sur le stress sont réellement encourageants, mais trop petits et trop courts pour parler de preuve solide, et l'Anses a identifié des publics pour qui le risque n'en vaut pas la peine. Si vous n'en faites pas partie, un essai limité dans le temps est envisageable, de préférence après en avoir parlé à votre médecin ou votre pharmacien.

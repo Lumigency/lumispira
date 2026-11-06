@@ -9,6 +9,7 @@ evidence:
   claim: "Mélanger eau de Javel et vinaigre dégage un gaz toxique"
   level: 5
 topics: ["Sécurité des produits", "Vinaigre blanc"]
+tiphNote: "S'il y a une seule chose à retenir de toute la rubrique Maison, c'est celle-là : la Javel ne se mélange jamais avec rien. Le reste, on peut en discuter. Ça, non."
 cover:
   id: "1737372805905-be0b91ec86fb"
   alt: "Des gants et une éponge posés sur le bord d'une baignoire"
@@ -29,13 +30,13 @@ sources:
     url: "https://ecoconso.be/fr/node/4290/printable/pdf"
 faq:
   - q: "Que faire si j'ai respiré un mélange de Javel et de vinaigre ?"
-    a: "Sors immédiatement à l'air libre et aère la pièce. En cas de toux qui persiste, de gêne pour respirer ou d'irritation, appelle un centre antipoison. Si la respiration devient difficile, appelle le 15 ou le 112."
+    a: "Sortez immédiatement à l'air libre et aérez la pièce. En cas de toux qui persiste, de gêne pour respirer ou d'irritation, appelez un centre antipoison. Si la respiration devient difficile, appelez le 15 ou le 112."
   - q: "Peut-on utiliser la Javel puis le vinaigre l'un après l'autre ?"
-    a: "C'est risqué si des restes des deux produits se rencontrent, par exemple dans des toilettes ou un siphon. Rince abondamment à l'eau claire et laisse passer du temps entre les deux, ou mieux, utilise un seul produit par nettoyage."
+    a: "C'est risqué si des restes des deux produits se rencontrent, par exemple dans des toilettes ou un siphon. Rincez abondamment à l'eau claire et laissez passer du temps entre les deux, ou mieux, utilisez un seul produit par nettoyage."
   - q: "Le désherbant Javel et vinaigre est-il efficace ?"
-    a: "Peu importe : il est dangereux pour toi et pour l'environnement. L'Anses recommande de n'utiliser au jardin que des produits portant la mention « Emploi autorisé au jardin »."
+    a: "Peu importe : il est dangereux pour vous et pour l'environnement. L'Anses recommande de n'utiliser au jardin que des produits portant la mention « Emploi autorisé au jardin »."
   - q: "La Javel est-elle indispensable pour le ménage ?"
-    a: "Pour le ménage courant, non : un savon comme le savon noir et de l'eau suffisent dans la plupart des cas. Si tu utilises de la Javel, dilue-la à l'eau froide, aère et porte des gants."
+    a: "Pour le ménage courant, non : un savon comme le savon noir et de l'eau suffisent dans la plupart des cas. Si vous utilisez de la Javel, diluez-la à l'eau froide, aérez et portez des gants."
 ---
 
 Le vinaigre blanc pour le calcaire, l'eau de Javel pour désinfecter : les deux produits sont souvent rangés côte à côte. Ensemble, ils deviennent dangereux. C'est l'un des rares sujets ménagers sur lesquels les autorités sanitaires sont parfaitement unanimes.
@@ -69,17 +70,17 @@ Le piège le plus courant est dans la salle de bain : un **détartrant pour WC**
 
 ## Les bons gestes avec la Javel
 
-1. **Un seul produit à la fois**, et rince abondamment entre deux produits différents.
-2. **Dilue à l'eau froide**, jamais chaude.
-3. **Aère** pendant et après le nettoyage.
-4. **Garde les produits dans leur flacon d'origine**, bien fermés, hors de portée des enfants et des animaux.
-5. **Ne prépare jamais de mélange maison** à base de Javel.
+1. **Un seul produit à la fois**, et rincez abondamment entre deux produits différents.
+2. **Diluez à l'eau froide**, jamais chaude.
+3. **Aérez** pendant et après le nettoyage.
+4. **Gardez les produits dans leur flacon d'origine**, bien fermés, hors de portée des enfants et des animaux.
+5. **Ne préparez jamais de mélange maison** à base de Javel.
 
 Pour le ménage du quotidien, la Javel est rarement nécessaire. Un savon comme [le savon noir](/maison-naturelle/savon-noir-utilisation/) suffit pour la plupart des surfaces, et [le vinaigre blanc](/maison-naturelle/vinaigre-blanc-usages/) s'occupe du calcaire, à condition de l'utiliser seul.
 
 ## En cas d'exposition
 
-Sors à l'air libre et aère la pièce. Si la toux persiste ou si tu as du mal à respirer, appelle un **centre antipoison**. En cas de détresse respiratoire, appelle le **15** ou le **112**. Garde l'étiquette des produits sous la main : elle aide les secours.
+Sortez à l'air libre et aérez la pièce. Si la toux persiste ou si vous avez du mal à respirer, appelez un **centre antipoison**. En cas de détresse respiratoire, appelez le **15** ou le **112**. Gardez l'étiquette des produits sous la main : elle aide les secours.
 
 ![Une fenêtre ouverte avec un rideau](https://images.unsplash.com/photo-1547166993-fc34f81b9aec "Lotus Design N Print|lotusdnp")
 

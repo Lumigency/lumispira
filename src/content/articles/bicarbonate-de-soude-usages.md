@@ -9,6 +9,7 @@ evidence:
   claim: "Le bicarbonate dans le frigo absorbe les mauvaises odeurs"
   level: 2
 topics: ["Bicarbonate", "Cuisine et salle de bain"]
+tiphNote: "Le bicarbonate est un excellent récurant, pas un super-héros. Laissez-le faire ce qu'il sait faire, et confiez le calcaire au vinaigre. Chacun son métier, et tout le monde est content."
 cover:
   id: "1588413333412-82148535db53"
   alt: "De la poudre blanche dans un bocal en verre, à côté d'une cuillère en bois"
@@ -31,9 +32,9 @@ faq:
   - q: "Bicarbonate de soude ou cristaux de soude : quelle différence ?"
     a: "Le bicarbonate de soude est doux, il est même utilisé en cuisine. Les cristaux de soude, ou carbonate de sodium, sont beaucoup plus basiques et irritants : on les manipule avec des gants et on ne les utilise pas sur l'aluminium."
   - q: "Combien de temps garder le bicarbonate dans le frigo ?"
-    a: "Seule la couche en surface agit. Renouvelle-le tous les deux à trois mois, étale-le dans une coupelle large plutôt que dans une boîte étroite, et surtout nettoie la source de l'odeur."
+    a: "Seule la couche en surface agit. Renouvelez-le tous les deux à trois mois, étalez-le dans une coupelle large plutôt que dans une boîte étroite, et surtout nettoyez la source de l'odeur."
   - q: "Peut-on mélanger bicarbonate et vinaigre blanc ?"
-    a: "C'est inutile : les deux se neutralisent. Utilise-les séparément, en rinçant entre les deux."
+    a: "C'est inutile : les deux se neutralisent. Utilisez-les séparément, en rinçant entre les deux."
 ---
 
 Il coûte quelques euros le kilo, se range dans un bocal et sert aussi en cuisine. Le bicarbonate de soude est devenu la star du ménage au naturel. Il a de vrais atouts, mais on lui prête bien plus qu'il ne fait.
@@ -60,7 +61,7 @@ C'est une **base douce**, sous forme de poudre fine. Deux propriétés expliquen
 
 La boîte de bicarbonate ouverte au fond du réfrigérateur est un grand classique. Le principe est plausible : le bicarbonate peut neutraliser certaines molécules odorantes. Mais **seule la fine couche en surface est au contact de l'air**, et aucun test sérieux n'en mesure l'effet. D'où notre indice **Fragile**.
 
-Si tu veux essayer, étale-le dans une **coupelle large** plutôt que dans une boîte, et renouvelle-le régulièrement. Mais la vraie solution reste de **jeter l'aliment en cause et de nettoyer** le frigo. Une éponge imbibée de [vinaigre blanc](/maison-naturelle/vinaigre-blanc-usages/) fait très bien l'affaire.
+Si vous voulez essayer, étalez-le dans une **coupelle large** plutôt que dans une boîte, et renouvelez-le régulièrement. Mais la vraie solution reste de **jeter l'aliment en cause et de nettoyer** le frigo. Une éponge imbibée de [vinaigre blanc](/maison-naturelle/vinaigre-blanc-usages/) fait très bien l'affaire.
 
 ## Ce qu'il ne fait pas
 
@@ -78,4 +79,4 @@ Le bicarbonate, lui, est assez doux pour entrer dans des recettes de cosmétique
 
 ## Notre conclusion
 
-Le bicarbonate de soude est un excellent récurant doux et un bon désodorisant d'appoint. Utilise-le pour ce qu'il fait bien, récurer et neutraliser les odeurs, et laisse le calcaire au vinaigre et la désinfection aux produits prévus pour ça. Et range-le loin des cristaux de soude pour ne pas les confondre.
+Le bicarbonate de soude est un excellent récurant doux et un bon désodorisant d'appoint. Utilisez-le pour ce qu'il fait bien, récurer et neutraliser les odeurs, et laissez le calcaire au vinaigre et la désinfection aux produits prévus pour ça. Et rangez-le loin des cristaux de soude pour ne pas les confondre.

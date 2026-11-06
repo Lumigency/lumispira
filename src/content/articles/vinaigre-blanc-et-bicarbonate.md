@@ -9,12 +9,13 @@ evidence:
   claim: "Mélanger vinaigre blanc et bicarbonate nettoie mieux"
   level: 1
 topics: ["Vinaigre blanc", "Bicarbonate"]
+tiphNote: "La mousse qui déborde de l'évier, c'est très joli en vidéo. Dans la vraie vie, utilisez-les chacun de leur côté : vous gagnerez en efficacité, et vous économiserez vos produits."
 cover:
   id: "1583907659441-addbe699e921"
   alt: "Un citron à côté d'une bouteille en verre"
   credit: "Precious Plastic Melbourne"
   handle: "preciousplasticmelbourne"
-verdict: "Non. Le vinaigre est acide, le bicarbonate est basique : mélangés, ils se neutralisent et il ne reste presque que de l'eau légèrement salée. La mousse impressionne, mais le pouvoir nettoyant disparaît. Utilise-les séparément, chacun pour ce qu'il fait bien."
+verdict: "Non. Le vinaigre est acide, le bicarbonate est basique : mélangés, ils se neutralisent et il ne reste presque que de l'eau légèrement salée. La mousse impressionne, mais le pouvoir nettoyant disparaît. Utilisez-les séparément, chacun pour ce qu'il fait bien."
 keyPoints:
   - "La réaction produit du gaz carbonique (les bulles), de l'eau et de l'acétate de sodium, sans pouvoir nettoyant notable."
   - "Le vinaigre perd son action contre le calcaire, le bicarbonate son effet abrasif et désodorisant."
@@ -58,7 +59,7 @@ L'effervescence crée un petit mouvement mécanique. Versée dans une canalisati
 
 Attention aussi aux **projections** : l'association de consommateurs belge écoconso rappelle que la mousse peut irriter les yeux.
 
-## Utilise-les séparément
+## Utilisez-les séparément
 
 Chacun a de vraies qualités, à condition de ne pas les mélanger.
 
@@ -67,7 +68,7 @@ Chacun a de vraies qualités, à condition de ne pas les mélanger.
 | **Vinaigre blanc** | Dissout le calcaire, dégraisse, désodorise | Bouilloire, robinets, pommeau de douche |
 | **Bicarbonate** | Récure en douceur, neutralise certaines odeurs | Évier, casseroles, plaques |
 
-Tu peux même les utiliser **l'un après l'autre** : le bicarbonate en pâte pour récurer, un rinçage, puis le vinaigre dilué pour faire briller. Ce qui compte, c'est de rincer entre les deux.
+Vous pouvez même les utiliser **l'un après l'autre** : le bicarbonate en pâte pour récurer, un rinçage, puis le vinaigre dilué pour faire briller. Ce qui compte, c'est de rincer entre les deux.
 
 Pour aller plus loin, on a détaillé [les vrais usages du vinaigre blanc et les surfaces à éviter](/maison-naturelle/vinaigre-blanc-usages/), ainsi que [ce que le bicarbonate fait vraiment](/maison-naturelle/bicarbonate-de-soude-usages/).
 
@@ -79,4 +80,4 @@ Le duo vinaigre et bicarbonate est inutile, mais sans danger. Ce n'est pas le ca
 
 ## Notre conclusion
 
-Le mélange vinaigre et bicarbonate est surtout un joli spectacle. Garde ces deux produits dans tes placards, mais utilise-les séparément : le vinaigre contre le calcaire, le bicarbonate pour récurer. Ils sont bien plus efficaces chacun de leur côté.
+Le mélange vinaigre et bicarbonate est surtout un joli spectacle. Gardez ces deux produits dans vos placards, mais utilisez-les séparément : le vinaigre contre le calcaire, le bicarbonate pour récurer. Ils sont bien plus efficaces chacun de leur côté.

@@ -9,6 +9,7 @@ evidence:
   claim: "Le savon noir nettoie et dégraisse la plupart des surfaces"
   level: 4
 topics: ["Savon noir", "Cuisine et salle de bain"]
+tiphNote: "Si vous ne deviez garder qu'un produit sous l'évier, ce serait lui. Une cuillère dans un seau, et la maison est propre. Le piège, c'est d'en mettre trop : plus de savon ne veut pas dire plus propre, juste plus glissant."
 cover:
   id: "1478473495191-2d8dd1398896"
   alt: "Un seau en bois"
@@ -29,9 +30,9 @@ faq:
   - q: "Peut-on utiliser le savon noir de ménage sur la peau ?"
     a: "Ce n'est pas fait pour. Le savon noir de ménage est très concentré et peut irriter. Pour la peau, il existe un savon noir de hammam, formulé et vendu comme cosmétique."
   - q: "Faut-il rincer après le savon noir ?"
-    a: "Pour les sols, non, à la bonne dilution. Pour dégraisser un four ou des plaques, avec une solution plus concentrée, rince à l'eau claire."
+    a: "Pour les sols, non, à la bonne dilution. Pour dégraisser un four ou des plaques, avec une solution plus concentrée, rincez à l'eau claire."
   - q: "Le savon noir convient-il au parquet ?"
-    a: "Sur un parquet vitrifié, il s'utilise bien dilué et avec une serpillière bien essorée. Sur un parquet huilé ou ciré, suis les conseils du fabricant du revêtement et teste sur une zone cachée."
+    a: "Sur un parquet vitrifié, il s'utilise bien dilué et avec une serpillière bien essorée. Sur un parquet huilé ou ciré, suivez les conseils du fabricant du revêtement et testez sur une zone cachée."
 ---
 
 Il existe en flacon ou en pot, liquide ou en pâte, et il fait presque tout dans une maison. Le savon noir est un classique du ménage d'antan revenu en force. À juste titre, à condition de bien le choisir et de bien le doser.
@@ -72,13 +73,13 @@ Plus de savon ne lave pas mieux : un surdosage laisse des traces et rend les sol
 
 ## Les précautions
 
-- **Porte des gants** si tu as la peau sensible : concentré, il peut irriter.
-- **Teste sur une zone cachée** avant de l'utiliser sur un textile délicat.
-- **Range-le hors de portée des enfants** et à l'abri de la chaleur. Il se conserve plusieurs années.
-- Comme pour tout produit ménager, **ne le mélange pas avec l'eau de Javel**, et utilise un seul produit à la fois. On t'explique pourquoi dans notre article sur [le mélange javel et vinaigre](/maison-naturelle/melanger-javel-et-vinaigre-danger/).
+- **Portez des gants** si vous avez la peau sensible : concentré, il peut irriter.
+- **Testez sur une zone cachée** avant de l'utiliser sur un textile délicat.
+- **Rangez-le hors de portée des enfants** et à l'abri de la chaleur. Il se conserve plusieurs années.
+- Comme pour tout produit ménager, **ne le mélangez pas avec l'eau de Javel**, et utilisez un seul produit à la fois. On vous explique pourquoi dans notre article sur [le mélange javel et vinaigre](/maison-naturelle/melanger-javel-et-vinaigre-danger/).
 
 ![Une cuisine aux murs blancs avec un parquet clair](https://images.unsplash.com/photo-1674217444141-d8ca3bc66584 "David Libeert|deefbelgium")
 
 ## Notre conclusion
 
-Si tu ne devais garder qu'un produit ménager naturel, ce serait celui-là. Le savon noir lave les sols, y compris les plus fragiles, dégraisse la cuisine et détache le linge. Choisis-le simple, à base d'huiles végétales sans additifs, et respecte les dosages : une cuillère suffit pour un seau.
+Si vous ne deviez garder qu'un produit ménager naturel, ce serait celui-là. Le savon noir lave les sols, y compris les plus fragiles, dégraisse la cuisine et détache le linge. Choisissez-le simple, à base d'huiles végétales sans additifs, et respecte les dosages : une cuillère suffit pour un seau.

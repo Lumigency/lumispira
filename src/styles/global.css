@@ -259,6 +259,15 @@ p { margin: 0 0 1em; }
 .toc a { color: var(--ink-soft); text-decoration: none; }
 .toc a:hover { color: var(--herb); text-decoration: underline; }
 
+/* Le mot de Tiph */
+.tiph-note { display: grid; grid-template-columns: 64px 1fr; gap: 1rem; background: var(--plum); color: var(--paper); border-radius: 22px; padding: 1.4rem 1.5rem; margin: 2.5rem 0 0; }
+.tiph-note .avatar { background: var(--pollen); color: var(--plum); }
+.tiph-note p { margin: 0; line-height: 1.65; }
+.tiph-note-title { font-family: var(--f-display); font-size: var(--t-md); margin-bottom: .4rem !important; color: var(--pollen); }
+.tiph-note-sign { margin-top: .7rem !important; font-family: var(--f-display); font-size: 1.15rem; }
+.tiph-note-sign span { font-family: var(--f-text); font-size: var(--t-xs); opacity: .8; }
+@media (max-width: 520px) { .tiph-note { grid-template-columns: 1fr; } .tiph-note .avatar { width: 48px; height: 48px; font-size: 1.2rem; } }
+
 /* Photos dans le texte des articles */
 .article-photo { margin: 2rem 0; }
 .article-photo img { width: 100%; height: auto; aspect-ratio: 3 / 2; object-fit: cover; border-radius: 18px; background: var(--oat); display: block; }

@@ -138,7 +138,7 @@ if (d.recipe && d.recipe.kind === 'food') {
     <div class="wrap article-grid">
       <div>
         {d.affiliate && (
-          <p class="disclosure">Cet article contient des liens d'affiliation. Si tu achètes via ces liens, nous touchons une commission sans surcoût pour toi. Les produits sont choisis selon <a href="/transparence/">notre méthode</a>, jamais par les marques.</p>
+          <p class="disclosure">Cet article contient des liens d'affiliation. Si vous achetez via ces liens, nous touchons une commission sans surcoût pour vous. Les produits sont choisis selon <a href="/transparence/">notre méthode</a>, jamais par les marques.</p>
         )}
 
         <section class="verdict-box" aria-labelledby="verdict">
@@ -169,6 +169,17 @@ if (d.recipe && d.recipe.kind === 'food') {
           )}
         </div>
 
+        {d.tiphNote && (
+          <aside class="tiph-note" aria-labelledby="tiph-note-title">
+            <div class="avatar" aria-hidden="true">T</div>
+            <div>
+              <p class="tiph-note-title" id="tiph-note-title">Le mot de Tiph</p>
+              <p>{d.tiphNote}</p>
+              <p class="tiph-note-sign">Tiph<span>, fondatrice de Lumispira</span></p>
+            </div>
+          </aside>
+        )}
+
         {note && noteAuthor && (
           <aside class="personal-note" aria-label="On a testé">
             <div class="avatar" aria-hidden="true">{noteAuthor.initials}</div>
@@ -181,7 +192,7 @@ if (d.recipe && d.recipe.kind === 'food') {
         )}
 
         {d.healthWarning && (
-          <p class="health-note">Cet article informe, il ne remplace pas un avis médical. Avant de commencer un complément, surtout si tu prends un traitement, es enceinte ou allaites, parles-en à ton médecin ou ton pharmacien. Un effet indésirable lié à un complément peut être déclaré sur le portail de nutrivigilance de l'Anses.</p>
+          <p class="health-note">Cet article informe, il ne remplace pas un avis médical. Avant de commencer un complément, surtout si vous prenez un traitement, êtes enceinte ou allaitez, parlez-en à votre médecin ou votre pharmacien. Un effet indésirable lié à un complément peut être déclaré sur le portail de nutrivigilance de l'Anses.</p>
         )}
 
         {d.faq.length > 0 && (
@@ -204,7 +215,7 @@ if (d.recipe && d.recipe.kind === 'food') {
             <a href={authorHref}><b>{author.kind === 'team' ? `${author.name} ${SITE.name}` : author.name}</b></a>{author.kind === 'person' && <>, {author.role.toLowerCase()}</>}
             <p>{author.bio}</p>
             {reviewer && <p><b>Relecture :</b> {reviewer.name}, {reviewer.title}.</p>}
-            <p class="author-box-team">Lumispira est un média indépendant : découvre <a href="/redaction/">la rédaction</a> et <a href="/methode/">notre méthode</a>.</p>
+            <p class="author-box-team">Lumispira est un média indépendant : découvrez <a href="/redaction/">la rédaction</a> et <a href="/methode/">notre méthode</a>.</p>
           </div>
         </section>
       </div>

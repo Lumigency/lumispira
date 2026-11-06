@@ -9,12 +9,13 @@ evidence:
   claim: "Les formes organiques de magnésium sont mieux absorbées que l'oxyde"
   level: 3
 topics: ["Compléments alimentaires", "Fatigue et énergie"]
+tiphNote: "Avant de remplir votre panier de compléments, jetez un œil à votre assiette : elle couvre souvent l'essentiel. Et si vous en prenez, choisissez la bonne forme et la bonne dose, pas la plus jolie boîte."
 cover:
   id: "1430163393927-3dab9af7ea38"
   alt: "Des amandes dans un bol en céramique blanche"
   credit: "Juan José Valencia Antía"
   handle: "juanantia"
-verdict: "Si tu as besoin d'un complément, choisis une forme organique (bisglycinate ou citrate) plutôt que l'oxyde ou le magnésium marin, dose autour de 150 à 250 mg par jour, et commence par vérifier ton alimentation."
+verdict: "Si vous avez besoin d'un complément, choisissez une forme organique (bisglycinate ou citrate) plutôt que l'oxyde ou le magnésium marin, dosez autour de 150 à 250 mg par jour, et commencez par vérifier votre alimentation."
 keyPoints:
   - "Les apports de référence de l'Anses sont de 380 mg par jour pour un homme et 300 mg pour une femme, aliments compris."
   - "Le bisglycinate est la forme la mieux tolérée par l'intestin ; le citrate est bien absorbé mais peut accélérer le transit."
@@ -33,7 +34,7 @@ sources:
     url: "https://ciqual.anses.fr/"
 faq:
   - q: "Quel est le meilleur magnésium contre la fatigue ?"
-    a: "Le magnésium ne réduit la fatigue que si elle est liée à un manque de magnésium. Dans ce cas, une forme bien tolérée comme le bisglycinate est un bon choix. Si la fatigue dure, parles-en à ton médecin : elle peut avoir beaucoup d'autres causes, comme un manque de fer ou un trouble de la thyroïde."
+    a: "Le magnésium ne réduit la fatigue que si elle est liée à un manque de magnésium. Dans ce cas, une forme bien tolérée comme le bisglycinate est un bon choix. Si la fatigue dure, parlez-en à votre médecin : elle peut avoir beaucoup d'autres causes, comme un manque de fer ou un trouble de la thyroïde."
   - q: "Le magnésium marin est-il meilleur parce qu'il est naturel ?"
     a: "Non. Le magnésium marin est majoritairement composé d'oxyde et d'hydroxyde de magnésium, des formes riches en magnésium mais moins bien absorbées et plus souvent laxatives. Son origine naturelle ne le rend pas plus efficace."
   - q: "À quel moment de la journée prendre son magnésium ?"
@@ -42,15 +43,15 @@ faq:
     a: "Oui, aux doses habituelles des compléments, chez un adulte en bonne santé. Les personnes atteintes d'une maladie des reins doivent demander l'avis de leur médecin avant toute supplémentation, car elles éliminent moins bien le magnésium."
 ---
 
-Le magnésium est l'un des compléments alimentaires les plus vendus en France, et l'un des plus mal compris. En rayon, tu trouves du bisglycinate, du citrate, du marin, du malate, de l'oxyde, parfois mélangés, avec des dosages qui varient du simple au triple. La question qui compte n'est pas « est-ce que le magnésium est bon ? », mais **quelle forme est absorbée, bien tolérée, et à quelle dose**.
+Le magnésium est l'un des compléments alimentaires les plus vendus en France, et l'un des plus mal compris. En rayon, vous trouvez du bisglycinate, du citrate, du marin, du malate, de l'oxyde, parfois mélangés, avec des dosages qui varient du simple au triple. La question qui compte n'est pas « est-ce que le magnésium est bon ? », mais **quelle forme est absorbée, bien tolérée, et à quelle dose**.
 
-## Avant tout : as-tu vraiment besoin d'un complément ?
+## Avant tout : avez-vous vraiment besoin d'un complément ?
 
-L'Anses fixe l'apport satisfaisant en magnésium à **380 mg par jour pour un homme adulte et 300 mg pour une femme adulte**. Ces chiffres incluent tout ce que tu manges.
+L'Anses fixe l'apport satisfaisant en magnésium à **380 mg par jour pour un homme adulte et 300 mg pour une femme adulte**. Ces chiffres incluent tout ce que vous mangez.
 
 Une alimentation qui fait la place aux céréales complètes, aux légumineuses, aux oléagineux, au chocolat noir et aux légumes verts couvre souvent une grande partie de ces besoins. Quelques repères issus de la table Ciqual de l'Anses montrent que les graines de courge, les amandes, les noix de cajou, le sarrasin ou les haricots secs comptent parmi les aliments les plus riches. Un petit-déjeuner comme notre [granola maison peu sucré](/recettes-grand-mere/granola-maison-peu-sucre/), plein d'amandes et de graines de courge, en apporte une bonne part.
 
-Un complément peut être utile si ton alimentation est pauvre en ces aliments, en période de stress intense ou de fatigue, ou sur conseil médical. Mais il ne rattrape pas une alimentation déséquilibrée. Si c'est le stress qui te pousse vers les compléments, lis aussi notre analyse de [l'ashwagandha](/sante/ashwagandha-avis-science/), qui n'est pas sans précautions.
+Un complément peut être utile si votre alimentation est pauvre en ces aliments, en période de stress intense ou de fatigue, ou sur conseil médical. Mais il ne rattrape pas une alimentation déséquilibrée. Si c'est le stress qui vous pousse vers les compléments, lisez aussi notre analyse de [l'ashwagandha](/sante/ashwagandha-avis-science/), qui n'est pas sans précautions.
 
 ![Des amandes dans un bol en céramique blanche](https://images.unsplash.com/photo-1430163393927-3dab9af7ea38 "Juan José Valencia Antía|juanantia")
 
@@ -80,23 +81,23 @@ Le magnésium marin a une image naturelle et haut de gamme. En réalité, il est
 
 ## Quelle dose prendre ?
 
-La plupart des compléments apportent entre 100 et 300 mg de magnésium par jour. Le chiffre qui compte est la quantité de **magnésium élément**, pas le poids total du sel. Un comprimé de « 1 000 mg de bisglycinate » contient environ 140 mg de magnésium : vérifie toujours la ligne du tableau nutritionnel.
+La plupart des compléments apportent entre 100 et 300 mg de magnésium par jour. Le chiffre qui compte est la quantité de **magnésium élément**, pas le poids total du sel. Un comprimé de « 1 000 mg de bisglycinate » contient environ 140 mg de magnésium : vérifiez toujours la ligne du tableau nutritionnel.
 
 L'EFSA a fixé une limite de sécurité de **250 mg par jour de magnésium apporté par les compléments**, en plus de l'alimentation. Au-delà, le risque principal est la diarrhée. Rester dans une fourchette de 150 à 250 mg est donc raisonnable pour un adulte en bonne santé.
 
 ## Comment lire une étiquette de magnésium
 
-1. **Repère la forme exacte** : « bisglycinate de magnésium » ou « citrate de magnésium ». Une mention vague comme « magnésium » ou « sels de magnésium » cache souvent de l'oxyde.
-2. **Vérifie la quantité de magnésium élément** par dose journalière, et compare-la à la limite de 250 mg.
-3. **Méfie-toi des mélanges** : un produit qui associe un peu de bisglycinate à beaucoup d'oxyde met en avant la forme noble mais repose sur la moins chère.
+1. **Repérez la forme exacte** : « bisglycinate de magnésium » ou « citrate de magnésium ». Une mention vague comme « magnésium » ou « sels de magnésium » cache souvent de l'oxyde.
+2. **Vérifiez la quantité de magnésium élément** par dose journalière, et comparez-la à la limite de 250 mg.
+3. **Méfiez-vous des mélanges** : un produit qui associe un peu de bisglycinate à beaucoup d'oxyde met en avant la forme noble mais repose sur la moins chère.
 4. **La vitamine B6** souvent ajoutée n'est pas indispensable. À forte dose prolongée, la B6 peut même provoquer des troubles neurologiques : pas besoin d'en cumuler plusieurs sources.
 
 ## Les précautions à connaître
 
-Le magnésium en complément est généralement bien toléré. Les personnes atteintes d'**insuffisance rénale** doivent demander l'avis de leur médecin, car leurs reins éliminent moins bien l'excès. Le magnésium peut aussi réduire l'absorption de certains médicaments, notamment certains antibiotiques et traitements de l'ostéoporose : un écart de quelques heures entre les prises est souvent conseillé. Ton pharmacien peut te le confirmer pour ton traitement.
+Le magnésium en complément est généralement bien toléré. Les personnes atteintes d'**insuffisance rénale** doivent demander l'avis de leur médecin, car leurs reins éliminent moins bien l'excès. Le magnésium peut aussi réduire l'absorption de certains médicaments, notamment certains antibiotiques et traitements de l'ostéoporose : un écart de quelques heures entre les prises est souvent conseillé. Votre pharmacien peut vous le confirmer pour votre traitement.
 
 ![Un tas de feuilles d'épinards frais](https://images.unsplash.com/photo-1557648493-6e5f8afda63d "Monika Grabkowska|moniqa")
 
 ## Notre conclusion
 
-Le meilleur magnésium est d'abord celui de ton assiette. Si tu choisis un complément, prends une forme organique, le bisglycinate en premier choix, le citrate si tu as tendance à la constipation, et vise 150 à 250 mg de magnésium élément par jour. Le magnésium marin, malgré son image, n'est pas le plus efficace.
+Le meilleur magnésium est d'abord celui de votre assiette. Si vous choisissez un complément, prenez une forme organique, le bisglycinate en premier choix, le citrate si vous avez tendance à la constipation, et visez 150 à 250 mg de magnésium élément par jour. Le magnésium marin, malgré son image, n'est pas le plus efficace.

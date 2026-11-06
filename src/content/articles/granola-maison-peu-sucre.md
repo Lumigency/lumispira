@@ -9,6 +9,7 @@ evidence:
   claim: "Les bêta-glucanes de l'avoine contribuent à réduire le cholestérol"
   level: 5
 topics: ["Recettes simples", "Petit-déjeuner"]
+tiphNote: "Un bocal de granola maison sur le plan de travail, c'est un petit-déjeuner réglé pour la semaine. Faites une double fournée : il disparaît toujours plus vite que prévu, surtout quand il est à portée de main."
 cover:
   id: "1725883691833-97103ecd582a"
   alt: "Un bol de granola avec du yaourt et des myrtilles"
@@ -43,15 +44,15 @@ recipe:
     - "1 cuillère à café de cannelle"
     - "1 pincée de sel"
   steps:
-    - "Préchauffe le four à 160 °C et couvre une plaque de papier cuisson."
-    - "Dans un grand saladier, mélange les flocons, les amandes, les graines, la cannelle et le sel."
-    - "Fouette légèrement le blanc d'œuf, ajoute le sirop d'érable et l'huile, puis verse sur le mélange sec. Mélange bien pour enrober chaque flocon."
-    - "Étale sur la plaque en une couche régulière et tasse fermement avec le dos d'une spatule."
-    - "Enfourne 20 à 25 minutes, sans remuer, jusqu'à ce que le granola soit doré."
-    - "Laisse refroidir complètement sur la plaque avant de casser en morceaux. Il durcit en refroidissant."
+    - "Préchauffez le four à 160 °C et couvrez une plaque de papier cuisson."
+    - "Dans un grand saladier, mélangez les flocons, les amandes, les graines, la cannelle et le sel."
+    - "Fouettez légèrement le blanc d'œuf, ajoutez le sirop d'érable et l'huile, puis versez sur le mélange sec. Mélangez bien pour enrober chaque flocon."
+    - "Étalez sur la plaque en une couche régulière et tasse fermement avec le dos d'une spatule."
+    - "Enfournez 20 à 25 minutes, sans remuer, jusqu'à ce que le granola soit doré."
+    - "Laissez refroidir complètement sur la plaque avant de casser en morceaux. Il durcit en refroidissant."
 faq:
   - q: "Pourquoi mon granola maison n'est-il pas croustillant ?"
-    a: "Trois causes fréquentes : la couche est trop épaisse, le four n'est pas assez chaud, ou tu l'as rangé avant qu'il ait totalement refroidi. Le granola sort du four encore souple et ne durcit qu'en refroidissant."
+    a: "Trois causes fréquentes : la couche est trop épaisse, le four n'est pas assez chaud, ou vous l'avez rangé avant qu'il ait totalement refroidi. Le granola sort du four encore souple et ne durcit qu'en refroidissant."
   - q: "Peut-on faire un granola sans sucre du tout ?"
     a: "Oui, en remplaçant le sirop par une banane très mûre écrasée. Le goût sera moins caramélisé et les morceaux un peu moins croquants, mais c'est une bonne option."
   - q: "Quand ajouter les fruits secs ?"
@@ -60,11 +61,11 @@ faq:
     a: "Fait maison et peu sucré comme ici, c'est un petit-déjeuner riche en fibres et en bonnes graisses. Il reste assez calorique : une portion de 40 à 50 g, avec un yaourt nature et un fruit, est une bonne base."
 ---
 
-Le granola a une image de petit-déjeuner santé, mais beaucoup de versions du commerce sont aussi sucrées que des céréales pour enfants. Le fait maison change tout : tu choisis la quantité de sucre, la qualité des graines, et tu obtiens un granola franchement meilleur.
+Le granola a une image de petit-déjeuner santé, mais beaucoup de versions du commerce sont aussi sucrées que des céréales pour enfants. Le fait maison change tout : vous choisissez la quantité de sucre, la qualité des graines, et vous obtenez un granola franchement meilleur.
 
 ## Pourquoi faire son granola soi-même
 
-La première raison, c'est le **sucre**. Cette recette apporte environ **5 g de sucres ajoutés pour 100 g**. Avec une portion de 50 g, tu restes très loin de la limite de 50 g de sucres libres par jour recommandée par l'OMS pour un adulte, et même de l'objectif idéal de 25 g. Compare avec la ligne « dont sucres » de ton granola habituel : la différence est souvent nette. Limiter les sucres rapides est d'ailleurs la piste la plus sérieuse sur le lien entre [acné et alimentation](/peau-acne/acne-et-alimentation/).
+La première raison, c'est le **sucrez**. Cette recette apporte environ **5 g de sucres ajoutés pour 100 g**. Avec une portion de 50 g, vous restez très loin de la limite de 50 g de sucres libres par jour recommandée par l'OMS pour un adulte, et même de l'objectif idéal de 25 g. Comparez avec la ligne « dont sucres » de votre granola habituel : la différence est souvent nette. Limiter les sucres rapides est d'ailleurs la piste la plus sérieuse sur le lien entre [acné et alimentation](/peau-acne/acne-et-alimentation/).
 
 La deuxième raison, ce sont les **fibres d'avoine**. Les flocons d'avoine contiennent des bêta-glucanes, des fibres dont l'effet sur le cholestérol sanguin est l'une des rares allégations santé validées par l'EFSA, à partir de **3 g de bêta-glucanes par jour**. Une portion de ce granola en apporte environ 1 g : ce n'est pas suffisant à elle seule, mais c'est une vraie contribution, d'où notre indice **Prouvé** sur l'effet des bêta-glucanes.
 
@@ -79,22 +80,22 @@ La troisième raison, c'est le **prix** : acheter flocons et graines en vrac rev
 Le secret des granolas de boutique, ce sont les gros morceaux croustillants. Deux gestes suffisent :
 
 1. **Le blanc d'œuf** : légèrement fouetté, il agit comme une colle qui soude les flocons entre eux à la cuisson, sans ajouter de sucre.
-2. **Ne pas remuer** pendant la cuisson, et tasser fermement la préparation sur la plaque avant d'enfourner. Tu casseras les plaques une fois le granola refroidi.
+2. **Ne pas remuer** pendant la cuisson, et tasser fermement la préparation sur la plaque avant d'enfourner. Vous casserez les plaques une fois le granola refroidi.
 
-Pour une version végétale, remplace le blanc d'œuf par 2 cuillères à soupe de graines de chia mélangées à 6 cuillères à soupe d'eau, laissées gonfler 10 minutes.
+Pour une version végétale, remplacez le blanc d'œuf par 2 cuillères à soupe de graines de chia mélangées à 6 cuillères à soupe d'eau, laissées gonfler 10 minutes.
 
 ## Les variantes
 
-- **Chocolat** : ajoute 15 g de cacao non sucré au mélange sec, et des pépites de chocolat noir après refroidissement.
-- **Pain d'épices** : remplace la cannelle par un mélange quatre-épices et une pointe de gingembre.
-- **Sans fruits à coque** : remplace les amandes par des flocons de sarrasin et un peu plus de graines.
+- **Chocolat** : ajoutez 15 g de cacao non sucré au mélange sec, et des pépites de chocolat noir après refroidissement.
+- **Pain d'épices** : remplacez la cannelle par un mélange quatre-épices et une pointe de gingembre.
+- **Sans fruits à coque** : remplacez les amandes par des flocons de sarrasin et un peu plus de graines.
 
 ## Conservation
 
-Range le granola **complètement refroidi** dans un bocal hermétique, à l'abri de la chaleur. Il reste croustillant 2 à 3 semaines. S'il ramollit, repasse-le 5 minutes au four à 160 °C.
+Rangez le granola **complètement refroidi** dans un bocal hermétique, à l'abri de la chaleur. Il reste croustillant 2 à 3 semaines. S'il ramollit, repassez-le 5 minutes au four à 160 °C.
 
 ![Un bol de yaourt avec des mûres et du granola](https://images.unsplash.com/photo-1692071106919-01bc0b9b0919 "Natalie Behn|natalie_behn")
 
 ## Notre conclusion
 
-Dix minutes de préparation, vingt-cinq de cuisson, et tu as un petit-déjeuner pour la semaine, bien moins sucré que la plupart des granolas vendus en magasin. C'est exactement le genre de fait maison qui vaut la peine.
+Dix minutes de préparation, vingt-cinq de cuisson, et vous avez un petit-déjeuner pour la semaine, bien moins sucré que la plupart des granolas vendus en magasin. C'est exactement le genre de fait maison qui vaut la peine.

@@ -9,6 +9,7 @@ evidence:
   claim: "Le miel soulage la toux aiguë"
   level: 4
 topics: ["Toux et gorge", "Rhume et nez bouché"]
+tiphNote: "Le lait chaud au miel ne remplace pas un médecin, mais il a le mérite d'être réconfortant et soutenu par des études sérieuses. Gardez juste en tête la règle d'or : jamais de miel avant un an."
 cover:
   id: "1676313779351-9648c6eaae8a"
   alt: "Un pot de miel à côté d'un bol de miel"
@@ -38,17 +39,17 @@ recipe:
     - "1 cuillère à soupe de miel (environ 15 à 20 g)"
     - "Facultatif : 1 pincée de cannelle ou 1 rondelle de gingembre frais"
   steps:
-    - "Fais chauffer le lait à feu doux, sans le faire bouillir. Ajoute le gingembre si tu en utilises."
-    - "Retire du feu et laisse tiédir une à deux minutes : un lait trop chaud abîme les arômes du miel."
-    - "Ajoute le miel et la cannelle, puis mélange jusqu'à ce que le miel soit fondu."
-    - "Bois-le tiède, idéalement le soir, avant le coucher."
+    - "Faites chauffer le lait à feu doux, sans le faire bouillir. Ajoutez le gingembre si vous en utilisez."
+    - "Retirez du feu et laissez tiédir une à deux minutes : un lait trop chaud abîme les arômes du miel."
+    - "Ajoutez le miel et la cannelle, puis mélangez jusqu'à ce que le miel soit fondu."
+    - "Buvez-le tiède, idéalement le soir, avant le coucher."
 faq:
   - q: "Quel miel choisir contre la toux ?"
     a: "Les études ont utilisé différents miels, dont le miel de sarrasin, d'eucalyptus ou d'agrumes, sans qu'un type ressorte clairement comme supérieur. Un miel de qualité, pur et non chauffé, suffit. Un miel foncé comme le sarrasin a un goût plus marqué."
   - q: "Pourquoi pas de miel avant 1 an ?"
     a: "Le miel peut contenir des spores d'une bactérie responsable du botulisme. L'intestin d'un bébé de moins de 12 mois ne sait pas encore les neutraliser. Le botulisme infantile est rare mais grave : il peut provoquer une paralysie. Le miel est donc à proscrire avant 1 an, même cuit ou dans une préparation."
   - q: "Combien de miel donner à un enfant qui tousse ?"
-    a: "À partir de 1 an, les essais utilisaient généralement une petite cuillère de miel avant le coucher. Pour un enfant, demande l'avis de ton médecin ou de ton pharmacien, surtout s'il a moins de 6 ans ou si la toux dure."
+    a: "À partir de 1 an, les essais utilisaient généralement une petite cuillère de miel avant le coucher. Pour un enfant, demandez l'avis de votre médecin ou de votre pharmacien, surtout s'il a moins de 6 ans ou si la toux dure."
   - q: "Quand faut-il consulter pour une toux ?"
     a: "Si la toux dure plus de trois semaines, s'accompagne d'une forte fièvre, d'une gêne pour respirer, de sifflements, de crachats avec du sang, ou si elle concerne un nourrisson. Un remède de grand-mère soulage, il ne soigne pas une infection sérieuse."
 ---
@@ -84,11 +85,11 @@ Plusieurs mécanismes sont avancés. La texture épaisse du miel **enrobe la gor
 ## Les précautions indispensables
 
 - **Jamais de miel avant 1 an**, même dans un lait ou une préparation cuite : risque de botulisme infantile.
-- **Diabète** : le miel reste un sucre. Une cuillère ponctuelle est généralement compatible, mais demande conseil à ton médecin.
-- **Brossage des dents** : si tu le prends au coucher, brosse-toi les dents après, surtout pour les enfants.
+- **Diabète** : le miel reste un sucre. Une cuillère ponctuelle est généralement compatible, mais demandez conseil à votre médecin.
+- **Brossage des dents** : si vous le prenez au coucher, brossez-vous les dents après, surtout pour les enfants.
 - **Toux qui dure ou signes inquiétants** : le miel soulage, il ne remplace pas une consultation.
 
-Si c'est surtout la nuit que la toux te réveille, nos [remèdes contre la toux sèche nocturne](/recettes-grand-mere/remede-toux-seche-nuit/) complètent le miel. Et inutile de tester [l'oignon dans les chaussettes](/recettes-grand-mere/oignon-dans-les-chaussettes-rhume/) : aucune preuve.
+Si c'est surtout la nuit que la toux vous réveille, nos [remèdes contre la toux sèche nocturne](/recettes-grand-mere/remede-toux-seche-nuit/) complètent le miel. Et inutile de tester [l'oignon dans les chaussettes](/recettes-grand-mere/oignon-dans-les-chaussettes-rhume/) : aucune preuve.
 
 ## La recette du lait chaud au miel
 

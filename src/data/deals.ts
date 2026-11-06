@@ -1,5 +1,5 @@
 // ─────────────────────────────────────────────────────────────
-// BONS PLANS — ajoute tes offres ici. Une offre expirée disparaît
+// BONS PLANS — ajoutez vos offres ici. Une offre expirée disparaît
 // automatiquement de la page (champ `expires`).
 //
 // Exemple :

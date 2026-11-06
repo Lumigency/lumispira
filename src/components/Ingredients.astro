@@ -1,5 +1,5 @@
 ---
-// Bandeau illustré « Ce qu'il te faut », en tête des recettes et formules.
+// Bandeau illustré « Ce qu'il vous faut », en tête des recettes et formules.
 // Chaque ingrédient de la recette est reconnu par mot-clé et dessiné à la main (SVG maison).
 interface Props { items: string[]; kind: 'food' | 'diy' }
 const { items, kind } = Astro.props;
@@ -62,7 +62,7 @@ const s = { stroke: 'var(--ink)', 'stroke-width': 2.2, 'stroke-linecap': 'round'
 {picked.length > 0 && (
   <section class="ingredients-strip" aria-labelledby="ing-strip-title">
     <div class="ingredients-strip-head">
-      <h2 id="ing-strip-title">{kind === 'food' ? "Ce qu'il te faut" : 'Les ingrédients de la formule'}</h2>
+      <h2 id="ing-strip-title">{kind === 'food' ? "Ce qu'il vous faut" : 'Les ingrédients de la formule'}</h2>
       <a href="#recette">{kind === 'food' ? 'Voir la recette' : 'Voir la formule'} <span aria-hidden="true">↓</span></a>
     </div>
     <ul>

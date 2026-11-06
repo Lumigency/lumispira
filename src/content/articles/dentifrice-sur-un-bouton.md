@@ -9,6 +9,7 @@ evidence:
   claim: "Le dentifrice fait disparaître les boutons"
   level: 1
 topics: ["Idées reçues"]
+tiphNote: "Qui n'a jamais tenté le coup, la veille d'un rendez-vous important ? Le dentifrice, c'est pour les dents. Pour le bouton, un patch et un peu de patience feront bien mieux l'affaire."
 cover:
   id: "1732887975710-6ab16d1fbc3a"
   alt: "Un tube de dentifrice posé sur une table"
@@ -59,15 +60,15 @@ Un bouton enflammé est une petite plaie. L'irriter davantage, avec du dentifric
 
 ## Ce qui marche vraiment
 
-1. **Le peroxyde de benzoyle** en soin local, disponible en pharmacie sans ordonnance. C'est l'un des actifs les mieux étudiés contre les boutons inflammatoires. Commence par une faible concentration, il peut dessécher et décolorer le linge.
+1. **Le peroxyde de benzoyle** en soin local, disponible en pharmacie sans ordonnance. C'est l'un des actifs les mieux étudiés contre les boutons inflammatoires. Commencez par une faible concentration, il peut dessécher et décolorer le linge.
 2. **L'acide salicylique**, qui aide à désincruster les pores. Plutôt pour les points noirs et les petits boutons.
 3. **Un patch hydrocolloïde** si le bouton s'est ouvert : il absorbe, protège et empêche d'y toucher. On a fait le point sur [ce que valent vraiment les patchs anti-boutons](/peau-acne/patch-bouton-efficace/).
 4. **Ne pas percer** avec les doigts, et nettoyer doucement le visage matin et soir.
 
-Si les boutons sont nombreux, douloureux ou laissent des marques, c'est le moment de consulter. Et si tu te demandes si ton assiette joue un rôle, lis notre dossier [acné et alimentation](/peau-acne/acne-et-alimentation/).
+Si les boutons sont nombreux, douloureux ou laissent des marques, c'est le moment de consulter. Et si vous vous demandez si votre assiette joue un rôle, lisez notre dossier [acné et alimentation](/peau-acne/acne-et-alimentation/).
 
 ![Gros plan sur une brosse à dents et un tube de dentifrice](https://images.unsplash.com/photo-1549924327-093737b3bb46 "Rich Smith|richwilliamsmith")
 
 ## Notre conclusion
 
-Le dentifrice sur un bouton est une idée reçue tenace, mais sans aucune preuve, et avec un vrai risque d'irritation et de marque. Garde ton dentifrice pour tes dents, et mise sur un soin local éprouvé ou un patch.
+Le dentifrice sur un bouton est une idée reçue tenace, mais sans aucune preuve, et avec un vrai risque d'irritation et de marque. Gardez votre dentifrice pour vos dents, et misez sur un soin local éprouvé ou un patch.

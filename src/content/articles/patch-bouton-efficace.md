@@ -9,6 +9,7 @@ evidence:
   claim: "Les patchs hydrocolloïdes accélèrent la guérison d'un bouton ouvert"
   level: 3
 topics: ["Idées reçues", "Marques et cicatrices"]
+tiphNote: "Le patch, c'est un peu l'allié anti-tripotage : il protège le bouton, et surtout il vous empêche d'y toucher. Sur un bouton ouvert, c'est un vrai bon réflexe. Sur une acné qui s'installe, ce n'est qu'un pansement."
 cover:
   id: "1778330804164-2f6d5d3b16ad"
   alt: "Des produits de soin, un miroir et une plante sur un plan de travail en marbre"
@@ -43,8 +44,8 @@ Petits ronds transparents, étoiles colorées, versions « microneedle » : les 
 Le patch classique est fait d'**hydrocolloïde**, la même matière que les pansements pour ampoules. Il absorbe les liquides qui s'écoulent d'une plaie et maintient un milieu humide, favorable à la cicatrisation. Sur un bouton, il fait trois choses :
 
 1. il **absorbe** le pus et le liquide d'un bouton ouvert, d'où l'aspect blanc du patch au réveil ;
-2. il **protège** la plaie des frottements et des bactéries ;
-3. il **t'empêche d'y toucher**, ce qui est peut-être son plus grand mérite.
+2. il **protégez** la plaie des frottements et des bactéries ;
+3. il **vous empêche d'y toucher**, ce qui est peut-être son plus grand mérite.
 
 ![Gros plan sur le visage d'une femme](https://images.unsplash.com/photo-1675773051474-55c4b7d2cf53 "omid armin|itsomidarmin")
 
@@ -73,10 +74,10 @@ Certains patchs contiennent de l'acide salicylique, de l'huile de tea tree ou de
 
 ## Comment bien l'utiliser
 
-1. Nettoie et sèche bien la peau : le patch n'adhère pas sur une peau grasse ou crémée.
-2. Pose-le sur le bouton, idéalement le soir.
-3. Retire-le quand il est blanc et gonflé, et remplace-le si besoin.
-4. Ne perce pas le bouton pour « l'aider » : laisse le patch faire.
+1. Nettoyez et séchez bien la peau : le patch n'adhère pas sur une peau grasse ou crémée.
+2. Posez-le sur le bouton, idéalement le soir.
+3. Retirez-le quand il est blanc et gonflé, et remplacez-le si besoin.
+4. Ne percez pas le bouton pour « l'aider » : laissez le patch faire.
 
 C'est en tout cas une bien meilleure idée que [le dentifrice sur un bouton](/peau-acne/dentifrice-sur-un-bouton/).
 
@@ -84,4 +85,4 @@ C'est en tout cas une bien meilleure idée que [le dentifrice sur un bouton](/pe
 
 ## Notre conclusion
 
-Le patch anti-bouton n'est pas un gadget, mais un petit outil avec un usage précis : les boutons ouverts. Il aide à cicatriser, limite les marques et t'empêche d'y toucher. Pour le reste, et surtout pour une acné qui s'installe, il ne remplace pas un vrai traitement. Les offres sur les patchs que nous recommandons seront réunies sur [notre page bons plans](/bons-plans/).
+Le patch anti-bouton n'est pas un gadget, mais un petit outil avec un usage précis : les boutons ouverts. Il aide à cicatriser, limite les marques et vous empêche d'y toucher. Pour le reste, et surtout pour une acné qui s'installe, il ne remplace pas un vrai traitement. Les offres sur les patchs que nous recommandons seront réunies sur [notre page bons plans](/bons-plans/).

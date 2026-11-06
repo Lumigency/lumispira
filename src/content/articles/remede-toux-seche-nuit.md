@@ -9,6 +9,7 @@ evidence:
   claim: "Le miel calme la toux"
   level: 4
 topics: ["Toux et gorge", "Tisanes"]
+tiphNote: "Une toux qui vous réveille la nuit, c'est épuisant, et on a vite envie de tout essayer. Commencez par le plus simple : une cuillère de miel, un oreiller de plus et une chambre aérée. Et si elle traîne, on va voir son médecin, sans culpabiliser."
 cover:
   id: "1548855917-74db67f6f74e"
   alt: "Une théière grise à côté d'une tasse de thé au citron"
@@ -38,19 +39,19 @@ recipe:
     - "Le jus d'un demi-citron"
     - "1 à 2 cuillères à café de miel"
   steps:
-    - "Fais chauffer l'eau sans la faire bouillir."
-    - "Ajoute le jus de citron, puis laisse tiédir une minute."
-    - "Ajoute le miel et mélange jusqu'à ce qu'il soit fondu."
-    - "Bois-la tiède, à petites gorgées, une demi-heure avant de te coucher."
+    - "Faites chauffer l'eau sans la faire bouillir."
+    - "Ajoutez le jus de citron, puis laissez tiédir une minute."
+    - "Ajoutez le miel et mélangez jusqu'à ce qu'il soit fondu."
+    - "Buvez-la tiède, à petites gorgées, une demi-heure avant de vous coucher."
 faq:
   - q: "Pourquoi la toux sèche est-elle pire la nuit ?"
     a: "En position allongée, les sécrétions du nez peuvent couler dans la gorge et l'irriter, et l'air de la chambre est souvent plus sec. La toux est aussi plus remarquée quand tout est calme."
   - q: "Le thym est-il efficace contre la toux ?"
     a: "Le thym est utilisé traditionnellement contre la toux et l'est encore dans certains sirops. Les données sur la tisane seule sont limitées : elle reste une boisson chaude réconfortante, à laquelle on peut ajouter du miel."
   - q: "Quand faut-il s'inquiéter d'une toux sèche ?"
-    a: "Si elle dure plus de trois semaines, s'aggrave, s'accompagne d'une difficulté à respirer, d'une douleur dans la poitrine, de sang dans les crachats ou d'une perte de poids inexpliquée. Chez un nourrisson, consulte rapidement."
+    a: "Si elle dure plus de trois semaines, s'aggrave, s'accompagne d'une difficulté à respirer, d'une douleur dans la poitrine, de sang dans les crachats ou d'une perte de poids inexpliquée. Chez un nourrisson, consultez rapidement."
   - q: "Peut-on donner du miel à un enfant qui tousse la nuit ?"
-    a: "Oui à partir d'un an, une petite cuillère avant le coucher, puis brossage des dents. Jamais avant un an. Demande l'avis de ton médecin ou de ton pharmacien pour un enfant de moins de six ans."
+    a: "Oui à partir d'un an, une petite cuillère avant le coucher, puis brossage des dents. Jamais avant un an. Demandez l'avis de votre médecin ou de votre pharmacien pour un enfant de moins de six ans."
 ---
 
 Une toux sèche qui reprend dès qu'on pose la tête sur l'oreiller, c'est épuisant. Les remèdes de grand-mère ne manquent pas : miel, citron, thym, oignon, huiles essentielles. Certains marchent, d'autres non, et quelques-uns sont à éviter.
@@ -82,7 +83,7 @@ Aérer quelques minutes avant de dormir et éviter de surchauffer la chambre lim
 ## Les remèdes inutiles ou à éviter
 
 - **L'oignon** : coupé sur la table de nuit ou [dans les chaussettes](/recettes-grand-mere/oignon-dans-les-chaussettes-rhume/), il n'a jamais montré d'effet.
-- **Les huiles essentielles et baumes mentholés chez l'enfant** : certains sont déconseillés chez les jeunes enfants, car ils peuvent provoquer des troubles respiratoires ou des convulsions. Demande conseil au pharmacien avant tout usage.
+- **Les huiles essentielles et baumes mentholés chez l'enfant** : certains sont déconseillés chez les jeunes enfants, car ils peuvent provoquer des troubles respiratoires ou des convulsions. Demandez conseil au pharmacien avant tout usage.
 - **Les sirops pour la toux sans avis** : certains sont réservés aux plus de 12 ans, d'autres sont déconseillés en cas de toux grasse. Le pharmacien est le bon interlocuteur.
 
 ## La recette de la boisson miel et citron
@@ -91,10 +92,10 @@ Un demi-citron pressé, de l'eau chaude mais pas bouillante, une ou deux cuillè
 
 ## Quand consulter
 
-D'après les recommandations du NHS, il faut voir un médecin si la toux **dure plus de trois semaines** ou s'accompagne d'une perte de poids inexpliquée. Il faut consulter **rapidement** si la toux s'aggrave fortement, en cas de difficulté à respirer, de douleur dans la poitrine ou de sang dans les crachats. Pour un nourrisson, demande un avis sans attendre.
+D'après les recommandations du NHS, il faut voir un médecin si la toux **dure plus de trois semaines** ou s'accompagne d'une perte de poids inexpliquée. Il faut consulter **rapidement** si la toux s'aggrave fortement, en cas de difficulté à respirer, de douleur dans la poitrine ou de sang dans les crachats. Pour un nourrisson, demandez un avis sans attendre.
 
 ![Un pot en céramique, un pichet et des tranches de citron](https://images.unsplash.com/photo-1484406528157-81e9e4d24931 "Hans Vivek|oneshotespresso")
 
 ## Notre conclusion
 
-Contre la toux sèche nocturne, le remède de grand-mère le plus simple est aussi le plus solide : une cuillère de miel avant de dormir, à partir d'un an. Ajoute une boisson tiède, un oreiller de plus et une chambre bien aérée. Laisse tomber l'oignon, et consulte si la toux s'installe.
+Contre la toux sèche nocturne, le remède de grand-mère le plus simple est aussi le plus solide : une cuillère de miel avant de dormir, à partir d'un an. Ajoutez une boisson tiède, un oreiller de plus et une chambre bien aérée. Laissez tomber l'oignon, et consultez si la toux s'installe.

@@ -9,6 +9,7 @@ evidence:
   claim: "Un rinçage au vinaigre de cidre rend les cheveux plus brillants"
   level: 2
 topics: ["Cheveux", "Cosmétiques maison"]
+tiphNote: "Le rinçage au vinaigre de cidre, c'est un joli geste de soin, pas un miracle en bouteille. Diluez bien, rincez à l'eau claire, et observez vos cheveux : ce sont eux qui auront le dernier mot."
 cover:
   id: "1556037843-347ddff9f4b0"
   alt: "Un plateau de pommes à côté d'une bouteille brune"
@@ -35,7 +36,7 @@ faq:
   - q: "Le vinaigre de cidre fait-il pousser les cheveux ?"
     a: "Non, rien ne le montre. Il agit au mieux sur l'aspect et le toucher de la fibre, pas sur la pousse."
   - q: "Faut-il rincer après le vinaigre ?"
-    a: "Les avis divergent. Rincer à l'eau claire après quelques minutes limite l'odeur et le risque d'irritation, surtout si ton cuir chevelu est sensible."
+    a: "Les avis divergent. Rincer à l'eau claire après quelques minutes limite l'odeur et le risque d'irritation, surtout si votre cuir chevelu est sensible."
 ---
 
 Le rinçage au vinaigre de cidre est une astuce de grand-mère revenue en force : quelques cuillères dans un bol d'eau, versées sur les cheveux après le shampoing, pour des cheveux brillants, doux et un cuir chevelu « rééquilibré ». Qu'en est-il vraiment ?
@@ -62,17 +63,17 @@ Le vinaigre contient de l'acide acétique. Dilué, il est généralement bien to
 
 ## Comment l'utiliser sans risque
 
-1. **Dilue toujours** : une à deux cuillères à soupe de vinaigre de cidre dans 250 ml d'eau.
-2. Après le shampoing, verse le mélange sur les **longueurs**, en évitant les yeux.
-3. Laisse poser une à deux minutes, puis **rince à l'eau claire** si ton cuir chevelu est sensible.
-4. Limite-toi à **une fois par semaine**.
-5. Arrête en cas de picotements, de rougeurs ou de démangeaisons.
+1. **Diluez toujours** : une à deux cuillères à soupe de vinaigre de cidre dans 250 ml d'eau.
+2. Après le shampoing, versez le mélange sur les **longueurs**, en évitant les yeux.
+3. Laissez poser une à deux minutes, puis **rincez à l'eau claire** si votre cuir chevelu est sensible.
+4. Limitez-vous à **une fois par semaine**.
+5. Arrêtez en cas de picotements, de rougeurs ou de démangeaisons.
 
-Comme pour tout soin maison, fais d'abord un test de tolérance. On t'explique pourquoi dans notre article sur [l'huile de ricin pour les cils](/beaute-naturelle/huile-de-ricin-cils/), et les mêmes règles valent pour notre [déodorant maison](/beaute-naturelle/deodorant-maison-sans-bicarbonate/).
+Comme pour tout soin maison, faites d'abord un test de tolérance. On vous explique pourquoi dans notre article sur [l'huile de ricin pour les cils](/beaute-naturelle/huile-de-ricin-cils/), et les mêmes règles valent pour notre [déodorant maison](/beaute-naturelle/deodorant-maison-sans-bicarbonate/).
 
 ## Une alternative plus simple
 
-Si ton objectif est d'avoir des cheveux moins frisottants et plus brillants, choisir un **shampoing doux au pH acide** et un après-shampoing règle souvent la question, sans odeur de vinaigre.
+Si votre objectif est d'avoir des cheveux moins frisottants et plus brillants, choisir un **shampoing doux au pH acide** et un après-shampoing règle souvent la question, sans odeur de vinaigre.
 
 ![Une femme aux longs cheveux bruns vue de dos](https://images.unsplash.com/photo-1596911647169-7085321c81b8 "Thalia Ruiz|thalia_s_ruiz")
 

@@ -23,7 +23,7 @@ const jsonLd = [{
     <div class="wrap">
       <Crumbs items={[{ name: 'Tous les articles', href: '/blog/' }]} />
       <h1>Tous les articles</h1>
-      <p class="lede">Chaque sujet passé au tamis, du plus récent au plus ancien. Filtre par rubrique ou parcours tout.</p>
+      <p class="lede">Chaque sujet passé au tamis, du plus récent au plus ancien. Filtrez par rubrique ou parcourez tout.</p>
       <ul class="topics" aria-label="Rubriques">
         {CATEGORY_KEYS.map((k) => <li><a href={`/${k}/`} style="text-decoration:none">{CATEGORIES[k].name}</a></li>)}
       </ul>

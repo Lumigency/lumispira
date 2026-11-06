@@ -1,6 +1,6 @@
 ---
 title: "Acné et alimentation : le sucre, le lait et le chocolat sont-ils coupables ?"
-seoTitle: "Acné et alimentation : sucre, lait, chocolat, le vrai"
+seoTitle: "Acné et alimentation : sucrez, lait, chocolat, le vrai"
 description: "Le chocolat donne-t-il des boutons ? Faut-il arrêter le lait ? Ce que les études montrent vraiment sur l'acné et l'alimentation, et ce qu'on peut changer."
 category: peau-acne
 date: 2026-11-02
@@ -9,6 +9,7 @@ evidence:
   claim: "Une alimentation riche en sucres rapides peut aggraver l'acné"
   level: 3
 topics: ["Acné et alimentation", "Idées reçues"]
+tiphNote: "Si vous avez déjà culpabilisé pour un carré de chocolat, respirez : l'acné n'est pas une punition pour ce que vous mangez. L'alimentation peut jouer un petit rôle, mais si votre peau vous pèse, le meilleur réflexe reste de consulter."
 cover:
   id: "1523035274455-b2e5c6d5c2e0"
   alt: "Une tablette de chocolat et du cacao en poudre dans un bol"
@@ -30,14 +31,14 @@ faq:
   - q: "Le chocolat donne-t-il des boutons ?"
     a: "Les études sur le chocolat seul sont peu nombreuses, petites et contradictoires. Le chocolat au lait cumule du sucre et du lait, deux facteurs mieux étudiés. Un carré de chocolat noir de temps en temps n'a pas de raison d'être banni."
   - q: "Faut-il arrêter les produits laitiers en cas d'acné ?"
-    a: "Les études qui associent produits laitiers et acné sont observationnelles et de qualité modeste : elles ne prouvent pas que le lait cause l'acné. Si tu veux tester, réduis-les pendant quelques semaines en gardant des apports suffisants en calcium, et observe. Inutile de les supprimer à vie sans raison."
+    a: "Les études qui associent produits laitiers et acné sont observationnelles et de qualité modeste : elles ne prouvent pas que le lait cause l'acné. Si vous voulez tester, réduisez-les pendant quelques semaines en gardant des apports suffisants en calcium, et observe. Inutile de les supprimer à vie sans raison."
   - q: "Quels aliments sont bons pour la peau ?"
     a: "Les données vont dans le sens d'une alimentation à faible charge glycémique : légumes, légumineuses, céréales complètes, fruits entiers, protéines, plutôt que sodas, pâtisseries et pain blanc. Aucun aliment isolé ne fait disparaître l'acné."
   - q: "Combien de temps pour voir l'effet d'un changement d'alimentation ?"
     a: "Dans l'essai de référence, les effets ont été mesurés après 12 semaines. La peau se renouvelle lentement : il faut compter au moins deux à trois mois avant de juger."
 ---
 
-« Arrête le chocolat, tu vas avoir des boutons. » On l'a tous entendu. Depuis, le discours a changé de cible : ce serait le lait, ou le sucre, ou le gluten. Que reste-t-il quand on regarde les études ?
+« Arrêtez le chocolat, vous allez avoir des boutons. » On l'a tous entendu. Depuis, le discours a changé de cible : ce serait le lait, ou le sucre, ou le gluten. Que reste-t-il quand on regarde les études ?
 
 ## L'acné, d'abord une question d'hormones et de peau
 
@@ -75,12 +76,12 @@ C'est l'idée reçue la plus ancienne, et paradoxalement la moins bien étudiée
 
 1. **Réduire les sucres rapides** : sodas, jus, biscuits, viennoiseries, bonbons. C'est le changement le mieux soutenu par les données, et il est bon pour la santé en général.
 2. **Privilégier les aliments à faible charge glycémique** : légumes, légumineuses, céréales complètes, fruits entiers, oléagineux. Un petit-déjeuner comme notre [granola maison peu sucré](/recettes-grand-mere/granola-maison-peu-sucre/) va dans ce sens.
-3. **Tester les produits laitiers si tu le souhaites** : réduis-les pendant deux à trois mois, observe ta peau, et veille à garder assez de calcium.
-4. **Ne pas te priver de tout** : un régime trop strict est difficile à tenir et peut nuire à ton rapport à l'alimentation.
-5. **Garder un traitement adapté** : l'alimentation est un levier d'appoint, pas un traitement. Et pour un bouton isolé, oublie [le dentifrice](/peau-acne/dentifrice-sur-un-bouton/) : un [patch hydrocolloïde](/peau-acne/patch-bouton-efficace/) fait bien mieux.
+3. **Tester les produits laitiers si vous le souhaitez** : réduisez-les pendant deux à trois mois, observe votre peau, et veille à garder assez de calcium.
+4. **Ne pas vous priver de tout** : un régime trop strict est difficile à tenir et peut nuire à votre rapport à l'alimentation.
+5. **Garder un traitement adapté** : l'alimentation est un levier d'appoint, pas un traitement. Et pour un bouton isolé, oubliez [le dentifrice](/peau-acne/dentifrice-sur-un-bouton/) : un [patch hydrocolloïde](/peau-acne/patch-bouton-efficace/) fait bien mieux.
 
 ![Une salade de légumes verts et orange dans un bol blanc](https://images.unsplash.com/photo-1592578630143-fac65cda7a67 "Ravi Sharma|ravinepz")
 
 ## Notre conclusion
 
-L'acné n'est pas une punition pour ce qu'on mange. Mais l'alimentation peut faire pencher la balance : les sucres rapides ont les données les plus sérieuses, les produits laitiers une association plus fragile, et le chocolat seul est largement innocenté faute de preuves. Si ton acné est étendue, douloureuse ou laisse des marques, consulte : des traitements efficaces existent. Retrouve tous nos dossiers dans la rubrique [Peau & acné](/peau-acne/).
+L'acné n'est pas une punition pour ce qu'on mange. Mais l'alimentation peut faire pencher la balance : les sucres rapides ont les données les plus sérieuses, les produits laitiers une association plus fragile, et le chocolat seul est largement innocenté faute de preuves. Si votre acné est étendue, douloureuse ou laisse des marques, consultez : des traitements efficaces existent. Retrouvez tous nos dossiers dans la rubrique [Peau & acné](/peau-acne/).

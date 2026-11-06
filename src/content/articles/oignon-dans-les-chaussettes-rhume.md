@@ -9,6 +9,7 @@ evidence:
   claim: "Un oignon dans les chaussettes soigne le rhume"
   level: 1
 topics: ["Rhume et nez bouché"]
+tiphNote: "J'adore les remèdes de grand-mère, mais celui-là, on peut le laisser au placard. Gardez vos oignons pour la soupe, vos chaussettes pour vos pieds, et offrez-vous du repos : c'est encore ce qui marche le mieux."
 cover:
   id: "1664975367126-e3f1c9b44e07"
   alt: "Deux oignons rouges"
@@ -59,14 +60,14 @@ Il n'existe pas de remède qui guérisse un rhume, mais plusieurs gestes aident 
 3. **Le lavage du nez** au sérum physiologique, pour se sentir moins encombrée.
 4. **Se laver les mains** souvent, pour ne pas contaminer son entourage.
 
-Si la toux te réveille la nuit, nos [remèdes contre la toux sèche nocturne](/recettes-grand-mere/remede-toux-seche-nuit/) passent en revue ce qui aide vraiment.
+Si la toux vous réveille la nuit, nos [remèdes contre la toux sèche nocturne](/recettes-grand-mere/remede-toux-seche-nuit/) passent en revue ce qui aide vraiment.
 
 ## Quand consulter
 
-Un rhume banal ne nécessite pas de consultation. Il faut en revanche voir un médecin en cas de forte fièvre qui dure, de difficulté à respirer, de douleur au visage ou aux oreilles qui s'aggrave, ou si les symptômes durent plus de dix jours sans s'améliorer. Pour un nourrisson, demande conseil plus tôt.
+Un rhume banal ne nécessite pas de consultation. Il faut en revanche voir un médecin en cas de forte fièvre qui dure, de difficulté à respirer, de douleur au visage ou aux oreilles qui s'aggrave, ou si les symptômes durent plus de dix jours sans s'améliorer. Pour un nourrisson, demandez conseil plus tôt.
 
 ![Une paire de chaussettes](https://images.unsplash.com/photo-1615486364462-ef6363adbc18 "Mockup Graphics|mockupgraphics")
 
 ## Notre conclusion
 
-L'oignon dans les chaussettes fait partie des remèdes de grand-mère attachants, mais sans aucune preuve. Il ne fait probablement pas de mal, ni de bien. Garde tes oignons pour la soupe, et mise sur le repos, le miel et un nez bien dégagé.
+L'oignon dans les chaussettes fait partie des remèdes de grand-mère attachants, mais sans aucune preuve. Il ne fait probablement pas de mal, ni de bien. Gardez vos oignons pour la soupe, et misez sur le repos, le miel et un nez bien dégagé.

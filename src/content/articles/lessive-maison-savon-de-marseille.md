@@ -9,6 +9,7 @@ evidence:
   claim: "Une lessive maison lave aussi bien qu'une lessive du commerce"
   level: 2
 topics: ["Lessive et linge"]
+tiphNote: "J'aime l'idée de la lessive maison, mais je préfère vous dire la vérité : sur le blanc et les taches, elle ne fait pas le poids. Si vous voulez essayer, réservez-la au linge du quotidien, et gardez un œil sur votre machine."
 cover:
   id: "1639739767611-cc582846849f"
   alt: "Un panier à linge posé sur un plan de travail en bois"
@@ -36,16 +37,16 @@ recipe:
     - "1 litre d'eau chaude"
     - "1 litre d'eau froide"
   steps:
-    - "Porte des gants : les cristaux de soude sont irritants."
-    - "Fais fondre le savon râpé et les cristaux de soude dans l'eau chaude en remuant."
-    - "Ajoute l'eau froide, mélange, et verse dans un bidon sans le remplir à ras bord."
-    - "Laisse reposer une nuit : la lessive va épaissir. Secoue avant chaque usage."
-    - "Utilise environ 15 cl par lavage, dans une boule doseuse."
+    - "Portez des gants : les cristaux de soude sont irritants."
+    - "Faites fondre le savon râpé et les cristaux de soude dans l'eau chaude en remuant."
+    - "Ajoutez l'eau froide, mélangez, et versez dans un bidon sans le remplir à ras bord."
+    - "Laissez reposer une nuit : la lessive va épaissir. Secouez avant chaque usage."
+    - "Utilisez environ 15 cl par lavage, dans une boule doseuse."
 faq:
   - q: "Pourquoi mon linge devient-il gris avec la lessive maison ?"
     a: "Avec une eau calcaire, le savon réagit avec le calcium et forme des dépôts qui se fixent dans les fibres. Le blanc se ternit lavage après lavage. Les cristaux de soude limitent le phénomène, sans le supprimer."
   - q: "La lessive maison abîme-t-elle la machine à laver ?"
-    a: "Les mêmes dépôts de savon calcaire peuvent s'accumuler dans la machine. Si tu l'utilises, fais régulièrement un cycle d'entretien à vide et surveille le bac et le joint."
+    a: "Les mêmes dépôts de savon calcaire peuvent s'accumuler dans la machine. Si vous l'utilisez, faites régulièrement un cycle d'entretien à vide et surveillez le bac et le joint."
   - q: "Peut-on ajouter des huiles essentielles pour l'odeur ?"
     a: "C'est possible, mais elles n'ajoutent rien au lavage et peuvent contenir des substances allergisantes. Le test de l'UFC-Que Choisir a d'ailleurs relevé une teneur très élevée en parfum allergisant dans la recette testée."
   - q: "Sur quel linge l'éviter ?"
@@ -73,7 +74,7 @@ D'où notre indice **Fragile** : rien ne montre qu'une lessive maison lave aussi
 
 Le savon de Marseille est un vrai savon. Dans une **eau calcaire**, il réagit avec le calcium et forme des dépôts insolubles, comme le voile qui se dépose sur une paroi de douche. Ces dépôts se fixent dans les fibres et ternissent le linge, lavage après lavage. Ils peuvent aussi encrasser la machine.
 
-C'est pour cela que les recettes ajoutent des **cristaux de soude**. L'association de consommateurs écoconso les juge « idéaux si le linge est très sale ou si l'eau est dure ». Ils limitent le problème, sans le supprimer. Si ton eau est très calcaire, la lessive maison n'est pas pour toi.
+C'est pour cela que les recettes ajoutent des **cristaux de soude**. L'association de consommateurs écoconso les juge « idéaux si le linge est très sale ou si l'eau est dure ». Ils limitent le problème, sans le supprimer. Si votre eau est très calcaire, la lessive maison n'est pas pour vous.
 
 ## Quand elle peut convenir
 
@@ -85,18 +86,18 @@ La lessive maison peut suffire pour :
 
 Elle est à éviter pour le **blanc**, le linge **taché**, et les textiles **absorbants** comme les couches lavables ou les chiffons, dont elle peut réduire le pouvoir absorbant.
 
-## La recette, si tu veux essayer
+## La recette, si vous voulez essayer
 
-C'est la recette proposée par écoconso, sans huiles essentielles. Les quantités et les étapes sont détaillées plus bas. Deux conseils : choisis un savon de Marseille **sans glycérine ajoutée**, et **porte des gants** pour manipuler les cristaux de soude, plus irritants que le [bicarbonate](/maison-naturelle/bicarbonate-de-soude-usages/).
+C'est la recette proposée par écoconso, sans huiles essentielles. Les quantités et les étapes sont détaillées plus bas. Deux conseils : choisissez un savon de Marseille **sans glycérine ajoutée**, et **portez des gants** pour manipuler les cristaux de soude, plus irritants que le [bicarbonate](/maison-naturelle/bicarbonate-de-soude-usages/).
 
 Pour assouplir le linge, un fond de [vinaigre blanc](/maison-naturelle/vinaigre-blanc-usages/) dans le bac à assouplissant fonctionne, sauf sur les élastiques.
 
 ## L'alternative du milieu
 
-Si tu cherches surtout à réduire les ingrédients controversés et les emballages, une **lessive du commerce écolabellisée**, bien dosée selon la dureté de ton eau, offre souvent le meilleur compromis entre efficacité et impact.
+Si vous cherchez surtout à réduire les ingrédients controversés et les emballages, une **lessive du commerce écolabellisée**, bien dosée selon la dureté de votre eau, offre souvent le meilleur compromis entre efficacité et impact.
 
 ![Un panier à linge blanc à côté d'un lave-linge jaune](https://images.unsplash.com/photo-1585318518669-3365d350fcfa "Anca Gabriela Zosin|agzed")
 
 ## Notre conclusion
 
-La lessive maison au savon de Marseille n'est ni une arnaque ni une solution miracle. Elle peut faire l'affaire pour du linge peu sale dans une eau douce. Pour le blanc, les taches ou une eau calcaire, elle montre vite ses limites. Si tu te lances, garde la recette simple, sans huiles essentielles, et surveille ton linge et ta machine.
+La lessive maison au savon de Marseille n'est ni une arnaque ni une solution miracle. Elle peut faire l'affaire pour du linge peu sale dans une eau douce. Pour le blanc, les taches ou une eau calcaire, elle montre vite ses limites. Si vous vous lancez, gardez la recette simple, sans huiles essentielles, et surveillez votre linge et votre machine.

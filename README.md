@@ -73,3 +73,9 @@ Le site transforme automatiquement l'image en photo responsive avec le crédit (
 
 Toute recette ou formule (`recipe:`) affiche en tête d'article un bandeau « Ce qu'il te faut » dessiné à la main.
 Les ingrédients sont reconnus par mot-clé dans `src/components/Ingredients.astro` : pour un nouvel ingrédient, ajoute une ligne dans `ICONS` et son dessin SVG.
+
+## Ton éditorial
+
+- **Vouvoiement** partout (articles, rubriques, formulaires).
+- Ton **bienveillant, grande sœur**, avec une **pointe d'humour** ; jamais moralisateur, jamais culpabilisant.
+- Chaque article se termine par **« Le mot de Tiph »** : champ `tiphNote` dans le front-matter, 2 à 3 phrases dans la voix de Tiphaine (conseil, regard personnel, un peu d'humour). L'encadré « On a testé » (`personalNote`) reste réservé aux vrais tests.

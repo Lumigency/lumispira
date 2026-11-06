@@ -9,6 +9,7 @@ evidence:
   claim: "Les oignons font pleurer à cause d'un gaz libéré à la découpe"
   level: 5
 topics: ["Recettes simples", "Recettes d’antan"]
+tiphNote: "Si vous pleurez en coupant vos oignons, ce n'est pas de l'émotion, c'est de la chimie. Pour le reste, la seule vraie règle, c'est la patience : des oignons pressés font une soupe pressée."
 cover:
   id: "1560963689-b9e9773ff232"
   alt: "Un bol de soupe aux oignons"
@@ -42,22 +43,22 @@ recipe:
     - "8 tranches de pain, de la veille de préférence"
     - "120 g de comté ou de gruyère râpé"
   steps:
-    - "Épluche les oignons et émince-les finement."
-    - "Fais fondre le beurre dans une cocotte et ajoute les oignons avec une pincée de sel."
-    - "Laisse-les cuire à feu doux 30 à 40 minutes, en remuant régulièrement, jusqu'à ce qu'ils soient dorés et fondants."
-    - "Saupoudre de farine et mélange 1 minute, puis verse le vin blanc si tu en utilises et laisse réduire 2 minutes."
-    - "Ajoute le bouillon, poivre, et laisse mijoter 20 minutes. Goûte avant de saler."
-    - "Fais griller les tranches de pain. Verse la soupe dans des bols allant au four, pose le pain dessus et couvre de fromage."
-    - "Passe sous le gril du four 5 minutes, jusqu'à ce que le fromage soit doré et bouillonnant."
+    - "Épluchez les oignons et émincez-les finement."
+    - "Faites fondre le beurre dans une cocotte et ajoutez les oignons avec une pincée de sel."
+    - "Laissez-les cuire à feu doux 30 à 40 minutes, en remuant régulièrement, jusqu'à ce qu'ils soient dorés et fondants."
+    - "Saupoudrez de farine et mélangez 1 minute, puis versez le vin blanc si vous en utilisez et laissez réduire 2 minutes."
+    - "Ajoutez le bouillon, poivre, et laissez mijoter 20 minutes. Goûtez avant de saler."
+    - "Faites griller les tranches de pain. Versez la soupe dans des bols allant au four, posez le pain dessus et couvrez de fromage."
+    - "Passez sous le gril du four 5 minutes, jusqu'à ce que le fromage soit doré et bouillonnant."
 faq:
   - q: "Comment couper les oignons sans pleurer ?"
-    a: "Utilise un couteau bien aiguisé, qui écrase moins de cellules, et mets les oignons au réfrigérateur un moment avant de les couper : le froid pourrait limiter la quantité de gaz qui s'échappe. Les lunettes de piscine fonctionnent aussi très bien."
+    a: "Utilisez un couteau bien aiguisé, qui écrase moins de cellules, et mettez les oignons au réfrigérateur un moment avant de les couper : le froid pourrait limiter la quantité de gaz qui s'échappe. Les lunettes de piscine fonctionnent aussi très bien."
   - q: "Pourquoi mes oignons brûlent-ils au lieu de dorer ?"
-    a: "Le feu est trop fort. Les oignons doivent cuire doucement, longtemps. S'ils attachent, ajoute une cuillère d'eau et gratte le fond : ce dépôt donne beaucoup de goût."
+    a: "Le feu est trop fort. Les oignons doivent cuire doucement, longtemps. S'ils attachent, ajoutez une cuillère d'eau et grattez le fond : ce dépôt donne beaucoup de goût."
   - q: "Peut-on faire la soupe à l'oignon sans vin ?"
-    a: "Oui. Le vin blanc apporte un peu d'acidité ; tu peux le remplacer par un peu plus de bouillon et quelques gouttes de vinaigre de cidre en fin de cuisson."
+    a: "Oui. Le vin blanc apporte un peu d'acidité ; vous pouvez le remplacer par un peu plus de bouillon et quelques gouttes de vinaigre de cidre en fin de cuisson."
   - q: "Peut-on la préparer à l'avance ?"
-    a: "Oui, la soupe est même meilleure le lendemain. Garde-la au réfrigérateur et ne gratine qu'au dernier moment."
+    a: "Oui, la soupe est même meilleure le lendemain. Gardez-la au réfrigérateur et ne gratine qu'au dernier moment."
 ---
 
 La soupe à l'oignon gratinée, c'est la soupe des soirs d'hiver, des fins de fête et des cuisines de grand-mère. Peu d'ingrédients, presque rien à acheter, et un résultat réconfortant. Seul obstacle : les oignons, et les larmes qui vont avec.
@@ -94,4 +95,4 @@ Le pain de la veille est parfait pour le gratiné : il tient mieux dans la soupe
 
 ## Notre conclusion
 
-La soupe à l'oignon gratinée demande peu d'ingrédients et beaucoup de patience. Coupe tes oignons avec un couteau bien aiguisé et sortis du réfrigérateur, laisse-les dorer doucement, utilise un bon bouillon, et finis avec du pain de la veille et du fromage. C'est la cuisine de grand-mère dans ce qu'elle a de plus simple.
+La soupe à l'oignon gratinée demande peu d'ingrédients et beaucoup de patience. Coupez vos oignons avec un couteau bien aiguisé et sortis du réfrigérateur, laissez-les dorer doucement, utilisez un bon bouillon, et finissez avec du pain de la veille et du fromage. C'est la cuisine de grand-mère dans ce qu'elle a de plus simple.

@@ -44,6 +44,8 @@ const articles = defineCollection({
       .optional(),
     featured: z.boolean().default(false),
     // Encadré « On a testé » : un texte (signé par l'auteur de l'article) ou { by, text }
+    // « Le mot de Tiph » : signature de fin d'article, dans la voix de Tiphaine
+    tiphNote: z.string().optional(),
     personalNote: z.union([z.string(), z.object({ by: z.enum(['tiphaine', 'marie', 'redaction']), text: z.string() })]).optional(),
     // Photo Unsplash : id = la partie après « photo- » dans l'URL images.unsplash.com
     cover: z

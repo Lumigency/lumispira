@@ -9,6 +9,7 @@ evidence:
   claim: "L'huile de ricin fait pousser les cils"
   level: 1
 topics: ["Huiles végétales", "Cils et sourcils"]
+tiphNote: "Je comprends l'envie de cils de star, mais l'huile de ricin n'a pas encore fait ses preuves sur ce terrain. Si vous aimez le geste, faites-le avec une quantité minuscule et beaucoup de douceur pour vos yeux."
 cover:
   id: "1608571424634-58ae03e6edcf"
   alt: "Un flacon d'huile sur une table ronde en bois"
@@ -29,9 +30,9 @@ faq:
   - q: "Combien de temps faut-il pour voir un résultat avec l'huile de ricin ?"
     a: "L'effet gainant est visible dès les premières applications : les cils paraissent plus brillants et plus souples. En revanche, il ne faut pas attendre une pousse : aucune étude ne la démontre."
   - q: "Peut-on mettre de l'huile de ricin sur les cils toutes les nuits ?"
-    a: "Oui, si tu la supportes bien. Applique une quantité minuscule avec une brosse propre, sur la pointe des cils, en évitant la racine pour limiter le risque que l'huile coule dans l'œil."
+    a: "Oui, si vous la supportez bien. Appliquez une quantité minuscule avec une brosse propre, sur la pointe des cils, en évitant la racine pour limiter le risque que l'huile coule dans l'œil."
   - q: "L'huile de ricin est-elle dangereuse pour les yeux ?"
-    a: "Elle n'est pas dangereuse en usage normal, mais elle peut irriter si elle entre dans l'œil et provoquer une vision trouble passagère. En cas de rougeur, de picotements persistants ou de gonflement des paupières, arrête et consulte."
+    a: "Elle n'est pas dangereuse en usage normal, mais elle peut irriter si elle entre dans l'œil et provoquer une vision trouble passagère. En cas de rougeur, de picotements persistants ou de gonflement des paupières, arrêtez et consultez."
   - q: "Existe-t-il un produit qui fait vraiment pousser les cils ?"
     a: "Oui : le bimatoprost, un médicament initialement utilisé contre le glaucome, a démontré son efficacité. C'est un médicament sur prescription, avec des effets indésirables possibles, notamment sur la couleur de l'iris et des paupières. Les sérums cosmétiques qui promettent une pousse reposent souvent sur des molécules proches, à manipuler avec prudence."
 ---
@@ -56,29 +57,29 @@ C'est tout. Il n'existe pas, à notre connaissance, d'essai clinique comparant d
 Ne pas faire pousser les cils ne veut pas dire ne rien faire. L'huile de ricin forme un **film protecteur** autour de chaque cil. Résultat :
 
 - les cils paraissent **plus brillants et plus foncés** ;
-- ils sont **plus souples**, donc peut-être moins cassants, surtout si tu utilises un recourbe-cils ou du mascara waterproof ;
+- ils sont **plus souples**, donc peut-être moins cassants, surtout si vous utilisez un recourbe-cils ou du mascara waterproof ;
 - ils semblent **plus fournis**, simplement parce qu'ils sont gainés.
 
-Si tes cils te paraissent plus beaux après quelques semaines, ce n'est pas forcément une illusion : des cils moins abîmés se cassent moins. Mais ce n'est pas de la pousse.
+Si vos cils vous paraissent plus beaux après quelques semaines, ce n'est pas forcément une illusion : des cils moins abîmés se cassent moins. Mais ce n'est pas de la pousse.
 
 ## Comment l'appliquer sans risque
 
-1. Choisis une **huile de ricin pure**, idéalement bio et pressée à froid, dans un flacon propre.
-2. Démaquille soigneusement tes yeux.
-3. Prends une **brosse à mascara propre** ou un coton-tige, et dépose une quantité minuscule d'huile : une goutte suffit pour les deux yeux.
-4. Applique sur la **longueur et la pointe des cils**, sans toucher la racine ni la paupière.
-5. Essuie l'excédent avec un mouchoir. Trop d'huile coulera dans l'œil pendant la nuit.
+1. Choisissez une **huile de ricin pure**, idéalement bio et pressée à froid, dans un flacon propre.
+2. Démaquillez soigneusement vos yeux.
+3. Prenez une **brossez à mascara propre** ou un coton-tige, et déposez une quantité minuscule d'huile : une goutte suffit pour les deux yeux.
+4. Appliquez sur la **longueur et la pointe des cils**, sans toucher la racine ni la paupière.
+5. Essuyez l'excédent avec un mouchoir. Trop d'huile coulera dans l'œil pendant la nuit.
 
-Pour les sourcils, tu peux appliquer un peu plus d'huile et masser légèrement.
+Pour les sourcils, vous pouvez appliquer un peu plus d'huile et masser légèrement.
 
 ## Les précautions
 
-- **Si l'huile entre dans l'œil**, rince abondamment à l'eau claire. Elle peut provoquer une sensation de voile et des picotements.
-- **Fais un test de tolérance** 48 heures avant, au pli du coude, comme pour tout soin naturel ou [cosmétique maison](/beaute-naturelle/deodorant-maison-sans-bicarbonate/). Des allergies de contact à l'huile de ricin ont été décrites.
-- **Ne l'utilise pas** si tu as une infection de l'œil ou des paupières, ou si tu portes des lentilles au moment de l'application.
+- **Si l'huile entre dans l'œil**, rincez abondamment à l'eau claire. Elle peut provoquer une sensation de voile et des picotements.
+- **Faites un test de tolérance** 48 heures avant, au pli du coude, comme pour tout soin naturel ou [cosmétique maison](/beaute-naturelle/deodorant-maison-sans-bicarbonate/). Des allergies de contact à l'huile de ricin ont été décrites.
+- **Ne l'utilisez pas** si vous avez une infection de l'œil ou des paupières, ou si vous portez des lentilles au moment de l'application.
 
 ![Des produits de beauté vus du dessus](https://images.unsplash.com/photo-1512207426415-91c2e14fbe36 "Annie Spratt|anniespratt")
 
 ## Notre conclusion
 
-L'huile de ricin est un bon soin gainant, simple et bon marché, mais pas un sérum de pousse. Si tu l'aimes, garde-la dans ta routine pour la souplesse et la brillance de tes cils. Si tu cherches une vraie pousse, sache que seul un médicament sur prescription a fait ses preuves, avec des effets indésirables à discuter avec un médecin. Pour d'autres ingrédients passés au tamis, comme [le vinaigre de cidre sur les cheveux](/beaute-naturelle/vinaigre-de-cidre-cheveux/), explore la rubrique [Beauté naturelle](/beaute-naturelle/).
+L'huile de ricin est un bon soin gainant, simple et bon marché, mais pas un sérum de pousse. Si vous l'aimez, gardez-la dans votre routine pour la souplesse et la brillance de vos cils. Si vous cherchez une vraie pousse, sache que seul un médicament sur prescription a fait ses preuves, avec des effets indésirables à discuter avec un médecin. Pour d'autres ingrédients passés au tamis, comme [le vinaigre de cidre sur les cheveux](/beaute-naturelle/vinaigre-de-cidre-cheveux/), explorez la rubrique [Beauté naturelle](/beaute-naturelle/).
